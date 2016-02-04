@@ -6094,6 +6094,8 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered,edges_truely_re
     green_edges=get_green_edges(H)
     print green_edges
     destroyed_graph=nx.MultiGraph(get_graph_from_destroyed_graph(H))
+    really_destroyed_graph=nx.MultiGraph(get_graph_from_truely_destroyed_graph(H))
+	
     #vale true se ho riparato almeno un link ad 1 hop
     recovered_flag=False
 
@@ -6120,6 +6122,7 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered,edges_truely_re
         if supply_edge==True:
 
             #vedi se il flusso residuo soddisfa la domanda, altrimenti lo ripristini
+            #max_flow_on_residual=compute_max_flow(destroyed_graph,id_source,id_target)
             max_flow_on_residual=compute_max_flow(destroyed_graph,id_source,id_target)
 
             if max_flow_on_residual < demand :
@@ -6154,7 +6157,9 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered,edges_truely_re
 #                                    H.node[target]['status']='repaired'
 #                                    H.node[target]['color']='blue'
 #DIMAN Added
+                #if H[source][target][key_to_recover]['status']=='destroyed':
                 if H[source][target][key_to_recover]['status']=='destroyed':
+				
                     H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',labelfont='blue',color='blue',style='solid')
                     recovered_flag=True
                     print 'Arco Ricoverato one hop: %d - %d'%(source,target)
@@ -9176,11 +9181,19 @@ def add_edges_recovered_to_graph_gray(H,graph_built,edges_recovered):
                     cap=H[source][target][k]['capacity']
                     #graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap)
                     if graph_built.has_edge(source,target):
-                        graph_built[source][target][k]['color'] = 'blue'
-                        graph_built[source][target][k]['status'] = 'repaired'
-                        graph_built[source][target][k]['style'] = 'solid'
-                    else:    
-                        graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap)
+                        if graph_built[source][target][k]['true_status'] == 'destroyed':					
+                            graph_built[source][target][k]['color'] = 'blue'
+                            graph_built[source][target][k]['status'] = 'repaired'
+                            graph_built[source][target][k]['style'] = 'solid'
+                        if graph_built[source][target][k]['true_status'] == 'on':				
+                            graph_built[source][target][k]['color'] = '""'
+                            graph_built[source][target][k]['status'] = 'on'
+                            graph_built[source][target][k]['style'] = 'solid'							
+                    else:
+                        if graph_built[source][target][k]['true_status'] == 'destroyed':										
+                            graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap)
+                        if graph_built[source][target][k]['true_status'] == 'on':										
+                            graph_built.add_edge(source,target, type='normal',status='on',labelfont='black',color='""',style='solid',capacity=cap)
         else:
 
             sys.exit('Errore in add_edges_recovered_to_graph: larco da aggiungere non esiste nel grafo supply')

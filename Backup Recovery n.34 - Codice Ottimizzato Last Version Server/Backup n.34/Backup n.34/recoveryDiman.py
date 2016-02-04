@@ -303,7 +303,12 @@ D=nx.MultiGraph(nx.read_gml(path_to_demand))
 
 merge_graphs(H,D)
 H1=nx.MultiGraph(H)
-
+H2=nx.MultiGraph(H)
+H3=nx.MultiGraph(H)
+H4=nx.MultiGraph(H)
+H5=nx.MultiGraph(H)
+H6=nx.MultiGraph(H)
+H7=nx.MultiGraph(H)
 
 #old_bet_dict=compute_my_betweeness(H,green_edges,'reciproco')
 #my_draw(H, '2-prepared-old_bet')
@@ -547,7 +552,7 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
 
         if recovered_one_hop_flag:
             add_edges_recovered_to_graph_gray(H,graph_built,recovered_edges_one_hop)
-        #print recovered_one_hop_flag
+        print recovered_one_hop_flag
 
         
 
