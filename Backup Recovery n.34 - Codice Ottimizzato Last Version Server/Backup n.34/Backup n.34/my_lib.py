@@ -2700,6 +2700,97 @@ def compute_my_betweeness_4_opt(H,green_edges,distance_metric):
     return betwenness_dict,shortest_paths_for_bet,end_time_bet
 
 
+#Diman's new betweenees metric
+#Ottimizzata
+def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
+
+    shortest_paths=[]
+    global betwenness_dict
+    betwenness_dict={}
+    global shortest_paths_for_bet
+    #print shortest_paths_for_bet
+    shortest_paths_for_bet={}
+    #print shortest_paths_for_bet
+    for node in H.nodes():
+        id_node=H.node[node]['id']
+        if id_node not in betwenness_dict:
+            betwenness_dict.update({id_node:0.0})
+
+    supply_graph=get_supply_graph(H,green_edges)
+    star_time_bet=time.time()
+    for edge in green_edges:
+        residual_graph=nx.MultiGraph(supply_graph)
+        id_source=edge[0]
+        id_target=edge[1]
+        demand= edge[2]
+        arc=(id_source,id_target)
+        #print '------------------------SHORTEST PATH CHE CONTRIBUISCONO ALLA BETW: coppia %d-%d = %f'%(id_source,id_target,demand)+' ---------------------------------'
+
+        #lista di tutti i path tra source e target con relativi pesi
+        #weighted_paths=compute_lenght_paths(H,id_source,id_target,distance_metric,True)
+        paths_selected=[]
+        demand_to_assign=demand
+        flag_demand_satified=False
+        while(flag_demand_satified==False):
+            curr_shortest=my_dijkstra_shortest_path(residual_graph,id_source,id_target)
+            if len(curr_shortest)==0:
+                print 'Nessun Path disponibile per la domanda: %d-%d:'%(id_source,id_target)
+                sys.exit('Errore in compute_my_betwenness_4_opt: coppia di domanda non connessa !!!')
+
+            cap_path=get_capacity_of_path(residual_graph,curr_shortest)
+            if cap_path>=demand_to_assign:
+                flag_demand_satified=True
+
+            else:
+                reduce_capacity_path(residual_graph,curr_shortest,cap_path)
+
+            demand_to_assign=demand_to_assign-cap_path
+            paths_selected.append(curr_shortest)
+
+        arc=(id_source,id_target)
+        #aggiorno i paths che contribuiscono alla betweeness dell'arco verde
+        if not shortest_paths_for_bet.has_key(arc):
+            shortest_paths_for_bet.update({arc:[]})
+        for path in paths_selected:
+            #print 'aggiunto'
+            shortest_paths_for_bet[arc].append(path)
+        #print shortest_paths_for_bet[arc]
+
+        #aggiorna le betweeness dei nodi
+        nodes_to_update_bet=get_list_of_nodes_from_paths(paths_selected)
+        #for node in H.nodes():
+        for node in nodes_to_update_bet:
+            id_node = H.node[node]['id']
+
+            #paths che passano per il nodo e sono minori di una certa lunghezza tra source e sink
+            paths_trough_node=paths_traverse_node(paths_selected,id_node)
+            #numeratore della formula di centralita approssimata
+            #print 'path attraversano %d '%(id_node)
+            #print paths_trough_node
+            if len(paths_trough_node)>0:
+                #total_flow_passing_node=compute_total_flow_based_on_real_flow(H,paths_trough_node,id_source,id_target)
+                total_flow_passing_node=compute_total_flow_based_on_path_capacity(H,paths_trough_node)
+                total_flow_capacity=0.0
+                total_flow_capacity=compute_total_flow_based_on_path_capacity(H,paths_selected)
+                #print total_flow_passing_node
+                #print total_flow_capacity
+                ratio=float(total_flow_passing_node/total_flow_capacity)
+                #print 'ratio calcolato %f: '%(ratio*demand)
+                old_betw = betwenness_dict[id_node]
+                new_betw = old_betw + float(('%.2f'%(ratio*demand)))
+                betwenness_dict.update({id_node:new_betw})
+                #print 'betwenness aggiornata per %d'%(id_node)
+
+                #sys.exit(0)
+    for node in H.nodes():
+        id_node=H.node[node]['id']
+        H.node[node]['betweeness']=betwenness_dict[id_node]
+
+    #print 'fine betwnees_opt'
+    #print shortest_paths_for_bet
+    end_time_bet=round(time.time()-star_time_bet,3)
+    return betwenness_dict,shortest_paths_for_bet,end_time_bet
+
 def get_list_of_nodes_from_paths(list_paths):
 
     join=[]
