@@ -1972,7 +1972,57 @@ def distance_node(H,node_i,node_j,distance_metric):
             distanza_temp=0.1
 
         return distanza_temp
+#Diman Added for a new distance metric:
+    elif distance_metric == 'unknown_capacity':
+        #get status of the link for 'broken' metric
+        keydict=H[node_i][node_j]
+        #print keydict
+        #print node_i, node_j
+        for k in keydict:
+            if H[node_i][node_j][k]['type']=='normal':
+                status=H[node_i][node_j][k]['status']
+                capacity=H[node_i][node_j][k]['capacity']
 
+        #print node_i,node_j
+        distanza_temp=0.0 #distanza con arco ok e nodi ok
+        costo_vertici=0.5
+        if H.node[node_i]['status']=='destroyed':
+            #print 'nodo rotto'
+            distanza_temp+=costo_vertici
+            #print 'aggiungo'
+            #print distanza_temp
+        #if H.node[node_j]['status']=='destroyed':
+            #print 'nodo rotto'
+            #distanza_temp+=costo_vertici
+            #print 'aggiungo'
+            #print 'Nodo rotto'
+            #print distanza_temp
+
+        #print distanza_temp
+        if status == 'destroyed':
+            #return the lenght of a link broken
+            costo_arco_rotto=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+
+        else:
+            distanza_temp+=0.1/(capacity)
+            #print 'arco non rotto'
+        #print distanza_temp
+        if distanza_temp==0.0:
+            sys.exit('Errore in distace node: distanza=0.0 !!!')
+            distanza_temp=0.1
+
+        return distanza_temp
+
+#Diman Finished adding new distance metric
     else:
         sys.exit('Errore distance_node: nessuna metrica di distanza riconosciuta')
         return None
