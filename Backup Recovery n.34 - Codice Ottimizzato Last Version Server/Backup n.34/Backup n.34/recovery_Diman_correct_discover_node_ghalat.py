@@ -428,7 +428,10 @@ pruning_after_split=False
 couples_to_prune=None
 
 #seamus
-owned_nodes = init_owned_nodes(green_edges)
+probe_nodes = init_probe_nodes(green_edges)
+discovered_edges=[]
+discovered_nodes=[]
+#green_nodes = list(owned_nodes)
 total_demand_of_graph=compute_total_demand_of_graph(H)
 
 #START Iteritive Split and Prune
@@ -436,7 +439,6 @@ total_demand_of_graph=compute_total_demand_of_graph(H)
 
 graph_built=get_graph_from_destroyed_graph(H)
 
-resolve_one_hop_nodes(H, graph_built, owned_nodes)
 my_draw(graph_built,'grafo_costruito')
 
 #sys.exit(0)
@@ -448,17 +450,23 @@ print '*********************************************'
 print 'Start Iteritive Split and Prune'
 print '*********************************************'
 cnt = 0
-while ( check_routability(graph_built,copy_of_green_edges)==False  ):
+K_HOPS = 1
+visited_but_working_nodes = []
+visited_and_broken_nodes = []
+gray_to_known = []
 
+#while ( check_routability(get_graph_from_destroyed_graph(graph_built),copy_of_green_edges)==False  ):
+while ( check_routability(get_graph_from_truely_destroyed_graph(graph_built,nodes_really_dest,edges_really_dest, nodes_recovered_isp, edges_recovered_isp),copy_of_green_edges)==False  ):
+#DIMAN COMMENTED SEAMUS
     #Begin Seamus Additions
     for node in nodes_recovered_isp: 
-        if node not in owned_nodes:
-             owned_nodes.append(node)
-        
-    print '########################################################'
-    print owned_nodes
+        if node not in probe_nodes:
+             probe_nodes.append(node)
 
-    information_gain(H, graph_built, owned_nodes, 1);
+    #Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes)
+    #Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes)
+
+#DIMAN COMMENTED SEAMUS
     
     #resolve_onwed_node_edges(H,graph_built, owned_nodes)
     #resolve_one_hop_nodes(H, graph_built, owned_nodes)
@@ -495,13 +503,17 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
             couple_pruned=[]
             #print recovered_edges_one_hop
             #print_edge_graph(temp_graph_supply)
-            couple_pruned=pruning_one_hop(temp_graph_supply,recovered_edges_one_hop,distance_metric,counter_isp,type_of_bet_passed)
+            my_draw(temp_graph_supply,'Demi0-%d-prune_one_hop'%(counter_isp))
+            couple_pruned=pruning_one_hop(temp_graph_supply,recovered_edges_one_hop,distance_metric,counter_isp,type_of_bet_passed,edges_really_dest)
+            my_draw(temp_graph_supply,'Demi1-%d-prune_one_hop'%(counter_isp))
             #print_edge_graph(temp_graph_supply)
             recovred_edges_one_hop=[]
             update_couple_to_prune(couples_to_prune,couple_pruned)
 
         #costruisce il grafo rimanente senza la distruzione
+		
         only_graph_destroyed=nx.MultiGraph(get_graph_from_destroyed_graph(temp_graph_supply))
+
         #only_graph_truely_destroyed=nx.MultiGraph(get_graph_from_truely_destroyed_graph(temp_graph_supply))
 		
         #my_draw(only_graph_destroyed,'4-grafo_distrutto')
@@ -510,12 +522,15 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
             #print 'entro'
             #non ho fatto split, calcolo se posso fare pruning su tutti
             #ritorna tutti i path fra coppie di nodi verdi senza ramificazioni  e senza nodi verdi (sul grafo Originale) intermedi su cui fare il pruning (Grafo distruttyo) --> TEOREMA PRUNING
+			
             multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune(H,temp_graph_supply,only_graph_destroyed,distance_metric)
+
             #multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune(H,temp_graph_supply,only_graph_truely_destroyed,distance_metric)
 
         else:
             #ho fatto split, controllo il pruning solo per le due nuove coppie splittate
             print 'controllo se lo split ha creato qualcosa per fare pruning'
+			
             multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune_after_split(H,temp_graph_supply,only_graph_destroyed,distance_metric,couples_to_prune)
 
         if (len(multiple_paths_to_prune)>0):
@@ -548,10 +563,25 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
 
         #print 'Controllo one hop'
         recovered_edges_one_hop=[]
-        recovered_edges_one_hop,recovered_one_hop_flag = recover_one_hop_edge_green(temp_graph_supply,edges_recovered_isp,nodes_recovered_isp,edges_truely_recovered_isp,nodes_truely_recovered_isp)
-
+        #my_draw(temp_graph_supply,'AfterOneHopEdge0-%d'%(counter_isp))		
+        recovered_edges_one_hop,recovered_one_hop_flag = recover_one_hop_edge_green(temp_graph_supply,edges_recovered_isp,nodes_recovered_isp,edges_truely_recovered_isp,nodes_truely_recovered_isp, nodes_really_dest,edges_really_dest)
+        my_draw(temp_graph_supply,'AfterOneHopEdge1-%d'%(counter_isp))
+		
+		#Diman Added Seamus's Code
+        #if recovered_one_hop_flag:
+        #    add_edges_recovered_to_graph_gray(H,graph_built,recovered_edges_one_hop)
+        #    information_gain(H, graph_built, owned_nodes, K_HOPS)
+        #    information_gain(H, temp_graph_supply, owned_nodes, K_HOPS)
+        #    current_green_edges = find_green_edges(temp_graph_supply)
+        #    if current_green_edges:
+        #        select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)
+        #print recovered_one_hop_flag	
+		
+		#Diman commented to add Seamus's code:
         if recovered_one_hop_flag:
-            add_edges_recovered_to_graph_gray(H,graph_built,recovered_edges_one_hop)
+            add_edges_recovered_to_graph_gray(H,graph_built,recovered_edges_one_hop, edges_really_dest)
+            Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes)
+            Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes)
         print recovered_one_hop_flag
 
         
@@ -575,18 +605,42 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
     #temp_green=get_green_edges(temp_graph_supply)
     #check_routability(temp_graph_supply,temp_green)
     #couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp)
+    #my_draw(temp_graph_supply,'Here0-%d-'%(counter_isp))
 
     couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path_and_ranking_max_split(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,nodes_truely_recovered_isp,type_of_bet_passed)
+    #my_draw(temp_graph_supply,'Here1-%d-'%(counter_isp))
+    #recovered_edges_one_hop,recovered_one_hop_flag = recover_one_hop_edge_green(temp_graph_supply,edges_recovered_isp,nodes_recovered_isp,edges_truely_recovered_isp,nodes_truely_recovered_isp, nodes_really_dest,edges_really_dest)
+	#couple_pruned=pruning_one_hop(temp_graph_supply,recovered_edges_one_hop,distance_metric,counter_isp,type_of_bet_passed)
 
+    my_draw(temp_graph_supply,'Here3-%d-'%(counter_isp))
     #couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path_and_demand(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,type_of_bet_passed)
 
-    if bc!=None:
-        add_node_to_graph_recovered_gray(H,graph_built,bc)
+	
+	#Diman Added Seamus's Code
+    #if bc!=None:
+        #wasted_repair = add_node_to_graph_recovered_gray(H,graph_built,bc)
+        #information_gain(H, graph_built, owned_nodes, K_HOPS)
+        #information_gain(H, temp_graph_supply, owned_nodes, K_HOPS)
+        #current_green_edges = find_green_edges(temp_graph_supply)
+        #if current_green_edges:
+        #    select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)
+        #if wasted_repair:
+        #    visited_but_working_nodes.append(bc)
+        #else:
+        #    visited_and_broken_nodes.append(bc)
         #owned_nodes.append(bc)
+		
+	#Diman Commented to Add Seamus's Code
+    if bc!=None:	
+        add_node_to_graph_recovered_gray(H,graph_built,bc)
+        Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes)
+        Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes)
+		
 
     #my_draw(graph_built,'5-isp-%d-graph_built'%(counter_isp))
     #sys.exit()
     counter_isp=counter_isp+1
+    #my_draw(temp_graph_supply,'5-isp-%d-recover-one-hop'%(counter_isp))
 
     if flag_no_split==True:
         counter_starvation+=1
@@ -603,12 +657,16 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
         #winsound.Beep(500,500)
         my_draw(temp_graph_supply,'5-isp-STALLO')
         #sys.exit('ERRORE ISP: possibile stallo dell algoritmo')
-        print 'Stallo: vedo se bastano le riparazioni gia fatte per instradare la domanda iniziale'
+        print 'Stallo: vedo se bastano le riparazioni gia fatte per instradare la domanda iniziale'		
         graph_recovered=build_graph_repaired(H,nodes_recovered_isp,edges_recovered_isp)
+		
         prepare_graph(graph_recovered)
         merge_graphs(graph_recovered,D)
         my_draw(graph_recovered,'5-STALLO-grafo_riparato_stallo')
         if check_routability(graph_recovered,copy_of_green_edges):
+        #if check_routability(get_graph_from_truely_destroyed_graph(graph_built,nodes_really_dest,edges_really_dest, nodes_recovered_isp, edges_recovered_isp),copy_of_green_edges):
+
+			
             print 'Riparazioni sufficienti ad instradare tutte le domande'
         else:
             print 'Riparazioni non sufficienti ad istradare tutte l domande'
@@ -624,6 +682,8 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
             #exit from while
 
         break
+
+		
 print '*********************************************'
 print 'END Iteritive Split and Prune'
 print '*********************************************'
@@ -659,7 +719,7 @@ num_rip_isp_nodes=len(nodes_recovered_isp)
 num_rip_truely_isp_nodes=len(Find_truely_recovered_nodes(H,nodes_recovered_isp))
 #len(nodes_truely_recovered_isp)
 num_rip_isp_edges=len(edges_recovered_isp)
-num_rip_truely_isp_edges=len(Find_truely_recovered_edges(H,edges_recovered_isp))
+num_rip_truely_isp_edges=len(Find_truely_recovered_edges(H,edges_recovered_isp, edges_really_dest))
 #len(edges_truely_recovered_isp)
 print num_rip_isp_nodes
 print num_rip_isp_edges
@@ -669,8 +729,37 @@ print num_rip_truely_isp_edges
 #add_edges_recovered_to_graph(H,temp_graph_supply,edges_recovered_isp)
 
 #recovery_supply_graph(H,temp_graph_supply,nodes_recovered_isp,edges_recovered_isp)
-recover_gray(H,nodes_recovered_isp,edges_recovered_isp, owned_nodes)
+#recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_truely_recovered_isp, edges_truely_recovered_isp)
+#my_draw(H,'Here6-%d-'%(counter_isp))
+recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_really_dest, edges_really_dest,discovered_edges,discovered_nodes)
+#my_draw(H,'Here7-%d-'%(counter_isp))
+
+#recover_gray(H,nodes_recovered_isp,edges_recovered_isp, owned_nodes)
+#recover_gray(H,nodes_recovered_isp,edges_recovered_isp, owned_nodes, K_HOPS)
+my_draw(temp_graph_supply,'Here4-%d-'%(counter_isp))
 my_draw(H,'6-final_algorithm')
+
+
+#DIMAN ADDED SOME CODE
+
+#Diman
+destroy_graph_manual(H2,path_to_real_distruption)
+my_draw(H2,'Diman_ISP')
+green_edges=deepcopy(copy_of_green_edges)
+my_draw(H2,'Diman-destroyed_for_ISP')
+
+
+recover(H2,nodes_truely_recovered_isp,edges_truely_recovered_isp)
+#set_betwenness_from_dict(H,old_bet_dict)
+#my_draw(H,'4-recovered_optimal_old_bet')
+#new_bet_dict=compute_my_betweeness_3(H, green_edges,distance_metric)
+#set_betwenness_from_dict(H,new_bet_dict)
+my_draw(H2,'Diman_recovered_ISP')
+
+
+
+
+
 
 #winsound.Beep(500,1000)
 time_elapsed=round(time.time() - start_time,3)
@@ -783,7 +872,7 @@ num_rip_mult_nodes=len(nodes_recovered_general)
 num_rip_truely_mult_nodes=len(Find_truely_recovered_nodes(H,nodes_recovered_general))
 
 num_rip_mult_edges=len(edges_recovered_general)
-num_rip_truely_mult_edges=len(Find_truely_recovered_edges(H,edges_recovered_general))
+num_rip_truely_mult_edges=len(Find_truely_recovered_edges(H,edges_recovered_general,edges_really_dest))
 
 #ripristina e disegna
 print 'Soluzione Multicommodity Generale: '
@@ -961,7 +1050,7 @@ num_rip_shortest_nodes=len(nodes_recovered_sb)
 num_rip_truely_shortest_nodes=len(Find_truely_recovered_nodes(H,nodes_recovered_sb))
 
 num_rip_shortest_edges=len(edges_recovered_sb)
-num_rip_truely_shortest_edges=len(Find_truely_recovered_edges(H,edges_recovered_sb))
+num_rip_truely_shortest_edges=len(Find_truely_recovered_edges(H,edges_recovered_sb,edges_really_dest))
 
 print num_rip_shortest_nodes
 print num_rip_shortest_edges
