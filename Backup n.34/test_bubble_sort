@@ -1,0 +1,25 @@
+
+import sys
+import time
+pippo=[i for i in range(1000000,1,-1)]
+
+#print pippo
+
+start=time.time()
+pippo.sort()
+"""
+for i in range(0,len(pippo),1):
+    for j in range(i+1,len(pippo),1):
+        a=pippo[i]
+        b=pippo[j]
+        if a>b:
+            #print 'scambio'
+            #print a,b
+            pippo[i]=b
+            pippo[j]=a
+            #print pippo[i],pippo[j]
+            #sys.exit(0)
+
+"""
+print time.time()-start
+#print pippo
