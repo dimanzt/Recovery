@@ -1,0 +1,4103 @@
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 120
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 120.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 121
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 121.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.02s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.02 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 122
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 122.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 123
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 123.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 124
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 124.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 125
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 125.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 126
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 126.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 127
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 127.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.03 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 128
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 128.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 129
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 129.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 130
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 130.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 131
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 131.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 132
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 132.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 133
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 133.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 134
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 134.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 135
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 135.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.03 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 136
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 136.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 137
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 137.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 138
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 138.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 139
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 139.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 140
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 140.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 141
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 141.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 142
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 142.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 143
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 143.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.01 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 144
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 144.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 145
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 145.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 146
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 146.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 147
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 147.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 148
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 148.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 149
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 149.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 150
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 150.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 151
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 151.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 152
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 152.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 153
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 153.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 154
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 154.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 155
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 155.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 156
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 156.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 157
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 157.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 158
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 158.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 159
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 159.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 160
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 160.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 161
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 161.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 162
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 162.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 163
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 163.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 164
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 164.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 165
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 165.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 166
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 166.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 167
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 167.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 168
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 168.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 169
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 169.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 170
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 170.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 171
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 171.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 172
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 172.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 173
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 173.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 174
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 174.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 175
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 175.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 176
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 176.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 177
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 177.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 178
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 178.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 179
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 179.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 180
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 180.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 181
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 181.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 182
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 182.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.01 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 183
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 183.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 184
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 184.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 185
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 185.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 186
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 186.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 187
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 187.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.01 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 188
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 188.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 189
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 189.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 190
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 190.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 191
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 191.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 192
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 192.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 193
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 193.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 194
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 194.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 195
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 195.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 196
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 196.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 197
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 197.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 198
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 198.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 199
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 199.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 200
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 200.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 201
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 201.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.01 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 202
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 202.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 203
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 203.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 204
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 204.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 205
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 205.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 206
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 206.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.01 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 207
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 207.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 208
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 208.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 209
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 209.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 210
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 210.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 211
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 211.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.01 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 212
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 212.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.01 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 213
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 213.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 214
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 214.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(2, 6, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 215
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 215.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(0, 3, 5)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(0, 3, 5)]
+iterazione 0 / 0 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(0, 3, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 216
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 216.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 217
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 217.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(7, 9, 2)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(7, 9, 2)]
+iterazione 0 / 0 --> 7-9
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(7, 9, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 218
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 218.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(1, 4, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       3    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 3 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(1, 4, 4)]
+iterazione 0 / 0 --> 1-4
+max flow residual: 17.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(1, 4, 1)]
+Number of runs: 1/1
+Parametri della simulazione: 
+Seed: 219
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: broken_capacity
+Type of betweeness: exact
+Abilene
+Dimensioni del Grafo
+Nodi: 11
+Archi: 14
+Totale: 25
+seed utilizzato: 219.000000: 
+Diametro del Grafo: 5
+Variazione del flusso assegnato: True
+Vario il numero di coppie fissando il flusso 1
+Numero di coppie da selezionare: 1
+Distruzione fissa
+Subset of couples Random:
+Coppie selezionate Random:
+[(5, 10, 3)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(5, 10, 3)]
+iterazione 0 / 0 --> 5-10
+max flow residual: 22.0
+domanda assegnata: 1/1
+coppie di archi verdi selezionati:
+[(5, 10, 1)]
+1
+SIMULAZIONI TERMINATE
+Immagini generate nella cartella: C:\Users\user\Novella\image_graph_dot\store_images

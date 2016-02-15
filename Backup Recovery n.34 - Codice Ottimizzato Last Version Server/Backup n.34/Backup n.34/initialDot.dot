@@ -1,0 +1,11 @@
+graph G {
+0 [shape=circle, Internal=1, Latitude=50, Country="United States", id=0, style=filled, pos="50,50!", Longitude=50, label=0];
+1 [shape=circle, Internal=1, Latitude=100, Country="United States", id=1, style=filled, pos="50,100!", Longitude=50, label=1];
+2 [shape=circle, Internal=1, Latitude=100, Country="United States", id=2, style=filled, pos="100,100!", Longitude=100, label=2];
+3 [shape=circle, Internal=1, Latitude=50, Country="United States", id=3, style=filled, pos="100,50!", Longitude=100, label=3];
+0 -- 1  [LinkNote=c, LinkLabel="NY-CH", capacity=10, key=0, label=10];
+0 -- 3  [LinkNote=c, LinkLabel="SE-NY", capacity=4, key=0, label=4];
+0 -- 3  [LinkNote=c, LinkLabel="NY-SE", capacity=7, key=1, label=7];
+1 -- 2  [LinkNote=c, LinkLabel="CH-DC", capacity=5, key=0, label=5];
+2 -- 3  [LinkNote=c, LinkLabel="DC-SE", capacity=4, key=0, label=4];
+}

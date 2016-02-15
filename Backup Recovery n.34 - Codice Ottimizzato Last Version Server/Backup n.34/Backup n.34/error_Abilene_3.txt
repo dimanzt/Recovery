@@ -1,0 +1,400 @@
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined

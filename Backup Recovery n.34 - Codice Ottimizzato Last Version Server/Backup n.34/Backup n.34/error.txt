@@ -1,0 +1,1 @@
+Errore: Num Riparazione Ottimo peggiore di qualche altro algoritmo!

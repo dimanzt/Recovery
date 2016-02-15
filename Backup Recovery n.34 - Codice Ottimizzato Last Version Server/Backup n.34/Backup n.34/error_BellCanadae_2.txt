@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 356, in <module>
+    nodes_destroyed,edges_destroyed,nodes_grey,edges_grey=destroy_gray_area(H,0.5)
+NameError: name 'destroy_gray_area' is not defined
+Traceback (most recent call last):
+  File "recovery.py", line 6, in <module>
+    import my_lib as my_lib_var
+  File "C:\Users\user\Novella\Backup Recovery n.34 - Codice Ottimizzato Last Version Server\Backup n.34\Backup n.34\my_lib.py", line 27, in <module>
+    from scipy.stats import multivariate_normal
+  File "C:\Python27\lib\site-packages\scipy\stats\__init__.py", line 321, in <module>
+    from .stats import *
+  File "C:\Python27\lib\site-packages\scipy\stats\stats.py", line 184, in <module>
+    from . import distributions
+  File "C:\Python27\lib\site-packages\scipy\stats\distributions.py", line 13, in <module>
+    from . import _continuous_distns
+  File "C:\Python27\lib\site-packages\scipy\stats\_continuous_distns.py", line 64, in <module>
+    kstwobign = kstwobign_gen(a=0.0, name='kstwobign')
+  File "C:\Python27\lib\site-packages\scipy\stats\_distn_infrastructure.py", line 1508, in __init__
+    self._construct_doc(docdict, dct.get(self.name))
+  File "C:\Python27\lib\site-packages\scipy\stats\_distn_infrastructure.py", line 763, in _construct_doc
+    self.__doc__ = doccer.docformat(self.__doc__, tempdict)
+  File "C:\Python27\lib\site-packages\scipy\misc\doccer.py", line 55, in docformat
+    icount = indentcount_lines(lines[1:])
+  File "C:\Python27\lib\site-packages\scipy\misc\doccer.py", line 147, in indentcount_lines
+    indentno = min(indentno, len(line) - len(stripped))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "multiple_simulations.py", line 116, in <module>
+    os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
+KeyboardInterrupt
