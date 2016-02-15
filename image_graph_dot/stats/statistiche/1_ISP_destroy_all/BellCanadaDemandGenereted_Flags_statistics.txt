@@ -1,0 +1,1200 @@
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 120
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 121
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 24, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 24): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 24, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 122
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 123
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 124
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(42, 45, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(42, 45): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(42, 45, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 125
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(40, 46, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(40, 46): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(40, 46, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 126
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 127
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 128
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(41, 47, 4) - 
+Max flows su grafo supply per ogni coppia: 
+(41, 47): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(41, 47, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 129
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 30, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 30): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 30, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 130
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 131
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 11, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(4, 11): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 11, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 132
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 17, 8) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 17): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 17, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 133
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(14, 39, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 39): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(14, 39, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 134
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(14, 39, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 39): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(14, 39, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 135
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(29, 37, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(29, 37): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(29, 37, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 136
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 137
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 138
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 22, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 22): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 22, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 139
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 10, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 10): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 10, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 140
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(35, 44, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(35, 44): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(35, 44, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 141
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 142
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 143
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(40, 46, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(40, 46): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(40, 46, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 144
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(13, 32, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(13, 32): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(13, 32, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 145
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(34, 36, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(34, 36): 15.0 - 
+Domanda Finale assegnata al grafo: 
+(34, 36, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 146
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(6, 20, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(6, 20): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(6, 20, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 147
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 30, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 30): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 30, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 148
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 17, 8) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 17): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 17, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 149
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 150
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(28, 33, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(28, 33): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(28, 33, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 151
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(29, 37, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(29, 37): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(29, 37, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 152
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(42, 45, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(42, 45): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(42, 45, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 153
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(42, 45, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(42, 45): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(42, 45, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 154
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 22, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 22): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 22, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 155
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 156
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(14, 39, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 39): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(14, 39, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 157
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 30, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 30): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 30, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 158
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(29, 37, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(29, 37): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(29, 37, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 159
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 17, 8) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 17): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 17, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 160
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 24, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 24): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 24, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 161
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 162
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 163
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 164
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 24, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 24): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 24, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 165
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 10, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 10): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 10, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 166
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 22, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 22): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 22, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 167
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(5, 18, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(5, 18): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(5, 18, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 168
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(31, 43, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(31, 43): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(31, 43, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 169
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 25, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 25): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 25, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 170
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(35, 44, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(35, 44): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(35, 44, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 171
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(35, 44, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(35, 44): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(35, 44, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 172
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(9, 21, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(9, 21): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(9, 21, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 173
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 11, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(4, 11): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 11, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 174
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(28, 33, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(28, 33): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(28, 33, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 175
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(13, 32, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(13, 32): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(13, 32, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 176
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 10, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 10): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 10, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 177
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(42, 45, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(42, 45): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(42, 45, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 178
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(41, 47, 4) - 
+Max flows su grafo supply per ogni coppia: 
+(41, 47): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(41, 47, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 179
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(40, 46, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(40, 46): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(40, 46, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 180
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(6, 20, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(6, 20): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(6, 20, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 181
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 182
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(13, 32, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(13, 32): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(13, 32, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 183
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 24, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 24): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 24, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 184
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 25, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 25): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 25, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 185
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(40, 46, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(40, 46): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(40, 46, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 186
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(9, 21, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(9, 21): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(9, 21, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 187
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(9, 21, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(9, 21): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(9, 21, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 188
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(35, 44, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(35, 44): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(35, 44, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 189
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(14, 39, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 39): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(14, 39, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 190
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 191
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(35, 44, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(35, 44): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(35, 44, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 192
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(9, 21, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(9, 21): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(9, 21, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 193
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 194
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(28, 33, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(28, 33): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(28, 33, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 195
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 30, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 30): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 30, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 196
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(12, 26, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(12, 26, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 197
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 198
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 199
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(9, 21, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(9, 21): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(9, 21, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 200
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 201
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 202
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(35, 44, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(35, 44): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(35, 44, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 203
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 24, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 24): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 24, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 204
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 17, 8) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 17): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 17, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 205
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(13, 32, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(13, 32): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(13, 32, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 206
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 10, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 10): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 10, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 207
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 208
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 25, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 25): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 25, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 209
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 210
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 17, 8) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 17): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 17, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 211
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 38): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 38, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 212
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 17, 8) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 17): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 17, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 213
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(6, 20, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(6, 20): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(6, 20, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 214
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 215
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 19, 11) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 19): 5.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 19, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 216
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(34, 36, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(34, 36): 15.0 - 
+Domanda Finale assegnata al grafo: 
+(34, 36, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 217
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(42, 45, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(42, 45): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(42, 45, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 218
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 11, 9) - 
+Max flows su grafo supply per ogni coppia: 
+(4, 11): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 11, 1) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 219
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(29, 37, 6) - 
+Max flows su grafo supply per ogni coppia: 
+(29, 37): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(29, 37, 1) - 

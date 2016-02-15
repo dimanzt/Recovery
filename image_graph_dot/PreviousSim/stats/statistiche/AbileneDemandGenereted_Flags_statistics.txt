@@ -1,0 +1,1248 @@
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 120
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 121
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 122
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 123
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 124
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 125
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 126
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 127
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 128
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 129
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 130
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 131
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 132
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 133
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 134
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 135
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 136
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 137
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 138
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 139
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 140
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 141
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 142
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 143
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 144
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 145
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 146
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 147
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 148
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 149
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 150
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 151
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 152
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 153
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 154
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 155
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 156
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 157
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 158
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 159
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 160
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 161
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 162
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 163
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 164
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 165
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 166
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 167
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 168
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 169
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 170
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 171
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 172
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 173
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 174
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 175
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 176
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 177
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 178
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 179
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 180
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 181
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 182
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 183
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 184
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 185
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 186
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 187
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 188
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 189
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 190
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 191
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 192
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 193
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 194
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 195
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 196
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 197
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 198
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 199
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 200
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 201
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 202
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 203
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 204
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 205
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 206
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 207
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 208
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 209
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 210
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 211
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 212
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 213
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 214
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 215
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 216
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 217
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(3, 4, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(3, 4): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(3, 4, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 218
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 2, 1) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 2): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 2, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 219
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(2, 9, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(2, 9): 9.0 - 
+Domanda Finale assegnata al grafo: 
+(2, 9, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 120
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 121
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(0, 1, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(0, 1): 8.0 - 
+Domanda Finale assegnata al grafo: 
+(0, 1, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 122
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 
+
+
+
+Topologia: AbileneDemandGenereted
+Seed: 120
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(1, 10, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(1, 10): 7.0 - 
+Domanda Finale assegnata al grafo: 
+(1, 10, 1) - 

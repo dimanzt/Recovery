@@ -1,0 +1,20 @@
+graph G {
+ratio=expand;
+overlap=false;
+size="20,20!";
+1 [status=repaired, style=filled, weight=0, color=blue, Country="United States", pos="-74,40!", Longitude="-74.00597", label="1/0.0", betweeness="0.0", shape=circle, Latitude="40.71427", type=normal, id=1];
+2 [status=repaired, style=filled, weight=0, color=blue, Country="United States", pos="-87,41!", Longitude="-87.65005", label="2/0.0", betweeness="0.0", shape=circle, Latitude="41.85003", type=normal, id=2];
+3 [status=destroyed, style=filled, weight=0, color=red, Country="United States", id=3, pos="-77,38!", Longitude="-77.03637", label="3/0.0", shape=circle, Internal=1, Latitude="38.89511", type=normal, betweeness="0.0"];
+4 [status=repaired, style=filled, weight=0, color=blue, Country="United States", id=4, pos="-122,47!", Longitude="-122.33207", label="4/0.0", shape=circle, Internal=1, Latitude="47.60621", type=green, betweeness="0.0"];
+5 [status=destroyed, style=filled, weight=0, color=red, Country="United States", id=5, pos="-122,37!", Longitude="-122.03635", label="5/1.0", shape=circle, Internal=1, Latitude="37.36883", type=normal, betweeness="1.0"];
+6 [status=repaired, style=filled, weight=0, color=blue, Country="United States", id=6, pos="-118,34!", Longitude="-118.24368", label="6/0.0", shape=circle, Internal=1, Latitude="34.05223", type=green, betweeness="0.0"];
+1 -- 2  [LinkType="OC-192", status=repaired, style=solid, capacity="9.0", weight="0.01", color=blue, labelfont=blue, LinkNote=c, label="9.0", LinkLabel="OC-192c", key=0, type=normal];
+2 -- 3  [LinkType="OC-192", status=destroyed, style=dashed, capacity=5, weight="0.02", color=red, labelfont=red, LinkNote=c, label=5, LinkLabel="OC-192c", key=0, type=normal];
+2 -- 4  [LinkType="OC-192", status=repaired, style=solid, capacity=5, weight="0.02", color=blue, labelfont=blue, LinkNote=c, label=5, LinkLabel="OC-192c", key=0, type=normal];
+2 -- 4  [style=bold, color=green, label="1.0", key=1, demand="1.0", fontcolor=green, type=green];
+3 -- 5  [LinkType="OC-192", status=destroyed, style=dashed, capacity=5, weight="0.02", color=red, labelfont=red, LinkNote=c, label=5, LinkLabel="OC-192c", key=0, type=normal];
+4 -- 5  [LinkType="OC-192", status=destroyed, style=dashed, capacity=5, weight="0.02", color=red, labelfont=red, LinkNote=c, label=5, LinkLabel="OC-192c", key=0, type=normal];
+4 -- 5  [LinkType="OC-192", status=destroyed, style=dashed, capacity=7, weight="0.0142857142857", color=red, labelfont=red, LinkNote=c, label=7, LinkLabel="OC-192c", key=1, type=normal];
+4 -- 6  [style=bold, color=green, label="1.0", key=0, demand="1.0", fontcolor=green, type=green];
+5 -- 6  [LinkType="OC-192", status=destroyed, style=dashed, capacity=10, weight="0.01", color=red, labelfont=red, LinkNote=c, label=10, LinkLabel="OC-192c", key=0, type=normal];
+}
