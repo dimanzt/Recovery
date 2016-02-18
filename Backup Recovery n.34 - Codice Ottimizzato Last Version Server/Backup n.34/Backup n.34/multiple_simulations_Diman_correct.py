@@ -36,7 +36,7 @@ seed=0
 alpha=0.0
 alpha_fixed=False
 flow_fixed=True
-flow_c=1
+flow_c=3
 if num_couple_passed!=-1:
     num_couple_fix=True
     number_of_couple=num_couple_passed
@@ -95,7 +95,7 @@ else:
     seed_array.append(seed)
 
 if flow_fixed==True:
-    flow_c=1
+    flow_c=3
 
 if num_couple_fix==False:
     number_of_couple=0

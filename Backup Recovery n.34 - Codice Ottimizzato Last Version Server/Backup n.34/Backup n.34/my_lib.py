@@ -9852,7 +9852,7 @@ def information_gain(H, G, owned_nodes, k):
         while (on_nodes != on_nodes_last):
             on_nodes_last = list(on_nodes)
             on_nodes = probe_network(H, G, on_nodes)
-
+"""
 def find_green_edges(H):
     green_edges = []
     for edge in H.edges():     
@@ -9864,5 +9864,7 @@ def find_green_edges(H):
                 if H[source][target][k]['type'] == 'green':
                     if (source,target,H[source][target][k]['demand']) not in green_edges:
                         green_edges.append((source,target,H[source][target][k]['demand']))
+                #if H[target][source][k]['type'] == 'green':
+                #    if (target,source,H[target][source][k]['demand']) not in green_edges:
+                #        green_edges.append((target,source,H[target][source][k]['demand']))
     return green_edges
-"""	

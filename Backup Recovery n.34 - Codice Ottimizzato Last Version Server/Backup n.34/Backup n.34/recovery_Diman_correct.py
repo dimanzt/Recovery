@@ -469,8 +469,11 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
 
     Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
     Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
-	
-    #graph_built=get_graph_from_truely_destroyed_graph(graph_built)	
+    current_green_edges = find_green_edges(temp_graph_supply)
+    select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)	
+    #select_betweeness(graph_built,current_green_edges,distance_metric,type_of_bet_passed)	
+
+    graph_built=get_graph_from_truely_destroyed_graph(graph_built)	
     #my_draw(temp_graph_supply,'Discover1-%d'%(counter_isp))
     #my_draw(graph_built,'Discover2-%d'%(counter_isp))
     #i = i+1
@@ -588,7 +591,10 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
 		#Diman commented to add Seamus's code:
         if recovered_one_hop_flag:
             add_edges_recovered_to_graph_gray(H,graph_built,recovered_edges_one_hop, edges_really_dest)
-
+            #Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
+            #Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
+            #current_green_edges = find_green_edges(temp_graph_supply)
+            #select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)	
             #Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
             #Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
             #graph_built=get_graph_from_truely_destroyed_graph(graph_built)	
@@ -649,6 +655,10 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
 	#Diman Commented to Add Seamus's Code
     if bc!=None:	
         add_node_to_graph_recovered_gray(H,graph_built,bc,nodes_really_dest,discovered_nodes,nodes_recovered_isp)
+        #Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
+        #Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
+        #current_green_edges = find_green_edges(temp_graph_supply)
+        #select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)			
         #add_node_to_graph_recovered(temp_graph_supply,graph_built,bc)#,nodes_really_dest,discovered_nodes)
 
         #Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,nodes_recovered_isp,edges_recovered_isp)
