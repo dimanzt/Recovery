@@ -2131,11 +2131,18 @@ def distance_node(H,node_i,node_j,distance_metric):
         for k in keydict:
             if H[node_i][node_j][k]['type']=='normal':
                 status=H[node_i][node_j][k]['status']
+                true_status=H[node_i][node_j][k]['true_status']
+                color=H[node_i][node_j][k]['color']				
                 capacity=H[node_i][node_j][k]['capacity']
+                prob=H[node_i][node_j][k]['prob']
+				
+
         #print node_i,node_j
         distanza_temp=0.0 #distanza con arco ok e nodi ok
         costo_vertici=0.5
-        if H.node[node_i]['status']=='destroyed':
+        x=H.node[node_i]['Latitude']
+        y=H.node[node_i]['Longitude']		
+        if H.node[node_i]['color']=='red':
             #print 'nodo rotto'
             distanza_temp+=costo_vertici
             #print 'aggiungo'
@@ -2146,14 +2153,34 @@ def distance_node(H,node_i,node_j,distance_metric):
             #print 'aggiungo'
             #print 'Nodo rotto'
             #print distanza_temp
+
         #print distanza_temp
-        if status == 'destroyed':
+        if color == 'red':
             #return the lenght of a link broken
             costo_arco_rotto=1.0
             ratio=0.0
             #print costo_arco_rotto,capacity
             #print costo_arco_rotto/capacity
             ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        elif color == 'gray':
+            #return the lenght of a link broken
+			
+            #pdf=bivariate_normal(x,y,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
+            ##prob= H.node[node_i]['prob'] #get_prob(pdf,x,y,sigma)
+            #costo_arco_rotto=float("%.10f"%(0.1 +(prob)*0.9))	
+            costo_arco_rotto=0.1	
+
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ##ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            ratio=float("%.10f"%((0.1 +(prob)*0.9)/capacity))
+
             #print 'arco rotto'
             #print ratio
             distanza_temp+=ratio
@@ -2166,7 +2193,30 @@ def distance_node(H,node_i,node_j,distance_metric):
         if distanza_temp==0.0:
             sys.exit('Errore in distace node: distanza=0.0 !!!')
             distanza_temp=0.1
+        #print 'Diman distance'
+        #print distanza_temp
+
         return distanza_temp
+
+		
+        """
+        #print str(x)+str(y)
+        pdf=bivariate_normal(x,y,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
+        #print 'pdf calcolata: ' + str(pdf)
+        prob=get_prob(pdf,x,y,sigma)
+        #print str(prob)
+        
+        if flip_coin(prob):
+            H.node[i]['true_status']='destroyed'
+            if id_node not in nodes_really_dest:
+                nodes_really_dest.append(id_node)			
+        else:
+            H.node[i]['true_status']='on'
+
+        if id_node not in destroyed_nodes:
+            destroyed_nodes.append(id_node)	
+
+        """			
 #Diman Finished adding new distance metric
     else:
         sys.exit('Errore distance_node: nessuna metrica di distanza riconosciuta')
@@ -2897,7 +2947,7 @@ def compute_my_betweeness_4_opt(H,green_edges,distance_metric):
 
 #Diman's new betweenees metric
 #Ottimizzata
-def compute_my_betweeness_5_opt(H,green_edges,distance_metric,mu_x,mu_y,sigma):
+def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
 
     shortest_paths=[]
     global betwenness_dict
@@ -2927,7 +2977,7 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric,mu_x,mu_y,sigma):
         demand_to_assign=demand
         flag_demand_satified=False
         while(flag_demand_satified==False):
-            curr_shortest=my_prob_dijkstra_shortest_path(residual_graph,id_source,id_target,mu_x,mu_y,sigma,distance_metric)
+            curr_shortest=my_prob_dijkstra_shortest_path(residual_graph,id_source,id_target,distance_metric)
             if len(curr_shortest)==0:
                 print 'Nessun Path disponibile per la domanda: %d-%d:'%(id_source,id_target)
                 sys.exit('Errore in compute_my_betwenness_4_opt: coppia di domanda non connessa !!!')
@@ -8724,6 +8774,8 @@ def select_betweeness(H,green_edges,distance_metric,type_of_bet):
         compute_my_betweeness_3(H,green_edges,distance_metric)
     elif type_of_bet=='exact':
         return compute_my_betweeness_4_opt(H,green_edges,distance_metric)
+    elif type_of_bet=='diman':
+        return compute_my_betweeness_5_opt(H,green_edges,distance_metric)		
     else:
         sys.exit('Errore select betweeness: tipologia non riconosciuta')
 
@@ -9105,6 +9157,17 @@ def get_list_distance_couples(path_to_folder_couple,filename_graph):
     return mylist
 
 
+#Diman added:
+def my_prob_dijkstra_shortest_path(H,source,target,distance_metric):
+
+    (length, path) = my_prob_single_source_dijkstra(H,distance_metric, source=source, target=target)
+    #print length
+
+    #print path
+    try:
+        return path[target]
+    except KeyError:
+        raise nx.NetworkXNoPath("node %s not reachable from %s" % (source, target))
 
 
 def my_dijkstra_shortest_path(H,source,target):
@@ -9118,6 +9181,52 @@ def my_dijkstra_shortest_path(H,source,target):
     except KeyError:
         raise nx.NetworkXNoPath("node %s not reachable from %s" % (source, target))
 
+
+		
+def my_prob_single_source_dijkstra(G,distance_metric, source, target=None, cutoff=None, weight='weight'):
+
+    #weight_e='capacity'
+    if source == target:
+        return ({source: 0}, {source: [source]})
+
+    push = heappush
+    pop = heappop
+    dist = {}  # dictionary of final distances
+    paths = {source: [source]}  # dictionary of paths
+    seen = {source: 0}
+    c = count()
+    fringe = []  # use heapq with (distance,label) tuples
+    push(fringe, (0, next(c), source))
+    while fringe:
+        (d, _, v) = pop(fringe)
+        if v in dist:
+            continue  # already searched this node.
+        dist[v] = d
+        if v == target:
+            break
+        # for ignore,w,edgedata in G.edges_iter(v,data=True):
+        # is about 30% slower than the following		
+        edata = iter(G[v].items())
+
+        for w, edgedata in edata:
+            #print v,edgedata,w
+            #vw_dist = dist[v] + float(edgedata.get('capacity', 1))+G.node[w][weight]
+            vw_dist = dist[v] + distance_node(G,v,w,distance_metric) #+G.node[w][weight]
+
+            if cutoff is not None:
+                if vw_dist > cutoff:
+                    continue
+            if w in dist:
+                if vw_dist < dist[w]:
+                    raise ValueError('Contradictory paths found:',
+                                     'negative weights?')
+            elif w not in seen or vw_dist < seen[w]:
+                seen[w] = vw_dist
+                push(fringe, (vw_dist, next(c), w))
+                paths[w] = paths[v] + [w]
+
+    return (dist, paths)
+		
 
 
 

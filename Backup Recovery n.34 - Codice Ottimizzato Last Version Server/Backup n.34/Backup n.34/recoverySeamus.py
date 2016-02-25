@@ -170,7 +170,7 @@ print "Total: %d"%(H.number_of_nodes()+H.number_of_edges())
 #commentare questa riga se si vuole seed random
 #seed_random=2
 #seed passato per argomento
-#seed_random=int(seed_passed)
+seed_random=int(seed_passed)
 seed_random = 120
 random.seed(seed_random)
 

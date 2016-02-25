@@ -1,1 +1,4 @@
 Prob_Edge	Seed		Alfa	ISP_Nodes	ISP_Edges	Total_ISP	OPT_Nodes	OPT_Edges	Total_OPT	MCG_Nodes	MCG_Edges	Total_MCG	MCW_Nodes	MCW_Edges	Total_MCW	MCB_Nodes	MCB_Edges	Total_MCB	SRT_Nodes	SRT_Edges	Total_SRT	RNK_Nodes	RNK_Edges	Total_RNK	ALL_Nodes	ALL_Edges	Total_ALL	Total_DEM	SRT_SATIS	%_DEM_SAT	RNK_N_COM	RNK_E_COM	Tot_RNK_C	RNK_N_NC	RNK_E_NC	Tot_RNK_NC	RNK_SATIS	%_DEM_RNK	FLOW_FIXD	NUM_COUPL	VAR_DISTR	ERROR_FLG	Flag_MCG		DirImages
+0.002		121		0.2		2		0		2		1		0		1		1		0		1		2		2		4		1		0		1		1		0		1		2		2		4		2		2		4		4		4		100		2		2		4		2		2		4		4		100		4		1		0		-		-		Simulazione_392
+0.002		123		0.2		3		3		6		2		3		5		2		3		5		3		5		8		2		3		5		3		4		7		3		5		8		3		5		8		4		4		100		3		5		8		3		5		8		4		100		4		1		0		-		-		Simulazione_392
+0.002		124		0.2		3		2		5		1		2		3		1		2		3		2		3		5		1		2		3		1		2		3		2		3		5		2		3		5		4		4		100		2		3		5		2		3		5		4		100		4		1		0		-		-		Simulazione_392

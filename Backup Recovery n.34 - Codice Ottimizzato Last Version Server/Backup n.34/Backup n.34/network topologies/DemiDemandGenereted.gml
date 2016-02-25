@@ -11,6 +11,6 @@ graph [
     source 0
     target 5
     type "green"
-    demand 3
+    demand 4
   ]
 ]

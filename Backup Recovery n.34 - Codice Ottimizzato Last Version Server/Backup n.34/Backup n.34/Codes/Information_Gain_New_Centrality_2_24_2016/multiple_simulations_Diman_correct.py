@@ -1,3 +1,4 @@
+"""
 __author__ = 'Utente'
 #python_path='c:\\Python27\\python '
 #python_path='C:\Python27\python '
@@ -56,18 +57,18 @@ prob_edge=0.002
 prob_edge_fixed=True
 
 #numero di simulazioni da eseguire (per far variare alpha oppure far variare la prob edge)
-num_simulations=1
+num_simulations=10
 #metrica di distanza per calcolare lunghezza dei path : 'one-hop' , 'capacity', 'broken'
 #distance_metric='broken'
-#distance_metric='broken_capacity'
-distance_metric='unknown_capacity'
+distance_metric='broken_capacity'
+#distance_metric='unknown_capacity'
 
 #type of betw 'classic', 'aprox', 'exact'
-#type_of_bet='exact'
-type_of_bet='diman'
+type_of_bet='exact'
+#type_of_bet='diman'
 
 #specificare il nome del programma per la simulazione
-name_of_program_simulation='recoverySeamus.py'
+name_of_program_simulation='recovery_Diman_correct.py'
 
 #specificare il nome del programma per generare le immagini
 name_of_program_images='genera_immagini.py'
@@ -93,7 +94,7 @@ size_array_seed=20
 seed_array=[]
 
 if seed_fixed==False:
-    for i in range(120,120+1,1):
+    for i in range(120,120+20,1):
         seed_array.append(i)
 else:
     seed_array.append(seed)
@@ -140,8 +141,8 @@ print 'Immagini generate nella cartella: '+path_to_image_store
 
 """
 __author__ = 'Utente'
-python_path='c:\\Python27\\python '
-
+#python_path='c:\\Python27\\python '
+#python_path='C:\Python27\python '
 
 import os
 from my_lib import *
@@ -152,7 +153,14 @@ from my_lib import *
 #path_to_file_simulation='/usr/local/home/'+'\\'+user_name+'\\'+'Desktop\image_graph_dot\current_simulation.txt'
 #path_to_image_store='c:\\Users\\'+user_name+'\\Documents\Lab Work\\image_graph_dot\\store_images'
 path_to_image_store='..\..\..\image_graph_dot\store_images'
-#path_to_image_store='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\store_images\\'
+#path_to_image_store='C:\Users\user\Novella\image_graph_dot\store_images'
+
+#Diman Added
+#import runpy, sys
+#Diman Added
+
+
+
 
 if len(sys.argv)>1:
     num_couple_passed=int(sys.argv[1])
@@ -180,7 +188,7 @@ if num_couple_passed!=-1:
 
 else:
     num_couple_fix=False
-    number_of_couple=3
+    number_of_couple=0
 
 fixed_distruption=True
 
@@ -191,16 +199,20 @@ prob_edge=0.002
 prob_edge_fixed=True
 
 #numero di simulazioni da eseguire (per far variare alpha oppure far variare la prob edge)
-num_simulations=1
+num_simulations=10
 #metrica di distanza per calcolare lunghezza dei path : 'one-hop' , 'capacity', 'broken'
 #distance_metric='broken'
 distance_metric='broken_capacity'
+#distance_metric='unknown_capacity'
 
-#type of betw 'classic', 'aprox', 'exact'
+
+#type of betw 'classic', 'aprox', 'exact', 'diman'
 type_of_bet='exact'
+#type_of_bet='diman'
+
 
 #specificare il nome del programma per la simulazione
-name_of_program_simulation='recoverySeamus.py'
+name_of_program_simulation='recovery_Diman_correct.py'
 
 #specificare il nome del programma per generare le immagini
 name_of_program_images='genera_immagini.py'
@@ -257,8 +269,13 @@ for i in range(0,num_simulations,1):
 
     for seed_elem in seed_array:
         #esegui una simulazione
-        os.system(python_path+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
+		#os.system(python_path+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
 
+        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
+        #saved_argv = sys.argv
+        #runpy.run_path(name_of_program_simulation, )#+" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
+   #'another.py', run_name="__main__")
+        #sys.argv = saved_argv # restore sys.argv
         #genera le immagini della simulazione corrente
         #os.system("python "+name_of_program_images +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric)
         sys.exit(0)
@@ -268,4 +285,3 @@ for i in range(0,num_simulations,1):
     #sys.exit(0)
 print 'SIMULAZIONI TERMINATE'
 print 'Immagini generate nella cartella: '+path_to_image_store
-"""
