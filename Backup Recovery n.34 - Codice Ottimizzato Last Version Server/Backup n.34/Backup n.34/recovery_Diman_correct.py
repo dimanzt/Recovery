@@ -157,7 +157,7 @@ print "Total: %d"%(H.number_of_nodes()+H.number_of_edges())
 #imposto il seed della simulazione con uno particolare
 #seed_random= random.randint(0,sys.maxint)
 #commentare questa riga se si vuole seed random
-seed_random=2
+#seed_random=2
 #seed passato per argomento
 seed_random=int(seed_passed)
 random.seed(seed_random)
@@ -231,7 +231,9 @@ max_var_distruption=find_max_radius_destruction_of_graph(H,coor_x,coor_y)
 
 print 'Max_var_distruption: %d'%(max_var_distruption)
 """
-
+mu_x=29
+mu_y=-95
+sigma=100
 #GENERATE FEASIBLE DEMAND ON SUPPLY GRAPH
 #prob_edge=0.05
 #Probability green edge passed in argument
@@ -322,7 +324,7 @@ H7=nx.MultiGraph(H)
 #centralita esatta
 #new_bet_dict=compute_my_betweeness_4(H, green_edges,distance_metric)
 
-select_betweeness(H,green_edges,distance_metric,type_of_bet_passed)
+select_betweeness(H,green_edges,distance_metric,type_of_bet_passed,mu_x,mu_y,sigma)
 
 
 #print new_bet_dict
@@ -351,7 +353,11 @@ file.close()
 #destroy_graph_manual(H,path_to_distruption)
 
 #casual destroy
-nodes_destroyed,nodes_really_dest,edges_destroyed,edges_really_dest=destroy_graph_gray(H,29,-95,100) #per abilene
+
+#mu_x=29
+#mu_y=-95
+#sigma=100
+nodes_destroyed,nodes_really_dest,edges_destroyed,edges_really_dest=destroy_graph_gray(H,mu_x,mu_y,sigma) #per abilene
 #nodes_destroyed,edges_destroyed=destroy_graph(H,29,-95,12) #per abilene
 
 
@@ -375,7 +381,7 @@ coor_y=-75
 path_to_distruption=write_destroyed_graph(nodes_destroyed,edges_destroyed,filename_graph,path_to_stats)
 path_to_real_distruption=write_really_destroyed_graph(nodes_really_dest,edges_really_dest,filename_graph,path_to_stats)
 #new_bet_dict=compute_my_betweeness_3(H, green_edges,distance_metric)
-dict_bet,temp_shortest_set,end_time_bet=select_betweeness(H,green_edges,distance_metric,type_of_bet_passed)
+dict_bet,temp_shortest_set,end_time_bet=select_betweeness(H,green_edges,distance_metric,type_of_bet_passed,mu_x,mu_y,sigma)
 my_draw(H,'3-destroyed')
 #CREO UNA COPIA DEL SET DI SHORTEST PATH INZIALI SU GRAFO DISTRUTTO PER UTILIZZARLO NELL'ALGORITMO SHORTESTS SET
 global shortest_set_algo
@@ -456,7 +462,7 @@ visited_and_broken_nodes = []
 gray_to_known = []
 i =0
 #while ( check_routability(graph_built,copy_of_green_edges)==False  ):
-while ( check_routability(graph_built,copy_of_green_edges)==False  ):
+while ( check_routability(remove_red_edges_nodes(graph_built),copy_of_green_edges)==False  ):
 ####while ( check_routability(get_graph_from_destroyed_graph(temp_graph_supply),copy_of_green_edges)==False  ):
 #while ( check_routability(get_graph_from_destroyed_graph(temp_graph_supply),copy_of_green_edges)==False  ):
 #while ( check_routability(get_graph_from_destroyed_graph(graph_built),copy_of_green_edges)==False  ):
@@ -470,10 +476,11 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
     Discover_neighbors(H, graph_built, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
     Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
     current_green_edges = find_green_edges(temp_graph_supply)
-    select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)	
+    select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed,mu_x,mu_y,sigma)	
     #select_betweeness(graph_built,current_green_edges,distance_metric,type_of_bet_passed)	
+    #graph_built=remove_red_edges_nodes(graph_built)	
 
-    graph_built=get_graph_from_truely_destroyed_graph(graph_built)	
+    #graph_built=get_graph_from_truely_destroyed_graph(graph_built)	
     #my_draw(temp_graph_supply,'Discover1-%d'%(counter_isp))
     #my_draw(graph_built,'Discover2-%d'%(counter_isp))
     #i = i+1
@@ -534,7 +541,7 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
             #non ho fatto split, calcolo se posso fare pruning su tutti
             #ritorna tutti i path fra coppie di nodi verdi senza ramificazioni  e senza nodi verdi (sul grafo Originale) intermedi su cui fare il pruning (Grafo distruttyo) --> TEOREMA PRUNING
 			
-            multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune(H,temp_graph_supply,only_graph_destroyed,distance_metric)
+            multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune(H,temp_graph_supply,only_graph_destroyed,distance_metric,mu_x,mu_y,sigma)
 
             #multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune(H,temp_graph_supply,only_graph_truely_destroyed,distance_metric)
 
@@ -542,7 +549,7 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
             #ho fatto split, controllo il pruning solo per le due nuove coppie splittate
             print 'controllo se lo split ha creato qualcosa per fare pruning'
 			
-            multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune_after_split(H,temp_graph_supply,only_graph_destroyed,distance_metric,couples_to_prune)
+            multiple_paths_to_prune,edges_to_prune=get_multiple_path_no_ramification_to_prune_after_split(H,temp_graph_supply,only_graph_destroyed,distance_metric,couples_to_prune,mu_x,mu_y,sigma)
 
         if (len(multiple_paths_to_prune)>0):
             pruning_flag=True
@@ -554,7 +561,7 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
             print 'multiple path to prune'
             print multiple_paths_to_prune
 
-            pruning_multiple(temp_graph_supply,multiple_paths_to_prune,counter_isp,counter_pruning,distance_metric,type_of_bet_passed)
+            pruning_multiple(temp_graph_supply,multiple_paths_to_prune,counter_isp,counter_pruning,distance_metric,type_of_bet_passed,mu_x,mu_y,sigma)
 
             if couples_to_prune==None:
                print 'PRUNING DEI PATH:'
@@ -627,7 +634,7 @@ while ( check_routability(graph_built,copy_of_green_edges)==False  ):
     #my_draw(temp_graph_supply,'Here0-%d-'%(counter_isp))
     #Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
 
-    couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path_and_ranking_max_split(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,nodes_truely_recovered_isp,type_of_bet_passed,probe_nodes)
+    couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path_and_ranking_max_split(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,nodes_truely_recovered_isp,type_of_bet_passed,probe_nodes,mu_x,mu_y,sigma)
     #Discover_neighbors(H, temp_graph_supply, probe_nodes, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,i)
 
     #my_draw(temp_graph_supply,'Here1-%d-'%(counter_isp))
@@ -715,6 +722,7 @@ print '*********************************************'
 print 'END Iteritive Split and Prune'
 print '*********************************************'
 my_draw(graph_built,'ISP%d'%cnt)
+my_draw(remove_red_edges_nodes(graph_built),'6-Suuply')
 #---------------------End Iteritive Split and Prune Phase---------------------------------------------------
 
 print 'soluzione parziale ISP'

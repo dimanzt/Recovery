@@ -1,18 +1,17 @@
 __author__ = 'Utente'
-#python_path='c:\\Python27\\python '
-#python_path='C:\Python27\python '
+python_path='c:\\Python27\\python '
+
 
 import os
-from my_libSeamus_Diman_Changed import *
+from my_lib import *
 
 #path_to_dot='/usr/local/home/'+'\\'+user_name+'\\'+'Desktop\image_graph_dot\DotFile\\'
 #path_to_image='/usr/local/home/'+'\\'+user_name+'\\'+'Desktop\image_graph_dot\immagini_generate\\'
 #path_to_image_store='/usr/local/home/'+'\\'+user_name+'\\'+'Desktop\image_graph_dot\store_images\\'
 #path_to_file_simulation='/usr/local/home/'+'\\'+user_name+'\\'+'Desktop\image_graph_dot\current_simulation.txt'
 #path_to_image_store='c:\\Users\\'+user_name+'\\Documents\Lab Work\\image_graph_dot\\store_images'
-path_to_image_store='C:\Users\user\Novella\image_graph_dot\store_images'
-#path_to_image_store='C:\Users\user\Novella\image_graph_dot\store_images'
-
+path_to_image_store='..\..\..\image_graph_dot\store_images'
+#path_to_image_store='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\store_images\\'
 
 if len(sys.argv)>1:
     num_couple_passed=int(sys.argv[1])
@@ -33,7 +32,7 @@ seed=0
 alpha=0.0
 alpha_fixed=False
 flow_fixed=True
-flow_c=1
+flow_c=3
 if num_couple_passed!=-1:
     num_couple_fix=True
     number_of_couple=num_couple_passed
@@ -60,7 +59,7 @@ distance_metric='broken_capacity'
 type_of_bet='exact'
 
 #specificare il nome del programma per la simulazione
-name_of_program_simulation='recoverySeamusDiman_changed.py'
+name_of_program_simulation='recoverySeamus.py'
 
 #specificare il nome del programma per generare le immagini
 name_of_program_images='genera_immagini.py'
@@ -117,8 +116,7 @@ for i in range(0,num_simulations,1):
 
     for seed_elem in seed_array:
         #esegui una simulazione
-		#os.system(python_path+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
-        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
+        os.system(python_path+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph)
 
         #genera le immagini della simulazione corrente
         #os.system("python "+name_of_program_images +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric)

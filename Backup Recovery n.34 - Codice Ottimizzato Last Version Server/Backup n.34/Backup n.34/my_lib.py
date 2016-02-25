@@ -118,11 +118,11 @@ def my_draw(H,file_name):
 
     #for node in graphDot.get_nodes():
      #   print str(get_attrDot(node,'pos'))
-
-    #seamus
-    #path='c:\\Users\\'+user_name+'\\Documents\Lab Work\\image_graph_dot\\DotFile' + file_name
+    #path='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\DotFile\\' + file_name
+    #path='c:\\Users\\'+user_name+'\\Documents\LabWork\\image_graph_dot\\DotFile' + file_name
     path='../../../image_graph_dot/DotFile/' + file_name    
-	#print path
+
+    #print path
     graphDot.write(path+'Dot.dot')
     #graphDot.write_png(file_name +'.png')
 
@@ -188,7 +188,6 @@ def add_attribute_Edges(H):
                     #print len(H[id_source][id_target])
                     number_edges=H.number_of_edges(id_source,id_target)
                     if number_edges ==1 and len(keydict)>1:
-                        #print 'foopu'
                         if 'type' not in H.edge[id_source][id_target]:
                             H.add_edge(id_source,id_target, type='normal')
                         #print 'prestatus'
@@ -330,6 +329,9 @@ def get_green_nodes(H):
 
 def destroy_graph_manual(H,file_path):
 
+    nodes_destroyed = []
+    edges_destroyed = []
+
     file=open(file_path,'r')
     flag_alt=0
     line=file.readline()
@@ -340,7 +342,10 @@ def destroy_graph_manual(H,file_path):
                 id_node=int(line)
                 #print id_node
                 H.node[id_node]['status']='destroyed'
+                H.node[id_node]['true_status']='destroyed'
                 H.node[id_node]['color']='red'
+                if id_node not in nodes_destroyed:
+                    nodes_destroyed.append(id_node)
             else:
                 flag_alt=1
         else:
@@ -356,11 +361,65 @@ def destroy_graph_manual(H,file_path):
                 keydict=H[id_source][id_target]
                 for k in keydict:
                     if H[id_source][id_target][k]['type']=='normal':
-                        H.add_edge(id_source,id_target,key=k, status='destroyed',labelfont='red',color='red',style='dashed')
-
+                        H.add_edge(id_source,id_target,key=k, status='destroyed',true_status='destroyed', labelfont='red',color='red',style='dashed')
+                        edges_destroyed.append((id_source,id_target))
 
         line=file.readline()
+    return nodes_destroyed,edges_destroyed
 
+def destroy_graph_manual_gray(H,file_path):
+
+    for node in H.nodes():
+        if H.node[node]['type'] == 'normal':
+            H.node[node]['status'] = 'destroyed'
+            H.node[node]['color'] = 'gray'
+
+    for edge in H.edges():
+        id_source=edge[0]
+        id_target=edge[1]
+        #print 'archi tra %d-%d'%(id_source,id_target)
+        keydict=H[id_source][id_target]
+        #print keydict
+        for k in keydict:
+            if H[id_source][id_target][k]['type'] != 'green':
+                H[id_source][id_target][k]['status'] = 'destroyed'
+                H[id_source][id_target][k]['color'] = 'gray'
+        
+    nodes_destroyed = []
+    edges_destroyed = []
+    
+    file=open(file_path,'r')
+    flag_alt=0
+    line=file.readline()
+    while(line!=''):
+        #print line
+        if flag_alt==0:
+            if line!='stop\n':
+                id_node=int(line)
+                #print id_node
+                H.node[id_node]['true_status']='destroyed'
+                if id_node not in nodes_destroyed:
+                    nodes_destroyed.append(id_node)
+            else:
+                flag_alt=1
+        else:
+            #if line !='stop\n':
+                new_line = re.sub('[()]', '', line)
+                #print 'ECCOMI:'
+                #print new_line
+                index_separator=new_line.index(',')
+                id_source=int(new_line[:index_separator])
+                id_target=int(new_line[index_separator+1:])
+                #print id_source
+                #print id_target
+                keydict=H[id_source][id_target]
+                for k in keydict:
+                    if H[id_source][id_target][k]['type']=='normal':
+                        H.add_edge(id_source,id_target,key=k, true_status='destroyed')
+                        edges_destroyed.append((id_source,id_target))
+
+        line=file.readline()
+    return nodes_destroyed,edges_destroyed
 
 def destroy_graph(H,mu_x,mu_y,sigma):
 
@@ -430,22 +489,6 @@ def destroy_nodes_gray(H,mu_x,mu_y,sigma):
 
         if id_node not in destroyed_nodes:
             destroyed_nodes.append(id_node)
-
-        
-
-        #if flip_coin(prob):
-            #if flip_coin(prob):
-            #    H.node[i]['status']='destroyed'
-            #else:
-            #    H.node[i]['status']='on'
-         #   if flip_coin(prob):
-         #       H.node[i]['true_status']='destroyed'
-         #   else:
-         #       H.node[i]['true_status']='on'
-         ##   H.node[i]['status']='destroyed'
-          #  H.node[i]['color']='gray'
-         #   if id_node not in destroyed_nodes:
-         #       destroyed_nodes.append(id_node)
             #print 'nodo distrutto:' +str(i)
     return destroyed_nodes,nodes_really_dest
 
@@ -494,6 +537,8 @@ def destroy_edges_gray(H,mu_x,mu_y,sigma):
             id_source = H.node[i]['id']
             id_target = H.node[j]['id']
             if H.has_edge(id_source,id_target):
+                if (id_source,id_target) in destroyed_edges or (id_target,id_source) in destroyed_edges:
+                    continue
                 x_1=H.node[i]['Latitude']
                 x_2=H.node[j]['Latitude']
                 y_1=H.node[i]['Longitude']
@@ -516,32 +561,23 @@ def destroy_edges_gray(H,mu_x,mu_y,sigma):
                         edge_reverse=(id_target,id_source)
 						
                         if(flip_coin(prob_arc)):
-                            H.add_edge(id_source,id_target,key=k, status='destroyed',true_status="destroyed",labelfont='gray',color='gray',style='dashed')
+                            H[id_source][id_target][k]['status'] = 'destroyed'
+                            H[id_source][id_target][k]['true_status'] = 'destroyed'
+                            H[id_source][id_target][k]['color'] = 'gray'
+                            H[id_source][id_target][k]['style'] = 'dashed'
+                            #H.add_edge(id_source,id_target,key=k, status='destroyed',true_status='destroyed',labelfont='gray',color='gray',style='dashed')
                             if edge not in edges_dest_really_dest and edge_reverse not in edges_dest_really_dest:
                                 edges_dest_really_dest.append(edge)							
                         else:
-                            H.add_edge(id_source,id_target,key=k, status='destroyed',true_status="on",labelfont='gray',color='gray',style='dashed')
+                            #H.add_edge(id_source,id_target,key=k, status='destroyed',true_status='on',labelfont='gray',color='gray',style='dashed'
+                            H[id_source][id_target][k]['status'] = 'destroyed'
+                            H[id_source][id_target][k]['true_status'] = 'on'
+                            H[id_source][id_target][k]['color'] = 'gray'
+                            H[id_source][id_target][k]['style'] = 'dashed'
 
-                        #edge=(id_source,id_target)
-                        #edge_reverse=(id_target,id_source)
                         if edge not in destroyed_edges and edge_reverse not in destroyed_edges:
                             destroyed_edges.append(edge)
-                
-                #if(flip_coin(prob_arc)):
-                #    keydict =H[id_source][id_target]
-                #    #print str(keydict)
-                #    key=len(keydict)
-                #    for k in keydict:
-                #        if 'normal' == H.edge[id_source][id_target][k]['type']:
-                #            if(flip_coin(prob_arc)):
-                #                H.add_edge(id_source,id_target,key=k, status='destroyed',true_status="destroyed",labelfont='gray',color='gray',style='dashed')
-                #            else:
-                #                H.add_edge(id_source,id_target,key=k, status='destroyed',true_status="on",labelfont='gray',color='gray',style='dashed')
-                #            edge=(id_source,id_target)
-                #            edge_reverse=(id_target,id_source)
-                #            if edge not in destroyed_edges and edge_reverse not in destroyed_edges:
-                #                destroyed_edges.append(edge)
-                #            #print 'arco distrutto: '+str(id_source)+str(id_target)
+
 
     return destroyed_edges,edges_dest_really_dest
 
@@ -1759,8 +1795,9 @@ def feasible_path(G,paths):
             paths.remove(path)
 
     return paths
-#DIMAN ADDED recover_gray_Diman
 
+
+#DIMAN ADDED recover_gray_Diman
 def recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_really_dest, edges_really_dest,discovered_edges,discovered_nodes):
     for node in nodes_recovered_isp:
         if node not in nodes_really_dest:
@@ -1770,7 +1807,6 @@ def recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_really_de
             H.node[node]['status']='repaired'
             H.node[node]['color']='blue'		
             print 'nodo ripristinato %d : '%(node)		
-
     for node in discovered_nodes:
         if node not in nodes_recovered_isp:
             if node in nodes_really_dest:
@@ -1791,25 +1827,19 @@ def recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_really_de
         edge=(id_source,id_target)
         edge_reverse=(id_target,id_source)	
         if edge in edges_really_dest or edge_reverse in edges_really_dest:
-
-
             for k in keydict:
                 if H.edge[id_source][id_target][k]['type']=='normal':
                     H.add_edge(id_source,id_target,key=k, status='repaired',labelfont='blue',color='blue',style='solid')
                     print 'arco ripristinato %d-%d: '%(id_source,id_target)
-
             if H.node[id_source]['true_status']=='destroyed':
                 H.node[id_source]['status']='repaired'
                 H.node[id_source]['color']='blue'
                 print 'nodo ripristinato %d : '%(id_source)
-
             if H.node[id_target]['true_status']=='destroyed':
                 H.node[id_target]['status']='repaired'
                 H.node[id_target]['color']='blue'
                 print 'nodo ripristinato %d : '%(id_target)
-
         elif edge not in edges_really_dest and edge_reverse not in edges_really_dest:
-
             #id_source=edge[0]
             #id_target=edge[1]
             #keydict =H[id_source][id_target]
@@ -1818,18 +1848,14 @@ def recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_really_de
                 if H.edge[id_source][id_target][k]['type']=='normal':
                     H.add_edge(id_source,id_target,key=k, status='repaired',labelfont='black',color='black',style='solid')
                     print 'arco ripristinato %d-%d: '%(id_source,id_target)
-
             if H.node[id_source]['true_status']=='destroyed':
                 H.node[id_source]['status']='repaired'
                 H.node[id_source]['color']='blue'
                 print 'nodo ripristinato %d : '%(id_source)
-
             if H.node[id_target]['true_status']=='destroyed':
                 H.node[id_target]['status']='repaired'
                 H.node[id_target]['color']='blue'
                 print 'nodo ripristinato %d : '%(id_target)		
-
-
 #Add Dicovered edges to the H graph			
     for edge in discovered_edges:
         id_source=edge[0]
@@ -1853,10 +1879,7 @@ def recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_really_de
                     #if H.edge[id_source][id_target][k]['type']=='destroyed':
                         #H.add_edge(id_source,id_target,key=k, status='destroyed',labelfont='red',color='red',style='solid')
                         #print 'arco ripristinato %d-%d: '%(id_source,id_target)
-
-
             elif edge not in edges_really_dest and edge_reverse not in edges_really_dest:
-
                 #id_source=edge[0]
                 #id_target=edge[1]
                 #keydict =H[id_source][id_target]
@@ -1872,6 +1895,7 @@ def recover_gray_Diman(H,nodes_recovered_isp,edges_recovered_isp,nodes_really_de
     #    if node not in owned_nodes:
     #        owned_nodes.append(node)                    
     #information_gain(H, H, owned_nodes, hops)
+
 
 def recover(H,nodes_repaired,edge_repaired):
 
@@ -1899,6 +1923,8 @@ def recover(H,nodes_repaired,edge_repaired):
             H.node[id_target]['status']='repaired'
             H.node[id_target]['color']='blue'
             print 'nodo ripristinato %d : '%(id_target)
+
+
 
 
 
@@ -2094,7 +2120,6 @@ def distance_node(H,node_i,node_j,distance_metric):
             if H[node_i][node_j][k]['type']=='normal':
                 status=H[node_i][node_j][k]['status']
                 capacity=H[node_i][node_j][k]['capacity']
-
         #print node_i,node_j
         distanza_temp=0.0 #distanza con arco ok e nodi ok
         costo_vertici=0.5
@@ -2109,7 +2134,6 @@ def distance_node(H,node_i,node_j,distance_metric):
             #print 'aggiungo'
             #print 'Nodo rotto'
             #print distanza_temp
-
         #print distanza_temp
         if status == 'destroyed':
             #return the lenght of a link broken
@@ -2123,7 +2147,6 @@ def distance_node(H,node_i,node_j,distance_metric):
             distanza_temp+=ratio
             #print 'arco rotto'
             #print distanza_temp
-
         else:
             distanza_temp+=0.1/(capacity)
             #print 'arco non rotto'
@@ -2131,9 +2154,7 @@ def distance_node(H,node_i,node_j,distance_metric):
         if distanza_temp==0.0:
             sys.exit('Errore in distace node: distanza=0.0 !!!')
             distanza_temp=0.1
-
         return distanza_temp
-
 #Diman Finished adding new distance metric
     else:
         sys.exit('Errore distance_node: nessuna metrica di distanza riconosciuta')
@@ -2861,11 +2882,9 @@ def compute_my_betweeness_4_opt(H,green_edges,distance_metric):
     end_time_bet=round(time.time()-star_time_bet,3)
     return betwenness_dict,shortest_paths_for_bet,end_time_bet
 
-
 #Diman's new betweenees metric
 #Ottimizzata
 def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
-
     shortest_paths=[]
     global betwenness_dict
     betwenness_dict={}
@@ -2877,7 +2896,6 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
         id_node=H.node[node]['id']
         if id_node not in betwenness_dict:
             betwenness_dict.update({id_node:0.0})
-
     supply_graph=get_supply_graph(H,green_edges)
     star_time_bet=time.time()
     for edge in green_edges:
@@ -2887,7 +2905,6 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
         demand= edge[2]
         arc=(id_source,id_target)
         #print '------------------------SHORTEST PATH CHE CONTRIBUISCONO ALLA BETW: coppia %d-%d = %f'%(id_source,id_target,demand)+' ---------------------------------'
-
         #lista di tutti i path tra source e target con relativi pesi
         #weighted_paths=compute_lenght_paths(H,id_source,id_target,distance_metric,True)
         paths_selected=[]
@@ -2898,17 +2915,13 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
             if len(curr_shortest)==0:
                 print 'Nessun Path disponibile per la domanda: %d-%d:'%(id_source,id_target)
                 sys.exit('Errore in compute_my_betwenness_4_opt: coppia di domanda non connessa !!!')
-
             cap_path=get_capacity_of_path(residual_graph,curr_shortest)
             if cap_path>=demand_to_assign:
                 flag_demand_satified=True
-
             else:
                 reduce_capacity_path(residual_graph,curr_shortest,cap_path)
-
             demand_to_assign=demand_to_assign-cap_path
             paths_selected.append(curr_shortest)
-
         arc=(id_source,id_target)
         #aggiorno i paths che contribuiscono alla betweeness dell'arco verde
         if not shortest_paths_for_bet.has_key(arc):
@@ -2917,13 +2930,11 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
             #print 'aggiunto'
             shortest_paths_for_bet[arc].append(path)
         #print shortest_paths_for_bet[arc]
-
         #aggiorna le betweeness dei nodi
         nodes_to_update_bet=get_list_of_nodes_from_paths(paths_selected)
         #for node in H.nodes():
         for node in nodes_to_update_bet:
             id_node = H.node[node]['id']
-
             #paths che passano per il nodo e sono minori di una certa lunghezza tra source e sink
             paths_trough_node=paths_traverse_node(paths_selected,id_node)
             #numeratore della formula di centralita approssimata
@@ -2942,12 +2953,10 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
                 new_betw = old_betw + float(('%.2f'%(ratio*demand)))
                 betwenness_dict.update({id_node:new_betw})
                 #print 'betwenness aggiornata per %d'%(id_node)
-
                 #sys.exit(0)
     for node in H.nodes():
         id_node=H.node[node]['id']
         H.node[node]['betweeness']=betwenness_dict[id_node]
-
     #print 'fine betwnees_opt'
     #print shortest_paths_for_bet
     end_time_bet=round(time.time()-star_time_bet,3)
@@ -3229,17 +3238,13 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
 
         tot_rip_isp=(num_rip_isp_nodes+num_rip_isp_edges)
         tot_truely_rip_isp=(nodes_truely_recovered_isp+edges_truely_recovered_isp)
-		
         tot_rip_opt=(num_rip_optimal_nodes+num_rip_optimal_edges)
         tot_rip_mcg=(num_rip_mult_nodes+num_rip_mult_edges)
         tot_truely_rip_mcg=(num_rip_truely_mult_nodes+num_rip_truely_mult_edges)
-		
         tot_rip_mcw=(num_rip_mult_worst_nodes+num_rip_mult_worst_edges)
         tot_rip_mcb=(num_rip_mult_best_nodes+num_rip_mult_best_edges)
         tot_rip_srt=(num_rip_shortest_nodes+num_rip_shortest_edges)
         tot_truely_rip_srt=(num_rip_truely_shortest_nodes+num_rip_truely_shortest_edges)
-		
-		
         tot_rip_rnk=(num_rip_ranked_nodes+num_rip_ranked_edges)
         tot_rip_all=(num_rip_all_nodes+num_rip_all_edges)
         tot_rip_rnk_com=(num_rip_ranked_comm_nodes+num_rip_ranked_comm_edges)
@@ -3247,17 +3252,13 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
 
         print 'tot_isp %d = %d + %d'%(tot_rip_isp, num_rip_isp_nodes,num_rip_isp_edges)
         print 'tot_isp_truely %d = %d + %d'%(tot_truely_rip_isp, nodes_truely_recovered_isp,edges_truely_recovered_isp)
-		
         print 'tot_opt %d = %d + %d'%(tot_rip_opt, num_rip_optimal_nodes,num_rip_optimal_edges)
         print 'tot_mcg %d = %d + %d'%(tot_rip_mcg, num_rip_mult_nodes,num_rip_mult_edges)
         print 'tot_mcg_truely %d = %d + %d'%(tot_truely_rip_mcg, num_rip_truely_mult_nodes,num_rip_truely_mult_edges)
-		
         print 'tot_mcw %d = %d + %d'%(tot_rip_mcw, num_rip_mult_worst_nodes,num_rip_mult_worst_edges)
         print 'tot_mcb %d = %d + %d'%(tot_rip_mcb, num_rip_mult_best_nodes, num_rip_mult_best_edges)
         print 'tot_srt %d = %d + %d'%(tot_rip_srt, num_rip_shortest_nodes, num_rip_shortest_edges)
         print 'tot_srt_truely %d = %d + %d'%(tot_truely_rip_srt, num_rip_truely_shortest_nodes, num_rip_truely_shortest_edges)
-		
-		
         print 'tot_rnk %d = %d + %d'%(tot_rip_rnk, num_rip_ranked_nodes, num_rip_ranked_edges)
         print 'tot_rnk_com %d = %d + %d'%(tot_rip_rnk_com, num_rip_ranked_comm_nodes, num_rip_ranked_comm_edges)
         print 'tot_rnk_no_com %d = %d + %d'%(tot_rip_rnk_no_com, num_rip_ranked_no_comm_nodes, num_rip_ranked_no_comm_edges)
@@ -3352,27 +3353,7 @@ def write_destroyed_graph(nodes_destroyed,edges_destroyed,filename_graph,path_to
     file.close()
 
     return path_to_file
-#Diman Added
-def write_really_destroyed_graph(nodes_really_destroyed,edges_really_destroyed,filename_graph,path_to_stats):
-    path_to_file=path_to_stats+filename_graph+'_Really_Destroyed.txt'
-    print path_to_file
-    #if not os.path.exists(path_to_file):
-    file=open(path_to_file,'w')
 
-    for node in nodes_really_destroyed:
-        file.write(str(node)+'\n')
-
-    file.write('stop\n')
-
-    for edge in edges_really_destroyed:
-        edge_str='('+str(edge[0])+','+str(edge[1])+')'
-        #print edge_str
-        file.write(edge_str+'\n')
-
-    file.close()
-
-    return path_to_file
-#Diman Added
 
 def check_if_path_exist(residualGraph,path):
 
@@ -3580,67 +3561,7 @@ def get_graph_from_destroyed_graph(H):
             new_graph.remove_node(id_node)
     """
     return new_graph
-#Diman Added
-def get_graph_from_truely_destroyed_graph(H):
 
-    new_graph=nx.MultiGraph(H)
-    edges_to_remove=[]
-    nodes_to_remove=[]
-    for edge in new_graph.edges():
-        source=edge[0]
-        target=edge[1]
-        if new_graph.has_edge(source,target):
-            keydict=H[source][target]
-            for k in keydict:
-                if H[source][target][k]['type']!='green' and H[source][target][k]['status']=='destroyed' and H[source][target][k]['true_status']=='destroyed':
-                    if H[source][target][k]['color']!='blue' or H[target][source][k]['color']!='blue':
-                        if H[source][target][k]['color']!='""' or H[target][source][k]['color']!='""':
-									
-                            arc=(source,target,k)
-                            arc_reverse=(target,source,k)
-                            if arc not in edges_to_remove and arc_reverse not in edges_to_remove:
-                                edges_to_remove.append(arc)
-
-    #BISOGNA RIMUOVERE ANCHE I NODI DISTRUTTI, E TUTTI GLI ARCHI INCIDENTI
-    for node in H.nodes():
-        if H.node[node]['true_status']=='destroyed' and H.node[node]['status']=='destroyed':
-            if H.node[node]['color']!='blue':
-                if H.node[node]['color']!='""':		
-                    nodes_to_remove.append(node)
-            """
-            #recupera gli archi incidenti
-            for edge in H.edges():
-                if node==edge[0] or node==edge[1]:
-                    keydict=H[edge[0]][edge[1]]
-                    for k in keydict:
-                        if H[edge[0]][edge[1]][k]['type']=='normal':
-                            arco=(edge[0],edge[1],k)
-                            arco_reverse=(edge[1],edge[0],k)
-                            if arco not in edges_to_remove and arco_reverse not in edges_to_remove:
-                                edges_to_remove.append(arc)
-            """
-    #print 'da rimuovere'
-    #print edges_to_remove
-    #print 'nodi da rimuovere'
-    #print nodes_to_remove
-    #rimuovi archi distrutti
-    for arc in edges_to_remove:
-        new_graph.remove_edge(u=arc[0],v=arc[1],key=arc[2])
-
-    #rimuovi nodi
-    for id_nodo in nodes_to_remove:
-        new_graph.remove_node(id_nodo)
-
-    #my_draw(new_graph,'1-Grafo_Distrutto')
-    #sys.exit(0)
-    """
-    for node in new_graph.nodes():
-        id_node=new_graph.node[node]['id']
-        if (get_degree_of_node(new_graph,id_node))==0:
-            new_graph.remove_node(id_node)
-    """
-    return new_graph
-#Diman Added
 
 def get_multiple_shortest_path_no_ramification_to_prune(H,distance_metric):
 
@@ -4410,7 +4331,7 @@ def split_by_one(H,number_of_split,distance_metric):
                         result_check,graph_splitted,temp_green_edges_after_split=simulate_split(graph_temp,id_bc,id_source,id_target,total_split,demand,demand_assigned,number_of_split)
                         if result_check==True:
                             #print 'Split possible'
-                            result_routability_check=check_routability(get_graph_from_truely_destroyed_graph(graph_splitted),temp_green_edges_after_split)
+                            result_routability_check=check_routability(get_graph_from_destroyed_graph(graph_splitted),temp_green_edges_after_split)
                         else:
                             #print 'Split impossible'
                             result_routability_check=False
@@ -4429,6 +4350,7 @@ def split_by_one(H,number_of_split,distance_metric):
                             H.node[id_bc]['type']='green'
                             if H.node[id_bc]['status']=='destroyed':
                                 H.node[id_bc]['status']='repaired'
+                                H.node[id_bc]['true_status']='on'
                                 H.node[id_bc]['color']='blue'
                             else:
                                 H.node[id_bc]['color']='green'
@@ -4650,7 +4572,7 @@ def split_by_capacity_path_reservation(H,counter_isp,distance_metric,nodes_recov
                                                 nodes_recovered.append(id_bc)
                                             if id_bc not in probe_nodes:
                                                 probe_nodes.append(id_bc)
-											
+
 
                                         # INIZIO MODIFICA NODI E ARCHI DEL GRAFO
 
@@ -4658,6 +4580,7 @@ def split_by_capacity_path_reservation(H,counter_isp,distance_metric,nodes_recov
                                         if H.node[id_bc]['status']=='destroyed':
                                             H.node[id_bc]['status']='repaired'
                                             H.node[id_bc]['color']='blue'
+                                            H.node[id_bc]['true_status']='on'
                                         else:
                                             H.node[id_bc]['color']='green'
 
@@ -4763,14 +4686,6 @@ def get_graph_reservations(residualGraph):
             sys.exit('Errore in get_graph_reservation: path prenotato non piu presente nel grafo')
 
     return graph_reservation
-
-
-
-
-
-
-
-
 
 
 
@@ -4921,6 +4836,7 @@ def split_by_capacity_path(H,counter_isp,distance_metric,nodes_recovered,probe_n
                             if H.node[id_bc]['status']=='destroyed':
                                 H.node[id_bc]['status']='repaired'
                                 H.node[id_bc]['color']='blue'
+                                H.node[id_bc]['true_status']='on'
                             else:
                                 H.node[id_bc]['color']='green'
 
@@ -5118,11 +5034,10 @@ def split_by_capacity_path_and_pruning(H,counter_isp,distance_metric,nodes_recov
 
                                     bc_found=True
                                     quantity_to_split_flag=True
-                                    if H.node[id_bc]['status']=='destroyed' and H.node[id_bc]['color']!='""':
+                                    if H.node[id_bc]['status']=='destroyed':
                                         if id_bc not in nodes_recovered:
                                             nodes_recovered.append(id_bc)
-                                        if id_bc not in probe_nodes:
-                                            probe_nodes.append(id_bc)
+
 
                                     # INIZIO MODIFICA NODI E ARCHI DEL GRAFO
 
@@ -5130,6 +5045,7 @@ def split_by_capacity_path_and_pruning(H,counter_isp,distance_metric,nodes_recov
                                     if H.node[id_bc]['status']=='destroyed':
                                         H.node[id_bc]['status']='repaired'
                                         H.node[id_bc]['color']='blue'
+                                        H.node[id_bc]['true_status']='on'
                                     else:
                                         H.node[id_bc]['color']='green'
 
@@ -5331,6 +5247,7 @@ def split_by_capacity_path_and_ranking(H,counter_isp,distance_metric,nodes_recov
                                     nodes_recovered.append(id_bc)
                                 if id_bc not in probe_nodes:
                                     probe_nodes.append(id_bc)
+
                             couple_selected=(id_source,id_target,demand)
 
                             # INIZIO MODIFICA NODI E ARCHI DEL GRAFO
@@ -5339,6 +5256,7 @@ def split_by_capacity_path_and_ranking(H,counter_isp,distance_metric,nodes_recov
                             if H.node[id_bc]['status']=='destroyed':
                                 H.node[id_bc]['status']='repaired'
                                 H.node[id_bc]['color']='blue'
+                                H.node[id_bc]['true_status']='on'
                             else:
                                 H.node[id_bc]['color']='green'
 
@@ -5419,7 +5337,7 @@ def split_by_capacity_path_and_ranking(H,counter_isp,distance_metric,nodes_recov
 
 
 #variante 5: lo split si fa al massimo della feasibility sul bc
-def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,nodes_recovered,nodes_truely_recovered,type_of_bet,probe_nodes):
+def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,nodes_recovered,type_of_bet,always_split):
 
     green_edges=get_green_edges(H)
     #print 'archi verdi'
@@ -5429,7 +5347,7 @@ def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,n
     bc_found=False
     array_sorted_bcs=[]
     array_sorted_bcs=get_bc(H)
-
+    #q,w,e=select_betweeness(H,green_edges,distance_metric,type_of_bet)
 
     #lista di tutti i path in ordine di ranking dato dal min(cap_of_path,demand) /max_flow della coppia verde
     ranked_paths_of_bc=[]
@@ -5579,17 +5497,16 @@ def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,n
                             #aggiungi bc come nodo verde.
 
                             bc_found=True
-                            if id_bc not in probe_nodes:
-                                probe_nodes.append(id_bc)							
                             quantity_to_split_flag=True
-                            if H.node[id_bc]['status']=='destroyed' and H.node[id_bc]['color']!='""':
+                            # stefano suggest
+							#Diman Changed this to always add a node to the monitoring nodes: Stefano suggests
+                            if always_split!=1:# and H.node[id_bc]['color']!='""':
+                                if H.node[id_bc]['status']=='destroyed':# and H.node[id_bc]['color']!='""':
+                                    if id_bc not in nodes_recovered:
+                                        nodes_recovered.append(id_bc)
+                            if always_split==1:# and H.node[id_bc]['color']!='""':										
                                 if id_bc not in nodes_recovered:
                                     nodes_recovered.append(id_bc)
-                                if id_bc not in probe_nodes:
-                                    probe_nodes.append(id_bc)
-                            if H.node[id_bc]['true_status']=='destroyed':
-                                if id_bc not in nodes_truely_recovered:
-                                    nodes_truely_recovered.append(id_bc)
                             couple_selected=(id_source,id_target,demand)
 
                             # INIZIO MODIFICA NODI E ARCHI DEL GRAFO
@@ -5599,11 +5516,12 @@ def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,n
                             if H.node[id_bc]['true_status']=='destroyed':
                                 H.node[id_bc]['status']='repaired'
                                 H.node[id_bc]['color']='blue'
-                            elif H.node[id_bc]['true_status']=='on' and  H.node[id_bc]['status']=='destroyed':
+                                H.node[id_bc]['true_status']='on'
+                            elif H.node[id_bc]['true_status']=='on':
                                 H.node[id_bc]['status']='on'
                                 H.node[id_bc]['color']='""'								
-                            elif H.node[id_bc]['color']!='""':# or H.node[id_bc]['color']!='green':
-                                H.node[id_bc]['color']='gray'
+                            else:
+                                H.node[id_bc]['color']='green'
 
                             #remove green edge between original couple
                             keydict=H[id_source][id_target]
@@ -5658,7 +5576,8 @@ def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,n
                             #new_bet_dict=compute_my_betweeness_3(H,new_green_edges,distance_metric)
                             #print new_bet_dict
                             #set_betwenness_from_dict(H,new_bet_dict)
-                            select_betweeness(H,new_green_edges,distance_metric,type_of_bet)
+                            q,w,e=select_betweeness(H,new_green_edges,distance_metric,type_of_bet)
+                            
                             my_draw(H,'5-isp-%d-split'%(counter_isp))
 
                             #hai trovato il best candidate e sei riuscito a fare split.Finisci
@@ -5834,6 +5753,7 @@ def split_by_capacity_path_and_demand(H,counter_isp,distance_metric,nodes_recove
                                     nodes_recovered.append(id_bc)
                                 if id_bc not in probe_nodes:
                                     probe_nodes.append(id_bc)
+
                             couple_selected=(id_source,id_target,demand)
 
                             # INIZIO MODIFICA NODI E ARCHI DEL GRAFO
@@ -5842,6 +5762,7 @@ def split_by_capacity_path_and_demand(H,counter_isp,distance_metric,nodes_recove
                             if H.node[id_bc]['status']=='destroyed':
                                 H.node[id_bc]['status']='repaired'
                                 H.node[id_bc]['color']='blue'
+                                H.node[id_bc]['true_status']='on'
                             else:
                                 H.node[id_bc]['color']='green'
 
@@ -5991,6 +5912,7 @@ def simulate_split(H,id_bc,id_source,id_target,total_split,demand,demand_assigne
     if H.node[id_bc]['status']=='destroyed':
         H.node[id_bc]['status']='repaired'
         H.node[id_bc]['color']='blue'
+        H.node[id_bc]['true_status']='on'
     else:
         H.node[id_bc]['color']='green'
 
@@ -6264,6 +6186,7 @@ def get_capacity_of_path(H,path):
 
 def pruning_multiple(H,paths_for_pruning,counter_isp,counter_pruning,distance_metric,type_of_bet):
     #global all_graph_paths
+    edges_removed = []
 
     for path in paths_for_pruning:
         path_cap=get_capacity_of_path(H,path)
@@ -6290,6 +6213,8 @@ def pruning_multiple(H,paths_for_pruning,counter_isp,counter_pruning,distance_me
                 H.remove_edge(id_source,id_target,key=key_to_prune)
                 green_arc=(id_source,id_target)
                 green_arc_reverse=(id_target,id_source)
+                if (id_source,id_target) not in edges_removed:
+                    edges_removed.append((id_source,id_target))
                 """
                 if green_arc in all_graph_paths:
                     del all_graph_paths[green_arc]
@@ -6317,6 +6242,8 @@ def pruning_multiple(H,paths_for_pruning,counter_isp,counter_pruning,distance_me
     select_betweeness(H,new_green_edges,distance_metric,type_of_bet)
     #print 'pruning multiplo'
     my_draw(H,'5-isp-%d-prune_%d'%(counter_isp,counter_pruning))
+
+    return edges_removed
 
 
 def pruning_multiple_after_recover(H,paths_for_pruning,edges_to_prune,flow_to_prune,number_of_prune,distance_metric):
@@ -6362,13 +6289,11 @@ def pruning_multiple_after_recover(H,paths_for_pruning,edges_to_prune,flow_to_pr
     my_draw(H,'5-split-%d-recover-pruned'%(number_of_prune))
 
 
-def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered,edges_truely_recovered_isp,nodes_truely_recovered_isp,nodes_really_dest,edges_really_dest):
+def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered):
 
     green_edges=get_green_edges(H)
     print green_edges
     destroyed_graph=nx.MultiGraph(get_graph_from_destroyed_graph(H))
-    really_destroyed_graph=nx.MultiGraph(get_graph_from_truely_destroyed_graph(H))
-	
     #vale true se ho riparato almeno un link ad 1 hop
     recovered_flag=False
 
@@ -6395,7 +6320,6 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered,edges_truely_re
         if supply_edge==True:
 
             #vedi se il flusso residuo soddisfa la domanda, altrimenti lo ripristini
-            #max_flow_on_residual=compute_max_flow(destroyed_graph,id_source,id_target)
             max_flow_on_residual=compute_max_flow(destroyed_graph,id_source,id_target)
 
             if max_flow_on_residual < demand :
@@ -6403,80 +6327,41 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered,edges_truely_re
                 source=arc[0]
                 target=arc[1]
                 key_to_recover=arc[2]
-                if H[source][target][key_to_recover]['true_status']=='destroyed':
-                    edge=(source,target)
+                if H[source][target][key_to_recover]['true_status']=='destroyed' or H[source][target][key_to_recover]['status']=='destroyed':
                     #seamus add if for color true_status
-                    H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
-                    if edge not in edges_truely_recovered_isp:
-                        edges_truely_recovered_isp.append(edge)					
-                    #if H[source][target][key_to_recover]['true_status'] == 'on':
-                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='on',true_status='on',labelfont='black',color='black',style='solid')
-                    #elif H[source][target][key_to_recover]['true_status'] == 'destroyed':
-                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
-                    #    if edge not in edges_truely_recovered:
-                    #        edges_truely_recovered.append(edge)
+                    if H[source][target][key_to_recover]['true_status'] == 'on':
+                        #H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
+					
+                        H.add_edge(source,target,key=key_to_recover, type='normal',status='on',true_status='on',labelfont='black',color='black',style='solid')
+                    else:
+                        H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
                     recovered_flag=True
                     print 'Arco Ricoverato one hop: %d - %d'%(source,target)
+                    edge=(source,target)
                     if edge not in edges_recovered:
                         edges_recovered.append(edge)
+                        
                         #aggiungi l'arco tra quelli da controllare per fare il pruning
-                        if edge not in recovered_edge_one_hop:
-                            recovered_edge_one_hop.append(edge)	
-                        #aggiungi l'arco tra quelli da controllare per fare il pruning
-                        """
                         if edge not in recovered_edge_one_hop:
                             recovered_edge_one_hop.append(edge)
-
+                        '''
                         #controllo se i nodi sono da ripristinare
                         if H.node[source]['status']=='destroyed':
                             if source not in nodes_recovered:
                                 nodes_recovered.append(source)
-                                if H.node[source]['true_status']=='destroyed':								
-                                    H.node[source]['status']='repaired'
-                                    H.node[source]['color']='blue'
-                                    if source not in nodes_truely_recovered:
-                                        nodes_truely_recovered.append(source)
-                                else:							
-                                    H.node[source]['status']='on'
-                                    H.node[source]['color']='black'	
-									
+                                H.node[source]['status']='repaired'
+                                H.node[source]['color']='blue'
+                                H.node[source]['true_status']='on'
+
                         if H.node[target]['status']=='destroyed':
                             if target not in nodes_recovered:
                                 nodes_recovered.append(target)
-                                if H.node[target]['true_status']=='destroyed':								
-                                    H.node[target]['status']='repaired'
-                                    H.node[target]['color']='blue'
-                                    if target not in nodes_truely_recovered:
-                                        nodes_truely_recovered.append(target)
-                                else:							
-                                    H.node[target]['status']='on'
-                                    H.node[target]['color']='black'	
-                        """
+                                H.node[target]['status']='repaired'
+                                H.node[target]['color']='blue'
+                                H.node[target]['true_status']='on'
+                        '''
                     else:
                         sys.exit('Errore in recover_one_hop: arco gia riparato in precedenza!!')
-
-                elif H[source][target][key_to_recover]['true_status']!='destroyed':
-                    edge=(source,target)
-                    if edge not in edges_really_dest:					
-                    #seamus add if for color true_status
-                        H.add_edge(source,target,key=key_to_recover, type='normal',status='on',true_status='on',labelfont='black',color='black',style='solid')
-                    elif edge in edges_really_dest:					
-                        H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
-				
-                    #if H[source][target][key_to_recover]['true_status'] == 'on':
-                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='on',true_status='on',labelfont='black',color='black',style='solid')
-                    #elif H[source][target][key_to_recover]['true_status'] == 'destroyed':
-                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
-                    #    if edge not in edges_truely_recovered:
-                    #        edges_truely_recovered.append(edge)
-                    recovered_flag=True
-                    print 'Arco Ricoverato one hop: %d - %d'%(source,target)
-                    if edge not in edges_recovered:
-                        edges_recovered.append(edge)
-
-                        #aggiungi l'arco tra quelli da controllare per fare il pruning
-                        if edge not in recovered_edge_one_hop:
-                            recovered_edge_one_hop.append(edge)			
                 else:
                     print 'Arco non rotto da riparare'
                     print arc
@@ -6487,6 +6372,7 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered,edges_truely_re
 
 def pruning_one_hop(H,recovered_edges_one_hop,distance_metric,counter_isp,type_of_bet):
 
+    edges_removed = []
     couple_pruned_one_hop=[]
     #global all_graph_paths
 
@@ -6528,6 +6414,8 @@ def pruning_one_hop(H,recovered_edges_one_hop,distance_metric,counter_isp,type_o
             if flow_to_prune==cap_path:
                 #edges_to_remove.append(arc)
                 H.remove_edge(arc[0],arc[1],arc[2])
+                if (arc[0],arc[1]) not in edges_removed:
+                    edges_removed.append(arc[0],arc[1])
                 #print 'rimosso'
             else:
                 H.add_edge(arc[0],arc[1],arc[2],capacity=cap_path-flow_to_prune)
@@ -6559,7 +6447,7 @@ def pruning_one_hop(H,recovered_edges_one_hop,distance_metric,counter_isp,type_o
     #print 'pruning multiplo'
     my_draw(H,'5-isp-%d-prune_one_hop'%(counter_isp))
 
-    return couple_pruned_one_hop
+    return couple_pruned_one_hop,edges_removed
 
 def update_couple_to_prune(couples_to_prune,couple_pruned):
 
@@ -6604,6 +6492,17 @@ def add_edges_recovered_to_graph(H,graph_built,edges_recovered):
 
             sys.exit('Errore in add_edges_recovered_to_graph: larco da aggiungere non esiste nel grafo supply')
 
+        if source not in graph_built.nodes():
+            status=H.node[source]['status']
+            long=H.node[source]['Longitude']
+            lat=H.node[source]['Latitude']
+            graph_built.add_node(H.node[source]['id'],status=status,true_status=H.node[node]['true_status'],id=source,Longitude=long,Latitude=lat)
+        if target not in graph_built.nodes():
+            status=H.node[target]['status']
+            long=H.node[target]['Longitude']
+            lat=H.node[target]['Latitude']
+            graph_built.add_node(H.node[target]['id'],status=status,true_status=H.node[node]['true_status'],id=target,Longitude=long,Latitude=lat)
+            
 def add_node_to_graph_recovered(H,graph_built,id_nodo):
 
         for node in H.nodes():
@@ -6612,17 +6511,35 @@ def add_node_to_graph_recovered(H,graph_built,id_nodo):
                 if id_nodo not in graph_built.nodes():
                     long=H.node[node]['Longitude']
                     lat=H.node[node]['Latitude']
-                    graph_built.add_node(H.node[node]['id'],id=id_nodo,Longitude=long,Latitude=lat)
-
+                    graph_built.add_node(H.node[node]['id'],status=H.node[node]['status'],true_status=H.node[node]['true_status'],id=id_nodo,Longitude=long,Latitude=lat)
+                
+        #supply graph senza archi verdi
+        only_supply=get_supply_graph(H,get_green_edges(H))
+        neighbors=nx.neighbors(only_supply,id_nodo)
+        for neigh in neighbors:
+            if only_supply.node[neigh]['status']!='destroyed':
+                keydict=only_supply[id_nodo][neigh]
+                for k in keydict:
+                    if only_supply[id_nodo][neigh][k]['type']=='normal':
+                        if only_supply[id_nodo][neigh][k]['status']=='on':
+                            capacity=only_supply[id_nodo][neigh][k]['capacity']
+                            if not graph_built.has_edge(id_nodo,neigh):
+                                graph_built.add_edge(id_nodo,neigh,type='normal',status='on',capacity=capacity,labelfont='black',color='black',style='solid')
+                            else:
+                                flag_edge=False
+                                #counter_k=-1
+                                keydict_new=graph_built[id_nodo][neigh]
+                                for k_new in keydict_new:
+                                    #counter_k+=1
+                                    if graph_built[id_nodo][neigh][k_new]['type']=='normal':
+                                        flag_edge=True
+                                if flag_edge==False:
+                                    graph_built.add_edge(id_nodo,neigh,type='normal',status='on',capacity=capacity,labelfont='black',color='black',style='solid')
 
 def recovery_supply_graph(H,temp_graph_supply,nodes_recovered,edges_recovered):
 
     #ripara i nodi
     print 'ciao'
-
-
-
-
 
 def compute_max_flow(graph,id_source,id_target):
 
@@ -6652,19 +6569,13 @@ def compute_max_flow(graph,id_source,id_target):
 
 #DIMAN ADDED
 def Find_truely_recovered_nodes(H,nodes_recovered_isp):
-
     nodes_truely_recovered=[]
-
     for node in nodes_recovered_isp:
         if H.node[node]['true_status']=='destroyed':
             nodes_truely_recovered.append(node)
-
     return nodes_truely_recovered
-
 def Find_truely_recovered_edges(H,edges_recovered_isp, edges_really_dest):
-
     edges_truely_recovered=[]
-
 #    for edge in edges_recovered_isp:
 #        source=edge[0]
 #        target=edge[1]
@@ -6674,7 +6585,6 @@ def Find_truely_recovered_edges(H,edges_recovered_isp, edges_really_dest):
 #            if H[source][target][k]['true_status']=='destroyed':
 #                if edge not in edges_truely_recovered:
 #				    edges_truely_recovered.append(edge)
-
     for edge in edges_recovered_isp:
                 keydict=H[edge[0]][edge[1]]
                 for k in keydict:
@@ -6684,10 +6594,10 @@ def Find_truely_recovered_edges(H,edges_recovered_isp, edges_really_dest):
                         if arc not in edges_truely_recovered and arc_reverse not in edges_truely_recovered:
                             edges_truely_recovered.append(arc)
 				
-    return edges_truely_recovered	
+    return edges_truely_recovered
+
 #DIMAN ADDED	
 def recover_all_green_nodes_really_destroyed(H):
-
     nodes_recovered=[]
     for node in H.nodes():
         if H.node[node]['type']=='green' and H.node[node]['type']!='normal':
@@ -6706,7 +6616,7 @@ def recover_all_green_nodes_really_destroyed(H):
     return nodes_recovered
 	
 #DIMAN ADDED	
-	
+
 def recover_all_green_nodes_destroyed(H):
 
     nodes_recovered=[]
@@ -6716,6 +6626,7 @@ def recover_all_green_nodes_destroyed(H):
                 #ripristina nodo verde distrutto
                 H.node[node]['status']='repaired'
                 H.node[node]['color']='blue'
+                H.node[node]['true_status']='on'
                 id_node=H.node[node]['id']
                 nodes_recovered.append(id_node)
 
@@ -7030,20 +6941,20 @@ def recovery_algorithm_based_on_shortest_set(H,distance_metric):
 
 
 #NEW OPTIMIZED VERSION
-def recovery_algorithm_based_on_shortest_set_opt(H,temp_graph_supply_shortest_based,shortest_set_algo,distance_metric,probe_nodes_2,discovered_edges_2,discovered_nodes_2,K_HOPS,nodes_really_dest,edges_really_dest):
+def recovery_algorithm_based_on_shortest_set_opt(H,shortest_set_algo,distance_metric):
 
     nodes_recovered=[]
     edges_recovered=[]
     policy_sorting='reverse'
     iteration=0
 
-    green_edges=get_green_edges(temp_graph_supply_shortest_based)
+    green_edges=get_green_edges(H)
 
     #array delle domande ordinato
     #green_edges_sorted=sort_array_demand(green_edges,policy_sorting)
     #print green_edges_sorted
 
-    original_graph_destroyed=nx.MultiGraph(temp_graph_supply_shortest_based)
+    original_graph_destroyed=nx.MultiGraph(H)
     paths_total_to_recover=[]
 
     print shortest_set_algo
@@ -7078,15 +6989,13 @@ def recovery_algorithm_based_on_shortest_set_opt(H,temp_graph_supply_shortest_ba
 
 
     for path in paths_total_to_recover:
-        recover_entire_path(temp_graph_supply_shortest_based,path,nodes_recovered,edges_recovered)
-#Begin Diman Additions:
-    #Begin Seamus Additions
-        for node in nodes_recovered: 
-            if node not in probe_nodes_2:
-                probe_nodes_2.append(node)
+        recover_entire_path(H,path,nodes_recovered,edges_recovered)
 
-        Discover_neighbors(H, temp_graph_supply_shortest_based, probe_nodes_2, K_HOPS, nodes_really_dest ,edges_really_dest,discovered_edges_2,discovered_nodes_2,nodes_recovered,edges_recovered,K_HOPS)
-
+    #green_residual=get_green_edges(H)
+    #demand_residual=0.0
+    #for edge in green_residual:
+    #    elem=edge[2]
+    #    demand_residual+=elem
 
 
     return nodes_recovered,edges_recovered
@@ -9295,14 +9204,10 @@ def update_status_node(H,node):
     H.node[node]['type']='normal'
     if H.node[node]['status']=='destroyed':
         H.node[node]['color']='red'
-    elif  H.node[node]['status']=='repaired':
+    elif H.node[node]['status']=='repaired':
         H.node[node]['color']='blue'
     elif H.node[node]['status']=='on':
-        #H.node[node]['color']='""'	
-        if H.node[node]['color']=='green':
-            H.node[node]['color']='green'
-        else:
-            H.node[node]['color']='""'
+        H.node[node]['color']='""'
     else:
         sys.exit('Errore check if all green: nodo ne on,ne repaired,ne destroyed')
 
@@ -9351,7 +9256,6 @@ def get_node_edges(H,id_node):
 
 def get_node_status(H,id_node):
     return H.node[id_node]['status']
-
 
 def init_probe_nodes(green_edges):
     owned_nodes = []
@@ -9419,7 +9323,6 @@ def reveal_edges_status(H,G,probe_nodes,nodes_really_dest ,edges_really_dest,dis
 
                    #status='on',labelfont='gray',color='gray',style='dashed'
 
-				   
 def discover_edges_status(H,G,probe_nodes,nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp):
     for node in probe_nodes: 
         edges = get_node_edges(H, node)
@@ -9561,6 +9464,59 @@ def reveal_nodes_status(H,G,probe_nodes, nodes_really_dest ,edges_really_dest,di
     return discovered_nodes,destroyed_nodes
 
 
+
+def init_owned_nodes(green_edges):
+    owned_nodes = []
+    for tup in green_edges:
+        if tup[0] not in owned_nodes:
+            owned_nodes.append(tup[0])
+        if tup[1] not in owned_nodes:
+            owned_nodes.append(tup[1])
+
+    return owned_nodes
+
+def resolve_owned_node_edges(H,G,owned_nodes, edges_recovered):
+    for node in owned_nodes:
+        edges = get_node_edges(H, node)
+        for edge in edges:
+            if (edge in edges_recovered) or ((edge[1],edge[0]) in edges_recovered):
+                continue
+            id_source=edge[0]
+            id_target=edge[1]
+            add_node_to_graph_info_gather(H,G,id_target)
+            keydict=H[id_source][id_target]
+            for k in keydict:
+                if H[id_source][id_target][k]['type'] != 'normal':
+                    continue
+                if (G.has_edge(id_source,id_target)) and not (k in G[id_source][id_target]):
+                    continue
+                if  G.has_edge(id_source,id_target) and G[id_source][id_target][k]['type'] == 'normal' and (G[id_source][id_target][k]['status'] == 'repaired' or G[id_source][id_target][k]['status'] == 'on'):
+                    continue
+                #if H[id_source][id_target][k]['status']=='destroyed':
+                cap = H[id_source][id_target][k]['capacity']
+                if H[id_source][id_target][k]['true_status'] == 'on':
+                    if G.has_edge(id_source,id_target):
+                        if G[id_source][id_target][k]['status'] == 'repaired':
+                           continue
+                        G[id_source][id_target][k]['color'] = 'black'
+                        G[id_source][id_target][k]['style'] = 'solid'
+                        G[id_source][id_target][k]['status'] = 'on'
+                        G[id_source][id_target][k]['true_status'] = 'on'
+                    else:
+                        G.add_edge(id_source,id_target,type='normal',status='on',true_status='on', capacity=cap,color='black',style='solid')
+                if H[id_source][id_target][k]['true_status'] == 'destroyed':
+                    if G.has_edge(id_source,id_target):
+                        G[id_source][id_target][k]['color'] = 'red'
+                        G[id_source][id_target][k]['style'] = 'dashed'
+                        G[id_source][id_target][k]['status'] = 'destroyed'
+                        G[id_source][id_target][k]['true_status'] = 'destroyed'
+                    else:
+                        G.add_edge(id_source,id_target,type='normal',status='destroyed',true_status='destroyed',capacity=cap,color='red',style='dashed')
+
+                   #status='on',labelfont='gray',color='gray',style='dashed'
+
+
+
 def resolve_one_hop_nodes(H, G, owned_nodes):
     on_nodes = []
     destroyed_nodes = []
@@ -9595,6 +9551,7 @@ def resolve_one_hop_nodes(H, G, owned_nodes):
                             if (id_target not in owned_nodes) and (id_target not in destroyed_nodes):
                                 destroyed_nodes.append(id_target)
     return on_nodes,destroyed_nodes
+
 
 def discover_one_hop_nodes(H, G, owned_nodes):
     on_nodes = []
@@ -9632,11 +9589,11 @@ def discover_one_hop_nodes(H, G, owned_nodes):
     return on_nodes,destroyed_nodes
 
 
-	
-def add_edges_recovered_to_graph_gray(H,graph_built,edges_recovered, edges_really_dest):
-
-    for edge in edges_recovered:
-        
+                            
+def add_edges_recovered_to_graph_gray(H,graph_built,edges_recovered):
+    #print 'adsfjhadslkfjasdlkfjcsaldkfv seklfjhsdlfjsdlfkjsdalkfajsdlkfjasdl kfjasdlkfajsdl fjadsalfk aodsfj'
+    #print edges_recovered
+    for edge in edges_recovered:     
         source=edge[0]
         target=edge[1]
         if H.has_edge(source,target):
@@ -9646,31 +9603,25 @@ def add_edges_recovered_to_graph_gray(H,graph_built,edges_recovered, edges_reall
                     cap=H[source][target][k]['capacity']
                     #graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap)
                     if graph_built.has_edge(source,target):
-                        #if graph_built[source][target][k]['true_status'] == 'destroyed':
-                        if edge in edges_really_dest:					
-						
+                        true_status = graph_built[source][target][k]['true_status']
+                        if true_status == 'destroyed':
                             graph_built[source][target][k]['color'] = 'blue'
                             graph_built[source][target][k]['status'] = 'repaired'
-                            graph_built[source][target][k]['style'] = 'solid'
-							
-                        #if graph_built[source][target][k]['true_status'] == 'on':					
-                        if edge not in edges_really_dest:				
-                            graph_built[source][target][k]['color'] = '""'
+                        else:
+                            graph_built[source][target][k]['color'] = 'black'
                             graph_built[source][target][k]['status'] = 'on'
-                            graph_built[source][target][k]['style'] = 'solid'							
+                        graph_built[source][target][k]['style'] = 'solid'
+                        graph_built[source][target][k]['true_status'] = 'on'
+                        
                     else:
-                        #if graph_built[source][target][k]['true_status'] == 'destroyed':	
-                        if edge in edges_really_dest:				
-						
-                            graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap)
-                        #if graph_built[source][target][k]['true_status'] == 'on':		
-                        if edge not in edges_really_dest:				
-						
-                            graph_built.add_edge(source,target, type='normal',status='on',labelfont='black',color='""',style='solid',capacity=cap)
+                        true_status = 'on'
+                        graph_built.add_edge(source,target, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid',capacity=cap)
+            
         else:
-
             sys.exit('Errore in add_edges_recovered_to_graph: larco da aggiungere non esiste nel grafo supply')
 
+    return (true_status == 'on')
+            
 def add_node_to_graph_info_gather(H,graph_built,id_nodo):
         for node in H.nodes():
             if H.node[node]['id']==id_nodo:
@@ -9679,41 +9630,32 @@ def add_node_to_graph_info_gather(H,graph_built,id_nodo):
                     lat=H.node[node]['Latitude']
                     graph_built.add_node(H.node[node]['id'],id=id_nodo,Longitude=long,Latitude=lat,status=H.node[node]['status'],true_status=H.node[node]['true_status'], color=H.node[node]['color'], type=H.node[node]['type'], betweeness=H.node[node]['betweeness'])
 
-def add_node_to_graph_recovered_gray(H,graph_built,id_nodo,nodes_really_dest,discovered_nodes,nodes_recovered_isp):
+def add_node_to_graph_recovered_gray(H,graph_built,id_nodo):
         for node in H.nodes():
             if H.node[node]['id']==id_nodo:
                 if id_nodo not in graph_built.nodes():
                     long=H.node[node]['Longitude']
                     lat=H.node[node]['Latitude']
-					
-                    #graph_built.add_node(H.node[node]['id'],id=id_nodo,Longitude=long,Latitude=lat,status=H.node[node]['status'],true_status=H.node[node]['true_status'], color=H.node[node]['color'], type=H.node[node]['type'], betweeness=H.node[node]['betweeness'])					
-                    graph_built.add_node(H.node[node]['id'],id=id_nodo,Longitude=H.node[node]['Longitude'],Latitude=H.node[node]['Latitude'],status='repaired',true_status=H.node[node]['true_status'], color='blue', type=H.node[node]['type'], betweeness=H.node[node]['betweeness'])
-                elif id_nodo not in nodes_really_dest and id_nodo in discovered_nodes:
-                    graph_built.node[node]['color'] = '""'
-                    graph_built.node[node]['status'] = 'on'
-                elif id_nodo not in discovered_nodes and id_nodo not in nodes_really_dest and id_nodo not in nodes_recovered_isp:
-                    graph_built.node[node]['color'] = 'gray'
-                    graph_built.node[node]['status'] = 'on'
-                elif id_nodo not in discovered_nodes and id_nodo not in nodes_really_dest and id_nodo in nodes_recovered_isp:
-                    graph_built.node[node]['color'] = '""'
-                    graph_built.node[node]['status'] = 'on'					
-                elif id_nodo not in discovered_nodes and id_nodo in nodes_really_dest:
-                    graph_built.node[node]['color'] = 'gray'
-                    graph_built.node[node]['status'] = 'destroyed'
+                    true_status = 'on'
+                    graph_built.add_node(H.node[node]['id'],id=id_nodo,Longitude=long,Latitude=lat,status='repaired',true_status='on', color='blue', type=H.node[node]['type'], betweeness=H.node[node]['betweeness'])
                 else:
-                    graph_built.node[node]['color'] = 'blue'
-                    graph_built.node[node]['status'] = 'repaired'
-                    #graph_built.node[node]['true_status'] = 'repaired'
+                    true_status = graph_built.node[node]['true_status']
+                    if true_status == 'destroyed':
+                        graph_built.node[node]['color'] = 'blue'
+                        graph_built.node[node]['status'] = 'repaired'
+                    else:
+                        graph_built.node[node]['color'] = 'blue'
+                        graph_built.node[node]['shape'] = 'square'
+                        graph_built.node[node]['status'] = 'on'
+                    graph_built.node[node]['true_status'] = 'on'
+        return (true_status == 'on')
 
-def recover_gray(H,nodes_repaired,edge_repaired):
-
+def recover_gray(H,nodes_repaired,edge_repaired, owned_nodes, edges_recovered, hops):
+    
     for node in nodes_repaired:
-        if H.node[node]['true_status']=='destroyed':
-            H.node[node]['status']='repaired'
-            H.node[node]['color']='blue'
-        elif H.node[node]['true_status']=='on':
-            H.node[node]['status']='on'
-            H.node[node]['color']='""'			
+        H.node[node]['status']='repaired'
+        H.node[node]['true_status']='on'
+        H.node[node]['color']='blue'
         print 'nodo ripristinato %d : '%(node)
 
     for edge in edge_repaired:
@@ -9723,34 +9665,218 @@ def recover_gray(H,nodes_repaired,edge_repaired):
         #print str(keydict)
         for k in keydict:
             if H.edge[id_source][id_target][k]['type']=='normal':
-                if H.edge[id_source][id_target][k]['true_status']=='destroyed':
+                if H.has_edge(id_source,id_target):
+                    H.edge[id_source][id_target][k]['status']='repaired'
+                    H.edge[id_source][id_target][k]['true_status']='on'
+                    H.edge[id_source][id_target][k]['color']='blue'
+                    H.edge[id_source][id_target][k]['style']='solid'
+                else:
                     H.add_edge(id_source,id_target,key=k, status='repaired',labelfont='blue',color='blue',style='solid')
-                    print 'arco ripristinato %d-%d: '%(id_source,id_target)
-                elif H.edge[id_source][id_target][k]['true_status']=='on':
-                    H.add_edge(id_source,id_target,key=k, status='on',labelfont='black',color='black',style='solid')
-                    print 'arco ripristinato %d-%d: '%(id_source,id_target)
-        if H.node[id_source]['true_status']=='destroyed':
+                print 'arco ripristinato %d-%d: '%(id_source,id_target)
+
+        if H.node[id_source]['status']=='destroyed':
             H.node[id_source]['status']='repaired'
+            H.node[id_source]['true_status']='on'
             H.node[id_source]['color']='blue'
             print 'nodo ripristinato %d : '%(id_source)
-        elif H.node[id_source]['true_status']=='on':
-            H.node[id_source]['status']='on'
-            H.node[id_source]['color']='""'
-            print 'nodo ripristinato %d : '%(id_source)
-			
-        if H.node[id_target]['true_status']=='destroyed':
+
+        if H.node[id_target]['status']=='destroyed':
             H.node[id_target]['status']='repaired'
+            H.node[id_target]['true_status']='on'
             H.node[id_target]['color']='blue'
             print 'nodo ripristinato %d : '%(id_target)
-        if H.node[id_target]['true_status']=='on':
-            H.node[id_target]['status']='on'
-            H.node[id_target]['color']='""'
-            print 'nodo ripristinato %d : '%(id_target)            
 
-    #for node in nodes_repaired:
-    #    if node not in owned_nodes:
-    #        owned_nodes.append(node)           
-    #information_gain(H, H, owned_nodes, hops)
+    for node in nodes_repaired:
+        if node not in owned_nodes:
+            owned_nodes.append(node)
+    #if couples_to_prune:      
+    #    for couple in couples_to_prune:
+    #        keydict = H[couple[0]][couple[1]]
+    #        for k in keydict:
+    #            if H.has_edge(couple[0],couple[1]):
+    #                H[couple[0]][couple[1]][k]['status'] = 'repaired'
+    #                H[couple[0]][couple[1]][k]['true_status'] = 'on'
+    #                H[couple[0]][couple[1]][k]['style'] = 'solid'
+    #                H[couple[0]][couple[1]][k]['color'] = 'blue'
+    #                #H[couple[0]][couple[1]][k]['capacity'] = H[couple[0]][couple[1]][k]['capacity'] - couple[2]
+                    
+    information_gain(H, H, owned_nodes, edges_recovered, hops)
+
+
+def get_k_hop_nodes(H, node_list, hops):
+    if not node_list:
+        return []
+    if hops == 0:
+        return node_list
+    k_hop_nodes = list(node_list)
+    infinity_flag = False
+    if hops <= -1:
+        infinity_flag = True
+    x = 0
+    tmp = []
+    while ((x < hops and not infinity_flag) or (tmp != k_hop_nodes and infinity_flag)):
+        tmp = list(k_hop_nodes)
+        for node in tmp:
+            edges = get_node_edges(H, node)
+            for edge in edges:
+                id_source=edge[0]
+                id_target=edge[1]
+                keydict=H[id_source][id_target]
+                for k in keydict:
+                    if H[id_source][id_target][k]['type'] == 'green':
+                        continue
+        x = x + 1
+    return k_hop_nodes
+
+def probe_network(H, G, nodes, edges_destroyed):
+
+    if not nodes:
+        return []
+    discovered_nodes = []
+    for node in nodes:
+        edges = get_node_edges(H, node)
+        for edge in edges:
+            id_source=edge[0]
+            id_target=edge[1]
+            if (id_source,id_target) in edges_destroyed or (id_target,id_source) in edges_destroyed:
+                continue
+            keydict=H[id_source][id_target]
+            for k in keydict:
+                if H[id_source][id_target][k]['color'] == 'gray' and H[id_source][id_target][k]['true_status'] == 'on' and H.node[id_target]['color'] == 'gray' and H.node[id_target]['true_status'] == 'on':
+                    if id_target not in G.nodes():
+                        long=H.node[id_target]['Longitude']
+                        lat=H.node[id_target]['Latitude']
+                        G.add_node(H.node[id_target]['id'],status='on',color='""',true_status='on',id=id_target,Longitude=long,Latitude=lat)
+                    if G.has_edge(id_source,id_target):
+                        keydict2=G[id_source][id_target]
+                        for k2 in keydict2:
+                            print G[id_source][id_target]
+                            if G[id_source][id_target][k2]['type'] == 'normal':
+                                G[id_source][id_target][k2]['color'] = 'black'
+                                G[id_source][id_target][k2]['style'] = 'solid'
+                                G[id_source][id_target][k2]['status'] = 'on'
+                    else:
+                        G.add_edge(id_source,id_target,key=k, true_status='on', status='on', type='normal', color='black', capacity =H[id_source][id_target][k]['capacity'])
+                    G.node[id_target]['color'] = '""'
+                    G.node[id_target]['status'] = 'on'
+                    if id_target not in discovered_nodes:
+                        discovered_nodes.append(id_target)
+    return discovered_nodes
+    
+
+def information_gain(H, G, owned_nodes, edges_recovered, k):
+
+    if k == 0:
+        return
+    
+    resolve_owned_node_edges(H,G,owned_nodes, edges_recovered)
+    on_nodes,destroyed_nodes = resolve_one_hop_nodes(H, G,owned_nodes)
+    if k == 1:
+        return
+    if k > 1:
+        for x in range(k-1):
+
+            on_nodes = probe_network(H, G, on_nodes, edges_recovered)
+    else:
+        on_nodes_last = []
+        while (on_nodes != on_nodes_last):
+            on_nodes_last = list(on_nodes)
+            on_nodes = probe_network(H, G, on_nodes)
+
+def find_green_edges(H):
+    green_edges = []
+    for edge in H.edges():     
+        source=edge[0]
+        target=edge[1]
+        if H.has_edge(source,target):
+            keydict=H[source][target]
+            for k in keydict:
+                if H[source][target][k]['type'] == 'green':
+                    if (source,target,H[source][target][k]['demand']) not in green_edges:
+                        green_edges.append((source,target,H[source][target][k]['demand']))
+    return green_edges
+    
+def write_really_destroyed_graph(nodes_really_destroyed,edges_really_destroyed,filename_graph,path_to_stats):
+    path_to_file=path_to_stats+filename_graph+'_Really_Destroyed.txt'
+    print path_to_file
+    #if not os.path.exists(path_to_file):
+    file=open(path_to_file,'w')
+
+    for node in nodes_really_destroyed:
+        file.write(str(node)+'\n')
+
+    file.write('stop\n')
+
+    for edge in edges_really_destroyed:
+        edge_str='('+str(edge[0])+','+str(edge[1])+')'
+        #print edge_str
+        file.write(edge_str+'\n')
+
+    file.close()
+
+    return path_to_file
+
+#def create_real_destroyed_graph(H,nodes_really_destroyed,edges_really_destroyed):
+#    destroyed = nx.MultiGraph(H)
+
+
+#Diman Added
+def get_graph_from_truely_destroyed_graph(H):
+    new_graph=nx.MultiGraph(H)
+    edges_to_remove=[]
+    nodes_to_remove=[]
+    for edge in new_graph.edges():
+        source=edge[0]
+        target=edge[1]
+        if new_graph.has_edge(source,target):
+            keydict=H[source][target]
+            for k in keydict:
+                if H[source][target][k]['type']!='green' and H[source][target][k]['status']=='destroyed' and H[source][target][k]['true_status']=='destroyed':
+                    if H[source][target][k]['color']!='blue' or H[target][source][k]['color']!='blue':
+                        if H[source][target][k]['color']!='""' or H[target][source][k]['color']!='""':
+									
+                            arc=(source,target,k)
+                            arc_reverse=(target,source,k)
+                            if arc not in edges_to_remove and arc_reverse not in edges_to_remove:
+                                edges_to_remove.append(arc)
+    #BISOGNA RIMUOVERE ANCHE I NODI DISTRUTTI, E TUTTI GLI ARCHI INCIDENTI
+    for node in H.nodes():
+        if H.node[node]['true_status']=='destroyed' and H.node[node]['status']=='destroyed':
+            if H.node[node]['color']!='blue':
+                if H.node[node]['color']!='""':		
+                    nodes_to_remove.append(node)
+            """
+            #recupera gli archi incidenti
+            for edge in H.edges():
+                if node==edge[0] or node==edge[1]:
+                    keydict=H[edge[0]][edge[1]]
+                    for k in keydict:
+                        if H[edge[0]][edge[1]][k]['type']=='normal':
+                            arco=(edge[0],edge[1],k)
+                            arco_reverse=(edge[1],edge[0],k)
+                            if arco not in edges_to_remove and arco_reverse not in edges_to_remove:
+                                edges_to_remove.append(arc)
+            """
+    #print 'da rimuovere'
+    #print edges_to_remove
+    #print 'nodi da rimuovere'
+    #print nodes_to_remove
+    #rimuovi archi distrutti
+    for arc in edges_to_remove:
+        new_graph.remove_edge(u=arc[0],v=arc[1],key=arc[2])
+    #rimuovi nodi
+    for id_nodo in nodes_to_remove:
+        new_graph.remove_node(id_nodo)
+    #my_draw(new_graph,'1-Grafo_Distrutto')
+    #sys.exit(0)
+    """
+    for node in new_graph.nodes():
+        id_node=new_graph.node[node]['id']
+        if (get_degree_of_node(new_graph,id_node))==0:
+            new_graph.remove_node(id_node)
+    """
+    return new_graph
+#Diman Added
 
 def Discover_neighbors(H, G, probe_nodes, k, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp,counter_isp):
     if k == 0:
@@ -9852,7 +9978,7 @@ def information_gain(H, G, owned_nodes, k):
         while (on_nodes != on_nodes_last):
             on_nodes_last = list(on_nodes)
             on_nodes = probe_network(H, G, on_nodes)
-"""
+
 def find_green_edges(H):
     green_edges = []
     for edge in H.edges():     
@@ -9864,7 +9990,5 @@ def find_green_edges(H):
                 if H[source][target][k]['type'] == 'green':
                     if (source,target,H[source][target][k]['demand']) not in green_edges:
                         green_edges.append((source,target,H[source][target][k]['demand']))
-                #if H[target][source][k]['type'] == 'green':
-                #    if (target,source,H[target][source][k]['demand']) not in green_edges:
-                #        green_edges.append((target,source,H[target][source][k]['demand']))
     return green_edges
+"""	   
