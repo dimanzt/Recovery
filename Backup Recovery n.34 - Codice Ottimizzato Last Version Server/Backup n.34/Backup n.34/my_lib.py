@@ -158,7 +158,8 @@ def add_attribute_Nodes(H):
             H.node[i]['Latitude']=random.randint(0,300)
         if 'true_status' not in H.node[i]:
             H.node[i]['true_status']='on'
-
+        if 'prob' not in H.node[i]:
+            H.node[i]['prob']=0
 def add_attribute_Edges(H):
 
     #for i in H.nodes():
@@ -202,6 +203,8 @@ def add_attribute_Edges(H):
                             H.add_edge(id_source,id_target, weight=0.1/cap)
                         if 'true_status' not in H.edge[id_source][id_target]:
                             H.add_edge(id_source,id_target, true_status='on')
+                        if 'prob' not in H.edge[id_source][id_target]:
+                            H.add_edge(id_source,id_target, prob=0)									
                     else:
                         #print 'barpa'
                         key=len(keydict)
@@ -221,6 +224,8 @@ def add_attribute_Edges(H):
                                 H.add_edge(id_source,id_target,key=k, weight=0.1/cap)
                             if 'true_status' not in H.edge[id_source][id_target][k]:
                                 H.add_edge(id_source,id_target,key=k, true_status='on')
+                            if 'prob' not in H.edge[id_source][id_target][k]:
+                                H.add_edge(id_source,id_target,key=k, prob=0)									
                             #print 'ripeti'
                             #print keydict
                             #print len(keydict)
@@ -483,12 +488,16 @@ def destroy_nodes_gray(H,mu_x,mu_y,sigma):
         if flip_coin(prob):
             H.node[i]['true_status']='destroyed'
             if id_node not in nodes_really_dest:
-                nodes_really_dest.append(id_node)			
+                nodes_really_dest.append(id_node)
+                H.node[i]['prob']=prob			
+				
         else:
             H.node[i]['true_status']='on'
+            H.node[i]['prob']=prob
 
         if id_node not in destroyed_nodes:
             destroyed_nodes.append(id_node)
+            H.node[i]['prob']=prob			
             #print 'nodo distrutto:' +str(i)
     return destroyed_nodes,nodes_really_dest
 
@@ -565,6 +574,8 @@ def destroy_edges_gray(H,mu_x,mu_y,sigma):
                             H[id_source][id_target][k]['true_status'] = 'destroyed'
                             H[id_source][id_target][k]['color'] = 'gray'
                             H[id_source][id_target][k]['style'] = 'dashed'
+                            H[id_source][id_target][k]['prob'] = prob_arc
+
                             #H.add_edge(id_source,id_target,key=k, status='destroyed',true_status='destroyed',labelfont='gray',color='gray',style='dashed')
                             if edge not in edges_dest_really_dest and edge_reverse not in edges_dest_really_dest:
                                 edges_dest_really_dest.append(edge)							
@@ -574,7 +585,8 @@ def destroy_edges_gray(H,mu_x,mu_y,sigma):
                             H[id_source][id_target][k]['true_status'] = 'on'
                             H[id_source][id_target][k]['color'] = 'gray'
                             H[id_source][id_target][k]['style'] = 'dashed'
-
+                            H[id_source][id_target][k]['prob'] = prob_arc
+							
                         if edge not in destroyed_edges and edge_reverse not in destroyed_edges:
                             destroyed_edges.append(edge)
 
@@ -2882,9 +2894,11 @@ def compute_my_betweeness_4_opt(H,green_edges,distance_metric):
     end_time_bet=round(time.time()-star_time_bet,3)
     return betwenness_dict,shortest_paths_for_bet,end_time_bet
 
+
 #Diman's new betweenees metric
 #Ottimizzata
-def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
+def compute_my_betweeness_5_opt(H,green_edges,distance_metric,mu_x,mu_y,sigma):
+
     shortest_paths=[]
     global betwenness_dict
     betwenness_dict={}
@@ -2896,6 +2910,7 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
         id_node=H.node[node]['id']
         if id_node not in betwenness_dict:
             betwenness_dict.update({id_node:0.0})
+
     supply_graph=get_supply_graph(H,green_edges)
     star_time_bet=time.time()
     for edge in green_edges:
@@ -2905,23 +2920,28 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
         demand= edge[2]
         arc=(id_source,id_target)
         #print '------------------------SHORTEST PATH CHE CONTRIBUISCONO ALLA BETW: coppia %d-%d = %f'%(id_source,id_target,demand)+' ---------------------------------'
+
         #lista di tutti i path tra source e target con relativi pesi
         #weighted_paths=compute_lenght_paths(H,id_source,id_target,distance_metric,True)
         paths_selected=[]
         demand_to_assign=demand
         flag_demand_satified=False
         while(flag_demand_satified==False):
-            curr_shortest=my_dijkstra_shortest_path(residual_graph,id_source,id_target)
+            curr_shortest=my_prob_dijkstra_shortest_path(residual_graph,id_source,id_target,mu_x,mu_y,sigma,distance_metric)
             if len(curr_shortest)==0:
                 print 'Nessun Path disponibile per la domanda: %d-%d:'%(id_source,id_target)
                 sys.exit('Errore in compute_my_betwenness_4_opt: coppia di domanda non connessa !!!')
+
             cap_path=get_capacity_of_path(residual_graph,curr_shortest)
             if cap_path>=demand_to_assign:
                 flag_demand_satified=True
+
             else:
                 reduce_capacity_path(residual_graph,curr_shortest,cap_path)
+
             demand_to_assign=demand_to_assign-cap_path
             paths_selected.append(curr_shortest)
+
         arc=(id_source,id_target)
         #aggiorno i paths che contribuiscono alla betweeness dell'arco verde
         if not shortest_paths_for_bet.has_key(arc):
@@ -2930,11 +2950,13 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
             #print 'aggiunto'
             shortest_paths_for_bet[arc].append(path)
         #print shortest_paths_for_bet[arc]
+
         #aggiorna le betweeness dei nodi
         nodes_to_update_bet=get_list_of_nodes_from_paths(paths_selected)
         #for node in H.nodes():
         for node in nodes_to_update_bet:
             id_node = H.node[node]['id']
+
             #paths che passano per il nodo e sono minori di una certa lunghezza tra source e sink
             paths_trough_node=paths_traverse_node(paths_selected,id_node)
             #numeratore della formula di centralita approssimata
@@ -2947,20 +2969,25 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
                 total_flow_capacity=compute_total_flow_based_on_path_capacity(H,paths_selected)
                 #print total_flow_passing_node
                 #print total_flow_capacity
-                ratio=float(total_flow_passing_node/total_flow_capacity)
+                ##ratio=float(total_flow_passing_node/total_flow_capacity)
+                ratio=float(((total_flow_passing_node)*(1-H.node[node]['prob']))/total_flow_capacity)
+
                 #print 'ratio calcolato %f: '%(ratio*demand)
                 old_betw = betwenness_dict[id_node]
                 new_betw = old_betw + float(('%.2f'%(ratio*demand)))
                 betwenness_dict.update({id_node:new_betw})
                 #print 'betwenness aggiornata per %d'%(id_node)
+
                 #sys.exit(0)
     for node in H.nodes():
         id_node=H.node[node]['id']
         H.node[node]['betweeness']=betwenness_dict[id_node]
+
     #print 'fine betwnees_opt'
     #print shortest_paths_for_bet
     end_time_bet=round(time.time()-star_time_bet,3)
     return betwenness_dict,shortest_paths_for_bet,end_time_bet
+	
 
 def get_list_of_nodes_from_paths(list_paths):
 
