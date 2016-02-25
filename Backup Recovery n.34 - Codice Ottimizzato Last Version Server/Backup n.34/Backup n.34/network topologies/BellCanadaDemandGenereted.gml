@@ -11,6 +11,6 @@ graph [
     source 27
     target 15
     type "green"
-    demand 3
+    demand 4
   ]
 ]

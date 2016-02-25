@@ -22,3 +22,27 @@ Max flows su grafo supply per ogni coppia:
 (15, 27): 10.0 - 
 Domanda Finale assegnata al grafo: 
 (15, 27, 3) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 120
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 4) - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 120
+Alfa: 0.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 4) - 

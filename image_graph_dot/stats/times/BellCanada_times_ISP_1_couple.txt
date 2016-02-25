@@ -122,3 +122,5 @@ Sim: 1/10 Seed: 139 --- Time: 14.039 seconds
 Sim: 1/10 Seed: 120 --- Time: 8.845 seconds 
 Sim: 1/1 Seed: 120 --- Time: 6.933 seconds 
 Sim: 1/1 Seed: 120 --- Time: 8.681 seconds 
+Sim: 1/1 Seed: 120 --- Time: 10.465 seconds 
+Sim: 1/1 Seed: 120 --- Time: 10.218 seconds 

@@ -6405,13 +6405,14 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered):
                 target=arc[1]
                 key_to_recover=arc[2]
                 if H[source][target][key_to_recover]['true_status']=='destroyed' or H[source][target][key_to_recover]['status']=='destroyed':
+                    H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')				
                     #seamus add if for color true_status
-                    if H[source][target][key_to_recover]['true_status'] == 'on':
-                        #H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
+                    #if H[source][target][key_to_recover]['true_status'] == 'on':
+                    #    #H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
 					
-                        H.add_edge(source,target,key=key_to_recover, type='normal',status='on',true_status='on',labelfont='black',color='black',style='solid')
-                    else:
-                        H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
+                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='on',true_status='on',labelfont='black',color='black',style='solid')
+                    #else:
+                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
                     recovered_flag=True
                     print 'Arco Ricoverato one hop: %d - %d'%(source,target)
                     edge=(source,target)
@@ -9335,18 +9336,22 @@ def get_supply_graph(H,green_edges):
     return supply_graph
 
 
+	
 def update_status_node(H,node):
 
     H.node[node]['type']='normal'
     if H.node[node]['status']=='destroyed':
         H.node[node]['color']='red'
-    elif H.node[node]['status']=='repaired':
+    elif  H.node[node]['status']=='repaired':
         H.node[node]['color']='blue'
     elif H.node[node]['status']=='on':
-        H.node[node]['color']='""'
+        #H.node[node]['color']='""'	
+        if H.node[node]['color']=='green':
+            H.node[node]['color']='green'
+        else:
+            H.node[node]['color']='""'
     else:
         sys.exit('Errore check if all green: nodo ne on,ne repaired,ne destroyed')
-
 
 
 def write_progress_algorithm_on_file(path_stat_prog,name_graph,name_algo,num_couple,curr_sim,num_tot_simu,curr_seed,num_nodes_repaired,num_edges_repaired,num_max_nodes_repaired,num_max_edges_repaired):
@@ -9521,50 +9526,7 @@ def discover_edges_status(H,G,probe_nodes,nodes_really_dest ,edges_really_dest,d
 def reveal_nodes_status(H,G,probe_nodes, nodes_really_dest ,edges_really_dest,discovered_edges,discovered_nodes,nodes_recovered_isp,edges_recovered_isp):
 
 # Add discovered nodes to the graph		
-    """	
-    for edge in discovered_edges:
-        id_source=edge[0]
-        id_target=edge[1]
-        keydict =H[id_source][id_target]
-        #print str(keydict)	
-        edge=(id_source,id_target)
-        edge_reverse=(id_target,id_source)	
-        if edge not in edges_really_dest and edge_reverse not in edges_really_dest:
-            if G.has_node(id_source):
-                if id_source not in discovered_nodes:
-                    discovered_nodes.append(id_source)
-                if id_source not in nodes_really_dest:
-                    G.node[id_source]['status']='on'
-                    G.node[id_source]['color']='""'
-                else:
-                    G.node[id_source]['status']='destroyed'
-                    G.node[id_source]['color']='red'			
-            else:
-                if id_source not in discovered_nodes:
-                    discovered_nodes.append(id_source)
-                if id_source not in nodes_really_dest:			
-                    G.add_node(H.node[id_source]['id'],id=H.node[id_source]['id'],Longitude=long,Latitude=lat,status='on',true_status=H.node[id_source]['true_status'], color='""', type=H.node[id_source]['type'], betweeness=H.node[id_source]['betweeness'])
-                else:			
-                    G.add_node(H.node[id_source]['id'],id=H.node[id_source]['id'],Longitude=long,Latitude=lat,status='destroyed',true_status=H.node[id_source]['true_status'], color='red', type=H.node[id_source]['type'], betweeness=H.node[id_source]['betweeness'])
-			
-			
-            if G.has_node(id_target):
-                if id_target not in discovered_nodes:
-                    discovered_nodes.append(id_target)
-                if id_target not in nodes_really_dest:
-                    G.node[id_target]['status']='on'
-                    G.node[id_target]['color']='""'
-                else:
-                    G.node[id_target]['status']='destroyed'
-                    G.node[id_target]['color']='red'			
-            else:
-                if id_target not in discovered_nodes:
-                    discovered_nodes.append(id_target)
-                if id_target not in nodes_really_dest:			
-                    G.add_node(H.node[id_target]['id'],id=H.node[id_target]['id'],Longitude=long,Latitude=lat,status='on',true_status=H.node[id_target]['true_status'], color='""', type=H.node[id_target]['type'], betweeness=H.node[id_target]['betweeness'])
-                else:			
-                    G.add_node(H.node[id_target]['id'],id=H.node[id_target]['id'],Longitude=long,Latitude=lat,status='destroyed',true_status=H.node[id_target]['true_status'], color='red', type=H.node[id_target]['type'], betweeness=H.node[id_target]['betweeness'])
-    """
+
     destroyed_nodes = []	
     #on_nodes = []	
     for node in probe_nodes:
@@ -9678,7 +9640,8 @@ def resolve_one_hop_nodes(H, G, owned_nodes):
                     else:
                         if H.node[id_target]['true_status'] == 'on':
                             G.node[id_target]['status'] = 'on'
-                            G.node[id_target]['color'] = '""'
+                            if H.node[id_target]['color'] != 'green':
+                                G.node[id_target]['color'] = '""'
                             if (id_target not in owned_nodes) and (id_target not in on_nodes):
                                 on_nodes.append(id_target)
                         else:
@@ -9893,7 +9856,8 @@ def probe_network(H, G, nodes, edges_destroyed):
                                 G[id_source][id_target][k2]['status'] = 'on'
                     else:
                         G.add_edge(id_source,id_target,key=k, true_status='on', status='on', type='normal', color='black', capacity =H[id_source][id_target][k]['capacity'])
-                    G.node[id_target]['color'] = '""'
+                    if G.node[id_target]['color'] != 'green':
+                        G.node[id_target]['color'] = '""'
                     G.node[id_target]['status'] = 'on'
                     if id_target not in discovered_nodes:
                         discovered_nodes.append(id_target)
@@ -10047,84 +10011,4 @@ def Discover_neighbors(H, G, probe_nodes, k, nodes_really_dest ,edges_really_des
     #        discovered_nodes = probe_network(H, G, discovered_nodes)
 	
 	
-"""
-def get_k_hop_nodes(H, node_list, hops):
-    if not node_list:
-        return []
-    if hops == 0:
-        return node_list
-    k_hop_nodes = list(node_list)
-    infinity_flag = False
-    if hops <= -1:
-        infinity_flag = True
-    x = 0
-    tmp = []
-    while ((x < hops and not infinity_flag) or (tmp != k_hop_nodes and infinity_flag)):
-        tmp = list(k_hop_nodes)
-        for node in tmp:
-            edges = get_node_edges(H, node)
-            for edge in edges:
-                id_source=edge[0]
-                id_target=edge[1]
-                keydict=H[id_source][id_target]
-                for k in keydict:
-                    if H[id_source][id_target][k]['type'] == 'green':
-                        continue
-                    if H[id_source][id_target][k]['status'] == 'on' or H[id_source][id_target][k]['status'] == 'repaired':
-                        if id_target not in k_hop_nodes:
-                            k_hop_nodes.append(id_target)
-        x = x + 1
-    return k_hop_nodes
-"""
-"""
-def probe_network(H, G, nodes):
-    if not nodes:
-        return []
-    discovered_nodes = nodes#[]
-    for node in nodes:
-        edges = get_node_edges(H, node)
-        for edge in edges:
-            id_source=edge[0]
-            id_target=edge[1]
-            keydict=H[id_source][id_target]
-            for k in keydict:
-                if H[id_source][id_target][k]['color'] == 'gray' and H[id_source][id_target][k]['true_status'] == 'on' and H.node[id_target]['color'] == 'gray' and H.node[id_target]['true_status'] == 'on':
-                    H[id_source][id_target][k]['color'] = 'black'
-                    H[id_source][id_target][k]['style'] = 'solid'
-                    H[id_source][id_target][k]['status'] = 'on'
-                    H.node[id_target]['color'] = '""'
-                    H.node[id_target]['status'] = 'on'
-                    if id_target not in discovered_nodes:
-                        discovered_nodes.append(id_target)
-					
-    return discovered_nodes
-"""   
-"""
-def information_gain(H, G, owned_nodes, k):
-    if k == 0:
-        return
-    resolve_onwed_node_edges(H,G,owned_nodes)
-    on_nodes,destroyed_nodes = resolve_one_hop_nodes(H, G,owned_nodes)
 
-    if k > 0:
-        for x in range(k-1):
-            on_nodes = probe_network(H, G, on_nodes)
-    else:
-        on_nodes_last = []
-        while (on_nodes != on_nodes_last):
-            on_nodes_last = list(on_nodes)
-            on_nodes = probe_network(H, G, on_nodes)
-
-def find_green_edges(H):
-    green_edges = []
-    for edge in H.edges():     
-        source=edge[0]
-        target=edge[1]
-        if H.has_edge(source,target):
-            keydict=H[source][target]
-            for k in keydict:
-                if H[source][target][k]['type'] == 'green':
-                    if (source,target,H[source][target][k]['demand']) not in green_edges:
-                        green_edges.append((source,target,H[source][target][k]['demand']))
-    return green_edges
-"""	   
