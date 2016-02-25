@@ -1,0 +1,1989 @@
+Number of runs: 1/4
+Simulation Parameters: 
+Seed: 120
+Alpha demand: 0.4
+Prob edge green: 0.002
+Distance metric: unknown_capacity
+Type of betweeness: diman
+Graph: Abilene
+Dimensions of the Graph
+Nodes: 11
+Edges: 14
+Total: 25
+Seed Utilized: 120.000000: 
+Diameter of the Graph: 5
+Flow Variation: True
+Vario il numero di coppie fissando il flusso: 4
+Number of Pairs Selected: 2
+Fixed Disruption
+Coppie selezionate Random:
+Subset of Random Couples:
+[(2, 6, 4), (0, 3, 5)]
+Abilene
+Optimize a model with 64 rows, 56 columns and 196 nonzeros
+Presolve removed 28 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 56 columns, 168 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+01   0.000000e+00      0s
+      13    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 13 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4), (0, 3, 5)]
+iterazione 0 / 1 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 4/4
+iterazione 1 / 1 --> 0-3
+max flow residual: 17.0
+domanda assegnata: 4/4
+Couples of Green Edges Seclected:
+[(2, 6, 4), (0, 3, 4)]
+Diman distance
+0.0125
+Diman distance
+0.00909090909091
+Diman distance
+0.01
+Diman distance
+0.00909090909091
+Diman distance
+0.0111111111111
+Diman distance
+0.01
+Diman distance
+0.0125
+Diman distance
+0.01
+Diman distance
+0.00833333333333
+Diman distance
+0.0125
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.01
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.0125
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.01
+Diman distance
+0.00769230769231
+Diman distance
+0.00769230769231
+Diman distance
+0.01
+Diman distance
+0.0125
+Diman distance
+0.01
+Diman distance
+0.0111111111111
+Diman distance
+0.0125
+Diman distance
+0.00909090909091
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.01
+Diman distance
+0.00909090909091
+Diman distance
+0.0111111111111
+Diman distance
+0.0125
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.01
+Diman distance
+0.00833333333333
+Diman distance
+0.0125
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.00769230769231
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.01
+Diman distance
+0.00769230769231
+Diman distance
+0.00769230769231
+0.268500879818
+0.963918808886
+0.109584051234
+0.899598308389
+0.798950251783
+0.154419747937
+0.0395690111878
+../../../image_graph_dot/stats/statistiche/Abilene_Destroyed.txt
+../../../image_graph_dot/stats/statistiche/Abilene_Really_Destroyed.txt
+Diman distance
+0.0495259353
+Diman distance
+0.036018862
+Diman distance
+0.0238977773
+Diman distance
+0.0217252521
+Diman distance
+0.0265530859
+Diman distance
+0.0132391865
+Diman distance
+0.0165489831
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.0341650792
+Diman distance
+0.0379611991
+Diman distance
+0.1137048097
+Diman distance
+0.0758032065
+Diman distance
+0.0699721906
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.0967526928
+Diman distance
+0.0744251483
+Diman distance
+0.0744251483
+Diman distance
+0.0132391865
+Diman distance
+0.0165489831
+Diman distance
+0.0341650792
+Diman distance
+0.0379611991
+Diman distance
+0.0495259353
+Diman distance
+0.036018862
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.0238977773
+Diman distance
+0.0217252521
+Diman distance
+0.0265530859
+Diman distance
+0.1137048097
+Diman distance
+0.0758032065
+Diman distance
+0.0699721906
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0777622468
+Diman distance
+0.0717805355
+Diman distance
+0.0717805355
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.0967526928
+Diman distance
+0.0744251483
+Diman distance
+0.0744251483
+*********************************************
+Start Iteritive Split and Prune
+*********************************************
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.1137048097
+Diman distance
+0.0758032065
+Diman distance
+0.0769230769
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.1137048097
+Diman distance
+0.0758032065
+Diman distance
+0.0769230769
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.1137048097
+Diman distance
+0.0758032065
+Diman distance
+0.0769230769
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.1137048097
+Diman distance
+0.0758032065
+Diman distance
+0.0769230769
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+[(0, 3, 4), (2, 6, 4)]
+False
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+INIZIO SPLIT COPPIA: 0-3-4: 0.24 
+Optimize a model with 116 rows, 113 columns and 400 nonzeros
+Presolve removed 58 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 58 rows, 113 columns, 342 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0000000e+00   4.000000e+01   0.000000e+00      0s
+      13    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 13 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+Valore massimo splittabile 4.000000
+Provo Demand to assign 4.000000
+Pre simulate split provando con 4.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 89 rows, 84 columns and 294 nonzeros
+Presolve removed 42 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 47 rows, 84 columns, 252 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.200000e+01   0.000000e+00      0s
+      15    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 15 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.1023819033
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.0113010092
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.1137048097
+Diman distance
+0.0758032065
+Diman distance
+0.0769230769
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.125
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.00833333333333
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.125
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.00833333333333
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+controllo se lo split ha creato qualcosa per fare pruning
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.125
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.00833333333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.00833333333333
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.125
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+[(0, 7, 4.0), (2, 6, 4), (3, 7, 4.0)]
+False
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+INIZIO SPLIT COPPIA: 0-7-4: 0.24 
+Optimize a model with 141 rows, 141 columns and 498 nonzeros
+Presolve removed 72 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 69 rows, 141 columns, 426 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0000000e+00   3.200000e+01   0.000000e+00      0s
+      17    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 17 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+Valore massimo splittabile 4.000000
+Provo Demand to assign 4.000000
+Pre simulate split provando con 4.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 114 rows, 112 columns and 392 nonzeros
+Presolve removed 56 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 58 rows, 112 columns, 336 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   4.800000e+01   0.000000e+00      0s
+      14    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 14 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0238977773
+Diman distance
+0.0909090909
+Diman distance
+0.0265530859
+Diman distance
+0.0819055227
+Diman distance
+0.0682546022
+Diman distance
+0.125
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.00833333333333
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.0165521372
+Diman distance
+0.0152788959
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0150680122
+Diman distance
+0.0150680122
+Diman distance
+0.00833333333333
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+Diman distance
+0.0150680122
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0150680122
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+controllo se lo split ha creato qualcosa per fare pruning
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+Diman distance
+0.0150680122
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+[(0, 9, 4.0), (2, 6, 4), (3, 7, 4.0), (7, 9, 4.0)]
+False
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+INIZIO SPLIT COPPIA: 2-6-4: 0.21 
+Optimize a model with 166 rows, 169 columns and 596 nonzeros
+Presolve removed 86 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 80 rows, 169 columns, 510 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0000000e+00   5.200000e+01   0.000000e+00      0s
+      15    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 15 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+Valore massimo splittabile 4.000000
+Provo Demand to assign 4.000000
+Pre simulate split provando con 4.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 139 rows, 140 columns and 490 nonzeros
+Presolve removed 70 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 69 rows, 140 columns, 420 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   4.400000e+01   0.000000e+00      0s
+      21    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 21 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.5379611991
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0150680122
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.51
+Diman distance
+0.511111111111
+controllo se lo split ha creato qualcosa per fare pruning
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+[(0, 9, 4.0), (2, 10, 4.0), (3, 7, 4.0), (6, 10, 4.0), (7, 9, 4.0)]
+False
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+INIZIO SPLIT COPPIA: 0-9-4: 0.24 
+Optimize a model with 191 rows, 197 columns and 694 nonzeros
+Presolve removed 100 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 91 rows, 197 columns, 594 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0000000e+00   4.400000e+01   0.000000e+00      0s
+      18    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 18 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+Valore massimo splittabile 4.000000
+Provo Demand to assign 4.000000
+Pre simulate split provando con 4.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 164 rows, 168 columns and 588 nonzeros
+Presolve removed 84 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 80 rows, 168 columns, 504 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   5.200000e+01   0.000000e+00      0s
+      17    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 17 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.1
+Diman distance
+0.0909090909
+Diman distance
+0.0111111111111
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.51
+Diman distance
+0.511111111111
+controllo se lo split ha creato qualcosa per fare pruning
+Diman distance
+0.01
+Diman distance
+0.125
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Diman distance
+0.125
+Diman distance
+0.0909090909
+[(0, 2, 4.0), (2, 9, 4.0), (2, 10, 4.0), (3, 7, 4.0), (6, 10, 4.0), (7, 9, 4.0)]
+Arco Ricoverato one hop: 0 - 2
+Arco Ricoverato one hop: 2 - 9
+True
+pre pruning one hop
+fine pruning one hop
+controllo se lo split ha creato qualcosa per fare pruning
+[(2, 10, 4.0), (3, 7, 4.0), (6, 10, 4.0), (7, 9, 4.0)]
+False
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+INIZIO SPLIT COPPIA: 3-7-4: 0.18 
+Optimize a model with 166 rows, 169 columns and 596 nonzeros
+Presolve removed 87 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 79 rows, 167 columns, 506 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0000000e+00   3.600000e+01   0.000000e+00      0s
+      13    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 13 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+Valore massimo splittabile 4.000000
+Provo Demand to assign 4.000000
+Pre simulate split provando con 4.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 139 rows, 140 columns and 490 nonzeros
+Presolve removed 71 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 68 rows, 138 columns, 416 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.800000e+01   0.000000e+00      0s
+      19    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 19 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.025
+Diman distance
+0.0142857142857
+Diman distance
+0.1
+Diman distance
+0.0142857142857
+Diman distance
+0.0111111111111
+Diman distance
+0.01
+Diman distance
+0.025
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.025
+Diman distance
+0.0142857142857
+Diman distance
+0.1
+Diman distance
+0.0142857142857
+Diman distance
+0.0111111111111
+Diman distance
+0.01
+Diman distance
+0.025
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0769230769
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.51
+Diman distance
+0.511111111111
+controllo se lo split ha creato qualcosa per fare pruning
+Diman distance
+0.1
+Diman distance
+0.0833333333
+Diman distance
+0.0833333333
+Diman distance
+0.0769230769
+Diman distance
+0.0769230769
+Diman distance
+0.1
+Diman distance
+0.0744251483
+Diman distance
+0.0769230769
+[(2, 10, 4.0), (3, 6, 4.0), (6, 7, 4.0), (6, 10, 4.0), (7, 9, 4.0)]
+Arco Ricoverato one hop: 3 - 6
+Arco Ricoverato one hop: 6 - 7
+True
+pre pruning one hop
+fine pruning one hop
+controllo se lo split ha creato qualcosa per fare pruning
+[(2, 10, 4.0), (6, 10, 4.0), (7, 9, 4.0)]
+False
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+INIZIO SPLIT COPPIA: 6-10-4: 0.19 
+Optimize a model with 141 rows, 141 columns and 498 nonzeros
+Presolve removed 73 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 68 rows, 139 columns, 422 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0000000e+00   2.000000e+01   0.000000e+00      0s
+      14    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 14 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+Valore massimo splittabile 4.000000
+Provo Demand to assign 4.000000
+Pre simulate split provando con 4.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 114 rows, 112 columns and 392 nonzeros
+Presolve removed 57 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 57 rows, 110 columns, 332 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+01   0.000000e+00      0s
+      14    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 14 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.025
+Diman distance
+0.0142857142857
+Diman distance
+0.1
+Diman distance
+0.0142857142857
+Diman distance
+0.0111111111111
+Diman distance
+0.01
+Diman distance
+0.025
+Diman distance
+0.0125
+Diman distance
+0.0769230769
+Diman distance
+0.0111111111111
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.0125
+Diman distance
+0.0769230769
+Diman distance
+0.0111111111111
+Diman distance
+0.51
+Diman distance
+0.511111111111
+Diman distance
+0.125
+Diman distance
+0.00833333333333
+Diman distance
+0.0111111111111
+Optimize a model with 40 rows, 32 columns and 112 nonzeros
+Presolve removed 25 rows and 12 columns
+Presolve time: 0.00s
+Presolved: 15 rows, 20 columns, 60 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+01   0.000000e+00      0s
+       7    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 7 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+*********************************************
+END Iteritive Split and Prune
+*********************************************
+soluzione parziale ISP
+[7, 9]
+[(0, 2), (2, 9), (3, 6), (6, 7)]
+soluzione rimanenete MCG
+[]
+[]
+Soluzione algoritmo ISP: 
+Nodi ripristinati
+[7, 9]
+Archi ripristinati
+[(0, 2), (2, 9), (3, 6), (6, 7)]
+2
+4
+1
+4
+nodo ripristinato 7 : 
+arco ripristinato 0-2: 
+arco ripristinato 2-9: 
+arco ripristinato 3-6: 
+arco ripristinato 6-7: 
+nodo ripristinato 7 : 
+nodo ripristinato 7 : 
+arco ripristinato 0-2: 
+arco ripristinato 2-9: 
+arco ripristinato 3-6: 
+arco ripristinato 6-7: 
+--- 1.838 seconds ---
+Inizio algoritmo OPTIMAL recovery
+../../../image_graph_dot/stats/statistiche/Abilene_Destroyed.txt
+INIZIO Optimal Recovery model
+Optimize a model with 75 rows, 95 columns and 249 nonzeros
+Found heuristic solution: objective 10
+Presolve removed 37 rows and 27 columns
+Presolve time: 0.00s
+Presolved: 38 rows, 68 columns, 187 nonzeros
+Variable types: 56 continuous, 12 integer (12 binary)
+
+Root relaxation: objective 2.423465e+00, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.42347    0    5   10.00000    2.42347  75.8%     -    0s
+H    0     0                       5.0000000    2.42347  51.5%     -    0s
+     0     0    3.92708    0   11    5.00000    3.92708  21.5%     -    0s
+     0     0     cutoff    0         5.00000    4.00001  20.0%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 4
+  Implied bound: 4
+  Clique: 5
+  Flow cover: 20
+  Flow path: 5
+  Network: 3
+
+Explored 0 nodes (60 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 1 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0%
+node usati
+[1, 7]
+archi_usati
+[(2, 9), (3, 6), (6, 7)]
+2
+3
+nodo ripristinato 1 : 
+nodo ripristinato 7 : 
+arco ripristinato 2-9: 
+arco ripristinato 3-6: 
+arco ripristinato 6-7: 
+--- 0.037 seconds ---
+Inizio algoritmo Multicommodity Generale
+Optimize a model with 64 rows, 56 columns and 196 nonzeros
+Presolve removed 28 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 56 columns, 168 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.600000e+01   0.000000e+00      0s
+      16    3.6000000e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 16 iterations and 0.00 seconds
+Optimal objective  3.600000000e+01
+La funzione obiettivo del multicommodity vale:
+36.0
+Soluzione Multicommodity Generale: 
+Nodi da ripristinare
+[9, 7, 8, 1, 10]
+Archi da ripristinare
+[(2, 9), (6, 7), (7, 8), (8, 9), (0, 1), (1, 10), (3, 6), (7, 10)]
+5
+8
+nodo ripristinato 9 : 
+nodo ripristinato 7 : 
+nodo ripristinato 8 : 
+nodo ripristinato 1 : 
+nodo ripristinato 10 : 
+arco ripristinato 2-9: 
+arco ripristinato 6-7: 
+arco ripristinato 7-8: 
+arco ripristinato 8-9: 
+arco ripristinato 0-1: 
+arco ripristinato 1-10: 
+arco ripristinato 3-6: 
+arco ripristinato 7-10: 
+Inizio algoritmo Multicommodity WORST
+Optimize a model with 64 rows, 56 columns and 196 nonzeros
+Presolve removed 28 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 56 columns, 168 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.600000e+01   0.000000e+00      0s
+      16    3.6000000e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 16 iterations and 0.00 seconds
+Optimal objective  3.600000000e+01
+La funzione obiettivo del multicommodity vale:
+36.0
+Optimize a model with 76 rows, 95 columns and 305 nonzeros
+Presolve removed 39 rows and 39 columns
+Presolve time: 0.00s
+Presolved: 37 rows, 56 columns, 200 nonzeros
+Variable types: 56 continuous, 0 integer (0 binary)
+
+Root relaxation: objective -2.800000e+01, 11 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     -28.0000000  -28.00000  0.00%     -    0s
+
+Explored 0 nodes (11 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 1 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.800000000000e+01, best bound -2.800000000000e+01, gap 0.0%
+node usati
+[1, 4, 5, 7, 8, 9, 10]
+archi_usati
+[(0, 1), (0, 2), (1, 10), (2, 9), (3, 4), (3, 6), (4, 5), (4, 6), (5, 8), (6, 7), (7, 8), (7, 10), (8, 9), (9, 10)]
+Soluzione algoritmo Multicommodity WORST
+Nodi da ripristinare
+[1, 4, 5, 7, 8, 9, 10]
+Archi da ripristinare
+[(0, 1), (0, 2), (1, 10), (2, 9), (3, 4), (3, 6), (4, 5), (4, 6), (5, 8), (6, 7), (7, 8), (7, 10), (8, 9), (9, 10)]
+7
+14
+nodo ripristinato 1 : 
+nodo ripristinato 4 : 
+nodo ripristinato 5 : 
+nodo ripristinato 7 : 
+nodo ripristinato 8 : 
+nodo ripristinato 9 : 
+nodo ripristinato 10 : 
+arco ripristinato 0-1: 
+arco ripristinato 0-2: 
+arco ripristinato 1-10: 
+arco ripristinato 2-9: 
+arco ripristinato 3-4: 
+arco ripristinato 3-6: 
+arco ripristinato 4-5: 
+arco ripristinato 4-6: 
+arco ripristinato 5-8: 
+arco ripristinato 6-7: 
+arco ripristinato 7-8: 
+arco ripristinato 7-10: 
+arco ripristinato 8-9: 
+arco ripristinato 9-10: 
+Inizio algoritmo Multicommodity BEST
+Optimize a model with 64 rows, 56 columns and 196 nonzeros
+Presolve removed 28 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 56 columns, 168 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.600000e+01   0.000000e+00      0s
+      16    3.6000000e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 16 iterations and 0.00 seconds
+Optimal objective  3.600000000e+01
+La funzione obiettivo del multicommodity da usare per il best vale:
+36.0
+Optimize a model with 76 rows, 95 columns and 305 nonzeros
+Presolve removed 32 rows and 18 columns
+Presolve time: 0.00s
+Presolved: 44 rows, 77 columns, 240 nonzeros
+Variable types: 56 continuous, 21 integer (21 binary)
+
+Root relaxation: objective 4.905361e+00, 35 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.90536    0   11          -    4.90536     -      -    0s
+H    0     0                      11.0000000    4.90536  55.4%     -    0s
+     0     0     cutoff    0        11.00000   10.00001  9.09%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 1
+  Implied bound: 3
+  Clique: 3
+  Flow cover: 6
+  Flow path: 2
+  Network: 5
+
+Explored 0 nodes (47 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 1 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0%
+node usati
+[1, 7, 9, 10]
+archi_usati
+[(0, 1), (1, 10), (2, 9), (3, 6), (6, 7), (7, 10), (9, 10)]
+Soluzione algoritmo Multicommodity Best
+Nodi da ripristinare
+[1, 7, 9, 10]
+[(0, 1), (1, 10), (2, 9), (3, 6), (6, 7), (7, 10), (9, 10)]
+4
+7
+nodo ripristinato 1 : 
+nodo ripristinato 7 : 
+nodo ripristinato 9 : 
+nodo ripristinato 10 : 
+arco ripristinato 0-1: 
+arco ripristinato 1-10: 
+arco ripristinato 2-9: 
+arco ripristinato 3-6: 
+arco ripristinato 6-7: 
+arco ripristinato 7-10: 
+arco ripristinato 9-10: 
+Inizio algoritmo Shortest path recovery
+{(0, 3): [[0, 1, 10, 7, 6, 3]], (2, 6): [[2, 9, 10, 7, 6]]}
+nodo ripristinato 1 : 
+arco ripristinato 0-1: 
+nodo ripristinato 10 : 
+arco ripristinato 1-10: 
+nodo ripristinato 7 : 
+arco ripristinato 10-7: 
+arco ripristinato 7-6: 
+arco ripristinato 6-3: 
+arco ripristinato 2-9: 
+Soluzione algoritmo Shortest Based Recovery - No commitment
+Nodi da ripristinare
+[1, 10, 7]
+Archi da ripristinare
+[(0, 1), (1, 10), (10, 7), (7, 6), (6, 3), (2, 9)]
+3
+6
+nodo ripristinato 1 : 
+nodo ripristinato 10 : 
+nodo ripristinato 7 : 
+arco ripristinato 0-1: 
+arco ripristinato 1-10: 
+arco ripristinato 10-7: 
+arco ripristinato 7-6: 
+arco ripristinato 6-3: 
+arco ripristinato 2-9: 
+Optimize a model with 68 rows, 58 columns and 204 nonzeros
+Presolve removed 32 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 58 columns, 172 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.0000000e+00   2.400000e+01   0.000000e+00      0s
+      12    8.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 12 iterations and 0.00 seconds
+Optimal objective  8.000000000e+00
+Inizio algoritmo Ripara tutto
+inzio recovery all
+Soluzione algoritmo Recovery All
+Nodi da ripristinare
+[1, 4, 5, 7, 8, 9, 10]
+Archi da ripristinare
+[(0, 1), (0, 2), (1, 10), (2, 9), (3, 4), (3, 6), (4, 5), (4, 6), (5, 8), (6, 7), (7, 8), (7, 10), (8, 9), (9, 10)]
+7
+14
+nodo ripristinato 1 : 
+nodo ripristinato 4 : 
+nodo ripristinato 5 : 
+nodo ripristinato 7 : 
+nodo ripristinato 8 : 
+nodo ripristinato 9 : 
+nodo ripristinato 10 : 
+arco ripristinato 0-1: 
+arco ripristinato 0-2: 
+arco ripristinato 1-10: 
+arco ripristinato 2-9: 
+arco ripristinato 3-4: 
+arco ripristinato 3-6: 
+arco ripristinato 4-5: 
+arco ripristinato 4-6: 
+arco ripristinato 5-8: 
+arco ripristinato 6-7: 
+arco ripristinato 7-8: 
+arco ripristinato 7-10: 
+arco ripristinato 8-9: 
+arco ripristinato 9-10: 
+../../../image_graph_dot/stats/statistiche/stat_simulations_Abilene_Prob_0.002_Alpha_0.4.txt
+tot_isp 6 = 2 + 4
+tot_isp_truely 5 = 1 + 4
+tot_opt 5 = 2 + 3
+tot_mcg 13 = 5 + 8
+tot_mcg_truely 5 = 0 + 5
+tot_mcw 21 = 7 + 14
+tot_mcb 11 = 4 + 7
+tot_srt 9 = 3 + 6
+tot_srt_truely 3 = 0 + 3
+tot_rnk 21 = 7 + 14
+tot_rnk_com 21 = 7 + 14
+tot_rnk_no_com 21 = 7 + 14
+tot_all 21 = 7 + 14
+total demand: 8.000000
+demand not satisfied shortest: 0.000000
+demand satisfied by shortest: 8.000000
+Perc of demand satisfied by shortest: 100
+demand not satisfied ranked comm: 0.000000
+demand satified by ranked comm: 8.000000
+Perc of demand satisfied by rank comm: 100
+2

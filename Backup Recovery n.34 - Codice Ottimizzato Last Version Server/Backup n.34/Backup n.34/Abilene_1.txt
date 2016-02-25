@@ -1,0 +1,9 @@
+Number of runs: 1/4
+Simulation Parameters: 
+Seed: 120
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: unknown_capacity
+Type of betweeness: diman
+Graph: output_Abilene
+1

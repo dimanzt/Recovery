@@ -1,16 +1,16 @@
 graph [
   node [
-    id 2688
-    label "2688"
+    id 2697
+    label "2697"
   ]
   node [
-    id 4474
-    label "4474"
+    id 4483
+    label "4483"
   ]
   edge [
-    source 2688
-    target 4474
+    source 2697
+    target 4483
     type "green"
-    demand 22
+    demand 1
   ]
 ]

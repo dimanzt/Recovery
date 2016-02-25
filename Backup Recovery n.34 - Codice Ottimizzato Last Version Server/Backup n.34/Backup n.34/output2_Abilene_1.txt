@@ -1,0 +1,1414 @@
+Number of runs: 1/4
+Simulation Parameters: 
+Seed: 120
+Alpha demand: 0.2
+Prob edge green: 0.002
+Distance metric: unknown_capacity
+Type of betweeness: diman
+Graph: Abilene
+Dimensions of the Graph
+Nodes: 11
+Edges: 14
+Total: 25
+Seed Utilized: 120.000000: 
+Diameter of the Graph: 5
+Flow Variation: True
+Vario il numero di coppie fissando il flusso: 1
+Number of Pairs Selected: 1
+Fixed Disruption
+Coppie selezionate Random:
+Subset of Random Couples:
+[(2, 6, 4)]
+Abilene
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+True
+[(2, 6, 4)]
+iterazione 0 / 0 --> 2-6
+max flow residual: 19.0
+domanda assegnata: 1/1
+Couples of Green Edges Seclected:
+[(2, 6, 1)]
+Diman distance
+0.0125
+Diman distance
+0.00909090909091
+Diman distance
+0.01
+Diman distance
+0.00909090909091
+Diman distance
+0.0111111111111
+Diman distance
+0.01
+Diman distance
+0.0125
+Diman distance
+0.01
+Diman distance
+0.00833333333333
+Diman distance
+0.0125
+Diman distance
+0.0111111111111
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.01
+Diman distance
+0.0111111111111
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.0125
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.01
+Diman distance
+0.00769230769231
+Diman distance
+0.00769230769231
+Diman prob:
+0.943190063419
+Diman prob:
+0.0366936674355
+Diman prob:
+0.322209893533
+Diman prob:
+0.0382983597124
+Diman prob:
+0.973153516286
+Diman prob:
+0.93033835232
+Diman prob:
+0.899598615195
+Diman prob:
+0.794469447757
+Diman prob:
+0.154685846923
+../../../image_graph_dot/stats/statistiche/Abilene_Destroyed.txt
+../../../image_graph_dot/stats/statistiche/Abilene_Really_Destroyed.txt
+Diman distance
+0.042303285
+Diman distance
+0.0307660254
+Diman distance
+0.0815022503
+Diman distance
+0.0740929548
+Diman distance
+0.0905580559
+Diman distance
+0.0948871057
+Diman distance
+0.1186088821
+Diman distance
+0.0909638754
+Diman distance
+0.0758032295
+Diman distance
+0.1137048442
+Diman distance
+0.0265796958
+Diman distance
+0.0265796958
+Diman distance
+0.0199347719
+Diman distance
+0.0133024301
+Diman distance
+0.0147804779
+Diman distance
+0.1171630646
+Diman distance
+0.0781087098
+Diman distance
+0.0721003475
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+*********************************************
+Start Iteritive Split and Prune
+*********************************************
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0815022503
+Diman distance
+0.0909090909
+Diman distance
+0.0905580559
+Diman distance
+0.0948871057
+Diman distance
+0.125
+Diman distance
+0.0909638754
+Diman distance
+0.0758032295
+Diman distance
+0.1137048442
+Diman distance
+0.0265796958
+Diman distance
+0.0265796958
+Diman distance
+0.0199347719
+Diman distance
+0.1171630646
+Diman distance
+0.0781087098
+Diman distance
+0.0769230769
+Diman distance
+0.0133024301
+Diman distance
+0.0147804779
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0909090909
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5909090909
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.6
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.5769230769
+broken_capacity distance
+0.625
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.5769230769
+broken_capacity distance
+0.1
+broken_capacity distance
+0.0769230769
+broken_capacity distance
+0.00769230769231
+[(2, 6, 1)]
+False
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+INIZIO SPLIT COPPIA: 2-6-1: 0.05 
+Optimize a model with 91 rows, 85 columns and 302 nonzeros
+Presolve removed 44 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 47 rows, 85 columns, 258 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   5.000000e+00   0.000000e+00      0s
+       8    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 8 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Valore massimo splittabile 1.000000
+Provo Demand to assign 1.000000
+Pre simulate split provando con 1.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 64 rows, 56 columns and 196 nonzeros
+Presolve removed 28 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 56 columns, 168 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   4.000000e+00   0.000000e+00      0s
+      10    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 10 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0815022503
+Diman distance
+0.0909090909
+Diman distance
+0.0905580559
+Diman distance
+0.0948871057
+Diman distance
+0.125
+Diman distance
+0.0909638754
+Diman distance
+0.0758032295
+Diman distance
+0.1137048442
+Diman distance
+0.0265796958
+Diman distance
+0.0265796958
+Diman distance
+0.0199347719
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.0769230769
+Diman distance
+0.0134468524
+Diman distance
+0.0103437326
+Diman distance
+0.00769230769231
+Diman distance
+0.0389988904
+Diman distance
+0.00833333333333
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.0815022503
+Diman distance
+0.0909090909
+Diman distance
+0.0905580559
+Diman distance
+0.0948871057
+Diman distance
+0.125
+Diman distance
+0.0909638754
+Diman distance
+0.0758032295
+Diman distance
+0.125
+Diman distance
+0.0265796958
+Diman distance
+0.0265796958
+Diman distance
+0.0833333333
+Diman distance
+0.0133024301
+Diman distance
+0.0147804779
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.0769230769
+Diman distance
+0.0134468524
+Diman distance
+0.0103437326
+Diman distance
+0.00769230769231
+Diman distance
+0.0389988904
+Diman distance
+0.00833333333333
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+controllo se lo split ha creato qualcosa per fare pruning
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0909090909
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5909090909
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.6
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.5769230769
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0833333333
+broken_capacity distance
+0.0769230769
+[(2, 7, 1.0), (6, 7, 1.0)]
+Arco Ricoverato one hop: 6 - 7
+True
+pre pruning one hop
+fine pruning one hop
+controllo se lo split ha creato qualcosa per fare pruning
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0909090909
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5909090909
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.6
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.5769230769
+[(2, 7, 1.0)]
+False
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+INIZIO SPLIT COPPIA: 2-7-1: 0.05 
+Optimize a model with 91 rows, 85 columns and 302 nonzeros
+Presolve removed 44 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 47 rows, 85 columns, 258 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Valore massimo splittabile 1.000000
+Provo Demand to assign 1.000000
+Pre simulate split provando con 1.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 64 rows, 56 columns and 196 nonzeros
+Presolve removed 28 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 56 columns, 168 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   3.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0833333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.00833333333333
+Diman distance
+0.0134468524
+Diman distance
+0.0103437326
+Diman distance
+0.00769230769231
+Diman distance
+0.0389988904
+Diman distance
+0.00833333333333
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+Diman distance
+0.0265796958
+Diman distance
+0.0265796958
+Diman distance
+0.0833333333
+Diman distance
+0.0909638754
+Diman distance
+0.0758032295
+Diman distance
+0.125
+Diman distance
+0.0133024301
+Diman distance
+0.0147804779
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.125
+Diman distance
+0.0909090909
+Diman distance
+0.125
+Diman distance
+0.0833333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.00833333333333
+Diman distance
+0.0134468524
+Diman distance
+0.0103437326
+Diman distance
+0.00769230769231
+Diman distance
+0.0389988904
+Diman distance
+0.00833333333333
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+Diman distance
+0.0265796958
+Diman distance
+0.1111111111
+Diman distance
+0.0833333333
+Diman distance
+0.1
+Diman distance
+0.0758032295
+Diman distance
+0.125
+Diman distance
+0.0133024301
+Diman distance
+0.0147804779
+Diman distance
+0.0948871057
+Diman distance
+0.125
+controllo se lo split ha creato qualcosa per fare pruning
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0909090909
+broken_capacity distance
+0.1
+broken_capacity distance
+0.0909090909
+broken_capacity distance
+0.1111111111
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0909090909
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.6
+broken_capacity distance
+0.625
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.5769230769
+[(2, 9, 1.0), (7, 9, 1.0)]
+Arco Ricoverato one hop: 2 - 9
+True
+pre pruning one hop
+fine pruning one hop
+controllo se lo split ha creato qualcosa per fare pruning
+broken_capacity distance
+0.1
+broken_capacity distance
+0.01
+broken_capacity distance
+0.1111111111
+broken_capacity distance
+0.125
+broken_capacity distance
+0.01
+broken_capacity distance
+0.6
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.625
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.6111111111
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.6
+broken_capacity distance
+0.625
+broken_capacity distance
+0.5833333333
+broken_capacity distance
+0.5769230769
+[(7, 9, 1.0)]
+False
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+INIZIO SPLIT COPPIA: 7-9-1: 0.05 
+Optimize a model with 91 rows, 85 columns and 302 nonzeros
+Presolve removed 44 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 47 rows, 85 columns, 258 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   1.000000e+00   0.000000e+00      0s
+       2    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 2 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Valore massimo splittabile 1.000000
+Provo Demand to assign 1.000000
+Pre simulate split provando con 1.000000 di quantita di flusso
+Cut condition ok
+Optimize a model with 64 rows, 56 columns and 196 nonzeros
+Presolve removed 28 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 56 columns, 168 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       4    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Diman distance
+0.125
+Diman distance
+0.0833333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.00833333333333
+Diman distance
+0.0134468524
+Diman distance
+0.0103437326
+Diman distance
+0.00769230769231
+Diman distance
+0.0389988904
+Diman distance
+0.00833333333333
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+Diman distance
+0.1
+Diman distance
+0.01
+Diman distance
+0.1111111111
+Diman distance
+0.125
+Diman distance
+0.01
+Diman distance
+0.1
+Diman distance
+0.0758032295
+Diman distance
+0.125
+Nodi di domanda sconnessi: soluzione infeasible
+Diman distance
+0.125
+Diman distance
+0.0833333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00833333333333
+Diman distance
+0.00769230769231
+Diman distance
+0.00833333333333
+Diman distance
+0.0134468524
+Diman distance
+0.0103437326
+Diman distance
+0.00769230769231
+Diman distance
+0.0389988904
+Diman distance
+0.00833333333333
+Diman distance
+0.0813198471
+Diman distance
+0.0750644742
+Diman distance
+0.1
+Diman distance
+0.01
+Diman distance
+0.1111111111
+Diman distance
+0.125
+Diman distance
+0.01
+Diman distance
+0.1
+Diman distance
+0.0758032295
+Diman distance
+0.125
+controllo se lo split ha creato qualcosa per fare pruning
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0833333333
+broken_capacity distance
+0.00833333333333
+broken_capacity distance
+0.00833333333333
+broken_capacity distance
+0.00769230769231
+broken_capacity distance
+0.00833333333333
+broken_capacity distance
+0.1
+broken_capacity distance
+0.0769230769
+broken_capacity distance
+0.00769230769231
+broken_capacity distance
+0.1
+broken_capacity distance
+0.00833333333333
+broken_capacity distance
+0.0111111111111
+broken_capacity distance
+0.1111111111
+broken_capacity distance
+0.0833333333
+broken_capacity distance
+0.1
+broken_capacity distance
+0.0111111111111
+broken_capacity distance
+0.125
+broken_capacity distance
+0.0833333333
+broken_capacity distance
+0.00833333333333
+broken_capacity distance
+0.00833333333333
+broken_capacity distance
+0.00769230769231
+broken_capacity distance
+0.00833333333333
+broken_capacity distance
+0.1
+broken_capacity distance
+0.0769230769
+broken_capacity distance
+0.00769230769231
+broken_capacity distance
+0.1
+broken_capacity distance
+0.00833333333333
+[(7, 10, 1.0), (9, 10, 1.0)]
+Arco Ricoverato one hop: 7 - 10
+Arco Ricoverato one hop: 9 - 10
+True
+pre pruning one hop
+fine pruning one hop
+controllo se lo split ha creato qualcosa per fare pruning
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 1: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 2: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 3: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 4: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 5: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 6: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 7: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 8: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 9: 
+Nodi di domanda sconnessi: soluzione infeasible
+[]
+False
+----------------CANDIDATO BEST CANDIDATE: 0 ----------------
+Candidato 0: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 1 ----------------
+Candidato 1: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 2 ----------------
+Candidato 2: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 3 ----------------
+Candidato 3: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 4 ----------------
+Candidato 4: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 5 ----------------
+Candidato 5: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 6 ----------------
+Candidato 6: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 7 ----------------
+Candidato 7: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 8 ----------------
+Candidato 8: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 9 ----------------
+Candidato 9: non ha arco feasible da splittare
+----------------CANDIDATO BEST CANDIDATE: 10 ----------------
+Candidato 10: non ha arco feasible da splittare
+---------COUNTER STARVATION 10: 
+Stallo: vedo se bastano le riparazioni gia fatte per instradare la domanda iniziale
+Optimize a model with 13 rows, 8 columns and 28 nonzeros
+Presolve removed 13 rows and 8 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Check Routability True
+Riparazioni sufficienti ad instradare tutte le domande
+*********************************************
+END Iteritive Split and Prune
+*********************************************
+soluzione parziale ISP
+[7, 9, 10]
+[(6, 7), (2, 9), (7, 10), (9, 10)]
+soluzione rimanenete MCG
+[]
+[]
+Soluzione algoritmo ISP: 
+Nodi ripristinati
+[7, 9, 10]
+Archi ripristinati
+[(6, 7), (2, 9), (7, 10), (9, 10)]
+3
+4
+2
+4
+nodo ripristinato 7 : 
+nodo ripristinato 9 : 
+arco ripristinato 6-7: 
+nodo ripristinato 7 : 
+arco ripristinato 2-9: 
+nodo ripristinato 9 : 
+arco ripristinato 7-10: 
+nodo ripristinato 7 : 
+arco ripristinato 9-10: 
+nodo ripristinato 9 : 
+nodo ripristinato 7 : 
+nodo ripristinato 9 : 
+arco ripristinato 6-7: 
+arco ripristinato 2-9: 
+arco ripristinato 7-10: 
+arco ripristinato 9-10: 
+--- 2.748 seconds ---
+Inizio algoritmo OPTIMAL recovery
+../../../image_graph_dot/stats/statistiche/Abilene_Destroyed.txt
+INIZIO Optimal Recovery model
+Optimize a model with 50 rows, 67 columns and 151 nonzeros
+Found heuristic solution: objective 9
+Presolve removed 20 rows and 25 columns
+Presolve time: 0.00s
+Presolved: 30 rows, 42 columns, 111 nonzeros
+Variable types: 28 continuous, 14 integer (14 binary)
+
+Root relaxation: objective 4.636752e-01, 20 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.46368    0    5    9.00000    0.46368  94.8%     -    0s
+H    0     0                       5.0000000    0.46368  90.7%     -    0s
+     0     0    3.19748    0   11    5.00000    3.19748  36.1%     -    0s
+     0     0     cutoff    0         5.00000    4.00001  20.0%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 2
+  Implied bound: 1
+  Clique: 1
+  Flow cover: 9
+  Network: 3
+
+Explored 0 nodes (47 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 1 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0%
+node usati
+[0, 7]
+archi_usati
+[(0, 2), (6, 7), (7, 10)]
+2
+3
+nodo ripristinato 0 : 
+nodo ripristinato 7 : 
+arco ripristinato 0-2: 
+arco ripristinato 6-7: 
+arco ripristinato 7-10: 
+--- 0.066 seconds ---
+Inizio algoritmo Multicommodity Generale
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+00   0.000000e+00      0s
+       8    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 8 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+La funzione obiettivo del multicommodity vale:
+4.0
+Soluzione Multicommodity Generale: 
+Nodi da ripristinare
+[9, 7, 8]
+Archi da ripristinare
+[(2, 9), (6, 7), (7, 8), (8, 9)]
+3
+4
+nodo ripristinato 9 : 
+nodo ripristinato 7 : 
+nodo ripristinato 8 : 
+arco ripristinato 2-9: 
+arco ripristinato 6-7: 
+arco ripristinato 7-8: 
+arco ripristinato 8-9: 
+Inizio algoritmo Multicommodity WORST
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+00   0.000000e+00      0s
+       8    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 8 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+La funzione obiettivo del multicommodity vale:
+4.0
+Optimize a model with 51 rows, 67 columns and 179 nonzeros
+Found heuristic solution: objective -28
+Presolve removed 39 rows and 39 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 28 columns, 72 nonzeros
+Variable types: 28 continuous, 0 integer (0 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 1 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.800000000000e+01, best bound -2.800000000000e+01, gap 0.0%
+node usati
+[0, 1, 3, 4, 5, 7, 8, 9, 10]
+archi_usati
+[(0, 1), (0, 2), (1, 10), (2, 9), (3, 4), (3, 6), (4, 5), (4, 6), (5, 8), (6, 7), (7, 8), (7, 10), (8, 9), (9, 10)]
+Soluzione algoritmo Multicommodity WORST
+Nodi da ripristinare
+[0, 1, 3, 4, 5, 7, 8, 9, 10]
+Archi da ripristinare
+[(0, 1), (0, 2), (1, 10), (2, 9), (3, 4), (3, 6), (4, 5), (4, 6), (5, 8), (6, 7), (7, 8), (7, 10), (8, 9), (9, 10)]
+9
+14
+nodo ripristinato 0 : 
+nodo ripristinato 1 : 
+nodo ripristinato 3 : 
+nodo ripristinato 4 : 
+nodo ripristinato 5 : 
+nodo ripristinato 7 : 
+nodo ripristinato 8 : 
+nodo ripristinato 9 : 
+nodo ripristinato 10 : 
+arco ripristinato 0-1: 
+arco ripristinato 0-2: 
+arco ripristinato 1-10: 
+arco ripristinato 2-9: 
+arco ripristinato 3-4: 
+arco ripristinato 3-6: 
+arco ripristinato 4-5: 
+arco ripristinato 4-6: 
+arco ripristinato 5-8: 
+arco ripristinato 6-7: 
+arco ripristinato 7-8: 
+arco ripristinato 7-10: 
+arco ripristinato 8-9: 
+arco ripristinato 9-10: 
+Inizio algoritmo Multicommodity BEST
+Optimize a model with 39 rows, 28 columns and 98 nonzeros
+Presolve removed 14 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 28 columns, 84 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+00   0.000000e+00      0s
+       8    4.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 8 iterations and 0.00 seconds
+Optimal objective  4.000000000e+00
+La funzione obiettivo del multicommodity da usare per il best vale:
+4.0
+Optimize a model with 51 rows, 67 columns and 179 nonzeros
+Found heuristic solution: objective 7
+Presolve removed 16 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 35 rows, 51 columns, 148 nonzeros
+Variable types: 28 continuous, 23 integer (23 binary)
+
+Root relaxation: objective 1.988889e+00, 33 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    1.98889    0    9    7.00000    1.98889  71.6%     -    0s
+     0     0    5.21667    0    7    7.00000    5.21667  25.5%     -    0s
+     0     0     cutoff    0         7.00000    6.00001  14.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 3
+  Implied bound: 2
+  Clique: 2
+  Flow cover: 12
+  Network: 4
+
+Explored 0 nodes (56 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 1 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0%
+node usati
+[7, 8, 9]
+archi_usati
+[(2, 9), (6, 7), (7, 8), (8, 9)]
+Soluzione algoritmo Multicommodity Best
+Nodi da ripristinare
+[7, 8, 9]
+[(2, 9), (6, 7), (7, 8), (8, 9)]
+3
+4
+nodo ripristinato 7 : 
+nodo ripristinato 8 : 
+nodo ripristinato 9 : 
+arco ripristinato 2-9: 
+arco ripristinato 6-7: 
+arco ripristinato 7-8: 
+arco ripristinato 8-9: 
+Inizio algoritmo Shortest path recovery
+{(2, 6): [[2, 9, 10, 7, 6]]}
+nodo ripristinato 9 : 
+arco ripristinato 2-9: 
+nodo ripristinato 10 : 
+arco ripristinato 9-10: 
+nodo ripristinato 7 : 
+arco ripristinato 10-7: 
+arco ripristinato 7-6: 
+Soluzione algoritmo Shortest Based Recovery - No commitment
+Nodi da ripristinare
+[9, 10, 7]
+Archi da ripristinare
+[(2, 9), (9, 10), (10, 7), (7, 6)]
+3
+4
+nodo ripristinato 9 : 
+nodo ripristinato 10 : 
+nodo ripristinato 7 : 
+arco ripristinato 2-9: 
+arco ripristinato 9-10: 
+arco ripristinato 10-7: 
+arco ripristinato 7-6: 
+Optimize a model with 41 rows, 29 columns and 102 nonzeros
+Presolve removed 16 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 25 rows, 29 columns, 86 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   2.000000e+00   0.000000e+00      0s
+       6    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 6 iterations and 0.00 seconds
+Optimal objective  1.000000000e+00
+Inizio algoritmo Ripara tutto
+inzio recovery all
+Soluzione algoritmo Recovery All
+Nodi da ripristinare
+[0, 1, 3, 4, 5, 7, 8, 9, 10]
+Archi da ripristinare
+[(0, 1), (0, 2), (1, 10), (2, 9), (3, 4), (3, 6), (4, 5), (4, 6), (5, 8), (6, 7), (7, 8), (7, 10), (8, 9), (9, 10)]
+9
+14
+nodo ripristinato 0 : 
+nodo ripristinato 1 : 
+nodo ripristinato 3 : 
+nodo ripristinato 4 : 
+nodo ripristinato 5 : 
+nodo ripristinato 7 : 
+nodo ripristinato 8 : 
+nodo ripristinato 9 : 
+nodo ripristinato 10 : 
+arco ripristinato 0-1: 
+arco ripristinato 0-2: 
+arco ripristinato 1-10: 
+arco ripristinato 2-9: 
+arco ripristinato 3-4: 
+arco ripristinato 3-6: 
+arco ripristinato 4-5: 
+arco ripristinato 4-6: 
+arco ripristinato 5-8: 
+arco ripristinato 6-7: 
+arco ripristinato 7-8: 
+arco ripristinato 7-10: 
+arco ripristinato 8-9: 
+arco ripristinato 9-10: 
+../../../image_graph_dot/stats/statistiche/stat_simulations_Abilene_Prob_0.002_Alpha_0.2.txt
+tot_isp 7 = 3 + 4
+tot_isp_truely 6 = 2 + 4
+tot_opt 5 = 2 + 3
+tot_mcg 7 = 3 + 4
+tot_mcg_truely 4 = 0 + 4
+tot_mcw 23 = 9 + 14
+tot_mcb 7 = 3 + 4
+tot_srt 7 = 3 + 4
+tot_srt_truely 4 = 0 + 4
+tot_rnk 23 = 9 + 14
+tot_rnk_com 23 = 9 + 14
+tot_rnk_no_com 23 = 9 + 14
+tot_all 23 = 9 + 14
+total demand: 1.000000
+demand not satisfied shortest: 0.000000
+demand satisfied by shortest: 1.000000
+Perc of demand satisfied by shortest: 100
+demand not satisfied ranked comm: 0.000000
+demand satified by ranked comm: 1.000000
+Perc of demand satisfied by rank comm: 100
+1

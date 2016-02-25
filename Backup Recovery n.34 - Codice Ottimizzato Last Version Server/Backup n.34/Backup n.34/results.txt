@@ -1,0 +1,487 @@
+1 Cogencto
+
+total isp 12= 8 +4 
+total isp truely 9 = 5 +4
+total opt = 9 = 5+ 4
+srt 33= 16 +17
+
+4 Cogencto
+  
+36 = 18 + 18 
+32 = 14 + 18
+31 = 11 + 20
+
+
+6 Cogencto
+
+51 = 24 + 27
+43 = 16 + 27
+37 = 13 + 24
+
+8 Cogencto
+
+57 = 27 + 30 
+48 = 18 + 30
+43 = 16 +27
+
+10 Cogencto
+
+52 = 22 + 30 
+47= 17 + 30 
+44 = 15 +29
+
+12 Cogencto
+59 = 26 + 33
+53 = 20 + 33
+49 = 17 + 32
+
+BellCanada 1
+8 = 4 + 4
+7 = 3 + 4
+7 = 3 + 4
+
+BellCanada 2
+16 = 7 + 9
+16 = 7 + 9
+14 = 6 + 8
+
+########################################################################
+
+BellCanada_Random_Capacity - High Capacity - 2 backbone - eterogeneous 3
+20 = 8 + 12
+20 = 8 + 12
+19 = 7 + 12 
+
+BellCanada_Random_Capacity - High Capacity - 2 backbone - eterogeneous 6
+########################################################################
+ 1 BellCanada High Capacity 
+ 1 hop
+ 
+ ISP 11 = 6 + 5
+ ISP truely 10 = 5 + 5 
+ OPT 7 = 3 + 4 
+ MCG 13 = 6 + 7 
+ SRT 15 = 7 + 8 
+ SRT truely 5 = 0 + 5 
+ demand not satisfied srt = 0 
+ 
+ ########################################################################
+ 2 BellCanada High Capacity 
+ 1 hop
+
+ ISP 16 = 7 + 9
+ ISP truely 14 = 6 + 8
+ OPT 14 = 6 + 8
+ MCG 31 = 14 + 17
+ SRT  33 = 15 + 18 
+ SRT truely 13 = 0 + 13
+ demand not satisfied srt = 0
+ ########################################################################
+ ########################################################################
+ ########################################################################
+ ######################################################################## 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 1 hop
+ 
+ 
+ ISP 14 = 9 + 5 
+ ISP truely  9 = 5 + 4 
+ OPT 9 = 5 + 4 
+ MCG 33 = 16 + 17 
+ SRT   33 = 16 + 17 
+ SRT truely 4 = 0 + 4 
+ demand not satisfied srt = 0
+
+ ########################################################################
+ 2 Cogentco_Random_Capacity
+ 1 hop
+ 
+ ISP 30 = 18 + 12 
+ ISP truely 19 = 9 + 10 
+ OPT 19 = 7 + 12 
+ MCG 67 = 32 + 35 
+ SRT  61 = 29 + 32  
+ SRT truely 14 = 0 + 14
+ demand not satisfied srt = 0 
+
+ 
+ ########################################################################
+ 4 Cogentco_Random_Capacity
+ 1 hop
+ 
+ ISP 45 = 22 + 23 
+ ISP truely 37 = 15 + 22 
+ OPT 31 = 11 + 20 
+ MCG 102 = 47 + 55 
+ SRT   75 = 34 + 41 
+ SRT truely 24 = 0 + 24 
+ demand not satisfied srt =  0
+ 
+ ########################################################################
+ 6 Cogentco_Random_Capacity
+ 1 hop
+ 
+ ISP 54 = 27 + 27 
+ ISP truely 41 = 15 + 26 
+ OPT 37 = 13 + 24
+ MCG 127 = 57 + 70 
+ SRT   89 = 39 + 50 
+ SRT truely 29 = 0 + 29 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 8 Cogentco_Random_Capacity
+ 1 hop
+ 
+ ISP 67 = 33 + 34 
+ ISP truely 50 = 18 + 32 
+ OPT 43 = 16 +27 
+ MCG 143 = 64 + 79 
+ SRT  102 = 45 + 57  
+ SRT truely 36 = 0 + 36 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 10 Cogentco_Random_Capacity
+ 1 hop
+ 
+ ISP 64 = 29 + 35 
+ ISP truely 52 = 18 + 34 
+ OPT 44 = 15 +29 
+ MCG 153 = 66 + 87 
+ SRT   102 = 42 + 60 
+ SRT truely 36 = 0 + 36 
+ demand not satisfied srt = 0 
+ 
+ ########################################################################
+ 12 Cogentco_Random_Capacity
+ 1 hop
+ 
+ ISP 
+ ISP truely 
+ OPT 
+ MCG 
+ SRT   
+ SRT truely 
+ demand not satisfied srt = 
+ 
+ ########################################################################
+ ########################################################################
+ ########################################################################
+ ######################################################################## 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 2 hop
+ 
+ ISP 11 = 7 + 4 
+ ISP truely 9 = 5 + 4 
+ OPT 9 = 5 + 4 
+ MCG 33 = 16 + 17 
+ SRT   33 = 16 + 17 
+ SRT truely 4 = 0 + 4 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 3 hop
+ 
+ ISP 11 = 7 + 4 
+ ISP truely 9 = 5 + 4 
+ OPT 9 = 5 + 4 
+ MCG 33 = 16 + 17 
+ SRT   33 = 16 + 17 
+ SRT truely 4 = 0 + 4 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 4 hop
+ 
+ ISP 10 = 6 + 4 
+ ISP truely 9 = 5 + 4 
+ OPT 9 = 5 + 4 
+ MCG 33 = 16 + 17 
+ SRT   33 = 16 + 17 
+ SRT truely 4 = 0 + 4 
+ demand not satisfied srt = 0 
+ 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 5 hop
+ 
+ ISP 10 = 6 + 4 
+ ISP truely 9 = 5 + 4 
+ OPT 9 = 5 + 4 
+ MCG 33 = 16 + 17 
+ SRT   33 = 16 + 17 
+ SRT truely 4 = 0 + 4 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 6 Cogentco_Random_Capacity 
+ 1 hop
+ 
+ ISP 54 = 27 + 27 
+ ISP truely 41 = 15 + 26 
+ OPT 37 = 13 + 24
+ MCG 127 = 57 + 70 
+ SRT   89 = 39 + 50 
+ SRT truely 29 = 0 + 29 
+ demand not satisfied srt = 0
+ 
+  
+ ########################################################################
+ 6 Cogentco_Random_Capacity 
+ 2 hop
+ 
+ ISP 50 = 24 + 26 
+ ISP truely 41 = 15 + 26 
+ OPT 37 = 13 + 24 
+ MCG 127 = 57 +70 
+ SRT   86 = 37 + 49 
+ SRT truely 29 = 0 + 29 
+ demand not satisfied srt = 0 
+
+ ########################################################################
+ 6 Cogentco_Random_Capacity 
+ 3 hop
+ 
+ ISP 50 = 24 + 26 
+ ISP truely 41 = 15 + 26 
+ OPT 37 = 13 + 24 
+ MCG 127 = 57 + 70 
+ SRT   82 = 35 + 47 
+ SRT truely 29 = 0 + 29 
+ demand not satisfied srt =  0
+ 
+ ########################################################################
+ 6 Cogentco_Random_Capacity 
+ 4 hop
+ 
+ ISP 51 = 24 + 27 
+ ISP truely 43 = 16 + 27 
+ OPT 37 = 13 + 24 
+ MCG 127 = 57 +70 
+ SRT  80 = 34 + 46  
+ SRT truely 29 = 0 + 29 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 6 Cogentco_Random_Capacity 
+ 5 hop
+ 
+ ISP 51 = 24 + 27 
+ ISP truely 43 = 16 + 27 
+ OPT 37 = 13 + 24 
+ MCG 127 = 57 + 70 
+ SRT   78 = 33 + 45 
+ SRT truely 29 = 0 + 29 
+ demand not satisfied srt = 0 
+ 
+ ########################################################################
+ ########################################################################
+ ########################################################################
+ ######################################################################## 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ Without information gain
+
+ ISP 33 = 16 + 17 
+ ISP truely 9 = 5 + 4 
+ OPT 9 = 5 + 4 
+ MCG 33 = 16 + 17 
+ SRT   33 = 16 + 17 
+ SRT truely 4 = 0 + 4 
+ demand not satisfied srt = 0 
+ 
+ 
+ ########################################################################
+ 2 Cogentco_Random_Capacity 
+ Without information gain
+
+ ISP 59 = 28 + 31 
+ ISP truely 31 = 12 + 19 
+ OPT 19 = 7 + 12 
+ MCG 67 = 32 + 35 
+ SRT   67 = 32 + 35 
+ SRT truely 12 = 0 + 14 
+ demand not satisfied srt =  0
+ 
+ 
+ ########################################################################
+ 4 Cogentco_Random_Capacity 
+ Without information gain
+
+ ISP 73 = 33 + 40 
+ ISP truely 40 = 15 + 25 
+ OPT 31 = 11 + 20 
+ MCG 102 = 47 + 55 
+ SRT   77 = 35 + 42 
+ SRT truely 24 = 0 + 24 
+ demand not satisfied srt =  0 
+ 
+ ########################################################################
+ 6 Cogentco_Random_Capacity 
+ Without information gain
+
+ ISP 87 = 28 + 49 
+ ISP truely 42 = 15 + 27 
+ OPT 37 = 13 + 24 
+ MCG 127 = 57 + 70 
+ SRT   95 = 42 + 53 
+ SRT truely 29 = 0 + 29 
+ demand not satisfied srt =  0 
+ 
+ ########################################################################
+ 8 Cogentco_Random_Capacity 
+ Without information gain
+
+ ISP 107 = 46 + 61 
+ ISP truely 53 = 19 + 34 
+ OPT 43 = 16 + 27 
+ MCG 142 = 64 + 79 
+ SRT   121 = 53 + 68
+ SRT truely  36 = 0 + 36 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 10 Cogentco_Random_Capacity 
+ Without information gain
+
+ ISP 105 = 43 + 62 
+ ISP truely 57 = 20 + 37 
+ OPT 44 = 15 + 29 
+ MCG 153 = 66 + 87 
+ SRT   125 = 53 + 72 
+ SRT truely 36 = 0 + 36 
+ demand not satisfied srt = 0
+ 
+ 
+ ########################################################################
+ ########################################################################
+ ########################################################################
+ ######################################################################## 
+ ########################################################################
+ 2 Cogentco_Random_Capacity 
+ 1 hop 
+ 
+ ISP  33 = 19 + 14 
+ ISP truely 27 = 13 + 14 
+ OPT 19 = 7 + 12 
+ MCG 67 = 32 + 35 
+ SRT    61 = 29 + 32 
+ SRT truely 14 = 0 + 14 
+ demand not satisfied srt = 0
+ 
+ ########################################################################
+ 2 Cogentco_Random_Capacity 
+ 2 hop 
+ 
+ ISP  25 = 15 + 10
+ ISP truely 19 = 9 + 10 
+ OPT 19 = 7 + 12 
+ MCG 67 = 32 + 35 
+ SRT    59 = 28 + 31 
+ SRT truely 14 = 0 + 14 
+ demand not satisfied srt = 0 
+ 
+ ########################################################################
+ 2 Cogentco_Random_Capacity 
+ 3 hop 
+ 
+ ISP  25 = 15 + 10 
+ ISP truely 19 = 9 + 10 
+ OPT 19 = 7 + 12 
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt = 
+ 
+ ########################################################################
+ 2 Cogentco_Random_Capacity 
+ 4 hop 
+ 
+ ISP  24 = 14 + 10 
+ ISP truely 19 = 9 + 10 
+ OPT 19 = 7 + 12 
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt = 
+ 
+ ########################################################################
+ 2 Cogentco_Random_Capacity 
+ 5 hop 
+ 
+ ISP  24 = 14 + 10 
+ ISP truely 19 = 9 + 10 
+ OPT 19 = 7 + 12
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt = 
+ 
+ ########################################################################
+ ########################################################################
+ ######################################################################## 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 1 hop 
+ 
+ ISP  12 = 8 + 4 
+ ISP truely 9 = 5 + 4 
+ OPT 9 = 5 + 4 
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt = 
+ 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 2 hop 
+ 
+ ISP  
+ ISP truely 
+ OPT 
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt = 
+ 
+ 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 3 hop 
+ 
+ ISP  
+ ISP truely 
+ OPT 
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt = 
+
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 4 hop 
+ 
+ ISP  
+ ISP truely 
+ OPT 
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt =  
+ 
+ ########################################################################
+ 1 Cogentco_Random_Capacity 
+ 5 hop 
+ 
+ ISP  
+ ISP truely 
+ OPT 
+ MCG 
+ SRT    
+ SRT truely 
+ demand not satisfied srt =  

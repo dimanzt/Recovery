@@ -1,0 +1,10 @@
+Sim: 3/10 Seed: 121 --- Time: 0 seconds 
+Sim: 3/10 Seed: 122 --- Time: 0 seconds 
+Sim: 3/10 Seed: 123 --- Time: 0 seconds 
+Sim: 3/10 Seed: 126 --- Time: 0 seconds 
+Sim: 3/10 Seed: 136 --- Time: 0 seconds 
+Sim: 3/10 Seed: 121 --- Time: 0 seconds 
+Sim: 3/10 Seed: 122 --- Time: 0 seconds 
+Sim: 3/10 Seed: 123 --- Time: 0 seconds 
+Sim: 3/10 Seed: 126 --- Time: 0 seconds 
+Sim: 3/10 Seed: 136 --- Time: 0 seconds 
