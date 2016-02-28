@@ -18,7 +18,6 @@ from my_lib_compute_max_demand_in_the_graph import *
 
 work_dir=os.getcwd()
 
-
 path_to_dot_dir='../../../image_graph_dot/DotFile/'
 path_to_image_dir='../../../image_graph_dot/immagini_generate/'
 path_to_image_store='../../../image_graph_dot/store_images/'
@@ -26,17 +25,6 @@ path_to_stats='../../../image_graph_dot/stats/statistiche/'
 path_to_file_simulation='../../../image_graph_dot/current_simulation.txt'
 path_to_stat_prog='../../../image_graph_dot/stats/progress_iteration/'
 path_to_stat_times='../../../image_graph_dot/stats/times/'
-"""
-
-
-path_to_dot_dir='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\DotFile\\'
-path_to_image_dir='c:\\Users\\user\\Seamus_Last\LabWork\\image_graph_dot\\immagini_generate\\'
-path_to_image_store='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\store_images\\'
-path_to_stats='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\stats\\statistiche\\'
-path_to_file_simulation='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\current_simulation.txt'
-path_to_stat_prog='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\stats\\progress_iteration\\'
-path_to_stat_times='c:\\Users\\user\\Seamus_Last\\LabWork\\image_graph_dot\\stats\\times\\'
-"""
 
 """
 
@@ -171,7 +159,7 @@ print "Total: %d"%(H.number_of_nodes()+H.number_of_edges())
 #seed_random=2
 #seed passato per argomento
 seed_random=int(seed_passed)
-seed_random = 120
+#seed_random = 72
 random.seed(seed_random)
 
 print 'Seed Utilized: %f: '%seed_random
@@ -197,7 +185,7 @@ else:
 list_of_couples=get_list_distance_couples(path_to_folder_couple,filename_graph)
 list_of_couples=subset_of_list(list_of_couples,50)
 list_of_couples=select_random_couples_from_list(list_of_couples,number_of_couple)
-#list_of_couples = [(0, 5, 10)]
+#list_of_couples = [(16, 38, 10),(35, 44, 10)]
 
 print 'Subset of Random Couples:'
 print list_of_couples
@@ -314,13 +302,7 @@ D=nx.MultiGraph(nx.read_gml(path_to_demand))
 #D=nx.MultiGraph(nx.read_gml('network topologies/abileneDemand.gml'))
 
 merge_graphs(H,D)
-H1=nx.MultiGraph(H)
-H2=nx.MultiGraph(H)
-H3=nx.MultiGraph(H)
-H4=nx.MultiGraph(H)
-H5=nx.MultiGraph(H)
-H6=nx.MultiGraph(H)
-H7=nx.MultiGraph(H)
+
 
 #old_bet_dict=compute_my_betweeness(H,green_edges,'reciproco')
 #my_draw(H, '2-prepared-old_bet')
@@ -464,15 +446,17 @@ print 'Start Iteritive Split and Prune'
 print '*********************************************'
 cnt = 0
 K_HOPS = 1
+always_split=1
 visited_but_working_nodes = []
 visited_and_broken_nodes = []
+neccesary_repairs = []
 gray_to_known = []
 edges_removed = []
 
 while ( check_routability(get_graph_from_destroyed_graph(graph_built),copy_of_green_edges)==False  ):
 
-    my_draw(get_graph_from_destroyed_graph(temp_graph_supply), 'supply_working%d'%counter_isp)
-    my_draw(get_graph_from_destroyed_graph(graph_built), 'built_working%d'%counter_isp)
+    #my_draw(get_graph_from_destroyed_graph(temp_graph_supply), 'supply_working%d'%counter_isp)
+    #my_draw(get_graph_from_destroyed_graph(graph_built), 'built_working%d'%counter_isp)
     #Begin Seamus Additions
     for node in nodes_recovered_isp: 
         if node not in owned_nodes:
@@ -482,10 +466,7 @@ while ( check_routability(get_graph_from_destroyed_graph(graph_built),copy_of_gr
     current_green_edges = find_green_edges(temp_graph_supply)
     if current_green_edges:
         dict_bet,temp_shortest_set,end_time_bet = select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)
-    else:
-        for edge in copy_of_green_edges:
-            if not check_routability(get_graph_from_destroyed_graph(graph_built),[edge]):
-                add_green_edges_to_graph(temp_graph_supply,[edge])
+
     cnt+=1
     #resolve_onwed_node_edges(H,graph_built, owned_nodes)
     #resolve_one_hop_nodes(H, graph_built, owned_nodes)
@@ -607,26 +588,36 @@ while ( check_routability(get_graph_from_destroyed_graph(graph_built),copy_of_gr
     #ritorna l'arco verde splittato e le due nuove coppie di archi verdi con il bc
     #temp_green=get_green_edges(temp_graph_supply)
     #check_routability(temp_graph_supply,temp_green)
-    #couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp)
-    always_split=1
-    couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path_and_ranking_max_split(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,type_of_bet_passed,always_split)
+    #couple_selected,couples_to_prune,flag_no_split,bc=split_random(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,type_of_bet_passed,always_split)  
+    couple_selected,couples_to_prune,flag_no_split,bc,neccesary_repair=split_by_capacity_path_and_ranking_max_split(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,type_of_bet_passed,always_split)
     for node in nodes_recovered_isp: 
         if node not in owned_nodes:
              owned_nodes.append(node)
-
+    supply_graph_working = get_graph_from_destroyed_graph(temp_graph_supply)
     #couple_selected,couples_to_prune,flag_no_split,bc=split_by_capacity_path_and_demand(temp_graph_supply,counter_isp,distance_metric,nodes_recovered_isp,type_of_bet_passed)
     print bc
     if bc!=None:
-        #seamus clean this up
         add_node_to_graph_recovered_gray(H,graph_built,bc)
+        before_nodes = 0
+        after_nodes = 0
+        if not neccesary_repair:
+            before_nodes = len(supply_graph_working.nodes())
         information_gain(H, graph_built, owned_nodes, edges_removed+edges_recovered_isp,K_HOPS)
-        information_gain(H, temp_graph_supply, owned_nodes, edges_removed+edges_recovered_isp, K_HOPS)
+        change = information_gain(H, temp_graph_supply, owned_nodes, edges_removed+edges_recovered_isp, K_HOPS)
+        if change:
+            neccesary_repair = True
+        if not neccesary_repair:
+            supply_graph_working = get_graph_from_destroyed_graph(temp_graph_supply)
+            after_nodes = len(supply_graph_working.nodes())
+            if before_nodes != after_nodes:
+                neccesary_repair = True
+            
         current_green_edges = find_green_edges(temp_graph_supply)
         if current_green_edges:
             select_betweeness(temp_graph_supply,current_green_edges,distance_metric,type_of_bet_passed)
-        #owned_nodes.append(bc)
-    #my_draw(graph_built,'5-isp-%d-graph_built'%(counter_isp))
-    #sys.exit()
+
+    if neccesary_repair or change:
+        neccesary_repairs.append(bc)
     
     counter_isp=counter_isp+1 
 
@@ -670,6 +661,7 @@ print '*********************************************'
 my_draw(get_graph_from_destroyed_graph(graph_built), '6-Supply_Graph')
 #check_routability(graph_built,copy_of_green_edges)
 
+
 print 'soluzione parziale ISP'
 print nodes_recovered_isp
 print edges_recovered_isp
@@ -701,6 +693,13 @@ print 'Nodes really repaired:'
 print real_node_repairs
 print len(real_node_repairs)
 
+print 'Uneccesary Node Repairs (No Inforamation Gain, already working node)'
+not_needed_repairs = []
+for node in neccesary_repairs:
+    if node not in nodes_recovered_isp:
+        not_needed_repairs.append(node)
+print not_needed_repairs
+
 #print nodes_recovered_isp
 print 'Archi ripristinati'
 print edges_recovered_isp
@@ -719,6 +718,7 @@ num_rip_isp_nodes=len(nodes_recovered_isp)
 num_rip_isp_edges=len(edges_recovered_isp)
 nodes_truely_recovered_isp=len(real_node_repairs)
 edges_truely_recovered_isp=len(real_edge_repairs)
+num_not_needed=len(not_needed_repairs)
 #print num_rip_isp_nodes
 #print num_rip_isp_edges
 
@@ -747,25 +747,19 @@ write_stat_time_simulation(path_to_stat_times,'ISP',filename_graph,int(sys.argv[
 
 #"""
 #----------------------------------------------------------OPTIMAL-------------------------------------------------------
-#Diman Commented these
-#del H
+print 'Inizio algoritmo OPTIMAL recovery'
+del H
 
-#H=nx.MultiGraph(nx.read_gml(path_to_graph))  #grafo supply
-#prepare_graph(H)
-#merge_graphs(H,D)
-#Diman Commented these
+H=nx.MultiGraph(nx.read_gml(path_to_graph))  #grafo supply
+prepare_graph(H)
+merge_graphs(H,D)
 
 #distruggi di nuovo e recover whit multicommodity
 #nodes_destroyed,edges_destroyed=destroy_graph(H,29,-95,10) #per abilene
-print path_to_distruption
-#Diman
-#prepare_graph(H1)
-#merge_graphs(H1,D)
-#Diman
-destroy_graph_manual(H1,path_to_real_distruption)
-#my_draw(H1,'Diman_optimal')
 
-my_draw(H1, 'really_destroyed')
+destroy_graph_manual(H,path_to_real_distruption)
+
+my_draw(H, 'really_destroyed')
 
 #green_edges=get_green_edges(temp_graph_supply_optimal)
 green_edges=deepcopy(copy_of_green_edges)
@@ -779,7 +773,7 @@ green_edges=deepcopy(copy_of_green_edges)
 
 #new_bet_dict=compute_my_betweeness_3(H, green_edges,distance_metric)
 #set_betwenness_from_dict(H,new_bet_dict)
-my_draw(H1,'7-destroyed_for_optimal')
+my_draw(H,'7-destroyed_for_optimal')
 #calcola recovery ottimo
 nodes_recovered_optimal=[]
 edges_recovered_optimal=[]
@@ -787,13 +781,13 @@ edges_recovered_optimal=[]
 start_time_optimal=time.time()
 
 #optimal classico
-nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H1,green_edges)
+nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
 num_rip_optimal_nodes=len(nodes_recovered_optimal)
 num_rip_optimal_edges=len(edges_recovered_optimal)
 print num_rip_optimal_nodes
 print num_rip_optimal_edges
 #ripristina e disegna
-recover(H1,nodes_recovered_optimal,edges_recovered_optimal)
+recover(H,nodes_recovered_optimal,edges_recovered_optimal)
 #set_betwenness_from_dict(H,old_bet_dict)
 #my_draw(H,'4-recovered_optimal_old_bet')
 #new_bet_dict=compute_my_betweeness_3(H, green_edges,distance_metric)
@@ -1313,7 +1307,7 @@ write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa
 
 """
 write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
-                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp,        #ISP
+                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed,        #ISP
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
                           num_rip_mult_nodes,num_rip_mult_edges,num_rip_truely_mult_nodes,num_rip_truely_mult_edges,       #Multicommodity generale
                           num_rip_mult_worst_nodes,num_rip_mult_worst_edges, #Multicommodity worst

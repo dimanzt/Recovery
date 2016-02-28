@@ -124,7 +124,7 @@ def my_draw(H,file_name):
 
     #print path
     graphDot.write(path+'Dot.dot')
-    #graphDot.write_png(file_name +'.png')
+    graphDot.write_png(file_name +'.png')
 
 
 def set_attrDot(elem,attr,value):
@@ -3285,7 +3285,7 @@ def count_occurance(elem, path):
     return count
 
 def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
-                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp,        #ISP
+                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed,      #ISP
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
                           num_rip_mult_nodes,num_rip_mult_edges,num_rip_truely_mult_nodes,num_rip_truely_mult_edges,       #Multicommodity generale
                           num_rip_mult_worst_nodes,num_rip_mult_worst_edges, #Multicommodity worst
@@ -3309,7 +3309,7 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
         if not os.path.exists(path_to_file_stat):
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
-            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tISP_Nodes\tISP_Edges\tTotal_ISP\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tMCG_Nodes\tMCG_Edges\tTotal_MCG\tMCW_Nodes\tMCW_Edges\tTotal_MCW\tMCB_Nodes\tMCB_Edges\tTotal_MCB\tSRT_Nodes\tSRT_Edges\tTotal_SRT\tRNK_Nodes\tRNK_Edges\tTotal_RNK\tALL_Nodes\tALL_Edges\tTotal_ALL\tTotal_DEM\tSRT_SATIS\t%_DEM_SAT\tRNK_N_COM\tRNK_E_COM\tTot_RNK_C\tRNK_N_NC\tRNK_E_NC\tTot_RNK_NC\tRNK_SATIS\t%_DEM_RNK\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\tFlag_MCG\t\tDirImages\n"
+            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tISP_Nodes\tISP_Edges\tTotal_ISP\tTruely_ISP_NODES\tTruely_ISP_EDGES\tTotal_truely_repaits\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tMCG_Nodes\tMCG_Edges\tTotal_MCG\tMCW_Nodes\tMCW_Edges\tTotal_MCW\tMCB_Nodes\tMCB_Edges\tTotal_MCB\tSRT_Nodes\tSRT_Edges\tTotal_SRT\tRNK_Nodes\tRNK_Edges\tTotal_RNK\tALL_Nodes\tALL_Edges\tTotal_ALL\tTotal_DEM\tSRT_SATIS\t%_DEM_SAT\tRNK_N_COM\tRNK_E_COM\tTot_RNK_C\tRNK_N_NC\tRNK_E_NC\tTot_RNK_NC\tRNK_SATIS\t%_DEM_RNK\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\tFlag_MCG\t\tDirImages\n"
             file.write(name_of_colunms)
             file.close
 
@@ -3329,6 +3329,7 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
 
         print 'tot_isp %d = %d + %d'%(tot_rip_isp, num_rip_isp_nodes,num_rip_isp_edges)
         print 'tot_isp_truely %d = %d + %d'%(tot_truely_rip_isp, nodes_truely_recovered_isp,edges_truely_recovered_isp)
+        print 'not_needed_repairs = %d' % num_not_needed
         print 'tot_opt %d = %d + %d'%(tot_rip_opt, num_rip_optimal_nodes,num_rip_optimal_edges)
         print 'tot_mcg %d = %d + %d'%(tot_rip_mcg, num_rip_mult_nodes,num_rip_mult_edges)
         print 'tot_mcg_truely %d = %d + %d'%(tot_truely_rip_mcg, num_rip_truely_mult_nodes,num_rip_truely_mult_edges)
@@ -3407,7 +3408,7 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
             sys.exit('Errore: Algoritmo Multicommodity Best ha fatto peggio del Multicommodity Worst!')
 
         file=open(path_to_file_stat,'a')
-        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_isp_nodes)+'\t\t'+str(num_rip_isp_edges)+'\t\t'+str(tot_rip_isp)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(num_rip_mult_nodes)+'\t\t'+str(num_rip_mult_edges)+'\t\t'+str(tot_rip_mcg)+'\t\t'+str(num_rip_mult_worst_nodes)+'\t\t'+str(num_rip_mult_worst_edges)+'\t\t'+str(tot_rip_mcw)+'\t\t'+str(num_rip_mult_best_nodes)+'\t\t'+str(num_rip_mult_best_edges)+'\t\t'+str(tot_rip_mcb)+'\t\t'+str(num_rip_shortest_nodes)+'\t\t'+str(num_rip_shortest_edges)+'\t\t'+str(tot_rip_srt)+'\t\t'+str(num_rip_ranked_nodes)+'\t\t'+str(num_rip_ranked_edges)+'\t\t'+str(tot_rip_rnk)+'\t\t'+str(num_rip_all_nodes)+'\t\t'+str(num_rip_all_edges)+'\t\t'+str(tot_rip_all)+'\t\t'+str(total_demand_of_graph)+'\t\t'+str(demand_satisfied)+'\t\t'+str(percent_of_demand)+'\t\t'+str(num_rip_ranked_comm_nodes)+'\t\t'+str(num_rip_ranked_comm_edges)+'\t\t'+str(tot_rip_rnk_com)+'\t\t'+str(num_rip_ranked_no_comm_nodes)+'\t\t'+str(num_rip_ranked_no_comm_edges)+'\t\t'+str(tot_rip_rnk_no_com)+'\t\t'+str(demand_satisfied_rnk)+'\t\t'+str(percent_of_demand_rnk)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+str(mcg_solution)+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
+        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_isp_nodes)+'\t\t'+str(num_rip_isp_edges)+'\t\t'+str(tot_rip_isp)+'\t\t'+str(nodes_truely_recovered_isp)+'\t\t'+str(edges_truely_recovered_isp)+'\t\t'+str(tot_truely_rip_isp)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(num_rip_mult_nodes)+'\t\t'+str(num_rip_mult_edges)+'\t\t'+str(tot_rip_mcg)+'\t\t'+str(num_rip_mult_worst_nodes)+'\t\t'+str(num_rip_mult_worst_edges)+'\t\t'+str(tot_rip_mcw)+'\t\t'+str(num_rip_mult_best_nodes)+'\t\t'+str(num_rip_mult_best_edges)+'\t\t'+str(tot_rip_mcb)+'\t\t'+str(num_rip_shortest_nodes)+'\t\t'+str(num_rip_shortest_edges)+'\t\t'+str(tot_rip_srt)+'\t\t'+str(num_rip_ranked_nodes)+'\t\t'+str(num_rip_ranked_edges)+'\t\t'+str(tot_rip_rnk)+'\t\t'+str(num_rip_all_nodes)+'\t\t'+str(num_rip_all_edges)+'\t\t'+str(tot_rip_all)+'\t\t'+str(total_demand_of_graph)+'\t\t'+str(demand_satisfied)+'\t\t'+str(percent_of_demand)+'\t\t'+str(num_rip_ranked_comm_nodes)+'\t\t'+str(num_rip_ranked_comm_edges)+'\t\t'+str(tot_rip_rnk_com)+'\t\t'+str(num_rip_ranked_no_comm_nodes)+'\t\t'+str(num_rip_ranked_no_comm_edges)+'\t\t'+str(tot_rip_rnk_no_com)+'\t\t'+str(demand_satisfied_rnk)+'\t\t'+str(percent_of_demand_rnk)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+str(mcg_solution)+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
         file.write(raw_line)
         file.close()
 
@@ -5416,6 +5417,8 @@ def split_by_capacity_path_and_ranking(H,counter_isp,distance_metric,nodes_recov
 #variante 5: lo split si fa al massimo della feasibility sul bc
 def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,nodes_recovered,type_of_bet,always_split):
 
+    needed_repair = False
+
     green_edges=get_green_edges(H)
     #print 'archi verdi'
     #print green_edges
@@ -5586,6 +5589,9 @@ def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,n
                                     nodes_recovered.append(id_bc)
                             couple_selected=(id_source,id_target,demand)
 
+                            if H.node[id_bc]['status']=='destroyed':
+                                needed_repair = True
+
                             # INIZIO MODIFICA NODI E ARCHI DEL GRAFO
 							#Diman Added to check the true status
 
@@ -5660,13 +5666,13 @@ def split_by_capacity_path_and_ranking_max_split(H,counter_isp,distance_metric,n
                             #hai trovato il best candidate e sei riuscito a fare split.Finisci
                             bc_found=True
                             flag_no_split=False
-                            return couple_selected,new_edges_added,flag_no_split,id_bc
+                            return couple_selected,new_edges_added,flag_no_split,id_bc,needed_repair
 
 
     #ho ciclato su tutti i bc e su tutti i suoi archi per ogni quantita possibile. Non ho travato il bc su cui fare lo split
     if flag_no_split==True and bc_found==False:
 
-        return None,None,flag_no_split,None
+        return None,None,flag_no_split,None,needed_repair
     else:
         print 'Flag no split %s'%(str(flag_no_split))
         print 'Bc Found %s'%(str(bc_found))
@@ -6406,13 +6412,7 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered):
                 key_to_recover=arc[2]
                 if H[source][target][key_to_recover]['true_status']=='destroyed' or H[source][target][key_to_recover]['status']=='destroyed':
                     H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')				
-                    #seamus add if for color true_status
-                    #if H[source][target][key_to_recover]['true_status'] == 'on':
-                    #    #H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
-					
-                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='on',true_status='on',labelfont='black',color='black',style='solid')
-                    #else:
-                    #    H.add_edge(source,target,key=key_to_recover, type='normal',status='repaired',true_status='on',labelfont='blue',color='blue',style='solid')
+            
                     recovered_flag=True
                     print 'Arco Ricoverato one hop: %d - %d'%(source,target)
                     edge=(source,target)
@@ -6422,22 +6422,7 @@ def recover_one_hop_edge_green(H,edges_recovered,nodes_recovered):
                         #aggiungi l'arco tra quelli da controllare per fare il pruning
                         if edge not in recovered_edge_one_hop:
                             recovered_edge_one_hop.append(edge)
-                        '''
-                        #controllo se i nodi sono da ripristinare
-                        if H.node[source]['status']=='destroyed':
-                            if source not in nodes_recovered:
-                                nodes_recovered.append(source)
-                                H.node[source]['status']='repaired'
-                                H.node[source]['color']='blue'
-                                H.node[source]['true_status']='on'
 
-                        if H.node[target]['status']=='destroyed':
-                            if target not in nodes_recovered:
-                                nodes_recovered.append(target)
-                                H.node[target]['status']='repaired'
-                                H.node[target]['color']='blue'
-                                H.node[target]['true_status']='on'
-                        '''
                     else:
                         sys.exit('Errore in recover_one_hop: arco gia riparato in precedenza!!')
                 else:
@@ -9574,6 +9559,7 @@ def init_owned_nodes(green_edges):
     return owned_nodes
 
 def resolve_owned_node_edges(H,G,owned_nodes, edges_recovered):
+    change = False
     for node in owned_nodes:
         edges = get_node_edges(H, node)
         for edge in edges:
@@ -9595,27 +9581,36 @@ def resolve_owned_node_edges(H,G,owned_nodes, edges_recovered):
                 if H[id_source][id_target][k]['true_status'] == 'on':
                     if G.has_edge(id_source,id_target):
                         if G[id_source][id_target][k]['status'] == 'repaired':
-                           continue
+                            continue
+                        before_color = H[id_source][id_target][k]['color']
                         G[id_source][id_target][k]['color'] = 'black'
                         G[id_source][id_target][k]['style'] = 'solid'
                         G[id_source][id_target][k]['status'] = 'on'
                         G[id_source][id_target][k]['true_status'] = 'on'
+                        if before_color != 'black':
+                            change = True
                     else:
                         G.add_edge(id_source,id_target,type='normal',status='on',true_status='on', capacity=cap,color='black',style='solid')
+                        change = True
                 if H[id_source][id_target][k]['true_status'] == 'destroyed':
                     if G.has_edge(id_source,id_target):
+                        before_color = H[id_source][id_target][k]['color']
                         G[id_source][id_target][k]['color'] = 'red'
                         G[id_source][id_target][k]['style'] = 'dashed'
                         G[id_source][id_target][k]['status'] = 'destroyed'
                         G[id_source][id_target][k]['true_status'] = 'destroyed'
+                        if before_color != 'red':
+                            change = True
                     else:
                         G.add_edge(id_source,id_target,type='normal',status='destroyed',true_status='destroyed',capacity=cap,color='red',style='dashed')
-
+                        change = True
+                
                    #status='on',labelfont='gray',color='gray',style='dashed'
 
-
+    return change
 
 def resolve_one_hop_nodes(H, G, owned_nodes):
+    change = False
     on_nodes = []
     destroyed_nodes = []
     for node in owned_nodes:
@@ -9628,6 +9623,7 @@ def resolve_one_hop_nodes(H, G, owned_nodes):
                 if G[id_source][id_target][k]['type'] == 'green':
                     continue
                 if G[id_source][id_target][k]['status'] == 'on' or G[id_source][id_target][k]['status'] == 'repaired':
+                    before_color = G.node[id_target]['color']
                     if G.node[id_target]['status']=='on':
                         if (G.node[id_target]['color'] == 'gray' or G.node[id_target]['color'] == 'red'):
                             G.node[id_target]['color'] = '""'
@@ -9649,7 +9645,9 @@ def resolve_one_hop_nodes(H, G, owned_nodes):
                             G.node[id_target]['color'] = 'red'
                             if (id_target not in owned_nodes) and (id_target not in destroyed_nodes):
                                 destroyed_nodes.append(id_target)
-    return on_nodes,destroyed_nodes
+                    if G.node[id_target]['color'] != before_color:
+                        change = True
+    return on_nodes,destroyed_nodes, change
 
 
 def discover_one_hop_nodes(H, G, owned_nodes):
@@ -9865,23 +9863,28 @@ def probe_network(H, G, nodes, edges_destroyed):
     
 
 def information_gain(H, G, owned_nodes, edges_recovered, k):
-
+    change = False
     if k == 0:
-        return
+        return change
     
-    resolve_owned_node_edges(H,G,owned_nodes, edges_recovered)
-    on_nodes,destroyed_nodes = resolve_one_hop_nodes(H, G,owned_nodes)
+    changed_edges = resolve_owned_node_edges(H,G,owned_nodes, edges_recovered)
+    on_nodes,destroyed_nodes, changed_nodes = resolve_one_hop_nodes(H, G,owned_nodes)
+    if changed_edges or changed_nodes:
+        change = True
+        
     if k == 1:
-        return
+        return change
     if k > 1:
         for x in range(k-1):
-
             on_nodes = probe_network(H, G, on_nodes, edges_recovered)
+            if on_nodes:
+                change=True
     else:
         on_nodes_last = []
         while (on_nodes != on_nodes_last):
             on_nodes_last = list(on_nodes)
             on_nodes = probe_network(H, G, on_nodes)
+    return change
 
 def find_green_edges(H):
     green_edges = []
@@ -10011,4 +10014,266 @@ def Discover_neighbors(H, G, probe_nodes, k, nodes_really_dest ,edges_really_des
     #        discovered_nodes = probe_network(H, G, discovered_nodes)
 	
 	
+#variante 5: lo split si fa al massimo della feasibility sul bc
+def split_random(H,counter_isp,distance_metric,nodes_recovered,type_of_bet,always_split):
+
+    green_edges=get_green_edges(H)
+    #print 'archi verdi'
+    #print green_edges
+    global betwenness_dict
+    global shortest_paths_for_bet
+    bc_found=False
+
+    array_nodes=H.nodes()
+    random.shuffle(array_nodes)
+    array_sorted_bcs = []
+    for node in array_nodes:
+        array_sorted_bcs.append((node, 0.0))
+
+    #lista di tutti i path in ordine di ranking dato dal min(cap_of_path,demand) /max_flow della coppia verde
+    ranked_paths_of_bc=[]
+
+    flag_no_split=True
+
+    for i in range(0,len(array_sorted_bcs),1):
+        if (bc_found==False):
+
+            id_bc=array_sorted_bcs[i][0]
+            print '----------------CANDIDATO BEST CANDIDATE: %d ----------------'%(id_bc)
+
+            residualGraph=nx.MultiGraph(H)
+            #calcola dizionario con chiavi i green edges e valori i path che hanno contribuito alla betweens del bc
+            shortest_pass_bc=compute_shortest_passing_bc(residualGraph,id_bc,green_edges)
+
+            ranked_paths_of_bc,flag_no_couple=compute_ranking_paths_of_bc(residualGraph,shortest_pass_bc)
+
+            if flag_no_couple == True:
+                #flag_no_split=True
+                print 'Candidato %d: non ha arco feasible da splittare'%(id_bc)
+            else:
+
+                for elem in range(0,len(ranked_paths_of_bc),1):
+                    if (bc_found==False):
+                        #tupla = ratio, path, demand_to_split_, edge
+                        tupla_selected=ranked_paths_of_bc[elem]
+
+                        id_source=tupla_selected[3][0]      #id_source_green
+                        id_target=tupla_selected[3][1]      #id_target_green
+                        demand=tupla_selected[2]            #domanda dell'arco verde
+                        ratio=tupla_selected[0]             #ratio
+                        path=tupla_selected[1]              #path associato al ratio demand/maxflow
+                        edge_split=(id_source,id_target,demand)
+
+                        print 'INIZIO SPLIT COPPIA: %d-%d-%d: %.2f '%(id_source,id_target,demand,ratio)
+
+                        ##shortest che hanno contribuito alla centralita del bc
+                        #print 'Shortest che passno per BC:'
+                        #print shortest_pass_bc
+
+                        """
+                        shortests_contribute_to_bc=shortest_pass_bc[edge_split]
+
+                        shortest_path=compute_shortest_from_set(residualGraph,shortests_contribute_to_bc,distance_metric)
+                        """
+
+                        temp_graph=nx.MultiGraph(residualGraph)
+                        couples_to_split=[(id_source,id_bc,0),(id_bc,id_target,0)]
+                        temp_green =deepcopy(green_edges)
+
+                        #calcola surplus del nodo
+                        surplus=0.0
+                        surplus=compute_surplus_of_node(residualGraph,id_bc)+0.0
+                        #fai la meta e prendi l'intero inferiore
+                        half_surplus=(surplus/2.0)
+                        #print 'upper buond surplus: %f'%half_surplus
+                        cut_condition_value=min(demand,half_surplus)
+                        #print 'al piu prendo :%f'%(cut_condition_value)
+
+                        max_value_to_split=find_max_value_to_split(temp_graph,temp_green,couples_to_split,edge_split,cut_condition_value)
+                        #sys.exit(0)
+                        #if max_value_to_split<cut_condition_value:
+                        #    print 'max value split - cut_condition value = %f -%f'%(max_value_to_split,cut_condition_value)
+                        #    sys.exit('Valore massimo splittabile diverso da cut condition')
+
+                        demand_to_assign=max_value_to_split
+
+                        """
+                        path_capacity=get_capacity_of_path(residualGraph,path)
+                        demand_assigned=0
+
+
+                        #calcola surplus del nodo
+                        surplus=0.0
+                        surplus=compute_surplus_of_node(residualGraph,id_bc)
+                        #fai la meta e prendi l'intero inferiore
+                        half_surplus=int(math.floor(surplus/2.0))
+
+                        if half_surplus>0:
+                            demand_to_assign=min(demand,path_capacity,half_surplus)
+                        else:
+                            demand_to_assign=min(demand,path_capacity)
+
+
+                        print demand_to_assign
+                        """
+
+                        quantity_to_split_flag=False
+                        quantity_to_split=demand_to_assign
+
+                        if quantity_to_split>0:
+
+
+                            #while(quantity_to_split_flag==False):
+
+                                    quantity_to_split_flag=True
+                                    demand_to_assign=quantity_to_split
+                                    print 'Provo Demand to assign %f'%(demand_to_assign)
+                                    if demand_to_assign>0:
+                                        #se la domanda da splittare e pari alla domanda totale allora faccio lo split totale dell'arco
+                                        if demand == demand_to_assign:
+                                            total_split=True
+                                        else:
+                                            #altrimenti faccio lo split pari alla path_capacity
+                                            total_split=False
+
+                                        demand_assigned=demand_to_assign
+
+                                        graph_temp=nx.MultiGraph(H)
+                                        print 'Pre simulate split provando con %f di quantita di flusso'%(demand_assigned)
+                                        result_check,graph_splitted,temp_green_edges_after_split=simulate_split(graph_temp,id_bc,id_source,id_target,total_split,demand,demand_assigned,counter_isp)
+                                        if result_check==True:
+                                            print 'Cut condition ok'
+                                            result_routability_check=check_routability(graph_splitted,temp_green_edges_after_split)
+                                        else:
+                                            print 'Cut condition non soddisfatta'
+                                            sys.exit('Impossibile errore in split, cut condition non soddisfatta')
+                                            result_routability_check=False
+                                            quantity_to_split_flag=True
+
+                                        if result_routability_check==True:
+                                            quantity_to_split_flag=True
+                                        else:
+                                            print 'Routability False, devo cambiare quantita'
+                                            sys.exit('Impossibile errore in split, routability check non soddisfatta')
+                                            #quantity_to_split=quantity_to_split-1
+
+                                            if quantity_to_split<=0:
+                                                quantity_to_split_flag=False
+                                                quantity_to_split=0
+                                                print 'Non posso piu diminuire la quantita da splittare. Cambio Bc'
+
+                                    elif demand_to_assign==0:
+                                            quantity_to_split_flag=True
+                                            result_routability_check=False
+                                    else:
+                                        sys.exit('Errore in splity by capacity: demand_to_assing <0')
+
+                        else:
+                            result_routability_check=False
+
+                        #sys.exit('stop')
+
+                        if result_routability_check==True:
+                            #modifica grafo originale con lo split degli archi.
+                            #aggiungi bc come nodo verde.
+
+                            bc_found=True
+                            quantity_to_split_flag=True
+                            # stefano suggest
+							#Diman Changed this to always add a node to the monitoring nodes: Stefano suggests
+                            if always_split!=1:# and H.node[id_bc]['color']!='""':
+                                if H.node[id_bc]['status']=='destroyed':# and H.node[id_bc]['color']!='""':
+                                    if id_bc not in nodes_recovered:
+                                        nodes_recovered.append(id_bc)
+                            if always_split==1:# and H.node[id_bc]['color']!='""':										
+                                if id_bc not in nodes_recovered:
+                                    nodes_recovered.append(id_bc)
+                            couple_selected=(id_source,id_target,demand)
+
+                            # INIZIO MODIFICA NODI E ARCHI DEL GRAFO
+							#Diman Added to check the true status
+
+                            H.node[id_bc]['type']='green'
+                            if H.node[id_bc]['true_status']=='destroyed':
+                                H.node[id_bc]['status']='repaired'
+                                H.node[id_bc]['color']='blue'
+                                H.node[id_bc]['true_status']='on'
+                            elif H.node[id_bc]['true_status']=='on':
+                                H.node[id_bc]['status']='on'
+                                H.node[id_bc]['color']='""'								
+                            else:
+                                H.node[id_bc]['color']='green'
+
+                            #remove green edge between original couple
+                            keydict=H[id_source][id_target]
+                            #print keydict
+                            for k in keydict:
+                                if H.edge[id_source][id_target][k]['type']=='green':
+                                    key_to_remove=k
+                            """
+                            if flag_half_split==True:
+                                if demand==1:
+                                    if demand_assigned==0.5:
+                                        if (demand_assigned*2)==demand:
+                                            total_split=True
+                            """
+
+                            if total_split==True:
+                                H.remove_edge(id_source,id_target,key=key_to_remove)
+                                #add two new green edge source,bc and bc,target
+
+                            else:
+                                H.add_edge(id_source, id_target, key=key_to_remove, type='green', demand=(demand-demand_assigned), color='green',style='bold')
+
+                            #splitta l'arco in due sul bc
+                            new_edges_added=[]
+                            split_edge(H,id_source,id_bc,demand_assigned)
+                            edge_1=(id_source,id_bc,demand_assigned)
+                            new_edges_added.append(edge_1)
+                            split_edge(H,id_bc,id_target,demand_assigned)
+                            edge_2=(id_bc,id_target,demand_assigned)
+                            new_edges_added.append(edge_2)
+
+                            #CALCOLA I PATH DELLE NUOVE COPPIE DI ARCHI PRENDENDOLI DALLA COPPIA ORIGINALE
+                            #compute_paths_from_split(id_source,id_target,id_bc)
+                            """
+                            if total_split==True:
+                                green_arc=(id_source,id_target)
+                                green_arc_reverse=(id_target,id_source)
+                                if green_arc in all_graph_paths:
+                                    del all_graph_paths[green_arc]
+                                elif green_arc_reverse in all_graph_paths:
+                                    del all_graph_paths[green_arc_reverse]
+                                else:
+                                    sys.exit('Errore in spit path and ranking: domanda da rimuovere non presente in all_graph_paths')
+                            """
+                            #print 'Dopo lo split di %d-%d'%(id_source,id_target)
+                            #print all_graph_paths
+                            #for edge in H.edges(data=True):
+                            #    print edge
+
+                            new_green_edges=get_green_edges(H)
+                            #print 'pre_compute_my_betw'
+                            #new_bet_dict=compute_my_betweeness_3(H,new_green_edges,distance_metric)
+                            #print new_bet_dict
+                            #set_betwenness_from_dict(H,new_bet_dict)
+                            q,w,e=select_betweeness(H,new_green_edges,distance_metric,type_of_bet)
+                            
+                            my_draw(H,'5-isp-%d-split'%(counter_isp))
+
+                            #hai trovato il best candidate e sei riuscito a fare split.Finisci
+                            bc_found=True
+                            flag_no_split=False
+                            return couple_selected,new_edges_added,flag_no_split,id_bc
+
+
+    #ho ciclato su tutti i bc e su tutti i suoi archi per ogni quantita possibile. Non ho travato il bc su cui fare lo split
+    if flag_no_split==True and bc_found==False:
+
+        return None,None,flag_no_split,None
+    else:
+        print 'Flag no split %s'%(str(flag_no_split))
+        print 'Bc Found %s'%(str(bc_found))
+
+        sys.exit('Errore in split: ho trovato il bc ma flag_no_split= True o viceversa')
 
