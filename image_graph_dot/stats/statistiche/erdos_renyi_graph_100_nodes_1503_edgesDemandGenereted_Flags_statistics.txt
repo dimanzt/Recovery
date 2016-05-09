@@ -1,0 +1,12 @@
+
+
+
+Topologia: erdos_renyi_graph_100_nodes_1503_edgesDemandGenereted
+Seed: 220
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(74, 78, 2) - (22, 23, 2) - (24, 26, 2) - (28, 29, 2) - (41, 45, 2) - (52, 53, 2) - 
+Max flows su grafo supply per ogni coppia: 
+(41, 45): 25000.0 - (74, 78): 27000.0 - (22, 23): 24000.0 - (52, 53): 26000.0 - (28, 29): 34000.0 - (24, 26): 24000.0 - 
+Domanda Finale assegnata al grafo: 
+(74, 78, 1) - (22, 23, 1) - (24, 26, 1) - (28, 29, 1) - (41, 45, 1) - (52, 53, 1) - 

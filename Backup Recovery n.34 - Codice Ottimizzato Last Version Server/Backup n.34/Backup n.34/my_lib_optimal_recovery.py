@@ -282,6 +282,13 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
 
     m.update()
 
+    #m.update()
+    #m.setParam('MIPGap',0.5)
+    #m.setParam('MIPGAPABS',2) 
+    #m.setParam('ITERATION_LIMIT',10)
+    #m.setParam('TimeLimit', 100)
+    #m.update()
+
     #print 'modello costruito'
     #for v in m.getVars():
     #    print v.varName

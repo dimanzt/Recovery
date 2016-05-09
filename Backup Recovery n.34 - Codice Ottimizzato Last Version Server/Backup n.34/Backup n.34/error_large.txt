@@ -1,0 +1,1678 @@
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site-packages/pydot/__init__.py", line 28, in <module>
+    import subprocess
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/subprocess.py", line 387, in <module>
+    """
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 49, in <module>
+    import posixpath as path
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/posixpath.py", line 17, in <module>
+    import warnings
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/warnings.py", line 1, in <module>
+    """Python part of the warnings subsystem."""
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/encodings/__init__.py", line 29, in <module>
+    """#"
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site-packages/pydot/__init__.py", line 28, in <module>
+    import subprocess
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/subprocess.py", line 430, in <module>
+    import pickle
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/pickle.py", line 165, in <module>
+    __all__.extend([x for x in dir() if re.match("[A-Z][A-Z0-9_]+$",x)])
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 141, in match
+    return _compile(pattern, flags).match(string)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 249, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 576, in compile
+    code = _code(p, flags)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 558, in _code
+    _compile_info(code, p, flags)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 536, in _compile_info
+    _compile_charset(charset, flags, code)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 232, in _compile_charset
+    flags & SRE_FLAG_UNICODE):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 274, in _optimize_charset
+    r = range(av[0], av[1]+1)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 539, in main
+    execsitecustomize()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 498, in execsitecustomize
+    import sitecustomize
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/encodings/__init__.py", line 31, in <module>
+    import codecs
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/codecs.py", line 8, in <module>
+    """#"
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "recoverySeamus.py", line 2, in <module>
+    import pydot # import pydot or you're not going to get anywhere my friend :D
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/encodings/__init__.py", line 32, in <module>
+    from encodings import aliases
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/encodings/aliases.py", line 17, in <module>
+    """
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site-packages/matplotlib/_pylab_helpers.py", line 96, in destroy_all
+    gc.collect(1)
+KeyboardInterrupt
+Error in sys.exitfunc:
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site-packages/matplotlib/_pylab_helpers.py", line 96, in destroy_all
+    gc.collect(1)
+KeyboardInterrupt
+equence):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 87, in __new__
+    cls = super(ABCMeta, mcls).__new__(mcls, name, bases, namespace)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 49, in <module>
+    import posixpath as path
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/posixpath.py", line 17, in <module>
+    import warnings
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/warnings.py", line 323, in <module>
+    class catch_warnings(object):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 139, in <module>
+    class Set(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 87, in __new__
+    cls = super(ABCMeta, mcls).__new__(mcls, name, bases, namespace)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 49, in <module>
+    import posixpath as path
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/posixpath.py", line 17, in <module>
+    import warnings
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/warnings.py", line 1, in <module>
+    """Python part of the warnings subsystem."""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 640, in <module>
+    class MutableSequence(Sequence):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 653, in MutableSequence
+    @abstractmethod
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 64, in <module>
+    import traceback
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/traceback.py", line 1, in <module>
+    """Extract, format and print information about Python stack traces."""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 12, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 64, in <module>
+    import traceback
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/traceback.py", line 1, in <module>
+    """Extract, format and print information about Python stack traces."""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 55, in <module>
+    class Iterable:
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 101, in __new__
+    cls._abc_negative_cache = WeakSet()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 37, in __init__
+    self.data = set()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 49, in <module>
+    import posixpath as path
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/posixpath.py", line 17, in <module>
+    import warnings
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/warnings.py", line 323, in <module>
+    class catch_warnings(object):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 64, in <module>
+    import traceback
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/traceback.py", line 12, in <module>
+    def _print(file, str='', terminator='\n'):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 590, in <module>
+    class Sequence(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 101, in __new__
+    cls._abc_negative_cache = WeakSet()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 37, in __init__
+    self.data = set()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 11, in <module>
+    from abc import ABCMeta, abstractmethod
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 8, in <module>
+    from _weakrefset import WeakSet
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 10, in <module>
+    class _IterationGuard(object):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 822, in <module>
+    def expand_template(template, match):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 121, in <module>
+    class Callable:
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 87, in __new__
+    cls = super(ABCMeta, mcls).__new__(mcls, name, bases, namespace)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 472, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 356, in _init_posix
+    from _sysconfigdata import build_time_vars
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_sysconfigdata.py", line 2, in <module>
+    build_time_vars = {'AC_APPLE_UNIVERSAL_BUILD': 0,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 365, in <module>
+    class Mapping(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 90, in __new__
+    for name, value in namespace.items()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 91, in <genexpr>
+    if getattr(value, "__isabstractmethod__", False))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 531, in main
+    known_paths = addsitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 313, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 184, in addsitedir
+    names = os.listdir(sitedir)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 9, in <module>
+    """
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 472, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 356, in _init_posix
+    from _sysconfigdata import build_time_vars
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_sysconfigdata.py", line 2, in <module>
+    build_time_vars = {'AC_APPLE_UNIVERSAL_BUILD': 0,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 590, in <module>
+    class Sequence(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 101, in __new__
+    cls._abc_negative_cache = WeakSet()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 37, in __init__
+    self.data = set()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 226, in <module>
+    _pattern_type = type(sre_compile.compile("", 0))
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 572, in compile
+    p = sre_parse.parse(p, flags)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 716, in parse
+    p = _parse_sub(source, pattern, 0)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 590, in <module>
+    class Sequence(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 101, in __new__
+    cls._abc_negative_cache = WeakSet()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 37, in __init__
+    self.data = set()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 472, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 356, in _init_posix
+    from _sysconfigdata import build_time_vars
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_sysconfigdata.py", line 2, in <module>
+    build_time_vars = {'AC_APPLE_UNIVERSAL_BUILD': 0,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 584, in <module>
+    MutableMapping.register(dict)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 109, in register
+    if issubclass(subclass, cls):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 174, in __subclasscheck__
+    for rcls in cls._abc_registry:
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 65, in __iter__
+    yield item
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 32, in __exit__
+    w._commit_removals()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 17, in <module>
+    from sre_constants import *
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_constants.py", line 27, in <module>
+    class error(Exception):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 365, in <module>
+    class Mapping(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 95, in __new__
+    if getattr(value, "__isabstractmethod__", False):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 17, in <module>
+    from sre_constants import *
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 230, in getuserbase
+    from sysconfig import get_config_var
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 5, in <module>
+    import os
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 493, in <module>
+    class MutableMapping(Mapping):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 90, in __new__
+    for name, value in namespace.items()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 17, in <module>
+    from sre_constants import *
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_constants.py", line 12, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 822, in <module>
+    def expand_template(template, match):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 491, in <module>
+    ValuesView.register(type({}.viewvalues()))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 108, in <module>
+    import _locale
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 443, in <module>
+    class KeysView(MappingView, Set):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 87, in __new__
+    cls = super(ABCMeta, mcls).__new__(mcls, name, bases, namespace)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 17, in <module>
+    from sre_constants import *
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_constants.py", line 27, in <module>
+    class error(Exception):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 108, in <module>
+    import _locale
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 91, in <module>
+    class Sized:
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 87, in __new__
+    cls = super(ABCMeta, mcls).__new__(mcls, name, bases, namespace)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 472, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 356, in _init_posix
+    from _sysconfigdata import build_time_vars
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_sysconfigdata.py", line 2, in <module>
+    build_time_vars = {'AC_APPLE_UNIVERSAL_BUILD': 0,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 717, in <module>
+    import copy_reg as _copy_reg
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/copy_reg.py", line 5, in <module>
+    """
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 472, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 356, in _init_posix
+    from _sysconfigdata import build_time_vars
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_sysconfigdata.py", line 174, in <module>
+    'HAVE_INITGROUPS': 1,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 584, in <module>
+    MutableMapping.register(dict)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 109, in register
+    if issubclass(subclass, cls):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 158, in __subclasscheck__
+    elif subclass in cls._abc_negative_cache:
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 72, in __contains__
+    wr = ref(item)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 30, in <module>
+    r"\a": (LITERAL, ord("\a")),
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 102, in <module>
+    """
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 14, in <module>
+    import _sre, sys
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 139, in <module>
+    class Set(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 139, in Set
+    class Set(Sized, Iterable, Container):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 62, in <module>
+    for t in _equivalences for i in t}
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 62, in <dictcomp>
+    for t in _equivalences for i in t}
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 102, in <module>
+    """
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 16, in <module>
+    from sre_constants import *
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 106, in <module>
+    class Container:
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 97, in __new__
+    cls.__abstractmethods__ = frozenset(abstracts)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 472, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 357, in _init_posix
+    vars.update(build_time_vars)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 70, in <module>
+    Iterable.register(str)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 109, in register
+    if issubclass(subclass, cls):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 161, in __subclasscheck__
+    ok = cls.__subclasshook__(subclass)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 66, in __subclasshook__
+    if _hasattr(C, "__iter__"):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 26, in _hasattr
+    return any(attr in B.__dict__ for B in C.__mro__)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 26, in <genexpr>
+    return any(attr in B.__dict__ for B in C.__mro__)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 590, in <module>
+    class Sequence(Sized, Iterable, Container):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 101, in __new__
+    cls._abc_negative_cache = WeakSet()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_weakrefset.py", line 37, in __init__
+    self.data = set()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 108, in <module>
+    import _locale
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 456, in <module>
+    KeysView.register(type({}.viewkeys()))
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 109, in register
+    if issubclass(subclass, cls):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 170, in __subclasscheck__
+    if cls in getattr(subclass, '__mro__', ()):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 822, in <module>
+    def expand_template(template, match):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 822, in <module>
+    def expand_template(template, match):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 443, in <module>
+    class KeysView(MappingView, Set):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 87, in __new__
+    cls = super(ABCMeta, mcls).__new__(mcls, name, bases, namespace)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 634, in <module>
+    Sequence.register(tuple)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 107, in register
+    if not isinstance(subclass, (type, types.ClassType)):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 731, in <module>
+    def _make_statvfs_result(tup, dict):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 17, in <module>
+    from sre_constants import *
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_constants.py", line 12, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 17, in <module>
+    from sre_constants import *
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_constants.py", line 12, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 431, in <module>
+    class MappingView(Sized):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 100, in __new__
+    cls._abc_cache = WeakSet()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 62, in <module>
+    for t in _equivalences for i in t}
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 62, in <dictcomp>
+    for t in _equivalences for i in t}
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 61, in <genexpr>
+    _ignorecase_fixes = {i: tuple(j for j in t if i != j)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 584, in <module>
+    MutableMapping.register(dict)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 117, in register
+    ABCMeta._abc_invalidation_counter += 1  # Invalidate negative cache
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 12, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 548, in <module>
+    main()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 530, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 266, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 241, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 231, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 520, in get_config_var
+    return get_config_vars().get(name)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sysconfig.py", line 453, in get_config_vars
+    import re
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_compile.py", line 15, in <module>
+    import sre_parse
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/sre_parse.py", line 11, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site.py", line 62, in <module>
+    import os
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/os.py", line 400, in <module>
+    import UserDict
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/UserDict.py", line 116, in <module>
+    import _abcoll
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/_abcoll.py", line 493, in <module>
+    class MutableMapping(Mapping):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/abc.py", line 87, in __new__
+    cls = super(ABCMeta, mcls).__new__(mcls, name, bases, namespace)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site-packages/matplotlib/_pylab_helpers.py", line 96, in destroy_all
+    gc.collect(1)
+KeyboardInterrupt
+Error in sys.exitfunc:
+Traceback (most recent call last):
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/opt/Anaconda2-python-2.5.0/lib/python2.7/site-packages/matplotlib/_pylab_helpers.py", line 96, in destroy_all
+    gc.collect(1)
+KeyboardInterrupt

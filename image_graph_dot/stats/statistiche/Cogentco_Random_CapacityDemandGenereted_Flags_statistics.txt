@@ -1,0 +1,732 @@
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(64, 176, 16) - (2, 180, 18) - (4, 102, 18) - (14, 41, 18) - (3, 101, 17) - (26, 119, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(64, 176): 64.0 - (4, 102): 48.0 - (26, 119): 58.0 - (14, 41): 46.0 - (2, 180): 23.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(64, 176, 3) - (2, 180, 3) - (4, 102, 3) - (14, 41, 3) - (3, 101, 3) - (26, 119, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 102, 18) - (9, 103, 20) - (17, 58, 18) - (46, 128, 15) - (2, 180, 18) - (67, 98, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(67, 98): 57.0 - (46, 128): 62.0 - (17, 58): 48.0 - (9, 103): 55.0 - (2, 180): 23.0 - (4, 102): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 102, 3) - (9, 103, 3) - (17, 58, 3) - (46, 128, 3) - (2, 180, 3) - (67, 98, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(67, 98, 16) - (2, 180, 18) - (17, 58, 18) - (1, 126, 23) - (4, 102, 18) - (64, 176, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(67, 98): 57.0 - (64, 176): 64.0 - (4, 102): 48.0 - (17, 58): 48.0 - (1, 126): 27.0 - (2, 180): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(67, 98, 3) - (2, 180, 3) - (17, 58, 3) - (1, 126, 3) - (4, 102, 3) - (64, 176, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(21, 106, 18) - (13, 189, 17) - (52, 127, 18) - (54, 107, 17) - (26, 119, 17) - (55, 130, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 119): 58.0 - (21, 106): 58.0 - (13, 189): 35.0 - (54, 107): 55.0 - (52, 127): 53.0 - (55, 130): 54.0 - 
+Domanda Finale assegnata al grafo: 
+(21, 106, 3) - (13, 189, 3) - (52, 127, 3) - (54, 107, 3) - (26, 119, 3) - (55, 130, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 124, 20) - (24, 115, 19) - (9, 103, 20) - (54, 107, 17) - (6, 104, 18) - (15, 22, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(24, 115): 21.0 - (6, 104): 48.0 - (8, 124): 30.0 - (54, 107): 55.0 - (15, 22): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 124, 3) - (24, 115, 3) - (9, 103, 3) - (54, 107, 3) - (6, 104, 3) - (15, 22, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 130, 16) - (2, 180, 18) - (63, 175, 16) - (68, 139, 14) - (19, 118, 16) - (10, 182, 19) - 
+Max flows su grafo supply per ogni coppia: 
+(55, 130): 54.0 - (19, 118): 49.0 - (10, 182): 35.0 - (2, 180): 23.0 - (68, 139): 48.0 - (63, 175): 64.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 130, 3) - (2, 180, 3) - (63, 175, 3) - (68, 139, 3) - (19, 118, 3) - (10, 182, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 57, 17) - (47, 105, 15) - (44, 122, 17) - (62, 136, 17) - (5, 123, 20) - (27, 120, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(27, 120): 21.0 - (5, 123): 27.0 - (16, 57): 41.0 - (44, 122): 30.0 - (47, 105): 62.0 - (62, 136): 34.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 57, 3) - (47, 105, 3) - (44, 122, 3) - (62, 136, 3) - (5, 123, 3) - (27, 120, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(52, 127, 18) - (45, 61, 15) - (19, 118, 16) - (8, 124, 20) - (46, 128, 15) - (63, 175, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(46, 128): 62.0 - (19, 118): 49.0 - (8, 124): 30.0 - (52, 127): 53.0 - (63, 175): 64.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(52, 127, 3) - (45, 61, 3) - (19, 118, 3) - (8, 124, 3) - (46, 128, 3) - (63, 175, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(39, 116, 14) - (29, 192, 16) - (24, 115, 19) - (2, 180, 18) - (15, 22, 17) - (68, 139, 14) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (68, 139): 48.0 - (15, 22): 48.0 - (29, 192): 24.0 - (2, 180): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(39, 116, 3) - (29, 192, 3) - (24, 115, 3) - (2, 180, 3) - (15, 22, 3) - (68, 139, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(26, 119, 17) - (2, 180, 18) - (44, 122, 17) - (45, 61, 15) - (46, 128, 15) - (47, 105, 15) - 
+Max flows su grafo supply per ogni coppia: 
+(46, 128): 62.0 - (47, 105): 62.0 - (26, 119): 58.0 - (44, 122): 30.0 - (2, 180): 23.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(26, 119, 3) - (2, 180, 3) - (44, 122, 3) - (45, 61, 3) - (46, 128, 3) - (47, 105, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(64, 176, 16) - (2, 180, 18) - (4, 102, 18) - (14, 41, 18) - (3, 101, 17) - (26, 119, 17) - (63, 175, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(63, 175): 64.0 - (64, 176): 64.0 - (4, 102): 48.0 - (26, 119): 58.0 - (14, 41): 46.0 - (2, 180): 23.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(64, 176, 3) - (2, 180, 3) - (4, 102, 3) - (14, 41, 3) - (3, 101, 3) - (26, 119, 3) - (63, 175, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 102, 18) - (9, 103, 20) - (17, 58, 18) - (46, 128, 15) - (2, 180, 18) - (67, 98, 16) - (52, 127, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(67, 98): 57.0 - (46, 128): 62.0 - (17, 58): 48.0 - (52, 127): 53.0 - (9, 103): 55.0 - (2, 180): 23.0 - (4, 102): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 102, 3) - (9, 103, 3) - (17, 58, 3) - (46, 128, 3) - (2, 180, 3) - (67, 98, 3) - (52, 127, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(67, 98, 16) - (2, 180, 18) - (17, 58, 18) - (1, 126, 23) - (4, 102, 18) - (64, 176, 16) - (15, 22, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(67, 98): 57.0 - (64, 176): 64.0 - (4, 102): 48.0 - (17, 58): 48.0 - (1, 126): 27.0 - (2, 180): 23.0 - (15, 22): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(67, 98, 3) - (2, 180, 3) - (17, 58, 3) - (1, 126, 3) - (4, 102, 3) - (64, 176, 3) - (15, 22, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(21, 106, 18) - (13, 189, 17) - (52, 127, 18) - (54, 107, 17) - (26, 119, 17) - (55, 130, 16) - (45, 61, 15) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 119): 58.0 - (21, 106): 58.0 - (13, 189): 35.0 - (54, 107): 55.0 - (52, 127): 53.0 - (55, 130): 54.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(21, 106, 3) - (13, 189, 3) - (52, 127, 3) - (54, 107, 3) - (26, 119, 3) - (55, 130, 3) - (45, 61, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 124, 20) - (24, 115, 19) - (9, 103, 20) - (54, 107, 17) - (6, 104, 18) - (15, 22, 17) - (68, 139, 14) - 
+Max flows su grafo supply per ogni coppia: 
+(24, 115): 21.0 - (6, 104): 48.0 - (8, 124): 30.0 - (54, 107): 55.0 - (15, 22): 48.0 - (68, 139): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 124, 3) - (24, 115, 3) - (9, 103, 3) - (54, 107, 3) - (6, 104, 3) - (15, 22, 3) - (68, 139, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 130, 16) - (2, 180, 18) - (63, 175, 16) - (68, 139, 14) - (19, 118, 16) - (10, 182, 19) - (30, 40, 14) - 
+Max flows su grafo supply per ogni coppia: 
+(55, 130): 54.0 - (19, 118): 49.0 - (30, 40): 46.0 - (10, 182): 35.0 - (2, 180): 23.0 - (68, 139): 48.0 - (63, 175): 64.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 130, 3) - (2, 180, 3) - (63, 175, 3) - (68, 139, 3) - (19, 118, 3) - (10, 182, 3) - (30, 40, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 57, 17) - (47, 105, 15) - (44, 122, 17) - (62, 136, 17) - (5, 123, 20) - (27, 120, 18) - (31, 43, 13) - 
+Max flows su grafo supply per ogni coppia: 
+(27, 120): 21.0 - (31, 43): 46.0 - (5, 123): 27.0 - (16, 57): 41.0 - (44, 122): 30.0 - (47, 105): 62.0 - (62, 136): 34.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 57, 3) - (47, 105, 3) - (44, 122, 3) - (62, 136, 3) - (5, 123, 3) - (27, 120, 3) - (31, 43, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(52, 127, 18) - (45, 61, 15) - (19, 118, 16) - (8, 124, 20) - (46, 128, 15) - (63, 175, 16) - (66, 193, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(46, 128): 62.0 - (19, 118): 49.0 - (8, 124): 30.0 - (52, 127): 53.0 - (63, 175): 64.0 - (66, 193): 40.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(52, 127, 3) - (45, 61, 3) - (19, 118, 3) - (8, 124, 3) - (46, 128, 3) - (63, 175, 3) - (66, 193, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(39, 116, 14) - (29, 192, 16) - (24, 115, 19) - (2, 180, 18) - (15, 22, 17) - (68, 139, 14) - (19, 118, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (68, 139): 48.0 - (19, 118): 49.0 - (15, 22): 48.0 - (29, 192): 24.0 - (2, 180): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(39, 116, 3) - (29, 192, 3) - (24, 115, 3) - (2, 180, 3) - (15, 22, 3) - (68, 139, 3) - (19, 118, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(26, 119, 17) - (2, 180, 18) - (44, 122, 17) - (45, 61, 15) - (46, 128, 15) - (47, 105, 15) - (65, 190, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(46, 128): 62.0 - (47, 105): 62.0 - (26, 119): 58.0 - (44, 122): 30.0 - (65, 190): 48.0 - (2, 180): 23.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(26, 119, 3) - (2, 180, 3) - (44, 122, 3) - (45, 61, 3) - (46, 128, 3) - (47, 105, 3) - (65, 190, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(64, 176, 16) - (2, 180, 18) - (4, 102, 18) - (14, 41, 18) - (3, 101, 17) - (26, 119, 17) - (63, 175, 16) - (24, 115, 19) - 
+Max flows su grafo supply per ogni coppia: 
+(63, 175): 64.0 - (24, 115): 21.0 - (64, 176): 64.0 - (4, 102): 48.0 - (26, 119): 58.0 - (14, 41): 46.0 - (2, 180): 23.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(64, 176, 3) - (2, 180, 3) - (4, 102, 3) - (14, 41, 3) - (3, 101, 3) - (26, 119, 3) - (63, 175, 3) - (24, 115, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 102, 18) - (9, 103, 20) - (17, 58, 18) - (46, 128, 15) - (2, 180, 18) - (67, 98, 16) - (52, 127, 18) - (16, 57, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 57): 41.0 - (67, 98): 57.0 - (46, 128): 62.0 - (17, 58): 48.0 - (52, 127): 53.0 - (9, 103): 55.0 - (2, 180): 23.0 - (4, 102): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 102, 3) - (9, 103, 3) - (17, 58, 3) - (46, 128, 3) - (2, 180, 3) - (67, 98, 3) - (52, 127, 3) - (16, 57, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(67, 98, 16) - (2, 180, 18) - (17, 58, 18) - (1, 126, 23) - (4, 102, 18) - (64, 176, 16) - (15, 22, 17) - (9, 103, 20) - 
+Max flows su grafo supply per ogni coppia: 
+(67, 98): 57.0 - (64, 176): 64.0 - (4, 102): 48.0 - (17, 58): 48.0 - (1, 126): 27.0 - (2, 180): 23.0 - (15, 22): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(67, 98, 3) - (2, 180, 3) - (17, 58, 3) - (1, 126, 3) - (4, 102, 3) - (64, 176, 3) - (15, 22, 3) - (9, 103, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(21, 106, 18) - (13, 189, 17) - (52, 127, 18) - (54, 107, 17) - (26, 119, 17) - (55, 130, 16) - (45, 61, 15) - (25, 121, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 119): 58.0 - (21, 106): 58.0 - (13, 189): 35.0 - (54, 107): 55.0 - (52, 127): 53.0 - (25, 121): 30.0 - (55, 130): 54.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(21, 106, 3) - (13, 189, 3) - (52, 127, 3) - (54, 107, 3) - (26, 119, 3) - (55, 130, 3) - (45, 61, 3) - (25, 121, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 124, 20) - (24, 115, 19) - (9, 103, 20) - (54, 107, 17) - (6, 104, 18) - (15, 22, 17) - (68, 139, 14) - (44, 122, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(24, 115): 21.0 - (6, 104): 48.0 - (8, 124): 30.0 - (54, 107): 55.0 - (44, 122): 30.0 - (15, 22): 48.0 - (68, 139): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 124, 3) - (24, 115, 3) - (9, 103, 3) - (54, 107, 3) - (6, 104, 3) - (15, 22, 3) - (68, 139, 3) - (44, 122, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 130, 16) - (2, 180, 18) - (63, 175, 16) - (68, 139, 14) - (19, 118, 16) - (10, 182, 19) - (30, 40, 14) - (64, 176, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(64, 176): 64.0 - (55, 130): 54.0 - (19, 118): 49.0 - (30, 40): 46.0 - (10, 182): 35.0 - (2, 180): 23.0 - (68, 139): 48.0 - (63, 175): 64.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 130, 3) - (2, 180, 3) - (63, 175, 3) - (68, 139, 3) - (19, 118, 3) - (10, 182, 3) - (30, 40, 3) - (64, 176, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 57, 17) - (47, 105, 15) - (44, 122, 17) - (62, 136, 17) - (5, 123, 20) - (27, 120, 18) - (31, 43, 13) - (28, 179, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(27, 120): 21.0 - (31, 43): 46.0 - (5, 123): 27.0 - (16, 57): 41.0 - (44, 122): 30.0 - (47, 105): 62.0 - (62, 136): 34.0 - (28, 179): 58.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 57, 3) - (47, 105, 3) - (44, 122, 3) - (62, 136, 3) - (5, 123, 3) - (27, 120, 3) - (31, 43, 3) - (28, 179, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(52, 127, 18) - (45, 61, 15) - (19, 118, 16) - (8, 124, 20) - (46, 128, 15) - (63, 175, 16) - (66, 193, 18) - (64, 176, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(64, 176): 64.0 - (46, 128): 62.0 - (19, 118): 49.0 - (8, 124): 30.0 - (52, 127): 53.0 - (63, 175): 64.0 - (66, 193): 40.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(52, 127, 3) - (45, 61, 3) - (19, 118, 3) - (8, 124, 3) - (46, 128, 3) - (63, 175, 3) - (66, 193, 3) - (64, 176, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(39, 116, 14) - (29, 192, 16) - (24, 115, 19) - (2, 180, 18) - (15, 22, 17) - (68, 139, 14) - (19, 118, 16) - (3, 101, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (68, 139): 48.0 - (19, 118): 49.0 - (3, 101): 48.0 - (15, 22): 48.0 - (29, 192): 24.0 - (2, 180): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(39, 116, 3) - (29, 192, 3) - (24, 115, 3) - (2, 180, 3) - (15, 22, 3) - (68, 139, 3) - (19, 118, 3) - (3, 101, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(26, 119, 17) - (2, 180, 18) - (44, 122, 17) - (45, 61, 15) - (46, 128, 15) - (47, 105, 15) - (65, 190, 17) - (68, 139, 14) - 
+Max flows su grafo supply per ogni coppia: 
+(46, 128): 62.0 - (47, 105): 62.0 - (26, 119): 58.0 - (44, 122): 30.0 - (65, 190): 48.0 - (2, 180): 23.0 - (68, 139): 48.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(26, 119, 3) - (2, 180, 3) - (44, 122, 3) - (45, 61, 3) - (46, 128, 3) - (47, 105, 3) - (65, 190, 3) - (68, 139, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(64, 176, 16) - (2, 180, 18) - (4, 102, 18) - (14, 41, 18) - (3, 101, 17) - (26, 119, 17) - (63, 175, 16) - (24, 115, 19) - (39, 116, 14) - 
+Max flows su grafo supply per ogni coppia: 
+(63, 175): 64.0 - (39, 116): 64.0 - (24, 115): 21.0 - (64, 176): 64.0 - (4, 102): 48.0 - (26, 119): 58.0 - (14, 41): 46.0 - (2, 180): 23.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(64, 176, 3) - (2, 180, 3) - (4, 102, 3) - (14, 41, 3) - (3, 101, 3) - (26, 119, 3) - (63, 175, 3) - (24, 115, 3) - (39, 116, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 102, 18) - (9, 103, 20) - (17, 58, 18) - (46, 128, 15) - (2, 180, 18) - (67, 98, 16) - (52, 127, 18) - (16, 57, 17) - (55, 130, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 57): 41.0 - (67, 98): 57.0 - (46, 128): 62.0 - (17, 58): 48.0 - (52, 127): 53.0 - (9, 103): 55.0 - (2, 180): 23.0 - (55, 130): 54.0 - (4, 102): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 102, 3) - (9, 103, 3) - (17, 58, 3) - (46, 128, 3) - (2, 180, 3) - (67, 98, 3) - (52, 127, 3) - (16, 57, 3) - (55, 130, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(67, 98, 16) - (2, 180, 18) - (17, 58, 18) - (1, 126, 23) - (4, 102, 18) - (64, 176, 16) - (15, 22, 17) - (9, 103, 20) - (0, 125, 24) - 
+Max flows su grafo supply per ogni coppia: 
+(67, 98): 57.0 - (64, 176): 64.0 - (4, 102): 48.0 - (17, 58): 48.0 - (0, 125): 24.0 - (1, 126): 27.0 - (2, 180): 23.0 - (15, 22): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(67, 98, 3) - (2, 180, 3) - (17, 58, 3) - (1, 126, 3) - (4, 102, 3) - (64, 176, 3) - (15, 22, 3) - (9, 103, 3) - (0, 125, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(21, 106, 18) - (13, 189, 17) - (52, 127, 18) - (54, 107, 17) - (26, 119, 17) - (55, 130, 16) - (45, 61, 15) - (25, 121, 17) - (19, 118, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 119): 58.0 - (21, 106): 58.0 - (13, 189): 35.0 - (19, 118): 49.0 - (54, 107): 55.0 - (52, 127): 53.0 - (25, 121): 30.0 - (55, 130): 54.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(21, 106, 3) - (13, 189, 3) - (52, 127, 3) - (54, 107, 3) - (26, 119, 3) - (55, 130, 3) - (45, 61, 3) - (25, 121, 3) - (19, 118, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 124, 20) - (24, 115, 19) - (9, 103, 20) - (54, 107, 17) - (6, 104, 18) - (15, 22, 17) - (68, 139, 14) - (44, 122, 17) - (1, 126, 23) - 
+Max flows su grafo supply per ogni coppia: 
+(24, 115): 21.0 - (6, 104): 48.0 - (8, 124): 30.0 - (54, 107): 55.0 - (44, 122): 30.0 - (1, 126): 27.0 - (15, 22): 48.0 - (68, 139): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 124, 3) - (24, 115, 3) - (9, 103, 3) - (54, 107, 3) - (6, 104, 3) - (15, 22, 3) - (68, 139, 3) - (44, 122, 3) - (1, 126, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 130, 16) - (2, 180, 18) - (63, 175, 16) - (68, 139, 14) - (19, 118, 16) - (10, 182, 19) - (30, 40, 14) - (64, 176, 16) - (20, 178, 20) - 
+Max flows su grafo supply per ogni coppia: 
+(64, 176): 64.0 - (55, 130): 54.0 - (19, 118): 49.0 - (30, 40): 46.0 - (20, 178): 47.0 - (10, 182): 35.0 - (2, 180): 23.0 - (68, 139): 48.0 - (63, 175): 64.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 130, 3) - (2, 180, 3) - (63, 175, 3) - (68, 139, 3) - (19, 118, 3) - (10, 182, 3) - (30, 40, 3) - (64, 176, 3) - (20, 178, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 57, 17) - (47, 105, 15) - (44, 122, 17) - (62, 136, 17) - (5, 123, 20) - (27, 120, 18) - (31, 43, 13) - (28, 179, 18) - (32, 50, 13) - 
+Max flows su grafo supply per ogni coppia: 
+(27, 120): 21.0 - (31, 43): 46.0 - (5, 123): 27.0 - (16, 57): 41.0 - (44, 122): 30.0 - (47, 105): 62.0 - (62, 136): 34.0 - (28, 179): 58.0 - (32, 50): 49.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 57, 3) - (47, 105, 3) - (44, 122, 3) - (62, 136, 3) - (5, 123, 3) - (27, 120, 3) - (31, 43, 3) - (28, 179, 3) - (32, 50, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(52, 127, 18) - (45, 61, 15) - (19, 118, 16) - (8, 124, 20) - (46, 128, 15) - (63, 175, 16) - (66, 193, 18) - (64, 176, 16) - (4, 102, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(64, 176): 64.0 - (46, 128): 62.0 - (19, 118): 49.0 - (8, 124): 30.0 - (52, 127): 53.0 - (4, 102): 48.0 - (63, 175): 64.0 - (66, 193): 40.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(52, 127, 3) - (45, 61, 3) - (19, 118, 3) - (8, 124, 3) - (46, 128, 3) - (63, 175, 3) - (66, 193, 3) - (64, 176, 3) - (4, 102, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(39, 116, 14) - (29, 192, 16) - (24, 115, 19) - (2, 180, 18) - (15, 22, 17) - (68, 139, 14) - (19, 118, 16) - (3, 101, 17) - (32, 50, 13) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (68, 139): 48.0 - (19, 118): 49.0 - (32, 50): 49.0 - (3, 101): 48.0 - (15, 22): 48.0 - (29, 192): 24.0 - (2, 180): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(39, 116, 3) - (29, 192, 3) - (24, 115, 3) - (2, 180, 3) - (15, 22, 3) - (68, 139, 3) - (19, 118, 3) - (3, 101, 3) - (32, 50, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(26, 119, 17) - (2, 180, 18) - (44, 122, 17) - (45, 61, 15) - (46, 128, 15) - (47, 105, 15) - (65, 190, 17) - (68, 139, 14) - (3, 101, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(46, 128): 62.0 - (47, 105): 62.0 - (26, 119): 58.0 - (44, 122): 30.0 - (3, 101): 48.0 - (65, 190): 48.0 - (2, 180): 23.0 - (68, 139): 48.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(26, 119, 3) - (2, 180, 3) - (44, 122, 3) - (45, 61, 3) - (46, 128, 3) - (47, 105, 3) - (65, 190, 3) - (68, 139, 3) - (3, 101, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(64, 176, 16) - (2, 180, 18) - (4, 102, 18) - (14, 41, 18) - (3, 101, 17) - (26, 119, 17) - (63, 175, 16) - (24, 115, 19) - (39, 116, 14) - (66, 193, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(63, 175): 64.0 - (39, 116): 64.0 - (24, 115): 21.0 - (64, 176): 64.0 - (4, 102): 48.0 - (26, 119): 58.0 - (14, 41): 46.0 - (2, 180): 23.0 - (66, 193): 40.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(64, 176, 3) - (2, 180, 3) - (4, 102, 3) - (14, 41, 3) - (3, 101, 3) - (26, 119, 3) - (63, 175, 3) - (24, 115, 3) - (39, 116, 3) - (66, 193, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 102, 18) - (9, 103, 20) - (17, 58, 18) - (46, 128, 15) - (2, 180, 18) - (67, 98, 16) - (52, 127, 18) - (16, 57, 17) - (55, 130, 16) - (5, 123, 20) - 
+Max flows su grafo supply per ogni coppia: 
+(16, 57): 41.0 - (67, 98): 57.0 - (46, 128): 62.0 - (5, 123): 27.0 - (17, 58): 48.0 - (52, 127): 53.0 - (9, 103): 55.0 - (2, 180): 23.0 - (55, 130): 54.0 - (4, 102): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 102, 3) - (9, 103, 3) - (17, 58, 3) - (46, 128, 3) - (2, 180, 3) - (67, 98, 3) - (52, 127, 3) - (16, 57, 3) - (55, 130, 3) - (5, 123, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(67, 98, 16) - (2, 180, 18) - (17, 58, 18) - (1, 126, 23) - (4, 102, 18) - (64, 176, 16) - (15, 22, 17) - (9, 103, 20) - (0, 125, 24) - (31, 43, 13) - 
+Max flows su grafo supply per ogni coppia: 
+(31, 43): 46.0 - (67, 98): 57.0 - (64, 176): 64.0 - (4, 102): 48.0 - (17, 58): 48.0 - (0, 125): 24.0 - (1, 126): 27.0 - (2, 180): 23.0 - (15, 22): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(67, 98, 3) - (2, 180, 3) - (17, 58, 3) - (1, 126, 3) - (4, 102, 3) - (64, 176, 3) - (15, 22, 3) - (9, 103, 3) - (0, 125, 3) - (31, 43, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(21, 106, 18) - (13, 189, 17) - (52, 127, 18) - (54, 107, 17) - (26, 119, 17) - (55, 130, 16) - (45, 61, 15) - (25, 121, 17) - (19, 118, 16) - (69, 140, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 119): 58.0 - (21, 106): 58.0 - (13, 189): 35.0 - (19, 118): 49.0 - (69, 140): 54.0 - (54, 107): 55.0 - (52, 127): 53.0 - (25, 121): 30.0 - (55, 130): 54.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(21, 106, 3) - (13, 189, 3) - (52, 127, 3) - (54, 107, 3) - (26, 119, 3) - (55, 130, 3) - (45, 61, 3) - (25, 121, 3) - (19, 118, 3) - (69, 140, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 124, 20) - (24, 115, 19) - (9, 103, 20) - (54, 107, 17) - (6, 104, 18) - (15, 22, 17) - (68, 139, 14) - (44, 122, 17) - (1, 126, 23) - (28, 179, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(24, 115): 21.0 - (6, 104): 48.0 - (28, 179): 58.0 - (8, 124): 30.0 - (54, 107): 55.0 - (44, 122): 30.0 - (1, 126): 27.0 - (15, 22): 48.0 - (68, 139): 48.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 124, 3) - (24, 115, 3) - (9, 103, 3) - (54, 107, 3) - (6, 104, 3) - (15, 22, 3) - (68, 139, 3) - (44, 122, 3) - (1, 126, 3) - (28, 179, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 130, 16) - (2, 180, 18) - (63, 175, 16) - (68, 139, 14) - (19, 118, 16) - (10, 182, 19) - (30, 40, 14) - (64, 176, 16) - (20, 178, 20) - (0, 125, 24) - 
+Max flows su grafo supply per ogni coppia: 
+(64, 176): 64.0 - (55, 130): 54.0 - (19, 118): 49.0 - (30, 40): 46.0 - (20, 178): 47.0 - (10, 182): 35.0 - (0, 125): 24.0 - (2, 180): 23.0 - (68, 139): 48.0 - (63, 175): 64.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 130, 3) - (2, 180, 3) - (63, 175, 3) - (68, 139, 3) - (19, 118, 3) - (10, 182, 3) - (30, 40, 3) - (64, 176, 3) - (20, 178, 3) - (0, 125, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 57, 17) - (47, 105, 15) - (44, 122, 17) - (62, 136, 17) - (5, 123, 20) - (27, 120, 18) - (31, 43, 13) - (28, 179, 18) - (32, 50, 13) - (69, 140, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(27, 120): 21.0 - (31, 43): 46.0 - (5, 123): 27.0 - (16, 57): 41.0 - (44, 122): 30.0 - (69, 140): 54.0 - (47, 105): 62.0 - (62, 136): 34.0 - (28, 179): 58.0 - (32, 50): 49.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 57, 3) - (47, 105, 3) - (44, 122, 3) - (62, 136, 3) - (5, 123, 3) - (27, 120, 3) - (31, 43, 3) - (28, 179, 3) - (32, 50, 3) - (69, 140, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(52, 127, 18) - (45, 61, 15) - (19, 118, 16) - (8, 124, 20) - (46, 128, 15) - (63, 175, 16) - (66, 193, 18) - (64, 176, 16) - (4, 102, 18) - (12, 59, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(64, 176): 64.0 - (46, 128): 62.0 - (19, 118): 49.0 - (8, 124): 30.0 - (52, 127): 53.0 - (12, 59): 41.0 - (4, 102): 48.0 - (63, 175): 64.0 - (66, 193): 40.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(52, 127, 3) - (45, 61, 3) - (19, 118, 3) - (8, 124, 3) - (46, 128, 3) - (63, 175, 3) - (66, 193, 3) - (64, 176, 3) - (4, 102, 3) - (12, 59, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(39, 116, 14) - (29, 192, 16) - (24, 115, 19) - (2, 180, 18) - (15, 22, 17) - (68, 139, 14) - (19, 118, 16) - (3, 101, 17) - (32, 50, 13) - (23, 110, 20) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (68, 139): 48.0 - (19, 118): 49.0 - (23, 110): 48.0 - (32, 50): 49.0 - (3, 101): 48.0 - (15, 22): 48.0 - (29, 192): 24.0 - (2, 180): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(39, 116, 3) - (29, 192, 3) - (24, 115, 3) - (2, 180, 3) - (15, 22, 3) - (68, 139, 3) - (19, 118, 3) - (3, 101, 3) - (32, 50, 3) - (23, 110, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(26, 119, 17) - (2, 180, 18) - (44, 122, 17) - (45, 61, 15) - (46, 128, 15) - (47, 105, 15) - (65, 190, 17) - (68, 139, 14) - (3, 101, 17) - (6, 104, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(6, 104): 48.0 - (46, 128): 62.0 - (47, 105): 62.0 - (26, 119): 58.0 - (44, 122): 30.0 - (3, 101): 48.0 - (65, 190): 48.0 - (2, 180): 23.0 - (68, 139): 48.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(26, 119, 3) - (2, 180, 3) - (44, 122, 3) - (45, 61, 3) - (46, 128, 3) - (47, 105, 3) - (65, 190, 3) - (68, 139, 3) - (3, 101, 3) - (6, 104, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(64, 176, 16) - (2, 180, 18) - (4, 102, 18) - (14, 41, 18) - (3, 101, 17) - (26, 119, 17) - (63, 175, 16) - (24, 115, 19) - (39, 116, 14) - (66, 193, 18) - (52, 127, 18) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (4, 102): 48.0 - (26, 119): 58.0 - (52, 127): 53.0 - (63, 175): 64.0 - (66, 193): 40.0 - (2, 180): 23.0 - (64, 176): 64.0 - (14, 41): 46.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(64, 176, 3) - (2, 180, 3) - (4, 102, 3) - (14, 41, 3) - (3, 101, 3) - (26, 119, 3) - (63, 175, 3) - (24, 115, 3) - (39, 116, 3) - (66, 193, 3) - (52, 127, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(4, 102, 18) - (9, 103, 20) - (17, 58, 18) - (46, 128, 15) - (2, 180, 18) - (67, 98, 16) - (52, 127, 18) - (16, 57, 17) - (55, 130, 16) - (5, 123, 20) - (33, 53, 14) - 
+Max flows su grafo supply per ogni coppia: 
+(33, 53): 30.0 - (67, 98): 57.0 - (4, 102): 48.0 - (52, 127): 53.0 - (2, 180): 23.0 - (55, 130): 54.0 - (17, 58): 48.0 - (46, 128): 62.0 - (5, 123): 27.0 - (16, 57): 41.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(4, 102, 3) - (9, 103, 3) - (17, 58, 3) - (46, 128, 3) - (2, 180, 3) - (67, 98, 3) - (52, 127, 3) - (16, 57, 3) - (55, 130, 3) - (5, 123, 3) - (33, 53, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(67, 98, 16) - (2, 180, 18) - (17, 58, 18) - (1, 126, 23) - (4, 102, 18) - (64, 176, 16) - (15, 22, 17) - (9, 103, 20) - (0, 125, 24) - (31, 43, 13) - (20, 178, 20) - 
+Max flows su grafo supply per ogni coppia: 
+(31, 43): 46.0 - (67, 98): 57.0 - (15, 22): 48.0 - (4, 102): 48.0 - (1, 126): 27.0 - (2, 180): 23.0 - (64, 176): 64.0 - (17, 58): 48.0 - (20, 178): 47.0 - (0, 125): 24.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(67, 98, 3) - (2, 180, 3) - (17, 58, 3) - (1, 126, 3) - (4, 102, 3) - (64, 176, 3) - (15, 22, 3) - (9, 103, 3) - (0, 125, 3) - (31, 43, 3) - (20, 178, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(21, 106, 18) - (13, 189, 17) - (52, 127, 18) - (54, 107, 17) - (26, 119, 17) - (55, 130, 16) - (45, 61, 15) - (25, 121, 17) - (19, 118, 16) - (69, 140, 16) - (65, 190, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 119): 58.0 - (69, 140): 54.0 - (25, 121): 30.0 - (55, 130): 54.0 - (21, 106): 58.0 - (13, 189): 35.0 - (19, 118): 49.0 - (54, 107): 55.0 - (65, 190): 48.0 - (52, 127): 53.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(21, 106, 3) - (13, 189, 3) - (52, 127, 3) - (54, 107, 3) - (26, 119, 3) - (55, 130, 3) - (45, 61, 3) - (25, 121, 3) - (19, 118, 3) - (69, 140, 3) - (65, 190, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(8, 124, 20) - (24, 115, 19) - (9, 103, 20) - (54, 107, 17) - (6, 104, 18) - (15, 22, 17) - (68, 139, 14) - (44, 122, 17) - (1, 126, 23) - (28, 179, 18) - (65, 190, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(24, 115): 21.0 - (6, 104): 48.0 - (65, 190): 48.0 - (44, 122): 30.0 - (15, 22): 48.0 - (68, 139): 48.0 - (8, 124): 30.0 - (54, 107): 55.0 - (1, 126): 27.0 - (28, 179): 58.0 - (9, 103): 55.0 - 
+Domanda Finale assegnata al grafo: 
+(8, 124, 3) - (24, 115, 3) - (9, 103, 3) - (54, 107, 3) - (6, 104, 3) - (15, 22, 3) - (68, 139, 3) - (44, 122, 3) - (1, 126, 3) - (28, 179, 3) - (65, 190, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 130, 16) - (2, 180, 18) - (63, 175, 16) - (68, 139, 14) - (19, 118, 16) - (10, 182, 19) - (30, 40, 14) - (64, 176, 16) - (20, 178, 20) - (0, 125, 24) - (24, 115, 19) - 
+Max flows su grafo supply per ogni coppia: 
+(63, 175): 64.0 - (24, 115): 21.0 - (30, 40): 46.0 - (55, 130): 54.0 - (2, 180): 23.0 - (64, 176): 64.0 - (19, 118): 49.0 - (20, 178): 47.0 - (10, 182): 35.0 - (0, 125): 24.0 - (68, 139): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 130, 3) - (2, 180, 3) - (63, 175, 3) - (68, 139, 3) - (19, 118, 3) - (10, 182, 3) - (30, 40, 3) - (64, 176, 3) - (20, 178, 3) - (0, 125, 3) - (24, 115, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 57, 17) - (47, 105, 15) - (44, 122, 17) - (62, 136, 17) - (5, 123, 20) - (27, 120, 18) - (31, 43, 13) - (28, 179, 18) - (32, 50, 13) - (69, 140, 16) - (39, 116, 14) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (31, 43): 46.0 - (27, 120): 21.0 - (44, 122): 30.0 - (69, 140): 54.0 - (47, 105): 62.0 - (62, 136): 34.0 - (32, 50): 49.0 - (5, 123): 27.0 - (16, 57): 41.0 - (28, 179): 58.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 57, 3) - (47, 105, 3) - (44, 122, 3) - (62, 136, 3) - (5, 123, 3) - (27, 120, 3) - (31, 43, 3) - (28, 179, 3) - (32, 50, 3) - (69, 140, 3) - (39, 116, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(52, 127, 18) - (45, 61, 15) - (19, 118, 16) - (8, 124, 20) - (46, 128, 15) - (63, 175, 16) - (66, 193, 18) - (64, 176, 16) - (4, 102, 18) - (12, 59, 16) - (5, 123, 20) - 
+Max flows su grafo supply per ogni coppia: 
+(4, 102): 48.0 - (12, 59): 41.0 - (52, 127): 53.0 - (5, 123): 27.0 - (63, 175): 64.0 - (66, 193): 40.0 - (64, 176): 64.0 - (46, 128): 62.0 - (19, 118): 49.0 - (8, 124): 30.0 - (45, 61): 61.0 - 
+Domanda Finale assegnata al grafo: 
+(52, 127, 3) - (45, 61, 3) - (19, 118, 3) - (8, 124, 3) - (46, 128, 3) - (63, 175, 3) - (66, 193, 3) - (64, 176, 3) - (4, 102, 3) - (12, 59, 3) - (5, 123, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(39, 116, 14) - (29, 192, 16) - (24, 115, 19) - (2, 180, 18) - (15, 22, 17) - (68, 139, 14) - (19, 118, 16) - (3, 101, 17) - (32, 50, 13) - (23, 110, 20) - (69, 140, 16) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (69, 140): 54.0 - (32, 50): 49.0 - (29, 192): 24.0 - (2, 180): 23.0 - (23, 110): 48.0 - (19, 118): 49.0 - (15, 22): 48.0 - (68, 139): 48.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(39, 116, 3) - (29, 192, 3) - (24, 115, 3) - (2, 180, 3) - (15, 22, 3) - (68, 139, 3) - (19, 118, 3) - (3, 101, 3) - (32, 50, 3) - (23, 110, 3) - (69, 140, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(26, 119, 17) - (2, 180, 18) - (44, 122, 17) - (45, 61, 15) - (46, 128, 15) - (47, 105, 15) - (65, 190, 17) - (68, 139, 14) - (3, 101, 17) - (6, 104, 18) - (15, 22, 17) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 22): 48.0 - (6, 104): 48.0 - (26, 119): 58.0 - (44, 122): 30.0 - (2, 180): 23.0 - (46, 128): 62.0 - (47, 105): 62.0 - (65, 190): 48.0 - (45, 61): 61.0 - (68, 139): 48.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(26, 119, 3) - (2, 180, 3) - (44, 122, 3) - (45, 61, 3) - (46, 128, 3) - (47, 105, 3) - (65, 190, 3) - (68, 139, 3) - (3, 101, 3) - (6, 104, 3) - (15, 22, 3) - 
+
+
+
+Topologia: Cogentco_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 2.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(64, 176, 16) - (2, 180, 18) - (4, 102, 18) - (14, 41, 18) - (3, 101, 17) - (26, 119, 17) - (63, 175, 16) - (24, 115, 19) - (39, 116, 14) - (66, 193, 18) - (52, 127, 18) - (7, 109, 19) - 
+Max flows su grafo supply per ogni coppia: 
+(39, 116): 64.0 - (24, 115): 21.0 - (4, 102): 48.0 - (26, 119): 58.0 - (52, 127): 53.0 - (7, 109): 48.0 - (63, 175): 64.0 - (66, 193): 40.0 - (2, 180): 23.0 - (64, 176): 64.0 - (14, 41): 46.0 - (3, 101): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(64, 176, 3) - (2, 180, 3) - (4, 102, 3) - (14, 41, 3) - (3, 101, 3) - (26, 119, 3) - (63, 175, 3) - (24, 115, 3) - (39, 116, 3) - (66, 193, 3) - (52, 127, 3) - (7, 109, 3) - 

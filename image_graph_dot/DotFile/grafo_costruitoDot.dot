@@ -1,0 +1,17 @@
+graph G {
+overlap=false;
+ratio=expand;
+size="20,20!";
+4 [Latitude=147, Longitude=21, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': -1106.8607, 'x': 1723.2073, 'z': 0.0, 'fill': u'#999999'}", id=4, label="4/0.0", pos="21,147!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+15 [Latitude=271, Longitude=156, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': -764.1811, 'x': 1212.5427, 'z': 0.0, 'fill': u'#999999'}", id=15, label="15/0.0", pos="156,271!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+19 [Latitude=193, Longitude=165, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': 110.99252, 'x': 835.05054, 'z': 0.0, 'fill': u'#999999'}", id=19, label="19/0.0", pos="165,193!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+56 [Latitude=187, Longitude=4, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': -636.436, 'x': 14.39575, 'z': 0.0, 'fill': u'#999999'}", id=56, label="56/0.0", pos="4,187!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+553 [Latitude=230, Longitude=34, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': -828.7586, 'x': 1637.6755, 'z': 0.0, 'fill': u'#999999'}", id=553, label="553/0.0", pos="34,230!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+587 [Latitude=187, Longitude=134, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': -82.068756, 'x': 1917.1201, 'z': 0.0, 'fill': u'#999999'}", id=587, label="587/0.0", pos="134,187!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+606 [Latitude=226, Longitude=38, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': 524.67706, 'x': -1783.0577, 'z': 0.0, 'fill': u'#999999'}", id=606, label="606/0.0", pos="38,226!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+689 [Latitude=78, Longitude=117, betweeness="0.0", color=green, graphics="{'d': 4.0, 'h': 4.0, 'w': 4.0, 'y': -334.29727, 'x': 591.9607, 'z': 0.0, 'fill': u'#999999'}", id=689, label="689/0.0", pos="117,78!", prob=0, shape=circle, status=on, style=filled, true_status=on, type=green, weight=0];
+4 -- 553  [color=green, demand=10, fontcolor=green, key=0, label=10, root_edge="(4, 553)", splitted_edge=False, style=bold, type=green];
+15 -- 587  [color=green, demand=10, fontcolor=green, key=0, label=10, root_edge="(15, 587)", splitted_edge=False, style=bold, type=green];
+19 -- 689  [color=green, demand=10, fontcolor=green, key=0, label=10, root_edge="(19, 689)", splitted_edge=False, style=bold, type=green];
+56 -- 606  [color=green, demand=10, fontcolor=green, key=0, label=10, root_edge="(56, 606)", splitted_edge=False, style=bold, type=green];
+}

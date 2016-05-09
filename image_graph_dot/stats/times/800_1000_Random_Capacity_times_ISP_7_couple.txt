@@ -1,0 +1,17 @@
+Sim: 2/10 Seed: 220 --- Time: 2659.558 seconds 
+Sim: 2/10 Seed: 221 --- Time: 2432.433 seconds 
+Sim: 2/10 Seed: 222 --- Time: 2601.381 seconds 
+Sim: 2/10 Seed: 223 --- Time: 2559.747 seconds 
+Sim: 2/10 Seed: 224 --- Time: 3030.45 seconds 
+Sim: 2/10 Seed: 226 --- Time: 3246.417 seconds 
+Sim: 2/10 Seed: 227 --- Time: 2259.937 seconds 
+Sim: 2/10 Seed: 228 --- Time: 2450.005 seconds 
+Sim: 2/10 Seed: 229 --- Time: 3329.701 seconds 
+Sim: 6/15 Seed: 221 --- Time: 6484.289 seconds 
+Sim: 6/15 Seed: 222 --- Time: 6433.532 seconds 
+Sim: 6/15 Seed: 223 --- Time: 8114.318 seconds 
+Sim: 6/15 Seed: 224 --- Time: 6780.568 seconds 
+Sim: 6/15 Seed: 225 --- Time: 6881.623 seconds 
+Sim: 6/15 Seed: 226 --- Time: 7710.928 seconds 
+Sim: 6/15 Seed: 227 --- Time: 6407.582 seconds 
+Sim: 6/15 Seed: 229 --- Time: 6709.503 seconds 

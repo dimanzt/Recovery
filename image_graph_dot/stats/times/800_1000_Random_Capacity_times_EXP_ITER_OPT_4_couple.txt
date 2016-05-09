@@ -1,0 +1,9 @@
+Sim: 3/15 Seed: 220 --- Time: 262.166 seconds 
+Sim: 3/15 Seed: 222 --- Time: 901.233 seconds 
+Sim: 3/15 Seed: 223 --- Time: 190.486 seconds 
+Sim: 3/15 Seed: 224 --- Time: 271.058 seconds 
+Sim: 3/15 Seed: 225 --- Time: 114.018 seconds 
+Sim: 3/15 Seed: 226 --- Time: 239.53 seconds 
+Sim: 3/15 Seed: 227 --- Time: 346.255 seconds 
+Sim: 3/15 Seed: 228 --- Time: 168.87 seconds 
+Sim: 3/15 Seed: 229 --- Time: 250.417 seconds 

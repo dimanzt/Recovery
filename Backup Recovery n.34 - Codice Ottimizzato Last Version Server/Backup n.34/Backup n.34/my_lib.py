@@ -22,6 +22,7 @@ import networkx as nx
 import pydot
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 from my_lib_optimal_recovery import *
 from scipy.integrate import dblquad
 from scipy.stats import multivariate_normal
@@ -49,6 +50,7 @@ import time
 
 
 def my_draw(H,file_name):
+    """    
     #print 'DRAWING************************'
     #imposto le coordinate del nodo per il formato .dot "x,y!"
     for i in H.nodes():
@@ -124,8 +126,8 @@ def my_draw(H,file_name):
 
     #print path
     graphDot.write(path+'Dot.dot')
-    graphDot.write_png(file_name +'.png')
-
+    #graphDot.write_png(file_name +'.png')
+    """    
 
 def set_attrDot(elem,attr,value):
     elem.__set_attribute__(attr,value)
@@ -440,6 +442,14 @@ def destroy_graph_gray(H,mu_x,mu_y,sigma):
 
     return nodes_dest,nodes_really_dest,edges_dest,edges_really_dest
 
+def destroy_random_graph_gray(H,prob):
+
+    nodes_dest,nodes_really_dest=destroy_random_nodes_gray(H,prob)
+    edges_dest,edges_really_dest=destroy_random_edges_gray(H,prob)
+
+    return nodes_dest,nodes_really_dest,edges_dest,edges_really_dest
+
+
 def destroy_nodes(H,mu_x,mu_y,sigma):
 
     destroyed_nodes=[]
@@ -500,6 +510,47 @@ def destroy_nodes_gray(H,mu_x,mu_y,sigma):
             H.node[i]['prob']=prob			
             #print 'nodo distrutto:' +str(i)
     return destroyed_nodes,nodes_really_dest
+
+
+
+def destroy_random_nodes_gray(H,prob):
+
+    destroyed_nodes=[]
+    nodes_really_dest=[]
+    #H.node[1]['status']='destroyed'
+    #H.node[1]['color']='red'
+    for i in H.nodes():
+        if H.node[i]['color'] == 'green':
+            continue
+        x=H.node[i]['Latitude']
+        y=H.node[i]['Longitude']
+        id_node=H.node[i]['id']
+        H.node[i]['status']='destroyed'
+        H.node[i]['color']='gray'
+
+        #print str(x)+str(y)
+        #pdf=bivariate_normal(x,y,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
+        #print 'pdf calcolata: ' + str(pdf)
+        #prob=get_prob(pdf,x,y,sigma)
+        #print str(prob)
+
+        if flip_coin(prob):
+            H.node[i]['true_status']='destroyed'
+            if id_node not in nodes_really_dest:
+                nodes_really_dest.append(id_node)
+                H.node[i]['prob']=prob
+
+        else:
+            H.node[i]['true_status']='on'
+            H.node[i]['prob']=prob
+
+        if id_node not in destroyed_nodes:
+            destroyed_nodes.append(id_node)
+            H.node[i]['prob']=prob
+            #print 'nodo distrutto:' +str(i)
+    return destroyed_nodes,nodes_really_dest
+
+
 
 
 def destroy_edges(H,mu_x,mu_y,sigma):
@@ -592,6 +643,66 @@ def destroy_edges_gray(H,mu_x,mu_y,sigma):
 
 
     return destroyed_edges,edges_dest_really_dest
+
+
+
+def destroy_random_edges_gray(H,prob):
+
+    destroyed_edges=[]
+    edges_dest_really_dest=[]
+    for i in H.nodes():
+        for j in H.nodes():
+            id_source = H.node[i]['id']
+            id_target = H.node[j]['id']
+            if H.has_edge(id_source,id_target):
+                if (id_source,id_target) in destroyed_edges or (id_target,id_source) in destroyed_edges:
+                    continue
+                x_1=H.node[i]['Latitude']
+                x_2=H.node[j]['Latitude']
+                y_1=H.node[i]['Longitude']
+                y_2=H.node[j]['Longitude']
+                #punto medio
+                x_m=(x_1+x_2)/2
+                y_m=(y_1+y_2)/2
+
+                #pdf_arc=bivariate_normal(x_m,y_m,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
+                #print 'pdf calcolata: ' + str(pdf)
+                prob_arc=prob #get_prob(pdf_arc,x_m,y_m,sigma)
+                #print 'prob_arco: ' + str(prob_arc)
+
+                keydict =H[id_source][id_target]
+                #print str(keydict)
+                key=len(keydict)
+                for k in keydict:
+                    if 'normal' == H.edge[id_source][id_target][k]['type']:
+                        edge=(id_source,id_target)
+                        edge_reverse=(id_target,id_source)
+
+                        if(flip_coin(prob_arc)):
+                            H[id_source][id_target][k]['status'] = 'destroyed'
+                            H[id_source][id_target][k]['true_status'] = 'destroyed'
+                            H[id_source][id_target][k]['color'] = 'gray'
+                            H[id_source][id_target][k]['style'] = 'dashed'
+                            H[id_source][id_target][k]['prob'] = prob_arc
+
+                            #H.add_edge(id_source,id_target,key=k, status='destroyed',true_status='destroyed',labelfont='gray',color='gray',style='dashed')
+                            if edge not in edges_dest_really_dest and edge_reverse not in edges_dest_really_dest:
+                                edges_dest_really_dest.append(edge)
+                        else:
+                            #H.add_edge(id_source,id_target,key=k, status='destroyed',true_status='on',labelfont='gray',color='gray',style='dashed'
+                            H[id_source][id_target][k]['status'] = 'destroyed'
+                            H[id_source][id_target][k]['true_status'] = 'on'
+                            H[id_source][id_target][k]['color'] = 'gray'
+                            H[id_source][id_target][k]['style'] = 'dashed'
+                            H[id_source][id_target][k]['prob'] = prob_arc
+
+                        if edge not in destroyed_edges and edge_reverse not in destroyed_edges:
+                            destroyed_edges.append(edge)
+
+
+    return destroyed_edges,edges_dest_really_dest
+
+
 
 def my_multivariate_pdf(vector, mean, cov):
     #vecotr= il punto x,y ; mean punto di epicentro, cov=matrice 2x2 delle covarienze
@@ -2089,7 +2200,7 @@ def distance_node(H,node_i,node_j,distance_metric):
         costo_vertici=0.5
         if H.node[node_i]['status']=='destroyed':
             #print 'nodo rotto'
-            distanza_temp+=costo_vertici
+            distanza_temp+=costo_vertici/(capacity)
             #print 'aggiungo'
             #print distanza_temp
         #if H.node[node_j]['status']=='destroyed':
@@ -2142,9 +2253,11 @@ def distance_node(H,node_i,node_j,distance_metric):
         costo_vertici=0.5
         x=H.node[node_i]['Latitude']
         y=H.node[node_i]['Longitude']		
-        if H.node[node_i]['color']=='red':
+        if H.node[node_i]['color']=='gray':
             #print 'nodo rotto'
-            distanza_temp+=costo_vertici
+            distanza_temp+=float("%0.10f"%((costo_vertici*H.node[node_i]['prob'])/capacity))
+        if H.node[node_i]['color']=='red': 
+            distanza_temp+=float("%0.10f"%((costo_vertici)/capacity))
             #print 'aggiungo'
             #print distanza_temp
         #if H.node[node_j]['status']=='destroyed':
@@ -2198,25 +2311,269 @@ def distance_node(H,node_i,node_j,distance_metric):
 
         return distanza_temp
 
-		
-        """
-        #print str(x)+str(y)
-        pdf=bivariate_normal(x,y,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
-        #print 'pdf calcolata: ' + str(pdf)
-        prob=get_prob(pdf,x,y,sigma)
-        #print str(prob)
-        
-        if flip_coin(prob):
-            H.node[i]['true_status']='destroyed'
-            if id_node not in nodes_really_dest:
-                nodes_really_dest.append(id_node)			
+#Diman Added for a new distance metric:
+    elif distance_metric == 'estimated_capacity':
+        #get status of the link for 'broken' metric
+        keydict=H[node_i][node_j]
+        #print keydict
+        #print node_i, node_j
+        for k in keydict:
+            if H[node_i][node_j][k]['type']=='normal':
+                status=H[node_i][node_j][k]['status']
+                true_status=H[node_i][node_j][k]['true_status']
+                color=H[node_i][node_j][k]['color']
+                capacity=H[node_i][node_j][k]['capacity']
+                prob=H[node_i][node_j][k]['prob']
+
+
+        #print node_i,node_j
+        distanza_temp=0.0 #distanza con arco ok e nodi ok
+        costo_vertici=0.5
+        x=H.node[node_i]['Latitude']
+        y=H.node[node_i]['Longitude']
+        node_prob=H.node[node_i]['prob']
+        if H.node[node_i]['color']=='gray':
+            if node_prob > 0.5:
+              distanza_temp+=float("%0.10f"%((costo_vertici*node_prob)/capacity))  #costo_vertici/capacity
+            #else: # H.node[node_i]['prob'] <= 0.5:
+            #  distanza_temp+=float("%0.10f"%(0.1/capacity))
+        if H.node[node_i]['color']=='red':
+            distanza_temp+=costo_vertici/capacity
+            ###distanza_temp+=float("%0.10f"%((costo_vertici*H.node[node_i]['prob'])/capacity))
+            #print 'aggiungo'
+            #print distanza_temp
+        #if H.node[node_j]['status']=='destroyed':
+            #print 'nodo rotto'
+            #distanza_temp+=costo_vertici
+            #print 'aggiungo'
+            #print 'Nodo rotto'
+            #print distanza_temp
+
+        #print distanza_temp
+        if color == 'red':
+            #return the lenght of a link broken
+            costo_arco_rotto=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        elif color == 'gray':
+            #return the lenght of a link broken
+
+            #pdf=bivariate_normal(x,y,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
+            ##prob= H.node[node_i]['prob'] #get_prob(pdf,x,y,sigma)
+            #costo_arco_rotto=float("%.10f"%(0.1 +(prob)*0.9))  
+            costo_arco_rotto=0.1
+            cost_of_arc=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ##ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            if prob > 0.5:
+              ratio=float("%.10f"%((0.1 + (prob)*0.9)/capacity))
+
+            else: #if prob > 0.5:
+              ratio=float("%.10f"%((costo_arco_rotto)/capacity))
+            ##ratio=float("%.10f"%((0.1 +(prob)*0.9)/capacity))
+
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
         else:
-            H.node[i]['true_status']='on'
+            distanza_temp+=0.1/(capacity)
+            #print 'arco non rotto'
+        print distanza_temp
+        if distanza_temp==0.0:
+            sys.exit('Errore in distace node: distanza=0.0 !!!')
+            distanza_temp=0.1
+        print 'Diman distance'
+        #print distanza_temp
 
-        if id_node not in destroyed_nodes:
-            destroyed_nodes.append(id_node)	
+        return distanza_temp
 
-        """			
+
+
+#Diman Added for a new distance metric:
+    elif distance_metric == 'estimated_zero_one_capacity':
+        #get status of the link for 'broken' metric
+        keydict=H[node_i][node_j]
+        #print keydict
+        #print node_i, node_j
+        for k in keydict:
+            if H[node_i][node_j][k]['type']=='normal':
+                status=H[node_i][node_j][k]['status']
+                true_status=H[node_i][node_j][k]['true_status']
+                color=H[node_i][node_j][k]['color']
+                capacity=H[node_i][node_j][k]['capacity']
+                prob=H[node_i][node_j][k]['prob']
+
+
+        #print node_i,node_j
+        distanza_temp=0.0 #distanza con arco ok e nodi ok
+        costo_vertici=0.5
+        x=H.node[node_i]['Latitude']
+        y=H.node[node_i]['Longitude']
+        node_prob=H.node[node_i]['prob']
+        if H.node[node_i]['color']=='gray':
+            if node_prob > 0.5:
+              distanza_temp+=float("%0.10f"%((costo_vertici)/capacity))  #costo_vertici/capacity
+            #else: # H.node[node_i]['prob'] <= 0.5:
+            #  distanza_temp+=float("%0.10f"%(0.1/capacity))
+        if H.node[node_i]['color']=='red':
+            distanza_temp+=costo_vertici/capacity
+            ###distanza_temp+=float("%0.10f"%((costo_vertici*H.node[node_i]['prob'])/capacity))
+            #print 'aggiungo'
+            #print distanza_temp
+        #if H.node[node_j]['status']=='destroyed':
+            #print 'nodo rotto'
+            #distanza_temp+=costo_vertici
+            #print 'aggiungo'
+            #print 'Nodo rotto'
+            #print distanza_temp
+
+        #print distanza_temp
+        if color == 'red':
+            #return the lenght of a link broken
+            costo_arco_rotto=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        elif color == 'gray':
+            #return the lenght of a link broken
+
+            #pdf=bivariate_normal(x,y,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
+            ##prob= H.node[node_i]['prob'] #get_prob(pdf,x,y,sigma)
+            #costo_arco_rotto=float("%.10f"%(0.1 +(prob)*0.9))  
+            costo_arco_rotto=0.1
+            cost_of_arc=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ##ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            if prob > 0.8:
+              ratio=float("%.10f"%((1)/capacity))
+
+            else: #if prob < 0.8:
+              ratio=float("%.10f"%((costo_arco_rotto)/capacity))
+            ##ratio=float("%.10f"%((0.1 +(prob)*0.9)/capacity))
+
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        else:
+            distanza_temp+=0.1/(capacity)
+            #print 'arco non rotto'
+        print distanza_temp
+        if distanza_temp==0.0:
+            sys.exit('Errore in distace node: distanza=0.0 !!!')
+            distanza_temp=0.1
+        print 'Diman distance'
+        #print distanza_temp
+
+        return distanza_temp
+
+
+
+#Diman Added for a new distance metric:
+    elif distance_metric == 'Modiano':
+        #get status of the link for 'broken' metric
+        keydict=H[node_i][node_j]
+        #print keydict
+        #print node_i, node_j
+        for k in keydict:
+            if H[node_i][node_j][k]['type']=='normal':
+                status=H[node_i][node_j][k]['status']
+                true_status=H[node_i][node_j][k]['true_status']
+                color=H[node_i][node_j][k]['color']
+                capacity=H[node_i][node_j][k]['capacity']
+                prob=H[node_i][node_j][k]['prob']
+
+
+        #print node_i,node_j
+        distanza_temp=0.0 #distanza con arco ok e nodi ok
+        costo_vertici=0.5
+        x=H.node[node_i]['Latitude']
+        y=H.node[node_i]['Longitude']
+        node_prob=H.node[node_i]['prob']
+        if H.node[node_i]['color']=='gray':
+            #if node_prob > 0.5:
+            distanza_temp+=float("%0.10f"%((costo_vertici*(-math.log(1-H.node[node_i]['prob']))/capacity)))  #costo_vertici/capacity
+            #else: # H.node[node_i]['prob'] <= 0.5:
+            #  distanza_temp+=float("%0.10f"%(0.1/capacity))
+        if H.node[node_i]['color']=='red':
+            distanza_temp+=costo_vertici/capacity
+            ###distanza_temp+=float("%0.10f"%((costo_vertici*H.node[node_i]['prob'])/capacity))
+            #print 'aggiungo'
+            #print distanza_temp
+        #if H.node[node_j]['status']=='destroyed':
+            #print 'nodo rotto'
+            #distanza_temp+=costo_vertici
+            #print 'aggiungo'
+            #print 'Nodo rotto'
+            #print distanza_temp
+
+        #print distanza_temp
+        if color == 'red':
+            #return the lenght of a link broken
+            costo_arco_rotto=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        elif color == 'gray':
+            #return the lenght of a link broken
+            costo_arco_rotto=0.1
+            cost_of_arc=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ##ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            ##if prob > 0.8:
+            #ratio=float("%.10f"%((1)/capacity))
+
+            #else: #if prob < 0.8:
+            #ratio=float("%.10f"%((costo_arco_rotto)/capacity))
+            ratio=float("%.10f"%((0.1 +(-math.log(1-prob))*0.9)/capacity))
+
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        else:
+            distanza_temp+=0.1/(capacity)
+            #print 'arco non rotto'
+        print distanza_temp
+        if distanza_temp==0.0:
+            sys.exit('Errore in distace node: distanza=0.0 !!!')
+            distanza_temp=0.1
+        print 'Diman distance'
+        #print distanza_temp
+
+        return distanza_temp
+
+
+
 #Diman Finished adding new distance metric
     else:
         sys.exit('Errore distance_node: nessuna metrica di distanza riconosciuta')
@@ -3019,8 +3376,8 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
                 total_flow_capacity=compute_total_flow_based_on_path_capacity(H,paths_selected)
                 #print total_flow_passing_node
                 #print total_flow_capacity
-                ##ratio=float(total_flow_passing_node/total_flow_capacity)
-                ratio=float(((total_flow_passing_node)*(1-H.node[node]['prob']))/total_flow_capacity)
+                ratio=float(total_flow_passing_node/total_flow_capacity)
+                ###ratio=float(((total_flow_passing_node)*(1-H.node[node]['prob']))/total_flow_capacity)
 
                 #print 'ratio calcolato %f: '%(ratio*demand)
                 old_betw = betwenness_dict[id_node]
@@ -3037,7 +3394,119 @@ def compute_my_betweeness_5_opt(H,green_edges,distance_metric):
     #print shortest_paths_for_bet
     end_time_bet=round(time.time()-star_time_bet,3)
     return betwenness_dict,shortest_paths_for_bet,end_time_bet
-	
+
+#Diman New betweeness centrality metric	
+####################################################################################################
+#Ottimizzata
+def compute_my_betweeness_6_opt(H,green_edges,distance_metric):
+
+    shortest_paths=[]
+    global betwenness_dict
+    betwenness_dict={}
+    global shortest_paths_for_bet
+    #print shortest_paths_for_bet
+    shortest_paths_for_bet={}
+    #print shortest_paths_for_bet
+    for node in H.nodes():
+        id_node=H.node[node]['id']
+        if id_node not in betwenness_dict:
+            betwenness_dict.update({id_node:0.0})
+
+    supply_graph=get_supply_graph(H,green_edges)
+    star_time_bet=time.time()
+    for edge in green_edges:
+        residual_graph=nx.MultiGraph(supply_graph)
+        temp_graph=nx.MultiGraph(supply_graph)
+        id_source=edge[0]
+        id_target=edge[1]
+        demand= edge[2]
+        arc=(id_source,id_target)
+        #print '------------------------SHORTEST PATH CHE CONTRIBUISCONO ALLA BETW: coppia %d-%d = %f'%(id_source,id_target,demand)+' ---------------------------------'
+
+        #lista di tutti i path tra source e target con relativi pesi
+        #weighted_paths=compute_lenght_paths(H,id_source,id_target,distance_metric,True)
+        paths_selected=[]
+        demand_to_assign=demand
+        flag_demand_satified=False
+        while(flag_demand_satified==False):
+            curr_shortest,cost=my_best_dijkstra_shortest_path(residual_graph,id_source,id_target,distance_metric)
+            if len(curr_shortest)==0:
+                print 'Nessun Path disponibile per la domanda: %d-%d:'%(id_source,id_target)
+                sys.exit('Errore in compute_my_betwenness_4_opt: coppia di domanda non connessa !!!')
+
+            cap_path=get_capacity_of_path(residual_graph,curr_shortest)
+            if cap_path>=demand_to_assign:
+                flag_demand_satified=True
+
+            else:
+                
+                reduce_capacity_path(temp_graph,curr_shortest,cap_path)
+                #demand_to_assign=demand_to_assign-cap_path
+                next_shortest_path,next_cost=my_best_dijkstra_shortest_path(temp_graph,id_source,id_target,distance_metric)
+                next_cap_path=get_capacity_of_path(temp_graph,next_shortest_path)
+                if next_cap_path>=demand_to_assign:
+                  flag_demand_satified=True
+                  cap_path=next_cap_path
+                  curr_shortest=next_shortest_path
+                reduce_capacity_path(residual_graph,curr_shortest,cap_path)
+            demand_to_assign=demand_to_assign-cap_path
+            paths_selected.append(curr_shortest)
+
+        arc=(id_source,id_target)
+        #aggiorno i paths che contribuiscono alla betweeness dell'arco verde
+        if not shortest_paths_for_bet.has_key(arc):
+            shortest_paths_for_bet.update({arc:[]})
+        for path in paths_selected:
+            #print 'aggiunto'
+            shortest_paths_for_bet[arc].append(path)
+        #print shortest_paths_for_bet[arc]
+
+        #aggiorna le betweeness dei nodi
+        nodes_to_update_bet=get_list_of_nodes_from_paths(paths_selected)
+        #for node in H.nodes():
+        for node in nodes_to_update_bet:
+            id_node = H.node[node]['id']
+
+            #paths che passano per il nodo e sono minori di una certa lunghezza tra source e sink
+            paths_trough_node=paths_traverse_node(paths_selected,id_node)
+            #numeratore della formula di centralita approssimata
+            #print 'path attraversano %d '%(id_node)
+            #print paths_trough_node
+            if len(paths_trough_node)>0:
+                #total_flow_passing_node=compute_total_flow_based_on_real_flow(H,paths_trough_node,id_source,id_target)
+                #Diman
+                #######total_discovery_passing_node=compute_discovery(H,paths_trough_node)
+                total_flow_passing_node=compute_total_flow_based_on_path_capacity(H,paths_trough_node)
+                total_flow_capacity=0.0
+                #Diman total gray nodes in the system!
+                ####total_discoverable_nodes=0.0
+                ####total_discoverable_nodes=compute_total_grays(H,paths_selected)
+                total_flow_capacity=compute_total_flow_based_on_path_capacity(H,paths_selected)
+                #print total_flow_passing_node
+                #print total_flow_capacity
+                #Diman 
+                ###ratio=float(total_dsicovery_passing_node/total_dicoverable_nodes)
+                ratio=H.node[node]['prob']
+                ###ratio=float(total_flow_passing_node/total_flow_capacity)
+                ###ratio=float(((total_flow_passing_node)*(H.node[node]['prob']))/total_flow_capacity)
+
+                #print 'ratio calcolato %f: '%(ratio*demand)
+                old_betw = betwenness_dict[id_node]
+                new_betw = old_betw + float(('%.2f'%(ratio*demand)))
+                betwenness_dict.update({id_node:new_betw})
+                #print 'betwenness aggiornata per %d'%(id_node)
+
+                #sys.exit(0)
+    for node in H.nodes():
+        id_node=H.node[node]['id']
+        H.node[node]['betweeness']=betwenness_dict[id_node]
+
+    #print 'fine betwnees_opt'
+    #print shortest_paths_for_bet
+    end_time_bet=round(time.time()-star_time_bet,3)
+    return betwenness_dict,shortest_paths_for_bet,end_time_bet
+
+
 
 def get_list_of_nodes_from_paths(list_paths):
 
@@ -3114,7 +3583,7 @@ def add_path_to_graph(original_graph,graph_built,path):
                 for k in keydict:
                     if original_graph[source][target][k]['type']=='normal':
                         cap=original_graph[source][target][k]['capacity']
-                        graph_built.add_edge(source,target,capacity=cap,type='normal')
+                        graph_built.add_edge(source,target,capacity=cap,type='normal',status=original_graph[source][target][k]['status'],true_status=original_graph[source][target][k]['true_status'],prob=original_graph[source][target][k]['prob'])
             else:
                 sys.exit('Errore in add_path_to_graph: arco del path inesistente')
 
@@ -3287,6 +3756,8 @@ def count_occurance(elem, path):
 def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed,      #ISP
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
+                          num_rip_expected_optimal_nodes,num_rip_expected_optimal_edges,num_rip_expected_truely_optimal_nodes,num_rip_expected_truely_optimal_edges,#Expected,
+                          num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges,num_rip_one_shot_expected_truely_optimal_nodes,num_rip_one_shot_expected_truely_optimal_edges,#One ShotExpected,
                           num_rip_mult_nodes,num_rip_mult_edges,num_rip_truely_mult_nodes,num_rip_truely_mult_edges,       #Multicommodity generale
                           num_rip_mult_worst_nodes,num_rip_mult_worst_edges, #Multicommodity worst
                           num_rip_mult_best_nodes,num_rip_mult_best_edges,    #Multicommodity best
@@ -3309,13 +3780,22 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
         if not os.path.exists(path_to_file_stat):
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
-            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tISP_Nodes\tISP_Edges\tTotal_ISP\tTruely_ISP_NODES\tTruely_ISP_EDGES\tTotal_truely_repaits\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tMCG_Nodes\tMCG_Edges\tTotal_MCG\tMCW_Nodes\tMCW_Edges\tTotal_MCW\tMCB_Nodes\tMCB_Edges\tTotal_MCB\tSRT_Nodes\tSRT_Edges\tTotal_SRT\tRNK_Nodes\tRNK_Edges\tTotal_RNK\tALL_Nodes\tALL_Edges\tTotal_ALL\tTotal_DEM\tSRT_SATIS\t%_DEM_SAT\tRNK_N_COM\tRNK_E_COM\tTot_RNK_C\tRNK_N_NC\tRNK_E_NC\tTot_RNK_NC\tRNK_SATIS\t%_DEM_RNK\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\tFlag_MCG\t\tDirImages\n"
+            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tISP_Nodes\tISP_Edges\tTotal_ISP\tTruely_ISP_NODES\tTruely_ISP_EDGES\tTotal_truely_ISP_repairs\tExpected_OPT_Nodes\tExpected_OPT_Edges\tTotal_OPT_Expected\tExpected_OPT_Nodes\tExpected_OPT_Edges\tExpected_OPT_Total\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tTotal_ONE_SHOT_OPT_Expected\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tONE_SHOT_Expected_OPT_Total\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tMCG_Nodes\tMCG_Edges\tTotal_MCG\tMCW_Nodes\tMCW_Edges\tTotal_MCW\tMCB_Nodes\tMCB_Edges\tTotal_MCB\tSRT_Nodes\tSRT_Edges\tTotal_SRT\tRNK_Nodes\tRNK_Edges\tTotal_RNK\tALL_Nodes\tALL_Edges\tTotal_ALL\tTotal_DEM\tSRT_SATIS\t%_DEM_SAT\tRNK_N_COM\tRNK_E_COM\tTot_RNK_C\tRNK_N_NC\tRNK_E_NC\tTot_RNK_NC\tRNK_SATIS\t%_DEM_RNK\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\tFlag_MCG\t\tDirImages\n"
+
+
+
+
+
             file.write(name_of_colunms)
             file.close
 
         tot_rip_isp=(num_rip_isp_nodes+num_rip_isp_edges)
         tot_truely_rip_isp=(nodes_truely_recovered_isp+edges_truely_recovered_isp)
         tot_rip_opt=(num_rip_optimal_nodes+num_rip_optimal_edges)
+        tot_rip_exp_opt=(num_rip_expected_optimal_nodes+num_rip_expected_optimal_edges)
+        tot_truely_exp_opt=(num_rip_expected_truely_optimal_nodes+ num_rip_expected_truely_optimal_edges)
+        tot_rip_one_shot_exp_opt=(num_rip_one_shot_expected_optimal_nodes+num_rip_one_shot_expected_optimal_edges)
+        tot_truely_one_shot_exp_opt=(num_rip_one_shot_expected_truely_optimal_nodes+ num_rip_one_shot_expected_truely_optimal_edges)
         tot_rip_mcg=(num_rip_mult_nodes+num_rip_mult_edges)
         tot_truely_rip_mcg=(num_rip_truely_mult_nodes+num_rip_truely_mult_edges)
         tot_rip_mcw=(num_rip_mult_worst_nodes+num_rip_mult_worst_edges)
@@ -3331,6 +3811,10 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
         print 'tot_isp_truely %d = %d + %d'%(tot_truely_rip_isp, nodes_truely_recovered_isp,edges_truely_recovered_isp)
         print 'not_needed_repairs = %d' % num_not_needed
         print 'tot_opt %d = %d + %d'%(tot_rip_opt, num_rip_optimal_nodes,num_rip_optimal_edges)
+        print 'tot_expected_opt %d = %d + %d'%(tot_rip_exp_opt, num_rip_expected_optimal_nodes,num_rip_expected_optimal_edges)
+        print 'tot_exp_opt_truely %d = %d + %d'%(tot_truely_exp_opt,num_rip_expected_truely_optimal_nodes ,num_rip_expected_truely_optimal_edges)
+        print 'tot_one_shot_expected_opt %d = %d + %d'%(tot_rip_one_shot_exp_opt, num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges)
+        print 'tot_one_shot_exp_opt_truely %d = %d + %d'%(tot_truely_one_shot_exp_opt,num_rip_one_shot_expected_truely_optimal_nodes ,num_rip_one_shot_expected_truely_optimal_edges)
         print 'tot_mcg %d = %d + %d'%(tot_rip_mcg, num_rip_mult_nodes,num_rip_mult_edges)
         print 'tot_mcg_truely %d = %d + %d'%(tot_truely_rip_mcg, num_rip_truely_mult_nodes,num_rip_truely_mult_edges)
         print 'tot_mcw %d = %d + %d'%(tot_rip_mcw, num_rip_mult_worst_nodes,num_rip_mult_worst_edges)
@@ -3369,15 +3853,16 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
             mcg_solution='-'
 
 
-
+        
         error='-'
+        """
         #CONTROLLO SE QUALCHE ALGORITMO HA FATTO MEGLIO DELL'OTTIMO, IN CASO SEGNALO ERRORE
         if tot_rip_opt > tot_rip_isp or tot_rip_opt > tot_rip_mcg or tot_rip_opt > tot_rip_mcw or tot_rip_opt > tot_rip_mcb or tot_rip_opt > tot_rip_rnk or tot_rip_opt > tot_rip_all or tot_rip_opt > tot_rip_rnk_no_com:
             error='SI'
             print 'Errore: Num Riparazione Ottimo peggiore di qualche altro algoritmo!'
             sys.exit('Errore: Num Riparazione Ottimo peggiore di qualche altro algoritmo!')
 
-        """
+        """ """
         #controllo con shortest, che puo fare meno, ma deve soddisfare meno domanda
         if tot_rip_opt > tot_rip_srt:
             #controlla la domanda soddisfatta
@@ -3385,7 +3870,7 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
                 error='SI'
                 print 'Errore: Num Riparazione Ottimo peggiore di shortest, che ha soddisfatto tutta la domanda!'
                 sys.exit('Errore: Num Riparazione Ottimo peggiore di shortest, che ha soddisfatto tutta la domanda!')
-        """
+        """ """
 
         #controllo con rank commitment, che puo fare meno, ma deve soddisfare meno domanda
         if tot_rip_opt > tot_rip_rnk_com:
@@ -3406,9 +3891,9 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
             error='SI'
             print 'Errore: Algoritmo Multicommodity Best ha fatto peggio del Multicommodity Worst!'
             sys.exit('Errore: Algoritmo Multicommodity Best ha fatto peggio del Multicommodity Worst!')
-
+        """
         file=open(path_to_file_stat,'a')
-        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_isp_nodes)+'\t\t'+str(num_rip_isp_edges)+'\t\t'+str(tot_rip_isp)+'\t\t'+str(nodes_truely_recovered_isp)+'\t\t'+str(edges_truely_recovered_isp)+'\t\t'+str(tot_truely_rip_isp)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(num_rip_mult_nodes)+'\t\t'+str(num_rip_mult_edges)+'\t\t'+str(tot_rip_mcg)+'\t\t'+str(num_rip_mult_worst_nodes)+'\t\t'+str(num_rip_mult_worst_edges)+'\t\t'+str(tot_rip_mcw)+'\t\t'+str(num_rip_mult_best_nodes)+'\t\t'+str(num_rip_mult_best_edges)+'\t\t'+str(tot_rip_mcb)+'\t\t'+str(num_rip_shortest_nodes)+'\t\t'+str(num_rip_shortest_edges)+'\t\t'+str(tot_rip_srt)+'\t\t'+str(num_rip_ranked_nodes)+'\t\t'+str(num_rip_ranked_edges)+'\t\t'+str(tot_rip_rnk)+'\t\t'+str(num_rip_all_nodes)+'\t\t'+str(num_rip_all_edges)+'\t\t'+str(tot_rip_all)+'\t\t'+str(total_demand_of_graph)+'\t\t'+str(demand_satisfied)+'\t\t'+str(percent_of_demand)+'\t\t'+str(num_rip_ranked_comm_nodes)+'\t\t'+str(num_rip_ranked_comm_edges)+'\t\t'+str(tot_rip_rnk_com)+'\t\t'+str(num_rip_ranked_no_comm_nodes)+'\t\t'+str(num_rip_ranked_no_comm_edges)+'\t\t'+str(tot_rip_rnk_no_com)+'\t\t'+str(demand_satisfied_rnk)+'\t\t'+str(percent_of_demand_rnk)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+str(mcg_solution)+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
+        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_isp_nodes)+'\t\t'+str(num_rip_isp_edges)+'\t\t'+str(tot_rip_isp)+'\t\t'+str(nodes_truely_recovered_isp)+'\t\t'+str(edges_truely_recovered_isp)+'\t\t'+str(tot_truely_rip_isp)+'\t\t'+str(num_rip_expected_optimal_nodes )+'\t\t'+str(num_rip_expected_optimal_edges)+'\t\t'+str(tot_rip_exp_opt)+'\t\t'+str(num_rip_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_exp_opt)+'\t\t'+str(num_rip_one_shot_expected_optimal_nodes )+'\t\t'+str(num_rip_one_shot_expected_optimal_edges)+'\t\t'+str(tot_rip_one_shot_exp_opt)+'\t\t'+str(num_rip_one_shot_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_one_shot_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_one_shot_exp_opt)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(num_rip_mult_nodes)+'\t\t'+str(num_rip_mult_edges)+'\t\t'+str(tot_rip_mcg)+'\t\t'+str(num_rip_mult_worst_nodes)+'\t\t'+str(num_rip_mult_worst_edges)+'\t\t'+str(tot_rip_mcw)+'\t\t'+str(num_rip_mult_best_nodes)+'\t\t'+str(num_rip_mult_best_edges)+'\t\t'+str(tot_rip_mcb)+'\t\t'+str(num_rip_shortest_nodes)+'\t\t'+str(num_rip_shortest_edges)+'\t\t'+str(tot_rip_srt)+'\t\t'+str(num_rip_ranked_nodes)+'\t\t'+str(num_rip_ranked_edges)+'\t\t'+str(tot_rip_rnk)+'\t\t'+str(num_rip_all_nodes)+'\t\t'+str(num_rip_all_edges)+'\t\t'+str(tot_rip_all)+'\t\t'+str(total_demand_of_graph)+'\t\t'+str(demand_satisfied)+'\t\t'+str(percent_of_demand)+'\t\t'+str(num_rip_ranked_comm_nodes)+'\t\t'+str(num_rip_ranked_comm_edges)+'\t\t'+str(tot_rip_rnk_com)+'\t\t'+str(num_rip_ranked_no_comm_nodes)+'\t\t'+str(num_rip_ranked_no_comm_edges)+'\t\t'+str(tot_rip_rnk_no_com)+'\t\t'+str(demand_satisfied_rnk)+'\t\t'+str(percent_of_demand_rnk)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+str(mcg_solution)+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
         file.write(raw_line)
         file.close()
 
@@ -6478,7 +6963,7 @@ def pruning_one_hop(H,recovered_edges_one_hop,distance_metric,counter_isp,type_o
                 #edges_to_remove.append(arc)
                 H.remove_edge(arc[0],arc[1],arc[2])
                 if (arc[0],arc[1]) not in edges_removed:
-                    edges_removed.append(arc[0],arc[1])
+                    edges_removed.append((arc[0],arc[1]))
                 #print 'rimosso'
             else:
                 H.add_edge(arc[0],arc[1],arc[2],capacity=cap_path-flow_to_prune)
@@ -6550,7 +7035,7 @@ def add_edges_recovered_to_graph(H,graph_built,edges_recovered):
             for k in keydict:
                 if H[source][target][k]['type']=='normal':
                     cap=H[source][target][k]['capacity']
-                    graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap)
+                    graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap,true_status='on')
         else:
 
             sys.exit('Errore in add_edges_recovered_to_graph: larco da aggiungere non esiste nel grafo supply')
@@ -6587,7 +7072,7 @@ def add_node_to_graph_recovered(H,graph_built,id_nodo):
                         if only_supply[id_nodo][neigh][k]['status']=='on':
                             capacity=only_supply[id_nodo][neigh][k]['capacity']
                             if not graph_built.has_edge(id_nodo,neigh):
-                                graph_built.add_edge(id_nodo,neigh,type='normal',status='on',capacity=capacity,labelfont='black',color='black',style='solid')
+                                graph_built.add_edge(id_nodo,neigh,type='normal',status='on',capacity=capacity,labelfont='black',color='black',style='solid',true_status='on')
                             else:
                                 flag_edge=False
                                 #counter_k=-1
@@ -6597,7 +7082,7 @@ def add_node_to_graph_recovered(H,graph_built,id_nodo):
                                     if graph_built[id_nodo][neigh][k_new]['type']=='normal':
                                         flag_edge=True
                                 if flag_edge==False:
-                                    graph_built.add_edge(id_nodo,neigh,type='normal',status='on',capacity=capacity,labelfont='black',color='black',style='solid')
+                                    graph_built.add_edge(id_nodo,neigh,type='normal',status='on',capacity=capacity,labelfont='black',color='black',style='solid',true_status='on')
 
 def recovery_supply_graph(H,temp_graph_supply,nodes_recovered,edges_recovered):
 
@@ -8601,7 +9086,7 @@ def compute_lenght_of_path(H,path):
 def assign_random_capacity_to_edges(H,filename):
 
     for edge in H.edges():
-        random_cap=random.randint(20,50)
+        random_cap=random.randint(20,100) #(20,50) bood
         #random_cap=1000
         H[edge[0]][edge[1]][0]['capacity']=random_cap
 
@@ -8761,7 +9246,9 @@ def select_betweeness(H,green_edges,distance_metric,type_of_bet):
     elif type_of_bet=='exact':
         return compute_my_betweeness_4_opt(H,green_edges,distance_metric)
     elif type_of_bet=='diman':
-        return compute_my_betweeness_5_opt(H,green_edges,distance_metric)		
+        return compute_my_betweeness_5_opt(H,green_edges,distance_metric)
+    elif type_of_bet=='prob_bet':
+        return compute_my_betweeness_6_opt(H,green_edges,distance_metric)		
     else:
         sys.exit('Errore select betweeness: tipologia non riconosciuta')
 
@@ -9155,6 +9642,19 @@ def my_prob_dijkstra_shortest_path(H,source,target,distance_metric):
     except KeyError:
         raise nx.NetworkXNoPath("node %s not reachable from %s" % (source, target))
 
+#Diman added:
+def my_best_dijkstra_shortest_path(H,source,target,distance_metric):
+
+    (length, path) = my_best_single_source_dijkstra(H,distance_metric, source=source, target=target)
+    #print length
+
+    #print path
+    try:
+        return path[target],length
+    except KeyError:
+        raise nx.NetworkXNoPath("node %s not reachable from %s" % (source, target))
+
+
 
 def my_dijkstra_shortest_path(H,source,target):
 
@@ -9214,7 +9714,50 @@ def my_prob_single_source_dijkstra(G,distance_metric, source, target=None, cutof
     return (dist, paths)
 		
 
+def my_best_single_source_dijkstra(G,distance_metric, source, target=None, cutoff=None, weight='weight'):
 
+    #weight_e='capacity'
+    if source == target:
+        return ({source: 0}, {source: [source]})
+
+    push = heappush
+    pop = heappop
+    dist = {}  # dictionary of final distances
+    paths = {source: [source]}  # dictionary of paths
+    seen = {source: 0}
+    c = count()
+    fringe = []  # use heapq with (distance,label) tuples
+    push(fringe, (0, next(c), source))
+    while fringe:
+        (d, _, v) = pop(fringe)
+        if v in dist:
+            continue  # already searched this node.
+        dist[v] = d
+        if v == target:
+            break
+        # for ignore,w,edgedata in G.edges_iter(v,data=True):
+        # is about 30% slower than the following    
+        edata = iter(G[v].items())
+
+        for w, edgedata in edata:
+            #print v,edgedata,w
+            #vw_dist = dist[v] + float(edgedata.get('capacity', 1))+G.node[w][weight]
+            vw_dist = dist[v] + distance_node(G,v,w,distance_metric) #+G.node[w][weight]
+
+            if cutoff is not None:
+                if vw_dist > cutoff:
+                    continue
+            if w in dist:
+                if vw_dist < dist[w]:
+                    raise ValueError('Contradictory paths found:',
+                                     'negative weights?')
+            elif w not in seen or vw_dist < seen[w]:
+                seen[w] = vw_dist
+                push(fringe, (vw_dist, next(c), w))
+                paths[w] = paths[v] + [w]
+
+    return (dist, paths)
+    
 
 def my_single_source_dijkstra(G, source, target=None, cutoff=None, weight='weight'):
 
@@ -9558,6 +10101,71 @@ def init_owned_nodes(green_edges):
 
     return owned_nodes
 
+
+def  repair_first_hop_edges(H, G, node_selected,repaired_edges,edges_in_solution):
+
+    #repaired_edges=[]
+    change = False
+    my_nodes =[]
+    my_nodes.append(node_selected)
+    for node in my_nodes:
+        edges = get_node_edges(H, node)
+        for edge in edges:
+            #if (edge in edges_recovered) or ((edge[1],edge[0]) in edges_recovered):
+            #    continue
+            id_source=edge[0]
+            id_target=edge[1]
+            #add_node_to_graph_info_gather(H,G,id_target)
+            keydict=H[id_source][id_target]
+            for k in keydict:
+                #if H[id_source][id_target][k]['type'] != 'normal':
+                #    continue
+                #if (G.has_edge(id_source,id_target)) and not (k in G[id_source][id_target]):
+                #    continue
+                #if  G.has_edge(id_source,id_target) and G[id_source][id_target][k]['type'] == 'normal' and (G[id_source][id_target][k]['status'] == 'repaired' or G[id_source][id_target][k]['status'] == 'on'):
+                #    continue
+                #if H[id_source][id_target][k]['status']=='destroyed':
+                cap = H[id_source][id_target][k]['capacity']
+                if H[id_source][id_target][k]['true_status'] == 'on':
+                    if G.has_edge(id_source,id_target):
+                        if G[id_source][id_target][k]['status'] == 'repaired':
+                            continue
+                        before_color = H[id_source][id_target][k]['color']
+                        G[id_source][id_target][k]['color'] = 'black'
+                        G[id_source][id_target][k]['style'] = 'solid'
+                        G[id_source][id_target][k]['status'] = 'on'
+                        G[id_source][id_target][k]['prob'] = 0.0
+                        G[id_source][id_target][k]['true_status'] = 'on'
+                        if before_color != 'black':
+                            change = True
+                    else:
+                        G.add_edge(id_source,id_target,type='normal',status='on',true_status='on', capacity=cap,color='black',style='solid',prob =0.0)
+                        change = True
+                if H[id_source][id_target][k]['true_status'] == 'destroyed':
+                    if G.has_edge(id_source,id_target):
+                        if edge in edges_in_solution:
+                          before_color = H[id_source][id_target][k]['color']
+                          G[id_source][id_target][k]['color'] = 'blue'
+                          G[id_source][id_target][k]['style'] = 'solid'
+                          G[id_source][id_target][k]['status'] = 'repaired'
+                          G[id_source][id_target][k]['true_status'] = 'on'
+                          G[id_source][id_target][k]['prob'] = 0.0
+                          #my_edge=(id_source,id_target)
+                          repaired_edges.append(edge)
+                          if before_color != 'red':
+                              change = True
+                    else:
+                        if edge in edges_in_solution:
+                          G.add_edge(id_source,id_target,type='normal',status='repaired',true_status='on',capacity=cap,color='blue',style='solid',prob=0.0)
+                          change = True
+                          #my_edge=(id_source,id_destination)
+                          repaired_edges.append(edge)
+
+                   #status='on',labelfont='gray',color='gray',style='dashed'
+
+    return change
+
+
 def resolve_owned_node_edges(H,G,owned_nodes, edges_recovered):
     change = False
     for node in owned_nodes:
@@ -9586,11 +10194,12 @@ def resolve_owned_node_edges(H,G,owned_nodes, edges_recovered):
                         G[id_source][id_target][k]['color'] = 'black'
                         G[id_source][id_target][k]['style'] = 'solid'
                         G[id_source][id_target][k]['status'] = 'on'
+                        G[id_source][id_target][k]['prob'] = 0.0
                         G[id_source][id_target][k]['true_status'] = 'on'
                         if before_color != 'black':
                             change = True
                     else:
-                        G.add_edge(id_source,id_target,type='normal',status='on',true_status='on', capacity=cap,color='black',style='solid')
+                        G.add_edge(id_source,id_target,type='normal',status='on',true_status='on', capacity=cap,color='black',style='solid',prob =0.0)
                         change = True
                 if H[id_source][id_target][k]['true_status'] == 'destroyed':
                     if G.has_edge(id_source,id_target):
@@ -9599,10 +10208,11 @@ def resolve_owned_node_edges(H,G,owned_nodes, edges_recovered):
                         G[id_source][id_target][k]['style'] = 'dashed'
                         G[id_source][id_target][k]['status'] = 'destroyed'
                         G[id_source][id_target][k]['true_status'] = 'destroyed'
+                        G[id_source][id_target][k]['prob'] = 1.0
                         if before_color != 'red':
                             change = True
                     else:
-                        G.add_edge(id_source,id_target,type='normal',status='destroyed',true_status='destroyed',capacity=cap,color='red',style='dashed')
+                        G.add_edge(id_source,id_target,type='normal',status='destroyed',true_status='destroyed',capacity=cap,color='red',style='dashed',prob=1.0)
                         change = True
                 
                    #status='on',labelfont='gray',color='gray',style='dashed'
@@ -9627,10 +10237,12 @@ def resolve_one_hop_nodes(H, G, owned_nodes):
                     if G.node[id_target]['status']=='on':
                         if (G.node[id_target]['color'] == 'gray' or G.node[id_target]['color'] == 'red'):
                             G.node[id_target]['color'] = '""'
+                            G.node[id_target]['prob'] = 0.0
                         if (id_target not in owned_nodes) and (id_target not in on_nodes):
                             on_nodes.append(id_target)
                     elif G.node[id_target]['status'] == 'repaired':
                         G.node[id_target]['color'] = 'blue'
+                        G.node[id_target]['prob'] = 0.0
                         if (id_target not in owned_nodes) and (id_target not in on_nodes):
                             on_nodes.append(id_target)
                     else:
@@ -9638,11 +10250,13 @@ def resolve_one_hop_nodes(H, G, owned_nodes):
                             G.node[id_target]['status'] = 'on'
                             if H.node[id_target]['color'] != 'green':
                                 G.node[id_target]['color'] = '""'
+                                G.node[id_target]['prob'] = 0.0
                             if (id_target not in owned_nodes) and (id_target not in on_nodes):
                                 on_nodes.append(id_target)
                         else:
                             G.node[id_target]['status'] = 'destroyed'
                             G.node[id_target]['color'] = 'red'
+                            G.node[id_target]['prob'] = 1.0
                             if (id_target not in owned_nodes) and (id_target not in destroyed_nodes):
                                 destroyed_nodes.append(id_target)
                     if G.node[id_target]['color'] != before_color:
@@ -9666,6 +10280,7 @@ def discover_one_hop_nodes(H, G, owned_nodes):
                     if G.node[id_target]['status']=='on':
                         if (G.node[id_target]['color'] == 'gray' or G.node[id_target]['color'] == 'red'):
                             G.node[id_target]['color'] = '""'
+                            G.node[id_target]['prob'] = 0.0
                         if (id_target not in owned_nodes) and (id_target not in on_nodes):
                             on_nodes.append(id_target)
                     elif G.node[id_target]['status'] == 'repaired':
@@ -9676,6 +10291,7 @@ def discover_one_hop_nodes(H, G, owned_nodes):
                         if H.node[id_target]['true_status'] == 'on':
                             G.node[id_target]['status'] = 'on'
                             G.node[id_target]['color'] = '""'
+                            G.node[id_target]['prob'] = 0.0
                             if (id_target not in owned_nodes) and (id_target not in on_nodes):
                                 on_nodes.append(id_target)
                         #else:
@@ -9702,13 +10318,21 @@ def add_edges_recovered_to_graph_gray(H,graph_built,edges_recovered):
                     if graph_built.has_edge(source,target):
                         true_status = graph_built[source][target][k]['true_status']
                         if true_status == 'destroyed':
+                        #print 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        #print graph_built[source][target][k]['status']
+                        #if true_status == 'destroyed':
                             graph_built[source][target][k]['color'] = 'blue'
                             graph_built[source][target][k]['status'] = 'repaired'
+                            graph_built[source][target][k]['true_status'] = 'on'
+                            graph_built[source][target][k]['prob'] = 0
+
+
                         else:
                             graph_built[source][target][k]['color'] = 'black'
                             graph_built[source][target][k]['status'] = 'on'
                         graph_built[source][target][k]['style'] = 'solid'
                         graph_built[source][target][k]['true_status'] = 'on'
+                        graph_built[source][target][k]['prob'] = 0
                         
                     else:
                         true_status = 'on'
@@ -9843,7 +10467,7 @@ def probe_network(H, G, nodes, edges_destroyed):
                     if id_target not in G.nodes():
                         long=H.node[id_target]['Longitude']
                         lat=H.node[id_target]['Latitude']
-                        G.add_node(H.node[id_target]['id'],status='on',color='""',true_status='on',id=id_target,Longitude=long,Latitude=lat)
+                        G.add_node(H.node[id_target]['id'],status='on',color='""',true_status='on',id=id_target,Longitude=long,Latitude=lat,prob=0.0)
                     if G.has_edge(id_source,id_target):
                         keydict2=G[id_source][id_target]
                         for k2 in keydict2:
@@ -9852,10 +10476,12 @@ def probe_network(H, G, nodes, edges_destroyed):
                                 G[id_source][id_target][k2]['color'] = 'black'
                                 G[id_source][id_target][k2]['style'] = 'solid'
                                 G[id_source][id_target][k2]['status'] = 'on'
+                                G[id_source][id_target][k2]['prob'] = 0.0
                     else:
-                        G.add_edge(id_source,id_target,key=k, true_status='on', status='on', type='normal', color='black', capacity =H[id_source][id_target][k]['capacity'])
+                        G.add_edge(id_source,id_target,key=k, true_status='on', status='on', type='normal', color='black', capacity =H[id_source][id_target][k]['capacity'],prob=0.0)
                     if G.node[id_target]['color'] != 'green':
                         G.node[id_target]['color'] = '""'
+                        G.node[id_target]['prob'] = 0.0
                     G.node[id_target]['status'] = 'on'
                     if id_target not in discovered_nodes:
                         discovered_nodes.append(id_target)

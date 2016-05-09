@@ -1,1 +1,1 @@
-Sim: 1/1 Seed: 120 --- Time: 1114.686 seconds 
+Sim: 7/10 Seed: 220 --- Time: 319.428 seconds 

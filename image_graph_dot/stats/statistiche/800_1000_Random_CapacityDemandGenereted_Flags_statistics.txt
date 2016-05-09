@@ -1,0 +1,516 @@
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(56, 606, 5) - (15, 587, 5) - (19, 689, 5) - (4, 553, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(56, 606): 27.0 - (19, 689): 46.0 - (4, 553): 24.0 - (15, 587): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(56, 606, 10) - (15, 587, 10) - (19, 689, 10) - (4, 553, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(20, 588, 5) - (26, 590, 5) - (23, 731, 5) - (38, 594, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 731): 26.0 - (26, 590): 37.0 - (20, 588): 24.0 - (38, 594): 44.0 - 
+Domanda Finale assegnata al grafo: 
+(20, 588, 10) - (26, 590, 10) - (23, 731, 10) - (38, 594, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 650, 5) - (14, 586, 5) - (8, 667, 5) - (38, 594, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 667): 22.0 - (14, 586): 49.0 - (38, 594): 44.0 - (7, 650): 20.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 650, 10) - (14, 586, 10) - (8, 667, 10) - (38, 594, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(53, 603, 5) - (15, 587, 5) - (54, 604, 5) - (65, 614, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 48.0 - (65, 614): 39.0 - (54, 604): 43.0 - (53, 603): 33.0 - 
+Domanda Finale assegnata al grafo: 
+(53, 603, 10) - (15, 587, 10) - (54, 604, 10) - (65, 614, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(28, 733, 5) - (60, 610, 5) - (36, 592, 5) - (45, 597, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(28, 733): 22.0 - (60, 610): 29.0 - (45, 597): 38.0 - (36, 592): 47.0 - 
+Domanda Finale assegnata al grafo: 
+(28, 733, 10) - (60, 610, 10) - (36, 592, 10) - (45, 597, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 731, 5) - (58, 608, 5) - (50, 601, 5) - (7, 650, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 731): 26.0 - (7, 650): 20.0 - (50, 601): 46.0 - (58, 608): 40.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 731, 10) - (58, 608, 10) - (50, 601, 10) - (7, 650, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(63, 613, 5) - (51, 602, 5) - (14, 586, 5) - (15, 587, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 586): 49.0 - (15, 587): 48.0 - (51, 602): 39.0 - (63, 613): 21.0 - 
+Domanda Finale assegnata al grafo: 
+(63, 613, 10) - (51, 602, 10) - (14, 586, 10) - (15, 587, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(30, 736, 5) - (15, 587, 5) - (36, 592, 5) - (58, 608, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 48.0 - (30, 736): 23.0 - (58, 608): 40.0 - (36, 592): 47.0 - 
+Domanda Finale assegnata al grafo: 
+(30, 736, 10) - (15, 587, 10) - (36, 592, 10) - (58, 608, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 605, 5) - (15, 587, 5) - (16, 668, 5) - (18, 686, 5) - (25, 589, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 48.0 - (55, 605): 34.0 - (25, 589): 50.0 - (18, 686): 21.0 - (16, 668): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 605, 10) - (15, 587, 10) - (16, 668, 10) - (18, 686, 10) - (25, 589, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 668, 5) - (8, 667, 5) - (19, 689, 5) - (59, 609, 5) - (15, 587, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 48.0 - (59, 609): 38.0 - (8, 667): 22.0 - (19, 689): 46.0 - (16, 668): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 668, 10) - (8, 667, 10) - (19, 689, 10) - (59, 609, 10) - (15, 587, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(56, 606, 5) - (15, 587, 5) - (19, 689, 5) - (4, 553, 5) - (16, 668, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(56, 606): 27.0 - (19, 689): 46.0 - (4, 553): 24.0 - (16, 668): 23.0 - (15, 587): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(56, 606, 10) - (15, 587, 10) - (19, 689, 10) - (4, 553, 10) - (16, 668, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(20, 588, 5) - (26, 590, 5) - (23, 731, 5) - (38, 594, 5) - (30, 736, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 731): 26.0 - (26, 590): 37.0 - (20, 588): 24.0 - (38, 594): 44.0 - (30, 736): 23.0 - 
+Domanda Finale assegnata al grafo: 
+(20, 588, 10) - (26, 590, 10) - (23, 731, 10) - (38, 594, 10) - (30, 736, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 650, 5) - (14, 586, 5) - (8, 667, 5) - (38, 594, 5) - (17, 682, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(17, 682): 24.0 - (8, 667): 22.0 - (14, 586): 49.0 - (38, 594): 44.0 - (7, 650): 20.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 650, 10) - (14, 586, 10) - (8, 667, 10) - (38, 594, 10) - (17, 682, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(53, 603, 5) - (15, 587, 5) - (54, 604, 5) - (65, 614, 5) - (50, 601, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 48.0 - (65, 614): 39.0 - (54, 604): 43.0 - (50, 601): 46.0 - (53, 603): 33.0 - 
+Domanda Finale assegnata al grafo: 
+(53, 603, 10) - (15, 587, 10) - (54, 604, 10) - (65, 614, 10) - (50, 601, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(28, 733, 5) - (60, 610, 5) - (36, 592, 5) - (45, 597, 5) - (5, 577, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(28, 733): 22.0 - (60, 610): 29.0 - (5, 577): 28.0 - (45, 597): 38.0 - (36, 592): 47.0 - 
+Domanda Finale assegnata al grafo: 
+(28, 733, 10) - (60, 610, 10) - (36, 592, 10) - (45, 597, 10) - (5, 577, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 731, 5) - (58, 608, 5) - (50, 601, 5) - (7, 650, 5) - (59, 609, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(23, 731): 26.0 - (59, 609): 38.0 - (7, 650): 20.0 - (50, 601): 46.0 - (58, 608): 40.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 731, 10) - (58, 608, 10) - (50, 601, 10) - (7, 650, 10) - (59, 609, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(63, 613, 5) - (51, 602, 5) - (14, 586, 5) - (15, 587, 5) - (27, 591, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 586): 49.0 - (15, 587): 48.0 - (51, 602): 39.0 - (63, 613): 21.0 - (27, 591): 47.0 - 
+Domanda Finale assegnata al grafo: 
+(63, 613, 10) - (51, 602, 10) - (14, 586, 10) - (15, 587, 10) - (27, 591, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(30, 736, 5) - (15, 587, 5) - (36, 592, 5) - (58, 608, 5) - (59, 609, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 48.0 - (59, 609): 38.0 - (30, 736): 23.0 - (58, 608): 40.0 - (36, 592): 47.0 - 
+Domanda Finale assegnata al grafo: 
+(30, 736, 10) - (15, 587, 10) - (36, 592, 10) - (58, 608, 10) - (59, 609, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 605, 5) - (15, 587, 5) - (16, 668, 5) - (18, 686, 5) - (25, 589, 5) - (30, 736, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 29.0 - (18, 686): 29.0 - (30, 736): 30.0 - (25, 589): 26.0 - (55, 605): 26.0 - (16, 668): 46.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 605, 10) - (15, 587, 10) - (16, 668, 10) - (18, 686, 10) - (25, 589, 10) - (30, 736, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 668, 5) - (8, 667, 5) - (19, 689, 5) - (59, 609, 5) - (15, 587, 5) - (56, 606, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 24.0 - (59, 609): 25.0 - (56, 606): 40.0 - (8, 667): 28.0 - (19, 689): 34.0 - (16, 668): 26.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 668, 10) - (8, 667, 10) - (19, 689, 10) - (59, 609, 10) - (15, 587, 10) - (56, 606, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(56, 606, 5) - (15, 587, 5) - (19, 689, 5) - (4, 553, 5) - (16, 668, 5) - (55, 605, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(56, 606): 25.0 - (55, 605): 41.0 - (4, 553): 20.0 - (15, 587): 50.0 - (19, 689): 25.0 - (16, 668): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(56, 606, 10) - (15, 587, 10) - (19, 689, 10) - (4, 553, 10) - (16, 668, 10) - (55, 605, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(20, 588, 5) - (26, 590, 5) - (23, 731, 5) - (38, 594, 5) - (30, 736, 5) - (53, 603, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 590): 46.0 - (30, 736): 27.0 - (53, 603): 50.0 - (23, 731): 33.0 - (38, 594): 32.0 - (20, 588): 39.0 - 
+Domanda Finale assegnata al grafo: 
+(20, 588, 10) - (26, 590, 10) - (23, 731, 10) - (38, 594, 10) - (30, 736, 10) - (53, 603, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 650, 5) - (14, 586, 5) - (8, 667, 5) - (38, 594, 5) - (17, 682, 5) - (27, 591, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 586): 34.0 - (7, 650): 26.0 - (17, 682): 35.0 - (27, 591): 41.0 - (8, 667): 44.0 - (38, 594): 34.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 650, 10) - (14, 586, 10) - (8, 667, 10) - (38, 594, 10) - (17, 682, 10) - (27, 591, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(53, 603, 5) - (15, 587, 5) - (54, 604, 5) - (65, 614, 5) - (50, 601, 5) - (12, 584, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 29.0 - (65, 614): 23.0 - (50, 601): 34.0 - (53, 603): 38.0 - (54, 604): 39.0 - (12, 584): 40.0 - 
+Domanda Finale assegnata al grafo: 
+(53, 603, 10) - (15, 587, 10) - (54, 604, 10) - (65, 614, 10) - (50, 601, 10) - (12, 584, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(28, 733, 5) - (60, 610, 5) - (36, 592, 5) - (45, 597, 5) - (5, 577, 5) - (21, 698, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(60, 610): 38.0 - (21, 698): 23.0 - (28, 733): 37.0 - (5, 577): 43.0 - (45, 597): 30.0 - (36, 592): 43.0 - 
+Domanda Finale assegnata al grafo: 
+(28, 733, 10) - (60, 610, 10) - (36, 592, 10) - (45, 597, 10) - (5, 577, 10) - (21, 698, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 731, 5) - (58, 608, 5) - (50, 601, 5) - (7, 650, 5) - (59, 609, 5) - (54, 604, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(59, 609): 39.0 - (54, 604): 46.0 - (50, 601): 20.0 - (7, 650): 21.0 - (58, 608): 41.0 - (23, 731): 34.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 731, 10) - (58, 608, 10) - (50, 601, 10) - (7, 650, 10) - (59, 609, 10) - (54, 604, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(63, 613, 5) - (51, 602, 5) - (14, 586, 5) - (15, 587, 5) - (27, 591, 5) - (65, 614, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 45.0 - (14, 586): 41.0 - (65, 614): 25.0 - (27, 591): 21.0 - (51, 602): 22.0 - (63, 613): 27.0 - 
+Domanda Finale assegnata al grafo: 
+(63, 613, 10) - (51, 602, 10) - (14, 586, 10) - (15, 587, 10) - (27, 591, 10) - (65, 614, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(30, 736, 5) - (15, 587, 5) - (36, 592, 5) - (58, 608, 5) - (59, 609, 5) - (60, 610, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 25.0 - (59, 609): 23.0 - (30, 736): 21.0 - (60, 610): 28.0 - (58, 608): 43.0 - (36, 592): 20.0 - 
+Domanda Finale assegnata al grafo: 
+(30, 736, 10) - (15, 587, 10) - (36, 592, 10) - (58, 608, 10) - (59, 609, 10) - (60, 610, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 605, 5) - (15, 587, 5) - (16, 668, 5) - (18, 686, 5) - (25, 589, 5) - (30, 736, 5) - (54, 604, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 47.0 - (18, 686): 42.0 - (30, 736): 34.0 - (25, 589): 47.0 - (54, 604): 26.0 - (55, 605): 43.0 - (16, 668): 27.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 605, 10) - (15, 587, 10) - (16, 668, 10) - (18, 686, 10) - (25, 589, 10) - (30, 736, 10) - (54, 604, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 668, 5) - (8, 667, 5) - (19, 689, 5) - (59, 609, 5) - (15, 587, 5) - (56, 606, 5) - (23, 731, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 31.0 - (59, 609): 20.0 - (56, 606): 34.0 - (23, 731): 41.0 - (8, 667): 26.0 - (19, 689): 33.0 - (16, 668): 24.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 668, 10) - (8, 667, 10) - (19, 689, 10) - (59, 609, 10) - (15, 587, 10) - (56, 606, 10) - (23, 731, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(56, 606, 5) - (15, 587, 5) - (19, 689, 5) - (4, 553, 5) - (16, 668, 5) - (55, 605, 5) - (27, 591, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(56, 606): 28.0 - (55, 605): 38.0 - (4, 553): 24.0 - (15, 587): 28.0 - (27, 591): 33.0 - (19, 689): 27.0 - (16, 668): 24.0 - 
+Domanda Finale assegnata al grafo: 
+(56, 606, 10) - (15, 587, 10) - (19, 689, 10) - (4, 553, 10) - (16, 668, 10) - (55, 605, 10) - (27, 591, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(20, 588, 5) - (26, 590, 5) - (23, 731, 5) - (38, 594, 5) - (30, 736, 5) - (53, 603, 5) - (58, 608, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 590): 21.0 - (30, 736): 44.0 - (53, 603): 20.0 - (23, 731): 27.0 - (38, 594): 50.0 - (58, 608): 32.0 - (20, 588): 35.0 - 
+Domanda Finale assegnata al grafo: 
+(20, 588, 10) - (26, 590, 10) - (23, 731, 10) - (38, 594, 10) - (30, 736, 10) - (53, 603, 10) - (58, 608, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 650, 5) - (14, 586, 5) - (8, 667, 5) - (38, 594, 5) - (17, 682, 5) - (27, 591, 5) - (65, 614, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 586): 38.0 - (65, 614): 44.0 - (7, 650): 31.0 - (17, 682): 27.0 - (27, 591): 22.0 - (8, 667): 23.0 - (38, 594): 28.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 650, 10) - (14, 586, 10) - (8, 667, 10) - (38, 594, 10) - (17, 682, 10) - (27, 591, 10) - (65, 614, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 225
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(53, 603, 5) - (15, 587, 5) - (54, 604, 5) - (65, 614, 5) - (50, 601, 5) - (12, 584, 5) - (61, 611, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 38.0 - (65, 614): 26.0 - (50, 601): 48.0 - (53, 603): 39.0 - (54, 604): 23.0 - (61, 611): 36.0 - (12, 584): 31.0 - 
+Domanda Finale assegnata al grafo: 
+(53, 603, 10) - (15, 587, 10) - (54, 604, 10) - (65, 614, 10) - (50, 601, 10) - (12, 584, 10) - (61, 611, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 226
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(28, 733, 5) - (60, 610, 5) - (36, 592, 5) - (45, 597, 5) - (5, 577, 5) - (21, 698, 5) - (66, 615, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(66, 615): 24.0 - (60, 610): 43.0 - (21, 698): 23.0 - (28, 733): 29.0 - (5, 577): 29.0 - (45, 597): 41.0 - (36, 592): 20.0 - 
+Domanda Finale assegnata al grafo: 
+(28, 733, 10) - (60, 610, 10) - (36, 592, 10) - (45, 597, 10) - (5, 577, 10) - (21, 698, 10) - (66, 615, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 227
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(23, 731, 5) - (58, 608, 5) - (50, 601, 5) - (7, 650, 5) - (59, 609, 5) - (54, 604, 5) - (24, 732, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(59, 609): 26.0 - (54, 604): 27.0 - (50, 601): 47.0 - (7, 650): 48.0 - (58, 608): 48.0 - (23, 731): 32.0 - (24, 732): 40.0 - 
+Domanda Finale assegnata al grafo: 
+(23, 731, 10) - (58, 608, 10) - (50, 601, 10) - (7, 650, 10) - (59, 609, 10) - (54, 604, 10) - (24, 732, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 228
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(63, 613, 5) - (51, 602, 5) - (14, 586, 5) - (15, 587, 5) - (27, 591, 5) - (65, 614, 5) - (50, 601, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 36.0 - (14, 586): 45.0 - (65, 614): 34.0 - (50, 601): 22.0 - (27, 591): 34.0 - (51, 602): 33.0 - (63, 613): 25.0 - 
+Domanda Finale assegnata al grafo: 
+(63, 613, 10) - (51, 602, 10) - (14, 586, 10) - (15, 587, 10) - (27, 591, 10) - (65, 614, 10) - (50, 601, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 229
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(30, 736, 5) - (15, 587, 5) - (36, 592, 5) - (58, 608, 5) - (59, 609, 5) - (60, 610, 5) - (46, 598, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 25.0 - (59, 609): 28.0 - (30, 736): 31.0 - (60, 610): 42.0 - (58, 608): 47.0 - (46, 598): 21.0 - (36, 592): 20.0 - 
+Domanda Finale assegnata al grafo: 
+(30, 736, 10) - (15, 587, 10) - (36, 592, 10) - (58, 608, 10) - (59, 609, 10) - (60, 610, 10) - (46, 598, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 220
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(55, 605, 5) - (15, 587, 5) - (16, 668, 5) - (18, 686, 5) - (25, 589, 5) - (30, 736, 5) - (54, 604, 5) - (14, 586, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 586): 47.0 - (15, 587): 26.0 - (18, 686): 32.0 - (30, 736): 20.0 - (25, 589): 44.0 - (54, 604): 43.0 - (55, 605): 35.0 - (16, 668): 40.0 - 
+Domanda Finale assegnata al grafo: 
+(55, 605, 10) - (15, 587, 10) - (16, 668, 10) - (18, 686, 10) - (25, 589, 10) - (30, 736, 10) - (54, 604, 10) - (14, 586, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 221
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(16, 668, 5) - (8, 667, 5) - (19, 689, 5) - (59, 609, 5) - (15, 587, 5) - (56, 606, 5) - (23, 731, 5) - (28, 733, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 587): 45.0 - (59, 609): 26.0 - (56, 606): 20.0 - (28, 733): 26.0 - (23, 731): 39.0 - (8, 667): 24.0 - (19, 689): 21.0 - (16, 668): 25.0 - 
+Domanda Finale assegnata al grafo: 
+(16, 668, 10) - (8, 667, 10) - (19, 689, 10) - (59, 609, 10) - (15, 587, 10) - (56, 606, 10) - (23, 731, 10) - (28, 733, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 222
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(56, 606, 5) - (15, 587, 5) - (19, 689, 5) - (4, 553, 5) - (16, 668, 5) - (55, 605, 5) - (27, 591, 5) - (8, 667, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(56, 606): 36.0 - (55, 605): 28.0 - (4, 553): 22.0 - (15, 587): 50.0 - (27, 591): 36.0 - (8, 667): 24.0 - (19, 689): 41.0 - (16, 668): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(56, 606, 10) - (15, 587, 10) - (19, 689, 10) - (4, 553, 10) - (16, 668, 10) - (55, 605, 10) - (27, 591, 10) - (8, 667, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 223
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(20, 588, 5) - (26, 590, 5) - (23, 731, 5) - (38, 594, 5) - (30, 736, 5) - (53, 603, 5) - (58, 608, 5) - (29, 734, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(26, 590): 180.0 - (30, 736): 46.0 - (53, 603): 150.0 - (29, 734): 62.0 - (23, 731): 165.0 - (38, 594): 189.0 - (58, 608): 60.0 - (20, 588): 175.0 - 
+Domanda Finale assegnata al grafo: 
+(20, 588, 10) - (26, 590, 10) - (23, 731, 10) - (38, 594, 10) - (30, 736, 10) - (53, 603, 10) - (58, 608, 10) - (29, 734, 10) - 
+
+
+
+Topologia: 800_1000_Random_CapacityDemandGenereted
+Seed: 224
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(7, 650, 5) - (14, 586, 5) - (8, 667, 5) - (38, 594, 5) - (17, 682, 5) - (27, 591, 5) - (65, 614, 5) - (36, 592, 5) - 
+Max flows su grafo supply per ogni coppia: 
+(14, 586): 21.0 - (65, 614): 109.0 - (7, 650): 101.0 - (17, 682): 115.0 - (27, 591): 64.0 - (8, 667): 108.0 - (38, 594): 120.0 - (36, 592): 103.0 - 
+Domanda Finale assegnata al grafo: 
+(7, 650, 10) - (14, 586, 10) - (8, 667, 10) - (38, 594, 10) - (17, 682, 10) - (27, 591, 10) - (65, 614, 10) - (36, 592, 10) - 

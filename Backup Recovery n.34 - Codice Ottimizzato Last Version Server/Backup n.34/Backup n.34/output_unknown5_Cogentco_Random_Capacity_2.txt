@@ -1,3 +1,0 @@
-4
-SIMULAZIONI TERMINATE
-Immagini generate nella cartella: ..\..\..\image_graph_dot\store_images

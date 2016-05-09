@@ -1,0 +1,8 @@
+Sim: 6/10 Seed: 220 --- Time: 9905.349 seconds 
+Sim: 6/10 Seed: 221 --- Time: 10361.71 seconds 
+Sim: 6/10 Seed: 222 --- Time: 9567.257 seconds 
+Sim: 6/10 Seed: 223 --- Time: 10850.538 seconds 
+Sim: 6/10 Seed: 224 --- Time: 10252.42 seconds 
+Sim: 6/10 Seed: 225 --- Time: 13192.295 seconds 
+Sim: 6/10 Seed: 227 --- Time: 10957.647 seconds 
+Sim: 6/10 Seed: 229 --- Time: 9870.498 seconds 

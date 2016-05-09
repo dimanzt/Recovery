@@ -1,0 +1,2 @@
+Sim: 5/10 Seed: 228 --- Time: 1.632 seconds 
+Sim: 5/10 Seed: 228 --- Time: 1.635 seconds 

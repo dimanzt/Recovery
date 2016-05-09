@@ -1,0 +1,14 @@
+Sim: 9/15 Seed: 221 --- Time: 4.776 seconds 
+Sim: 9/15 Seed: 223 --- Time: 7.202 seconds 
+Sim: 9/15 Seed: 225 --- Time: 3.793 seconds 
+Sim: 9/15 Seed: 226 --- Time: 3.542 seconds 
+Sim: 9/15 Seed: 227 --- Time: 3.194 seconds 
+Sim: 9/15 Seed: 228 --- Time: 5.658 seconds 
+Sim: 9/15 Seed: 229 --- Time: 6.227 seconds 
+Sim: 9/15 Seed: 220 --- Time: 4.399 seconds 
+Sim: 9/15 Seed: 221 --- Time: 5.019 seconds 
+Sim: 9/15 Seed: 223 --- Time: 3.901 seconds 
+Sim: 9/15 Seed: 225 --- Time: 3.91 seconds 
+Sim: 9/15 Seed: 227 --- Time: 2.839 seconds 
+Sim: 9/15 Seed: 228 --- Time: 3.182 seconds 
+Sim: 9/15 Seed: 229 --- Time: 5.602 seconds 

@@ -1,58 +1,30 @@
 graph [
   node [
-    id 0
-    label "0"
+    id 100
+    label "100"
   ]
   node [
-    id 59
-    label "59"
+    id 139
+    label "139"
   ]
   node [
-    id 299
-    label "299"
+    id 4
+    label "4"
   ]
   node [
-    id 334
-    label "334"
-  ]
-  node [
-    id 335
-    label "335"
-  ]
-  node [
-    id 222
-    label "222"
-  ]
-  node [
-    id 27
-    label "27"
-  ]
-  node [
-    id 30
-    label "30"
+    id 333
+    label "333"
   ]
   edge [
-    source 0
-    target 299
+    source 100
+    target 333
     type "green"
-    demand 22
+    demand 10
   ]
   edge [
-    source 59
-    target 222
+    source 139
+    target 4
     type "green"
-    demand 22
-  ]
-  edge [
-    source 334
-    target 27
-    type "green"
-    demand 22
-  ]
-  edge [
-    source 335
-    target 30
-    type "green"
-    demand 22
+    demand 10
   ]
 ]
