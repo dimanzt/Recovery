@@ -1,7 +1,0 @@
-Sim: 7/10 Seed: 220 --- Time: 196.514 seconds 
-Sim: 7/10 Seed: 221 --- Time: 150.776 seconds 
-Sim: 7/10 Seed: 223 --- Time: 113.874 seconds 
-Sim: 7/10 Seed: 224 --- Time: 222.009 seconds 
-Sim: 7/10 Seed: 225 --- Time: 244.547 seconds 
-Sim: 7/10 Seed: 227 --- Time: 183.449 seconds 
-Sim: 7/10 Seed: 228 --- Time: 259.444 seconds 

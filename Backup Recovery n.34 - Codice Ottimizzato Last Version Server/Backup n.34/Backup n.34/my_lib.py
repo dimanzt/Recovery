@@ -9086,7 +9086,7 @@ def compute_lenght_of_path(H,path):
 def assign_random_capacity_to_edges(H,filename):
 
     for edge in H.edges():
-        random_cap=random.randint(20,100) #(20,50) bood
+        random_cap=random.randint(50,50) #(20,50) bood
         #random_cap=1000
         H[edge[0]][edge[1]][0]['capacity']=random_cap
 
@@ -10316,23 +10316,24 @@ def add_edges_recovered_to_graph_gray(H,graph_built,edges_recovered):
                     cap=H[source][target][k]['capacity']
                     #graph_built.add_edge(source,target, type='normal',status='repaired',labelfont='blue',color='blue',style='solid',capacity=cap)
                     if graph_built.has_edge(source,target):
-                        true_status = graph_built[source][target][k]['true_status']
+                        g_key=graph_built(source,tarfet)
+                        true_status = graph_built[source][target][g_key]['true_status']
                         if true_status == 'destroyed':
                         #print 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
                         #print graph_built[source][target][k]['status']
                         #if true_status == 'destroyed':
-                            graph_built[source][target][k]['color'] = 'blue'
-                            graph_built[source][target][k]['status'] = 'repaired'
-                            graph_built[source][target][k]['true_status'] = 'on'
-                            graph_built[source][target][k]['prob'] = 0
+                            graph_built[source][target][g_key]['color'] = 'blue'
+                            graph_built[source][target][g_key]['status'] = 'repaired'
+                            graph_built[source][target][g_key]['true_status'] = 'on'
+                            graph_built[source][target][g_key]['prob'] = 0
 
 
                         else:
-                            graph_built[source][target][k]['color'] = 'black'
-                            graph_built[source][target][k]['status'] = 'on'
-                        graph_built[source][target][k]['style'] = 'solid'
-                        graph_built[source][target][k]['true_status'] = 'on'
-                        graph_built[source][target][k]['prob'] = 0
+                            graph_built[source][target][g_key]['color'] = 'black'
+                            graph_built[source][target][g_key]['status'] = 'on'
+                        graph_built[source][target][g_key]['style'] = 'solid'
+                        graph_built[source][target][g_key]['true_status'] = 'on'
+                        graph_built[source][target][g_key]['prob'] = 0
                         
                     else:
                         true_status = 'on'

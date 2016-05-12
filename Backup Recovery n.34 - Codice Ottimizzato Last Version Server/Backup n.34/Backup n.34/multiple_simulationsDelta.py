@@ -64,7 +64,7 @@ alpha=0.0
 alpha_fixed=False
 #flow_fixed=True
 flow_fixed=False
-flow_c=15
+flow_c=5
 if num_couple_passed!=-1:
     num_couple_fix=True
     number_of_couple=num_couple_passed
@@ -119,13 +119,13 @@ size_array_seed=20
 seed_array=[]
 
 if seed_fixed==False:
-    for i in range(220,220+10,1):
+    for i in range(220,220+20,1):
         seed_array.append(i)
 else:
     seed_array.append(seed)
 
 if flow_fixed==True:
-    flow_c=15
+    flow_c=5
 
 if num_couple_fix==False:
     number_of_couple=5
@@ -140,10 +140,10 @@ for i in range(0,num_simulations,1):
         alpha+=0.2
 
     if num_couple_fix==False:
-        number_of_couple+=1
+        number_of_couple+=0
 
     if flow_fixed==False:
-        flow_c+=0
+        flow_c+=5
 
     if fixed_distruption==False:
         var_distruption+=15

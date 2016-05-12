@@ -1,5 +1,0 @@
-Sim: 6/15 Seed: 223 --- Time: 0 seconds 
-Sim: 2/10 Seed: 221 --- Time: 0 seconds 
-Sim: 2/10 Seed: 223 --- Time: 0 seconds 
-Sim: 2/10 Seed: 224 --- Time: 0 seconds 
-Sim: 2/10 Seed: 227 --- Time: 0 seconds 

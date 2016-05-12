@@ -4,97 +4,69 @@ graph [
     label "64"
   ]
   node [
-    id 66
-    label "66"
+    id 33
+    label "33"
+  ]
+  node [
+    id 34
+    label "34"
   ]
   node [
     id 37
     label "37"
   ]
   node [
-    id 103
-    label "103"
+    id 14
+    label "14"
   ]
   node [
-    id 40
-    label "40"
+    id 15
+    label "15"
   ]
   node [
-    id 10
-    label "10"
+    id 18
+    label "18"
   ]
   node [
-    id 43
-    label "43"
+    id 21
+    label "21"
   ]
   node [
-    id 76
-    label "76"
+    id 24
+    label "24"
   ]
   node [
-    id 79
-    label "79"
-  ]
-  node [
-    id 51
-    label "51"
-  ]
-  node [
-    id 53
-    label "53"
-  ]
-  node [
-    id 54
-    label "54"
-  ]
-  node [
-    id 61
-    label "61"
-  ]
-  node [
-    id 63
-    label "63"
+    id 26
+    label "26"
   ]
   edge [
     source 64
     target 37
     type "green"
-    demand 15
+    demand 10
   ]
   edge [
-    source 66
-    target 40
+    source 33
+    target 14
     type "green"
-    demand 15
+    demand 10
   ]
   edge [
-    source 103
-    target 51
+    source 34
+    target 24
     type "green"
-    demand 15
+    demand 10
   ]
   edge [
-    source 10
-    target 61
+    source 15
+    target 21
     type "green"
-    demand 15
+    demand 10
   ]
   edge [
-    source 43
-    target 79
+    source 18
+    target 26
     type "green"
-    demand 15
-  ]
-  edge [
-    source 76
-    target 54
-    type "green"
-    demand 15
-  ]
-  edge [
-    source 53
-    target 63
-    type "green"
-    demand 15
+    demand 10
   ]
 ]

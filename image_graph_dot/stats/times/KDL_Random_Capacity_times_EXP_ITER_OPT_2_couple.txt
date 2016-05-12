@@ -1,5 +1,0 @@
-Sim: 1/10 Seed: 220 --- Time: 40331.564 seconds 
-Sim: 1/10 Seed: 221 --- Time: 12621.403 seconds 
-Sim: 1/10 Seed: 222 --- Time: 143668.606 seconds 
-Sim: 1/10 Seed: 223 --- Time: 3455.272 seconds 
-Sim: 1/10 Seed: 224 --- Time: 270752.743 seconds 

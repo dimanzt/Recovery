@@ -1,8 +1,0 @@
-Sim: 7/15 Seed: 220 --- Time: 243.699 seconds 
-Sim: 7/15 Seed: 221 --- Time: 169.142 seconds 
-Sim: 7/15 Seed: 222 --- Time: 155.476 seconds 
-Sim: 7/15 Seed: 223 --- Time: 162.733 seconds 
-Sim: 7/15 Seed: 224 --- Time: 313.792 seconds 
-Sim: 7/15 Seed: 225 --- Time: 213.533 seconds 
-Sim: 7/15 Seed: 226 --- Time: 179.589 seconds 
-Sim: 7/15 Seed: 227 --- Time: 284.717 seconds 

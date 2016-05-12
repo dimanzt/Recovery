@@ -1,4 +1,0 @@
-Sim: 8/15 Seed: 222 --- Time: 0 seconds 
-Sim: 8/15 Seed: 224 --- Time: 0 seconds 
-Sim: 8/15 Seed: 222 --- Time: 0 seconds 
-Sim: 8/15 Seed: 224 --- Time: 0 seconds 
