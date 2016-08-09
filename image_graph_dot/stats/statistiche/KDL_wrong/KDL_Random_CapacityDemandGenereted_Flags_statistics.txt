@@ -1,0 +1,120 @@
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.6
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.8
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 
+
+
+
+Topologia: KDL_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 2.2
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(59, 222, 43) - (8, 191, 48) - 
+Max flows su grafo supply per ogni coppia: 
+(8, 191): 47.0 - (59, 222): 30.0 - 
+Domanda Finale assegnata al grafo: 
+(59, 222, 10) - (8, 191, 10) - 

@@ -1,3 +1,0 @@
-strict digraph  {
-	1 -> 2 [key=0];
-}

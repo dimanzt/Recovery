@@ -1,1 +1,0 @@
-Prob_edge	Seed	Rip_optimal	Rip_MultiC	DirImages0.05	0	9	80.05	0	9	8

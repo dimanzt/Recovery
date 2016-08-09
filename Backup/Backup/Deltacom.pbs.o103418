@@ -1,0 +1,11 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Setting up for goliath.cse.psu.edu 
+Setting up gurobi650
+looking for GUROBI License
+Found gurobi-goliath.lic setting variable GRB_LICENSE_FILE
+adding GUROBI_HOME path to path
+Adding /home/software/gurobi/gurobi651/linux64/lib to LD_LIBRARY_PATH
+Setting PYTHON_HOME to /home/software/python/Anaconda2.4-Python2.7
+Adding  /home/software/python/Anaconda2.4-Python2.7/bin to path
+Finished setting host based settings

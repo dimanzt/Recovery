@@ -1,0 +1,13 @@
+graph G {
+0 [status=on, style=filled, color=green, Country="United States", pos="50,50!", Longitude=50, label=0, shape=circle, Internal=1, Latitude=50, type=green, id=0];
+1 [status=on, style="", color="", Country="United States", pos="50,100!", Longitude=50, label=1, shape=circle, Internal=1, Latitude=100, type=normal, id=1];
+2 [status=on, style=filled, color=green, Country="United States", pos="100,100!", Longitude=100, label=2, shape=circle, Internal=1, Latitude=100, type=green, id=2];
+3 [status=on, style=filled, color=green, Country="United States", pos="100,50!", Longitude=100, label=3, shape=circle, Internal=1, Latitude=50, type=green, id=3];
+0 -- 1  [status=on, LinkLabel="NY-CH", capacity=10, key=0, color=black, type=normal, LinkNote=c, label=10];
+0 -- 2  [style=bold, color=green, label=6, key=0, demand=6, fontcolor=green, type=green];
+0 -- 3  [status=on, LinkLabel="SE-NY", capacity=4, key=0, color=black, type=normal, LinkNote=c, label=4];
+0 -- 3  [status=on, LinkLabel="NY-SE", capacity=7, key=1, color=black, type=normal, LinkNote=c, label=7];
+0 -- 3  [style=bold, color=green, label=1, key=2, demand=1, fontcolor=green, type=green];
+1 -- 2  [status=on, LinkLabel="CH-DC", capacity=5, key=0, color=black, type=normal, LinkNote=c, label=5];
+2 -- 3  [status=on, LinkLabel="DC-SE", capacity=4, key=0, color=black, type=normal, LinkNote=c, label=4];
+}
