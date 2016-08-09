@@ -3986,6 +3986,33 @@ def count_occurance(elem, path):
 
     return count
 
+def write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
+                          num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
+                          flow_c_value,                                        #valore di flusso fixed assegnato per questa run
+                          number_of_couple,                                     #numero di coppie scelto per rappresentare la domanda
+                          var_distruption):
+
+
+        path_to_file_stat=path_to_stats+filename_stat
+        print path_to_file_stat
+        if not os.path.exists(path_to_file_stat):
+            #print 'non esiste lo creo'
+            file=open(path_to_file_stat,'w+')
+            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\t\tDirImages\n"
+
+            file.write(name_of_colunms)
+            file.close
+
+        tot_rip_opt=(num_rip_optimal_nodes+num_rip_optimal_edges)
+
+        print 'tot_opt %d = %d + %d'%(tot_rip_opt, num_rip_optimal_nodes,num_rip_optimal_edges)
+
+        file=open(path_to_file_stat,'a')
+        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
+        file.write(raw_line)
+        file.close()
+
+
 def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed,      #ISP
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
@@ -4015,10 +4042,6 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
             name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tISP_Nodes\tISP_Edges\tTotal_ISP\tTruely_ISP_NODES\tTruely_ISP_EDGES\tTotal_truely_ISP_repairs\tExpected_OPT_Nodes\tExpected_OPT_Edges\tTotal_OPT_Expected\tExpected_OPT_Nodes\tExpected_OPT_Edges\tExpected_OPT_Total\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tTotal_ONE_SHOT_OPT_Expected\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tONE_SHOT_Expected_OPT_Total\tBB_Expected_OPT_Nodes\tBB_Expected_OPT_Edges\tBB_Expected_OPT_Total\tBB_Truely_OPT_Nodes\tBB_Truely_OPT_Edges\tBB_Truely_OPT_Total\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tMCG_Nodes\tMCG_Edges\tTotal_MCG\tMCW_Nodes\tMCW_Edges\tTotal_MCW\tMCB_Nodes\tMCB_Edges\tTotal_MCB\tSRT_Nodes\tSRT_Edges\tTotal_SRT\tTruely_SRT_Nodes\tTruely_SRT_EDGES\tTotal_Truely_SRT\tRNK_Nodes\tRNK_Edges\tTotal_RNK\tALL_Nodes\tALL_Edges\tTotal_ALL\tTotal_DEM\tSRT_SATIS\t%_DEM_SAT\tRNK_N_COM\tRNK_E_COM\tTot_RNK_C\tRNK_N_NC\tRNK_E_NC\tTot_RNK_NC\tRNK_SATIS\t%_DEM_RNK\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\tFlag_MCG\t\tDirImages\n"
-
-
-
-
 
             file.write(name_of_colunms)
             file.close
