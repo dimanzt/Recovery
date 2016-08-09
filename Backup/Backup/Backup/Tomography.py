@@ -337,6 +337,52 @@ time_elapsed_optimal=round(time.time() - start_time_optimal,3)
 print("--- %s seconds ---" % str(time_elapsed_optimal))
 write_stat_time_simulation(path_to_stat_times,'OPT',filename_graph,int(sys.argv[5]),int(sys.argv[4]),seed_passed,number_of_couple,time_elapsed_optimal)
 #################################################################################################################
+#----------------------------------------------------------OPTIMAL GRAY-------------------------------------------------------
+print 'Inizio algoritmo OPTIMAL recovery'
+del H
+#Diman commented two comments
+H=nx.MultiGraph(nx.read_gml(path_to_graph))  #grafo supply
+prepare_graph(H)
+merge_graphs(H,D)
+
+#distruggi di nuovo e recover whit multicommodity
+#nodes_destroyed,edges_destroyed=destroy_graph(H,29,-95,10) #per abilene
+
+destroy_graph_manual(H,path_to_distruption)
+
+my_draw(H, 'really_destroyed')
+
+#green_edges=get_green_edges(temp_graph_supply_optimal)
+green_edges=deepcopy(copy_of_green_edges)
+
+my_draw(H,'7-destroyed_for_optimal')
+#calcola recovery ottimo
+nodes_recovered_optimal=[]
+edges_recovered_optimal=[]
+
+start_time_optimal=time.time()
+
+#optimal classico
+nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
+#nodes_recovered_optimal,edges_recovered_optimal=optimal_approx_recovery(H,green_edges)
+
+num_rip_optimal_gray_nodes=len(nodes_recovered_optimal)
+num_rip_optimal_gray_edges=len(edges_recovered_optimal)
+print num_rip_optimal_gray_nodes
+print num_rip_optimal_gray_edges
+#ripristina e disegna
+recover(H,nodes_recovered_optimal,edges_recovered_optimal)
+#set_betwenness_from_dict(H,old_bet_dict)
+#my_draw(H,'4-recovered_optimal_old_bet')
+#new_bet_dict=compute_my_betweeness_3(H, green_edges,distance_metric)
+#set_betwenness_from_dict(H,new_bet_dict)
+my_draw(H,'8-recovered_optimal_new_bet')
+
+time_elapsed_optimal=round(time.time() - start_time_optimal,3)
+print("--- %s seconds ---" % str(time_elapsed_optimal))
+write_stat_time_simulation(path_to_stat_times,'OPT',filename_graph,int(sys.argv[5]),int(sys.argv[4]),seed_passed,number_of_couple,time_elapsed_optimal)
+#################################################################################################################
+
 filename_stat='stat_simulations_'+filename_graph+"_Prob_"+str(prob_edge)+"_Alpha_"+str(alfa)+"_KHOP_"+str(K_HOPS)+"_distance_metric_"+str(distance_metric_passed)+"_type_of_bet_"+str(type_of_bet_passed)+"_always_put_monitor_"+str(always_split)+"_randomDisruption_"+str(random_disruption)+"_disruption_value_"+str(disruption_value)+"_error_"+str(error)+"_Gap"+str(Gap)+".txt"
 
 #numero della simulazione corrente e scrivo statistiche
@@ -345,6 +391,8 @@ num_sim=get_num_simulation(path_to_file_simulation)
 #################################################################################################################
 write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
+                          num_rip_optimal_gray_nodes,num_rip_optimal_gray_edges,#Gray OPTIMAL
+                          num_sim,                        
                           flow_c_value,                                        #valore di flusso fixed assegnato per questa run
                           number_of_couple,                                     #numero di coppie scelto per rappresentare la domanda
                           var_distruption)

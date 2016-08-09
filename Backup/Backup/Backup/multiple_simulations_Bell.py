@@ -95,7 +95,7 @@ prob_edge=0.002
 prob_edge_fixed=True
 
 #numero di simulazioni da eseguire (per far variare alpha oppure far variare la prob edge)
-num_simulations= 10
+num_simulations= 1
 #metrica di distanza per calcolare lunghezza dei path : 'one-hop' , 'capacity', 'broken'
 #distance_metric='broken'
 #distance_metric='broken_capacity'
@@ -106,7 +106,7 @@ num_simulations= 10
 #type_of_bet='diman'
 
 #specificare il nome del programma per la simulazione
-name_of_program_simulation='recoverySeamus.py'
+name_of_program_simulation='Tomography.py'
 
 #specificare il nome del programma per generare le immagini
 name_of_program_images='genera_immagini.py'
@@ -132,7 +132,7 @@ size_array_seed=10
 seed_array=[]
 
 if seed_fixed==False:
-    for i in range(120,120+5,1):
+    for i in range(120,120+1,1):
         seed_array.append(i)
 else:
     seed_array.append(seed)
