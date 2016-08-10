@@ -357,18 +357,17 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
 
 
 
-        """Diman add paths
-        temp_used_vertex=[]
-        temp_max_flow=0
-        total_flow=0
-        max_flow=0
-        path=[]
+        """Diman add paths"""
+        paths_selected=[]
         for h in demand_flows:
           for i in nodes:
             for j in nodes:
               if flow[h,i,j]>0:
+          paths_selected.append(curr_path)
 
-  
+
+
+        """  
         for i in nodes:
           #var_reference=m.getVarByName('usedVertex_%s'%(i))
           var_reference=m.getAttr('x', usedVertex)
