@@ -363,8 +363,48 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
           for i in nodes:
             for j in nodes:
               if flow[h,i,j]>0:
+                curr_path = {i : [i]} #disctionary of paths
+                curr_path[j] 
           paths_selected.append(curr_path)
 
+
+
+
+
+    paths = {source: [source]}  # dictionary of paths
+    seen = {source: 0}
+    c = count()
+    fringe = []  # use heapq with (distance,label) tuples
+    push(fringe, (0, next(c), source))
+    while fringe:
+        (d, _, v) = pop(fringe)
+        if v in dist:
+            continue  # already searched this node.
+        dist[v] = d
+        if v == target:
+            break
+        # for ignore,w,edgedata in G.edges_iter(v,data=True):
+        # is about 30% slower than the following    
+        edata = iter(G[v].items())
+
+        for w, edgedata in edata:
+            #print v,edgedata,w
+            #vw_dist = dist[v] + float(edgedata.get('capacity', 1))+G.node[w][weight]
+            vw_dist = dist[v] + distance_node(G,v,w,distance_metric) #+G.node[w][weight]
+
+            if cutoff is not None:
+                if vw_dist > cutoff:
+                    continue
+            if w in dist:
+                if vw_dist < dist[w]:
+                    raise ValueError('Contradictory paths found:',
+                                     'negative weights?')
+            elif w not in seen or vw_dist < seen[w]:
+                seen[w] = vw_dist
+                push(fringe, (vw_dist, next(c), w))
+                paths[w] = paths[v] + [w]
+
+    return (dist, paths)
 
 
         """  
