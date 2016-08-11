@@ -316,7 +316,7 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
         #         print var_reference.varName, var_reference.x
 
 
-        """
+        #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
         for i,j in arcs:
             var_reference = m.getVarByName('usedArc_%s_%s' % (i,j))
             if arc_cost[i,j]!=0 and var_reference.x>0:
@@ -330,7 +330,7 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
             if vertex_cost[i]!=0 and var_reference.x>0:
                 node=i
                 nodes_repaired.append(node)
-        """
+        #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
 
         my_used_arc=[]
         my_used_vertex=[]
@@ -358,7 +358,8 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
 
 
         """Diman add paths"""
-        paths_selected=[]
+        paths_selected_nodes=[]
+        paths_selected_edges=[]
         for h in demand_flows:
           curr_path_nodes=[]
           curr_path_edges=[]
@@ -367,53 +368,15 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
               if flow[h,i,j]>0:
                 edge=(i,j)
                 edge_reverse = (j, i)
-                if i not in curr_path:
+                if i not in curr_path_nodes:
                 #curr_path = {i : [i]} #disctionary of paths
                   curr_path_nodes.append(i)
-                if j not in curr_path:
+                if j not in curr_path_nodes:
                   curr_path_nodes.append(j)
-                if 
-                  curr_path_edges.append() 
-          paths_selected.append(curr_path)
-
-
-
-
-
-    paths = {source: [source]}  # dictionary of paths
-    seen = {source: 0}
-    c = count()
-    fringe = []  # use heapq with (distance,label) tuples
-    push(fringe, (0, next(c), source))
-    while fringe:
-        (d, _, v) = pop(fringe)
-        if v in dist:
-            continue  # already searched this node.
-        dist[v] = d
-        if v == target:
-            break
-        # for ignore,w,edgedata in G.edges_iter(v,data=True):
-        # is about 30% slower than the following    
-        edata = iter(G[v].items())
-
-        for w, edgedata in edata:
-            #print v,edgedata,w
-            #vw_dist = dist[v] + float(edgedata.get('capacity', 1))+G.node[w][weight]
-            vw_dist = dist[v] + distance_node(G,v,w,distance_metric) #+G.node[w][weight]
-
-            if cutoff is not None:
-                if vw_dist > cutoff:
-                    continue
-            if w in dist:
-                if vw_dist < dist[w]:
-                    raise ValueError('Contradictory paths found:',
-                                     'negative weights?')
-            elif w not in seen or vw_dist < seen[w]:
-                seen[w] = vw_dist
-                push(fringe, (vw_dist, next(c), w))
-                paths[w] = paths[v] + [w]
-
-    return (dist, paths)
+                if edge not in curr_path_edges and edge_reverse not in curr_path_edges:
+                  curr_path_edges.append(edge)
+          paths_selected_nodes.append(curr_path_nodes)
+          paths_selected_edges.append(curr_path_edges)
 
 
         """  
