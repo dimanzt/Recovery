@@ -327,7 +327,8 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
 
         for i in nodes:
             var_reference = m.getVarByName('usedVertex_%s' % (i))
-            if vertex_cost[i]!=0 and var_reference.x>0:
+            if var_reference.x>0:
+            #if vertex_cost[i]!=0 and var_reference.x>0:
                 node=i
                 nodes_repaired.append(node)
         #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
@@ -341,9 +342,9 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
            #SE L'ARCO E' STATO USATO NELLA SOLUZIONE OTTIMA
            if var_reference.x>0 or var_reference_reverse.x>0:
                #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
-                if arc_cost[i,j]!=0:
-                    edge=(i,j)
-                    my_used_arc.append(edge)
+                #if arc_cost[i,j]!=0:
+                edge=(i,j)
+                my_used_arc.append(edge)
 
         for i in nodes:
             var_reference=m.getVarByName('usedVertex_%s'%(i))
@@ -405,30 +406,5 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
           temp_max_flow=0
         """
 
-        """ VECCHIA RIPARAZIONE SBAGLIATA
-        for h in demand_flows:
-            for i,j in arcs:
-                flow_edge=m.getVarByName('flow_%s_%s_%s'%(h,i,j))
-                #print 'esamino flusso %s tra %s %s '%(h,i,j)
-                #print flow_edge.varName, flow_edge.x
-                if flow_edge.x>0: #passa del flusso non nullo sull'arco i-j
-                    edge=(i,j)
-                    if(edge not in my_used_arc):
-                        my_used_arc.append(edge)
 
-                    if (i not in my_used_vertex):
-                        my_used_vertex.append(i)
-                    if (j not in my_used_vertex):
-                        my_used_vertex.append(j)
-                flow_edge_reverse=m.getVarByName('flow_%s_%s_%s'%(h,j,i))
-                if flow_edge_reverse.x>0:
-                    edge_reverse=(j,i)
-                    if(edge_reverse not in my_used_arc):
-                        my_used_arc.append(edge_reverse)
-                    if (i not in my_used_vertex):
-                        my_used_vertex.append(i)
-                    if (j not in my_used_vertex):
-                        my_used_vertex.append(j)
-        """
-
-        return my_used_vertex,my_used_arc
+        return my_used_vertex,my_used_arc,nodes_repaired,paths_selected_nodes,paths_selected_edges
