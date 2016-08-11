@@ -360,11 +360,20 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
         """Diman add paths"""
         paths_selected=[]
         for h in demand_flows:
+          curr_path_nodes=[]
+          curr_path_edges=[]
           for i in nodes:
             for j in nodes:
               if flow[h,i,j]>0:
-                curr_path = {i : [i]} #disctionary of paths
-                curr_path[j] 
+                edge=(i,j)
+                edge_reverse = (j, i)
+                if i not in curr_path:
+                #curr_path = {i : [i]} #disctionary of paths
+                  curr_path_nodes.append(i)
+                if j not in curr_path:
+                  curr_path_nodes.append(j)
+                if 
+                  curr_path_edges.append() 
           paths_selected.append(curr_path)
 
 
