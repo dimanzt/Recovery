@@ -317,7 +317,8 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
         #   if arc_cost[i,j]!=0:
         #         print var_reference.varName, var_reference.x
 
-
+        nodes_repaired=[]
+        edges_repaired=[]
         #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
         for i,j in arcs:
             var_reference = m.getVarByName('usedArc_%s_%s' % (i,j))
