@@ -128,7 +128,7 @@ def optimal_recovery_tomography(H,green_edges):
     edges_repaired=[]
 
     #nodes_used, edges_used=optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
-    my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges= =optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
+    my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges= optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
 
     print 'node usati'
     print nodes_used
