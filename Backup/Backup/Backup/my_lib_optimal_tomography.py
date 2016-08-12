@@ -130,7 +130,7 @@ def optimal_recovery_tomography(H,green_edges):
     edges_total=[]
 
     #nodes_used, edges_used=optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
-    nodes_used,edges_used,nodes_total,edges_total,paths_selected_nodes,paths_selected_edges= optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
+    nodes_used,edges_used, nodes_total, edges_total=optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
 
     print 'node usati'
     print nodes_used
@@ -151,7 +151,8 @@ def optimal_recovery_tomography(H,green_edges):
                     edges_repaired.append(edge)
 
     #return nodes_repaired,edges_repaired
-    return nodes_repaired,edges_repaired,nodes_total,edges_total,paths_selected_nodes,paths_selected_edges
+    return nodes_repaired, edges_repaired, nodes_total, edges_total
+    #,paths_selected_nodes,paths_selected_edges
 
 
 
@@ -354,7 +355,11 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
                #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
                 if arc_cost[i,j]>=0:
                   edge=(i,j)
+                  edge_reverse=(j,i)
                   edges_repaired.append(edge)
+                #if edge not in edges_repaired or edge_reverse not in edges_repaired:
+                #  if vertex_cost==0:
+                #    edges_repaired.append(edge) 
                 #if arc_cost[i,j]!=0:
                 #  my_used_arc.append(edge)
 
@@ -364,9 +369,12 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
             #print 'ESAMINO VERTICE'
             #print var_reference, var_reference.x
             if var_reference.x>0:
+                node=i
                 #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
-                if vertex_cost[i] >=0:
-                    nodes_repaired.append(i)
+                if vertex_cost[node]>=0:
+                  nodes_repaired.append(node)
+                #if node not in nodes_repaired and vertex_cost[node]==0:
+                #  nodes_repaired.append(node) 
         print 'Nodes in the solution'
         print nodes_repaired
         #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
@@ -449,4 +457,5 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
         """
 
         #return nodes and edges in the solution to be repaired, all nodes and edges in the solution, A path of nodes for each demand pair, a path of edges for each demand pair
-        return my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges
+        return my_used_vertex,my_used_arc,nodes_repaired,edges_repaired 
+        #,paths_selected_nodes,paths_selected_edges

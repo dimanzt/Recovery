@@ -321,8 +321,14 @@ start_time_optimal=time.time()
 
 #optimal classico
 #nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
+nodes_recovered_optimal, edges_recovered_optimal, total_nodes_sol, total_edges_sol=optimal_recovery_tomography(H,green_edges)
 
-nodes_recovered_optimal,edges_recovered_optimal,total_nodes_sol,total_edges_sol,paths_selected_nodes,paths_selected_edges = optimal_recovery_tomography(H,green_edges)
+#nodes_recovered_optimal, edges_recovered_optimal, total_nodes_sol, total_edges_sol=optimal_recovery_tomography(H,green_edges)
+print 'INJAAAAAAAAAAAAAAAAAAAA'
+print total_nodes_sol
+print total_edges_sol
+print nodes_recovered_optimal
+print edges_recovered_optimal
 #nodes_recovered_optimal,edges_recovered_optimal=optimal_approx_recovery(H,green_edges)
 
 num_rip_optimal_nodes=len(nodes_recovered_optimal)
@@ -372,11 +378,18 @@ my_draw(H,'7-destroyed_for_gray_optimal')
 #calcola recovery ottimo
 nodes_recovered_optimal=[]
 edges_recovered_optimal=[]
+total_nodes_sol=[]
+total_edges_sol=[]
 
 start_time_optimal=time.time()
 
 #optimal classico
-nodes_recovered_optimal,edges_recovered_optimal,total_nodes_sol,total_edges_sol,paths_selected_nodes,paths_selected_edges = optimal_recovery_tomography(H,green_edges)
+nodes_recovered_optimal, edges_recovered_optimal, total_nodes_sol, total_edges_sol=optimal_recovery_tomography(H,green_edges)
+print 'INJAAAAAA GRAAAAY'
+print nodes_recovered_optimal
+print edges_recovered_optimal
+print total_nodes_sol
+print total_edges_sol
 
 #nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
 #nodes_recovered_optimal,edges_recovered_optimal=optimal_approx_recovery(H,green_edges)
