@@ -319,7 +319,9 @@ edges_recovered_optimal=[]
 start_time_optimal=time.time()
 
 #optimal classico
-nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
+#nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
+
+nodes_recovered_optimal,edges_recovered_optimal,total_nodes_sol,total_edges_sol,paths_selected_nodes,paths_selected_edges = optimal_recovery_tomography(H,green_edges)
 #nodes_recovered_optimal,edges_recovered_optimal=optimal_approx_recovery(H,green_edges)
 
 num_rip_optimal_nodes=len(nodes_recovered_optimal)
