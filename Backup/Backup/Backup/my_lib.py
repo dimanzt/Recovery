@@ -50,7 +50,7 @@ import time
 
 
 def my_draw(H,file_name):
-    """                
+                    
     #print 'DRAWING************************'
     #imposto le coordinate del nodo per il formato .dot "x,y!"
     for i in H.nodes():
@@ -127,7 +127,7 @@ def my_draw(H,file_name):
     #print path
     graphDot.write(path+'Dot.dot')
     #graphDot.write_png(file_name +'.png')
-    """                    
+                        
 
 def set_attrDot(elem,attr,value):
     elem.__set_attribute__(attr,value)
@@ -4018,7 +4018,7 @@ def write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
         error='-'
 
         file=open(path_to_file_stat,'a')
-        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+'\t\t'+str(num_rip_optimal_total_nodes)+'\t\t'+str(num_rip_optimal_total_edges)+'\t\t'+str(tot_rip_opt_total)+str(num_rip_optimal_gray_nodes)+'\t\t'+str(num_rip_optimal_gray_edges)+'\t\t'+str(tot_rip_opt_gray)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
+        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(num_rip_optimal_total_nodes)+'\t\t'+str(num_rip_optimal_total_edges)+'\t\t'+str(tot_rip_opt_total)+'\t\t'+str(num_rip_optimal_gray_nodes)+'\t\t'+str(num_rip_optimal_gray_edges)+'\t\t'+str(tot_rip_opt_gray)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
         file.write(raw_line)
         file.close()
 

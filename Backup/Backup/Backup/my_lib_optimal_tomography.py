@@ -371,18 +371,19 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
           curr_path_edges=[]
           for i in nodes:
             for j in nodes:
-              if flow[h,i,j]>0:
-                edge=(i,j)
-                edge_reverse = (j, i)
-                if i not in curr_path_nodes:
-                #curr_path = {i : [i]} #disctionary of paths
-                  curr_path_nodes.append(i)
-                if j not in curr_path_nodes:
-                  curr_path_nodes.append(j)
-                if edge not in curr_path_edges and edge_reverse not in curr_path_edges:
-                  curr_path_edges.append(edge)
-          paths_selected_nodes.append(curr_path_nodes)
-          paths_selected_edges.append(curr_path_edges)
+              for (i,j) in arcs:
+                if flow[h,i,j]>0:
+                  edge=(i,j)
+                  edge_reverse = (j, i)
+                  if i not in curr_path_nodes:
+                  #curr_path = {i : [i]} #disctionary of paths
+                    curr_path_nodes.append(i)
+                  if j not in curr_path_nodes:
+                    curr_path_nodes.append(j)
+                  if edge not in curr_path_edges and edge_reverse not in curr_path_edges:
+                    curr_path_edges.append(edge)
+            paths_selected_nodes.append(curr_path_nodes)
+            paths_selected_edges.append(curr_path_edges)
 
 
         """  
