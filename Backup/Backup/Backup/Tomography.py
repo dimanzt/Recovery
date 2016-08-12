@@ -18,6 +18,7 @@ from my_lib_optimal_recovery_multicommodity_worst import *
 from my_lib_optimal_recovery_multicommodity_best import *
 from my_lib_check_routability import *
 from my_lib_compute_max_demand_in_the_graph import *
+from my_lib_optimal_tomography import *
 #https://www.diffchecker.com/efddo0xv
 
 work_dir=os.getcwd()

@@ -7,7 +7,7 @@ from gurobipy import *
 # Model data
 
 
-def optimal_recovery(H,green_edges):
+def optimal_recovery_tomography(H,green_edges):
     print "INIZIO Optimal Recovery model"
     nodes=[]
     #construct the array nodes:
@@ -127,7 +127,8 @@ def optimal_recovery(H,green_edges):
     nodes_repaired=[]
     edges_repaired=[]
 
-    nodes_used, edges_used=optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
+    #nodes_used, edges_used=optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
+    my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges= =optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
 
     print 'node usati'
     print nodes_used
@@ -147,7 +148,8 @@ def optimal_recovery(H,green_edges):
                 if H[id_source][id_target][k]['status']=='destroyed':
                     edges_repaired.append(edge)
 
-    return nodes_repaired,edges_repaired
+    #return nodes_repaired,edges_repaired
+    return my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges
 
 
 
@@ -319,8 +321,8 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
         #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
         for i,j in arcs:
             var_reference = m.getVarByName('usedArc_%s_%s' % (i,j))
-            if arc_cost[i,j]!=0 and var_reference.x>0:
-            #if var_reference.x>0:
+            #if arc_cost[i,j]!=0 and var_reference.x>0:
+            if var_reference.x>0:
                 edge=(i,j)
                 edges_repaired.append(edge)
 
@@ -342,9 +344,11 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
            #SE L'ARCO E' STATO USATO NELLA SOLUZIONE OTTIMA
            if var_reference.x>0 or var_reference_reverse.x>0:
                #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
+                if arc_cost[i,j]!=0:
+                  edge=(i,j)
+                  my_used_arc.append(edge)
                 #if arc_cost[i,j]!=0:
-                edge=(i,j)
-                my_used_arc.append(edge)
+                #  my_used_arc.append(edge)
 
         for i in nodes:
             var_reference=m.getVarByName('usedVertex_%s'%(i))
@@ -406,5 +410,5 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
           temp_max_flow=0
         """
 
-
-        return my_used_vertex,my_used_arc,nodes_repaired,paths_selected_nodes,paths_selected_edges
+        #return nodes and edges in the solution to be repaired, all nodes and edges in the solution, A path of nodes for each demand pair, a path of edges for each demand pair
+        return my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges
