@@ -401,7 +401,7 @@ num_sim=get_num_simulation(path_to_file_simulation)
 write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
                           num_rip_optimal_gray_nodes,num_rip_optimal_gray_edges,#Gray OPTIMAL
-                          num_rip_optimal_total_nodes,num_rip_optimal_total_edges,#OPTIMAL total nodes and edges in the solutiom
+                          num_rip_optimal_total_nodes,num_rip_optimal_total_edges,#OPTIMAL total nodes and edges in the solution
                           num_sim,                        
                           flow_c_value,                                        #valore di flusso fixed assegnato per questa run
                           number_of_couple,                                     #numero di coppie scelto per rappresentare la domanda

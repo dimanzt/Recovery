@@ -3989,6 +3989,7 @@ def count_occurance(elem, path):
 def write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
                           num_rip_optimal_gray_nodes,num_rip_optimal_gray_edges,#Gray OPTIMAL
+                          num_rip_optimal_total_nodes,num_rip_optimal_total_edges,#OPTIMAL total nodes and edges in the solution
                           num_sim,
                           flow_c_value,                                        #valore di flusso fixed assegnato per questa run
                           number_of_couple,                                     #numero di coppie scelto per rappresentare la domanda
@@ -4000,19 +4001,24 @@ def write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
         if not os.path.exists(path_to_file_stat):
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
-            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tOPT_gray_Nodes\tOPT_gray_edges\tTotal_OPT_gray\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\t\tDirImages\n"
+            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tTotal_OPT_sol_nodes\tTotal_OPT_sol_edges\tTotal_OPT_sol\tOPT_gray_Nodes\tOPT_gray_edges\tTotal_OPT_gray\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\t\tDirImages\n"
 
             file.write(name_of_colunms)
             file.close
 
         tot_rip_opt=(num_rip_optimal_nodes+num_rip_optimal_edges)
         tot_rip_opt_gray=(num_rip_optimal_gray_nodes+num_rip_optimal_gray_edges)
+        tot_rip_opt_total=(num_rip_optimal_total_nodes+num_rip_optimal_total_edges)
+
 
         print 'tot_opt %d = %d + %d'%(tot_rip_opt, num_rip_optimal_nodes,num_rip_optimal_edges)
+        print 'tot_opt_gray %d = %d + %d'%(tot_rip_opt_gray, num_rip_optimal_gray_nodes,num_rip_optimal_gray_edges)
+        print 'tot_opt_in_sol %d = %d + %d'%(tot_rip_opt_total, num_rip_optimal_total_nodes,num_rip_optimal_total_edges)
+
         error='-'
 
         file=open(path_to_file_stat,'a')
-        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(num_rip_optimal_gray_nodes)+'\t\t'+str(num_rip_optimal_gray_edges)+'\t\t'+str(tot_rip_opt_gray)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
+        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+'\t\t'+str(num_rip_optimal_total_nodes)+'\t\t'+str(num_rip_optimal_total_edges)+'\t\t'+str(tot_rip_opt_total)+str(num_rip_optimal_gray_nodes)+'\t\t'+str(num_rip_optimal_gray_edges)+'\t\t'+str(tot_rip_opt_gray)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
         file.write(raw_line)
         file.close()
 
