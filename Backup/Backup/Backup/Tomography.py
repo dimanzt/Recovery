@@ -339,6 +339,12 @@ my_draw(H,'8-recovered_optimal_new_bet')
 time_elapsed_optimal=round(time.time() - start_time_optimal,3)
 print("--- %s seconds ---" % str(time_elapsed_optimal))
 write_stat_time_simulation(path_to_stat_times,'OPT',filename_graph,int(sys.argv[5]),int(sys.argv[4]),seed_passed,number_of_couple,time_elapsed_optimal)
+
+#ADD NUMBER of TOTAL NODES and EDGES in the solution to the stats
+num_rip_optimal_total_nodes=len(total_nodes_sol)
+num_rip_optimal_total_edges=len(total_edges_sol)
+print total_edges_sol
+print total_nodes_sol
 #################################################################################################################
 #----------------------------------------------------------OPTIMAL GRAY-------------------------------------------------------
 print 'Inizio algoritmo OPTIMAL recovery'
@@ -395,6 +401,7 @@ num_sim=get_num_simulation(path_to_file_simulation)
 write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
                           num_rip_optimal_gray_nodes,num_rip_optimal_gray_edges,#Gray OPTIMAL
+                          num_rip_optimal_total_nodes,num_rip_optimal_total_edges,#OPTIMAL total nodes and edges in the solutiom
                           num_sim,                        
                           flow_c_value,                                        #valore di flusso fixed assegnato per questa run
                           number_of_couple,                                     #numero di coppie scelto per rappresentare la domanda
