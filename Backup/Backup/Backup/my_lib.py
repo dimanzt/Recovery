@@ -50,7 +50,7 @@ import time
 
 
 def my_draw(H,file_name):
-    """                    
+                        
     #print 'DRAWING************************'
     #imposto le coordinate del nodo per il formato .dot "x,y!"
     for i in H.nodes():
@@ -127,7 +127,7 @@ def my_draw(H,file_name):
     #print path
     graphDot.write(path+'Dot.dot')
     #graphDot.write_png(file_name +'.png')
-    """                 
+                     
 
 def set_attrDot(elem,attr,value):
     elem.__set_attribute__(attr,value)

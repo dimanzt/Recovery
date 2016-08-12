@@ -315,7 +315,8 @@ my_draw(H,'7-destroyed_for_optimal')
 #calcola recovery ottimo
 nodes_recovered_optimal=[]
 edges_recovered_optimal=[]
-
+total_nodes_sol=[]
+total_edges_sol=[]
 start_time_optimal=time.time()
 
 #optimal classico
@@ -328,6 +329,13 @@ num_rip_optimal_nodes=len(nodes_recovered_optimal)
 num_rip_optimal_edges=len(edges_recovered_optimal)
 print num_rip_optimal_nodes
 print num_rip_optimal_edges
+print 'Total nodes and edges in the solution'
+num_rip_optimal_total_nodes=len(total_nodes_sol)
+num_rip_optimal_total_edges=len(total_edges_sol)
+print total_edges_sol
+print total_nodes_sol
+
+
 #ripristina e disegna
 recover(H,nodes_recovered_optimal,edges_recovered_optimal)
 #set_betwenness_from_dict(H,old_bet_dict)
@@ -341,10 +349,6 @@ print("--- %s seconds ---" % str(time_elapsed_optimal))
 write_stat_time_simulation(path_to_stat_times,'OPT',filename_graph,int(sys.argv[5]),int(sys.argv[4]),seed_passed,number_of_couple,time_elapsed_optimal)
 
 #ADD NUMBER of TOTAL NODES and EDGES in the solution to the stats
-num_rip_optimal_total_nodes=len(total_nodes_sol)
-num_rip_optimal_total_edges=len(total_edges_sol)
-print total_edges_sol
-print total_nodes_sol
 #################################################################################################################
 #----------------------------------------------------------OPTIMAL GRAY-------------------------------------------------------
 print 'Inizio algoritmo OPTIMAL recovery'
@@ -359,12 +363,12 @@ merge_graphs(H,D)
 
 destroy_graph_manual(H,path_to_distruption)
 
-my_draw(H, 'really_destroyed')
+my_draw(H, 'gray_really_destroyed')
 
 #green_edges=get_green_edges(temp_graph_supply_optimal)
 green_edges=deepcopy(copy_of_green_edges)
 
-my_draw(H,'7-destroyed_for_optimal')
+my_draw(H,'7-destroyed_for_gray_optimal')
 #calcola recovery ottimo
 nodes_recovered_optimal=[]
 edges_recovered_optimal=[]
@@ -372,7 +376,9 @@ edges_recovered_optimal=[]
 start_time_optimal=time.time()
 
 #optimal classico
-nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
+nodes_recovered_optimal,edges_recovered_optimal,total_nodes_sol,total_edges_sol,paths_selected_nodes,paths_selected_edges = optimal_recovery_tomography(H,green_edges)
+
+#nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
 #nodes_recovered_optimal,edges_recovered_optimal=optimal_approx_recovery(H,green_edges)
 
 num_rip_optimal_gray_nodes=len(nodes_recovered_optimal)
@@ -385,7 +391,7 @@ recover(H,nodes_recovered_optimal,edges_recovered_optimal)
 #my_draw(H,'4-recovered_optimal_old_bet')
 #new_bet_dict=compute_my_betweeness_3(H, green_edges,distance_metric)
 #set_betwenness_from_dict(H,new_bet_dict)
-my_draw(H,'8-recovered_optimal_new_bet')
+my_draw(H,'8-recovered_gray_optimal_new_bet')
 
 time_elapsed_optimal=round(time.time() - start_time_optimal,3)
 print("--- %s seconds ---" % str(time_elapsed_optimal))

@@ -126,9 +126,11 @@ def optimal_recovery_tomography(H,green_edges):
     edges_used=[]
     nodes_repaired=[]
     edges_repaired=[]
+    nodes_total=[]
+    edges_total=[]
 
     #nodes_used, edges_used=optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
-    my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges= optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
+    nodes_used,edges_used,nodes_total,edges_total,paths_selected_nodes,paths_selected_edges= optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow)
 
     print 'node usati'
     print nodes_used
@@ -149,7 +151,7 @@ def optimal_recovery_tomography(H,green_edges):
                     edges_repaired.append(edge)
 
     #return nodes_repaired,edges_repaired
-    return my_used_vertex,my_used_arc,nodes_repaired,edges_repaired,paths_selected_nodes,paths_selected_edges
+    return nodes_repaired,edges_repaired,nodes_total,edges_total,paths_selected_nodes,paths_selected_edges
 
 
 
@@ -316,16 +318,20 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
         #   var_reference = m.getVarByName('usedArc_%s_%s' % (i,j))
         #   if arc_cost[i,j]!=0:
         #         print var_reference.varName, var_reference.x
-
+        """
         nodes_repaired=[]
         edges_repaired=[]
         #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
         for i,j in arcs:
             var_reference = m.getVarByName('usedArc_%s_%s' % (i,j))
+            var_reference_reverse=m.getVarByName('usedArc_%s_%s'%(j,i)) #arco ji
             #if arc_cost[i,j]!=0 and var_reference.x>0:
-            if var_reference.x>0:
+            if var_reference.x>0 or var_reference_reverse.x>0:
+            #if var_reference.x>0:
                 edge=(i,j)
-                edges_repaired.append(edge)
+                edge_reverse=(j,i)
+                if edge not in edges_repaired and edge_reverse not in edges_repaired:
+                  edges_repaired.append(edge)
 
 
         for i in nodes:
@@ -333,7 +339,36 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
             if var_reference.x>0:
             #if vertex_cost[i]!=0 and var_reference.x>0:
                 node=i
-                nodes_repaired.append(node)
+                if node not in nodes_repaired:
+                  nodes_repaired.append(node)
+
+        """
+        nodes_repaired=[]
+        edges_repaired=[]
+        #IN ARCS CI SONO SOLO GLI ARCHI DEL GRAFO QUINDI (I,J) , MA NON (J,I) 0 VICEVERSA
+        for i,j in arcs:
+           var_reference = m.getVarByName('usedArc_%s_%s' % (i,j))    #arco ij
+           var_reference_reverse=m.getVarByName('usedArc_%s_%s'%(j,i)) #arco ji
+           #SE L'ARCO E' STATO USATO NELLA SOLUZIONE OTTIMA
+           if var_reference.x>0 or var_reference_reverse.x>0:
+               #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
+                if arc_cost[i,j]>=0:
+                  edge=(i,j)
+                  edges_repaired.append(edge)
+                #if arc_cost[i,j]!=0:
+                #  my_used_arc.append(edge)
+
+        for i in nodes:
+            var_reference=m.getVarByName('usedVertex_%s'%(i))
+            #SE IL NODO E' STATO USATO (ATTRAVERSATO DA UN FLUSSO NON NULLO
+            #print 'ESAMINO VERTICE'
+            #print var_reference, var_reference.x
+            if var_reference.x>0:
+                #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
+                if vertex_cost[i] >=0:
+                    nodes_repaired.append(i)
+        print 'Nodes in the solution'
+        print nodes_repaired
         #DIMAN ADDED TO HAVE THE ORIGINAL SOLUTION
 
         my_used_arc=[]
@@ -360,7 +395,8 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
                 #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
                 if vertex_cost[i] !=0:
                     my_used_vertex.append(i)
-
+        print 'Nodes repaired in the solution'
+        print my_used_vertex
 
 
         """Diman add paths"""

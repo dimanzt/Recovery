@@ -76,14 +76,14 @@ alpha_fixed=False
 flow_fixed=False
 error_fixed=False
 Gap_fixed = False
-flow_c=10
+flow_c=2
 if num_couple_passed!=-1:
     num_couple_fix=True
     number_of_couple=num_couple_passed
 
 else:
     num_couple_fix=False
-    number_of_couple=5
+    number_of_couple=1
 
 fixed_distruption=True
 fixed_dist_value=False
@@ -138,10 +138,10 @@ else:
     seed_array.append(seed)
 
 if flow_fixed==True:
-    flow_c=10
+    flow_c=2
 
 if num_couple_fix==False:
-    number_of_couple=5
+    number_of_couple=1
 
 
 #number_of_couple=2
