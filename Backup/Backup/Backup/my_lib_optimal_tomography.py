@@ -151,7 +151,7 @@ def optimal_recovery_tomography(H,green_edges):
                     edges_repaired.append(edge)
 
     #return nodes_repaired,edges_repaired
-    return nodes_repaired, edges_repaired, nodes_total, edges_total
+    return nodes_repaired, edges_repaired, nodes_used, edges_used  #nodes_total, edges_total
     #,paths_selected_nodes,paths_selected_edges
 
 
@@ -401,7 +401,7 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
             #print var_reference, var_reference.x
             if var_reference.x>0:
                 #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
-                if vertex_cost[i] !=0:
+                if vertex_cost[i]!=0:
                     my_used_vertex.append(i)
         print 'Nodes repaired in the solution'
         print my_used_vertex
