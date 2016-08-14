@@ -151,7 +151,7 @@ def optimal_recovery_tomography(H,green_edges):
                     edges_repaired.append(edge)
 
     #return nodes_repaired,edges_repaired
-    return nodes_repaired, edges_repaired, nodes_used, edges_used  #nodes_total, edges_total
+    return nodes_repaired, edges_repaired, nodes_total, edges_total
     #,paths_selected_nodes,paths_selected_edges
 
 
@@ -369,6 +369,8 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
             #print 'ESAMINO VERTICE'
             #print var_reference, var_reference.x
             if var_reference.x>0:
+                #print 'DIMMAAAAAAAAAAAAAAAAAAAAAN'
+                #print var_reference.x
                 node=i
                 #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
                 if vertex_cost[node]>=0:
@@ -400,6 +402,8 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
             #print 'ESAMINO VERTICE'
             #print var_reference, var_reference.x
             if var_reference.x>0:
+                #print 'DIMAAAAAAAAAAAAAAAAN22222222222'
+                #print var_reference.x
                 #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
                 if vertex_cost[i]!=0:
                     my_used_vertex.append(i)
@@ -408,6 +412,7 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
 
 
         """Diman add paths"""
+        
         paths_selected_nodes=[]
         paths_selected_edges=[]
         for h in demand_flows:
@@ -426,10 +431,12 @@ def optimize(nodes,demand_flows,arcs,capacity,vertex_cost,arc_cost,inflow):
                     curr_path_nodes.append(j)
                   if edge not in curr_path_edges and edge_reverse not in curr_path_edges:
                     curr_path_edges.append(edge)
-            paths_selected_nodes.append(curr_path_nodes)
-            paths_selected_edges.append(curr_path_edges)
-
-
+            #paths_selected_nodes.append(curr_path_nodes)
+            #paths_selected_edges.append(curr_path_edges)
+        print 'DIMMMMMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN'
+        print curr_path_nodes
+        print curr_path_edges
+        
         """  
         for i in nodes:
           #var_reference=m.getVarByName('usedVertex_%s'%(i))

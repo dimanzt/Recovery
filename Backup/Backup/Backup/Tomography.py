@@ -233,6 +233,7 @@ coor_y=-75
 #memorizza distruzione per ripeterla COMMENTARE SE SI PASSA LA DISTRUZIONE MANUALE
 path_to_distruption=write_destroyed_graph(nodes_destroyed,edges_destroyed,filename_graph,path_to_stats)
 path_to_real_distruption=write_really_destroyed_graph(nodes_really_dest,edges_really_dest,filename_graph,path_to_stats)
+#path_to_real_distruption=write_destroyed_graph(nodes_really_dest,edges_really_dest,filename_graph,path_to_stats)
 
 #new_bet_dict=compute_my_betweeness_3(H, green_edges,distance_metric)
 dict_bet,temp_shortest_set,end_time_bet=select_betweeness(H,green_edges,distance_metric,type_of_bet_passed)

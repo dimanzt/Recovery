@@ -76,7 +76,7 @@ alpha_fixed=False
 flow_fixed=False
 error_fixed=False
 Gap_fixed = False
-flow_c=2
+flow_c=1
 if num_couple_passed!=-1:
     num_couple_fix=True
     number_of_couple=num_couple_passed
@@ -138,7 +138,7 @@ else:
     seed_array.append(seed)
 
 if flow_fixed==True:
-    flow_c=2
+    flow_c=1
 
 if num_couple_fix==False:
     number_of_couple=1
@@ -164,7 +164,7 @@ for i in range(0,num_simulations,1):
         var_distruption+=0
 
     if fixed_dist_value==False:
-        disruption_value+=10
+        disruption_value+=0
 
     if fixed_hop==False:
         K_HOPS+=0
