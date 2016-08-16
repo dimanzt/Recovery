@@ -581,6 +581,7 @@ write_stat_time_simulation(path_to_stat_times,'BB_EXP_ITER_OPT',filename_graph,i
 write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
                           num_rip_optimal_gray_nodes,num_rip_optimal_gray_edges,#Gray OPTIMAL
+                          num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges,num_rip_BB_expected_truely_optimal_nodes,num_rip_BB_expected_truely_optimal_edges,#IBB Expected,
                           num_rip_optimal_total_nodes,num_rip_optimal_total_edges,#OPTIMAL total nodes and edges in the solution
                           num_sim,                        
                           flow_c_value,                                        #valore di flusso fixed assegnato per questa run
