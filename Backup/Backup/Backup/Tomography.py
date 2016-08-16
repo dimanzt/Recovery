@@ -500,7 +500,83 @@ while (routability_flag==False):
       temp_graph_supply_4.node[node_selected]['prob']=0
       repaired_nodes.append(node_selected)
 
+    #temp_graph_supply_4.node[node_selected]['status']='on'
+      if H9.node[node_selected]['true_status']=='destroyed':
+        H9.node[node_selected]['color']='blue'
+        H9.node[node_selected]['status']='on'
+        temp_graph_supply_4.node[node_selected]['color']='blue'
+        temp_graph_supply_4.node[node_selected]['status']='on'
 
+      elif H9.node[node_selected]['status']=='destroyed':
+        temp_graph_supply_4.node[node_selected]['status']='on'
+        temp_graph_supply_4.node[node_selected]['color']='""'
+
+
+      if H9.node[node_selected]['true_status']=='on' or H9.node[node_selected]['true_status']=='repaired':
+        H9.node[node_selected]['color']='""'
+        H9.node[node_selected]['status']=='on'
+        temp_graph_supply_4.node[node_selected]['color']='""'
+        temp_graph_supply_4.node[node_selected]['status']=='on'
+  #counter=counter+1
+  for node in repaired_nodes:
+    if node not in owned_nodes:
+      owned_nodes.append(node)
+  repair_first_hop_edges(H9, temp_graph_supply_4, node_selected, repaired_edges,edges_recovered_expected_optimal)
+  #information_gain(H9, graph_built_4, owned_nodes, edges_removed+edges_recovered_isp,K_HOPS)
+  #for edge in repaired_edges:
+  #  if edge not in repaired_edges:
+  #    repaired_edges.append(edge) 
+  information_gain(H9, temp_graph_supply_4, owned_nodes, edges_removed_exp+edges_recovered_exp, K_HOPS)
+  print 'DEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEMI'
+  print owned_nodes
+  if len(nodes_recovered_expected_optimal)==0:# and len(edges_recovered_expected_optimal)==0:
+    routability_flag=True
+  my_draw(temp_graph_supply_4,'Diman_BB_optimal_%d'%counter)
+  counter=counter+1
+
+  max_prob = 0
+
+
+nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_expected_recovery(temp_graph_supply_4,green_edges,Gap)
+#for edge in repaired_edges:
+#  if edge not in edges_recovered_expected_optimal:
+#    edges_recovered_expected_optimal.append(edge) 
+
+for edge in edges_recovered_expected_optimal:
+  if edge not in repaired_edges:
+    repaired_edges.append(edge)
+
+num_rip_one_shot_expected_optimal_nodes=len(repaired_nodes)#len(nodes_recovered_expected_optimal)
+num_rip_one_shot_expected_optimal_edges=len(repaired_edges)
+print num_rip_one_shot_expected_optimal_nodes
+print num_rip_one_shot_expected_optimal_edges
+#########################################################
+real_expected_node_repairs = []
+for node in  repaired_nodes:
+    if node in nodes_really_destroyed_6:
+        real_expected_node_repairs.append(node)
+
+
+real_expected_edge_repairs = []
+for edge in repaired_edges:
+    if edge in edges_really_destroyed_6:
+        real_expected_edge_repairs.append(edge)
+
+num_rip_BB_expected_truely_optimal_nodes=len(real_expected_node_repairs)
+num_rip_BB_expected_truely_optimal_edges=len(real_expected_edge_repairs)
+############################################################
+#ripristina e disegna
+recover(H9,repaired_nodes,repaired_edges)
+recover(temp_graph_supply_4,repaired_nodes,repaired_edges)
+
+my_draw(temp_graph_supply_4,'Diman_BB_expected_optimal_Final_%d'%counter)
+counter=counter+1
+my_draw(H9,'Diman_BB_expected_optimal_Final_%d'%counter)
+
+time_elapsed_BB_expected_optimal=round(time.time() - start_time_expected_optimal,3)
+print("--- %s seconds ---" % str(time_elapsed_BB_expected_optimal))
+write_stat_time_simulation(path_to_stat_times,'BB_EXP_ITER_OPT',filename_graph,int(sys.argv[5]),int(sys.argv[4]),seed_passed,number_of_couple,time_elapsed_BB_expected_optimal)
+#sys.exit(0)
 #################################################################################################################
 write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
