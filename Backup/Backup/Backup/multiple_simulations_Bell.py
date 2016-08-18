@@ -62,7 +62,10 @@ if len(sys.argv)>10:
    Gap=float(sys.argv[11])
 else:
    Gap=0.0001
-
+if len(sys.argv)>11:
+   risk=int(sys.argv[12])
+else: 
+   risk=0
 #parametri delle simulazioni
 
 #flag per scegliere sempre lo stesso seed oppure no
@@ -178,7 +181,7 @@ for i in range(0,num_simulations,1):
     for seed_elem in seed_array:
         #esegui una simulazione
         #os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(disruption_value)+" "+str(error)+" "+str(Gap))
-        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(disruption_value)+" "+str(error)+" "+str(Gap))
+        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(disruption_value)+" "+str(error)+" "+str(Gap)+" "+str(risk))
 #Always split is 1 if we always put a monitor, 0 is we don't always put a monitor
 
         #genera le immagini della simulazione corrente

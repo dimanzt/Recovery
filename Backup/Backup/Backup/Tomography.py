@@ -58,7 +58,7 @@ random_disruption=int(sys.argv[16])
 disruption_value=int(sys.argv[17])
 error=float(sys.argv[18])
 Gap=float(sys.argv[19])
-
+risk=int(sys.argv[20])
 
 if sys.argv[13]!=None:
     filename_graph=str(sys.argv[13])
@@ -414,7 +414,7 @@ print("--- %s seconds ---" % str(time_elapsed_optimal))
 write_stat_time_simulation(path_to_stat_times,'OPT',filename_graph,int(sys.argv[5]),int(sys.argv[4]),seed_passed,number_of_couple,time_elapsed_optimal)
 #################################################################################################################
 
-filename_stat='stat_simulations_'+filename_graph+"_Prob_"+str(prob_edge)+"_Alpha_"+str(alfa)+"_KHOP_"+str(K_HOPS)+"_distance_metric_"+str(distance_metric_passed)+"_type_of_bet_"+str(type_of_bet_passed)+"_always_put_monitor_"+str(always_split)+"_randomDisruption_"+str(random_disruption)+"_disruption_value_"+str(disruption_value)+"_error_"+str(error)+"_Gap"+str(Gap)+".txt"
+filename_stat='stat_simulations_'+filename_graph+"_Prob_"+str(prob_edge)+"_Alpha_"+str(alfa)+"_KHOP_"+str(K_HOPS)+"_distance_metric_"+str(distance_metric_passed)+"_type_of_bet_"+str(type_of_bet_passed)+"_always_put_monitor_"+str(always_split)+"_randomDisruption_"+str(random_disruption)+"_disruption_value_"+str(disruption_value)+"_error_"+str(error)+"_Gap"+str(Gap)+"risk"+str(risk)+".txt"
 
 #numero della simulazione corrente e scrivo statistiche
 num_sim=get_num_simulation(path_to_file_simulation)
@@ -464,7 +464,7 @@ counter=counter+1
 information_gain(H9, temp_graph_supply_4, owned_nodes, edges_removed_exp+edges_recovered_exp, K_HOPS)
 my_draw(temp_graph_supply_4,'Diman_expected_optimal_%d'%counter)
 counter=counter+1
-risk = 0
+#risk = 0
 #nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_expected_recovery(temp_graph_supply_4,green_edges,Gap)
 while (routability_flag==False):
   nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_risk_behavior_expected_recovery(temp_graph_supply_4,green_edges,Gap,risk)
