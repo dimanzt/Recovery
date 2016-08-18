@@ -7,7 +7,7 @@ from gurobipy import *
 # Model data
 
 
-def optimal_risk_averse_expected_recovery(H,green_edges,Gap):
+def optimal_risk_behavior_expected_recovery(H,green_edges,Gap,risk):
     print "INIZIO Optimal Recovery model"
     nodes=[]
     #construct the array nodes:
@@ -64,8 +64,14 @@ def optimal_risk_averse_expected_recovery(H,green_edges,Gap):
         if H.node[i]['color']=='red':
             node_cost=1 #H.node[i]['prob'] #1
         if H.node[i]['color']=='gray':
+            if risk==0: #risk neutral
+              node_cost=H.node[i]['prob']
+            if risk==1: #risk averse
+              node_cost=1-(0.0001)**H.node[i]['prob']
+            if risk==2: # risk seeking
+              node_cost=(10000)**H.node[i]['prob']
             #node_cost=H.node[i]['prob'] 
-            node_cost=1-(0.0001)**H.node[i]['prob']
+            #node_cost=1-(0.0001)**H.node[i]['prob']
         else:
             node_cost=H.node[i]['prob']
 
@@ -90,7 +96,12 @@ def optimal_risk_averse_expected_recovery(H,green_edges,Gap):
                 if H[id_source][id_target][k]['color']=='red':
                     edge_cost= 1 #H[id_source][id_target][k]['prob'] #1
                 if H[id_source][id_target][k]['color']=='gray':
-                    edge_cost=H[id_source][id_target][k]['prob']
+                    if risk==0: #risk neutral
+                      edge_cost=H[id_source][id_target][k]['prob']
+                    if risk==1: #risk averse
+                      edge_cost=1-(0.0001)**H.node[i]['prob']
+                    if risk==2: #risk seeking
+                      edge_cost=(10000)**H.node[i]['prob']
                 else:
                     edge_cost=H[id_source][id_target][k]['prob']
                 edge_tupla_1=(id_source,id_target)

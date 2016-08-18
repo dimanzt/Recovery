@@ -19,7 +19,8 @@ from my_lib_optimal_recovery_multicommodity_best import *
 from my_lib_check_routability import *
 from my_lib_compute_max_demand_in_the_graph import *
 from my_lib_optimal_tomography import *
-from optimal_risk_averse_expected_recovery import *
+#from my_lib_optimal_risk_averse_expected_recovery import *
+from my_lib_optimal_risk_behavior_expected_recovery import *
 #https://www.diffchecker.com/efddo0xv
 
 work_dir=os.getcwd()
@@ -463,9 +464,10 @@ counter=counter+1
 information_gain(H9, temp_graph_supply_4, owned_nodes, edges_removed_exp+edges_recovered_exp, K_HOPS)
 my_draw(temp_graph_supply_4,'Diman_expected_optimal_%d'%counter)
 counter=counter+1
+risk = 0
 #nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_expected_recovery(temp_graph_supply_4,green_edges,Gap)
 while (routability_flag==False):
-  nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_risk_averse_expected_recovery(temp_graph_supply_4,green_edges,Gap)
+  nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_risk_behavior_expected_recovery(temp_graph_supply_4,green_edges,Gap,risk)
   ##nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_expected_recovery(temp_graph_supply_4,green_edges,Gap)
   #nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_approx_recovery(temp_graph_supply_4,green_edges)
   #nodes_recovered_expected_optimal,edges_recovered_expected_optimal=optimal_recovery_multicommodity_max_flow(temp_graph_supply_4,green_edges)
