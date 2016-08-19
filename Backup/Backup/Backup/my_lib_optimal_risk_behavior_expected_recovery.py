@@ -69,7 +69,7 @@ def optimal_risk_behavior_expected_recovery(H,green_edges,Gap,risk):
             if risk==1: #risk averse
               node_cost=1-(0.001)**H.node[i]['prob']
             if risk==2: # risk seeking
-              node_cost=(1000)**H.node[i]['prob']
+              node_cost=(1000)**H.node[i]['prob']/ 1000
             #node_cost=H.node[i]['prob'] 
             #node_cost=1-(0.0001)**H.node[i]['prob']
         else:
@@ -101,7 +101,7 @@ def optimal_risk_behavior_expected_recovery(H,green_edges,Gap,risk):
                     if risk==1: #risk averse
                       edge_cost=1-(0.001)**H.node[i]['prob']
                     if risk==2: #risk seeking
-                      edge_cost=(1000)**H.node[i]['prob']
+                      edge_cost=(1000)**H.node[i]['prob']/ 1000
                 else:
                     edge_cost=H[id_source][id_target][k]['prob']
                 edge_tupla_1=(id_source,id_target)
