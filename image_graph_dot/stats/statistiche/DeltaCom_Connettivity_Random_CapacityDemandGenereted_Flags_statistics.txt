@@ -1,0 +1,72 @@
+
+
+
+Topologia: DeltaCom_Connettivity_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(31, 41, 9) - (7, 23, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 23): 41.0 - (31, 41): 41.0 - 
+Domanda Finale assegnata al grafo: 
+(31, 41, 22) - (7, 23, 22) - 
+
+
+
+Topologia: DeltaCom_Connettivity_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(31, 41, 9) - (7, 23, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 23): 41.0 - (31, 41): 41.0 - 
+Domanda Finale assegnata al grafo: 
+(31, 41, 22) - (7, 23, 22) - 
+
+
+
+Topologia: DeltaCom_Connettivity_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(31, 41, 9) - (7, 23, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 23): 41.0 - (31, 41): 41.0 - 
+Domanda Finale assegnata al grafo: 
+(31, 41, 22) - (7, 23, 22) - 
+
+
+
+Topologia: DeltaCom_Connettivity_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(31, 41, 9) - (7, 23, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 23): 41.0 - (31, 41): 41.0 - 
+Domanda Finale assegnata al grafo: 
+(31, 41, 22) - (7, 23, 22) - 
+
+
+
+Topologia: DeltaCom_Connettivity_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(31, 41, 9) - (7, 23, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 23): 41.0 - (31, 41): 41.0 - 
+Domanda Finale assegnata al grafo: 
+(31, 41, 22) - (7, 23, 22) - 
+
+
+
+Topologia: DeltaCom_Connettivity_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(31, 41, 9) - (7, 23, 12) - 
+Max flows su grafo supply per ogni coppia: 
+(7, 23): 41.0 - (31, 41): 41.0 - 
+Domanda Finale assegnata al grafo: 
+(31, 41, 22) - (7, 23, 22) - 

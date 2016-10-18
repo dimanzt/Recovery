@@ -1,0 +1,20 @@
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - (2, 22): 10.0 - 
+
+
+
+Topologia: BellCanadaDemandGenereted
+Seed: 120
+Alfa: 0.4
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 10.0 - (2, 22): 10.0 - 

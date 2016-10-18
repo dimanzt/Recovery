@@ -1,0 +1,30 @@
+graph G {
+ratio=expand;
+overlap=false;
+size="20,20!";
+0 [status=on, style="", weight=0, color="", Country="United States", id=0, pos="-74,40!", Longitude="-74.00597", label="0/0", betweeness=0, shape=circle, Latitude="40.71427", type=normal, prob=0, true_status=on];
+1 [status=on, style="", weight=0, color="", Country="United States", id=1, pos="-87,41!", Longitude="-87.65005", label="1/0", betweeness=0, shape=circle, Latitude="41.85003", type=normal, prob=0, true_status=on];
+2 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-77,38!", Longitude="-77.03637", betweeness=0, shape=circle, Internal=1, Latitude="38.89511", label="2/0", type=normal, id=2, true_status=on];
+3 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-122,47!", Longitude="-122.33207", betweeness=0, shape=circle, Internal=1, Latitude="47.60621", label="3/0", type=normal, id=3, true_status=on];
+4 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-122,37!", Longitude="-122.03635", betweeness=0, shape=circle, Internal=1, Latitude="37.36883", label="4/0", type=normal, id=4, true_status=on];
+5 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-118,34!", Longitude="-118.24368", betweeness=0, shape=circle, Internal=1, Latitude="34.05223", label="5/0", type=normal, id=5, true_status=on];
+6 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-104,39!", Longitude="-104.9847", betweeness=0, shape=circle, Internal=1, Latitude="39.73915", label="6/0", type=normal, id=6, true_status=on];
+7 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-94,39!", Longitude="-94.62746", betweeness=0, shape=circle, Internal=1, Latitude="39.11417", label="7/0", type=normal, id=7, true_status=on];
+8 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-95,29!", Longitude="-95.36327", betweeness=0, shape=circle, Internal=1, Latitude="29.76328", label="8/0", type=normal, id=8, true_status=on];
+9 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-84,33!", Longitude="-84.38798", betweeness=0, shape=circle, Internal=1, Latitude="33.749", label="9/0", type=normal, id=9, true_status=on];
+10 [status=on, prob=0, style="", weight=0, color="", Country="United States", pos="-86,39!", Longitude="-86.15804", betweeness=0, shape=circle, Internal=1, Latitude="39.76838", label="10/0", type=normal, id=10, true_status=on];
+0 -- 1  [LinkType="OC-192", status=on, capacity=10, weight="0.01", color=black, LinkNote=c, label=10, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+0 -- 2  [LinkType="OC-192", status=on, capacity=8, weight="0.0125", color=black, LinkNote=c, label=8, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+1 -- 10  [LinkType="OC-192", status=on, capacity=9, weight="0.0111111111111", color=black, LinkNote=c, label=9, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+2 -- 9  [LinkType="OC-192", status=on, capacity=11, weight="0.00909090909091", color=black, LinkNote=c, label=11, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+3 -- 4  [LinkType="OC-192", status=on, capacity=10, weight="0.01", color=black, LinkNote=c, label=10, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+3 -- 6  [LinkType="OC-192", status=on, capacity=12, weight="0.00833333333333", color=black, LinkNote=c, label=12, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+4 -- 5  [LinkType="OC-192", status=on, capacity=13, weight="0.00769230769231", color=black, LinkNote=c, label=13, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+4 -- 6  [LinkType="OC-192", status=on, capacity=13, weight="0.00769230769231", color=black, LinkNote=c, label=13, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+5 -- 8  [LinkType="OC-192", status=on, capacity=12, weight="0.00833333333333", color=black, LinkNote=c, label=12, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+6 -- 7  [LinkType="OC-192", status=on, capacity=13, weight="0.00769230769231", color=black, LinkNote=c, label=13, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+7 -- 8  [LinkType="OC-192", status=on, capacity=8, weight="0.0125", color=black, LinkNote=c, label=8, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+7 -- 10  [LinkType="OC-192", status=on, capacity=12, weight="0.00833333333333", color=black, LinkNote=c, label=12, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+8 -- 9  [LinkType="OC-192", status=on, capacity=10, weight="0.01", color=black, LinkNote=c, label=10, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+9 -- 10  [LinkType="OC-192", status=on, capacity=9, weight="0.0111111111111", color=black, LinkNote=c, label=9, LinkLabel="OC-192c", key=0, type=normal, prob=0, true_status=on];
+}
