@@ -52,6 +52,7 @@ type_of_bet_passed=sys.argv[7]
 flow_c_fixed=sys.argv[8]
 flow_c_value=int(sys.argv[9])
 number_of_couple=int(sys.argv[10])
+Percentage = float(sys.argv[18])
 #fixed_distruption=str(sys.argv[11])
 #var_distruption=float(sys.argv[12])
 #K_HOPS=int(sys.argv[14])
@@ -132,9 +133,11 @@ if not os.path.exists(path_to_file_times):
 #path_to_demand,green_edges=generate_demand_from_list_of_couple(H,list_of_couples,prob_edge,filename_demand,alfa,seed_random,path_to_stats,distance_metric)
 
 #genera la domanda in base ad una quantita' di flusso FISSATA (flow_c_value_ da assegnare a tutte le coppie
-path_to_demand,green_edges=generate_demand_of_fixed_value_from_list_of_couple(H,list_of_couples,flow_c_value,prob_edge,filename_demand,alfa,seed_random,path_to_stats,distance_metric)
-
-
+path_to_demand,green_edges_old=generate_demand_of_fixed_value_from_list_of_couple(H,list_of_couples,flow_c_value,prob_edge,filename_demand,alfa,seed_random,path_to_stats,distance_metric)
+my_monitors,green_edges = generate_random_monitors(H,Percentage,seed_random)
+print 'DIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN'
+print my_monitors
+print green_edges
 print 'Couples of Green Edges Seclected:'
 #per passare archi particolari
 #green_edges=[(3,6,3)]
@@ -196,7 +199,7 @@ coor_y=-75
 prepare_graph(H1)
 merge_graphs(H1,D)
 my_draw(H1, 'real_Graph_%f'%alfa)
-green_edges= deepcopy(copy_of_green_edges)
+#green_edges= deepcopy(copy_of_green_edges)
 nodes_included=[]
 edges_included=[]
 distance_metric = "one-hop"
@@ -205,7 +208,7 @@ print 'Green edges'
 print green_edges
 #i=0
 # This is the routing matrix
-R= np.zeros(shape=(len(green_edges),H.number_of_edges()))
+R= np.zeros(shape=(len(green_edges),H2.number_of_edges()))
 print ' A zero matrix'
 print R
 # Counts the number of equations
@@ -214,7 +217,7 @@ for edge in green_edges:
   #residual_graph=nx.MultiGraph(supply_graph)
   source=edge[0]
   target=edge[1]
-  demand= edge[2]
+  #demand= edge[2]
   arc=(source,target)
   (length, path) = my_prob_single_source_dijkstra(H2,distance_metric, source, target)
   print 'Diman'
@@ -253,6 +256,8 @@ for edge in green_edges:
         #Set up the routing matrix R: 
         edge_number=0
         for e in H2.edges():
+          #print 'Number of H2 edges'
+          #print H2.edges()
           my_source=e[0]
           my_target=e[1]
           graph_edge=(my_source, my_target)
@@ -279,22 +284,47 @@ print 'Edges in the graph'
 print H2.edges()
 print 'Routing matrix'
 print R
-#C = np.array([[1.0, 0.0, 0.0], [1.0, 1.0, 1.0], [0.0, 1.0, 1.0]])
+#C = np.array([[1.0, 1.0, 1.0], [1.0, 0.0, 0.0], [1.0, 1.0, 1.0]])
 #[1,1,0;0,1,1;1,0,1]
-my_null = nullspace(R)
+my_null = null(R)
 print 'Null space of R'
 print my_null
+rows= len(my_null)
+columns = len(my_null.T)
+print 'Rows'
+print rows
+print 'Columns'
+print columns
+routing_rows = len(R)
+routing_columns = len(R.T)
+print 'Routing rows'
+print routing_rows
+print 'Routing Columns'
+print routing_columns
 iden =1
 Num_Identi_link =0
-for i in range(0,len(green_edges)-1):
-  for j in range(0,len(my_null.T)-1):
-    if (my_null[i][j] ==0) and (iden==1):
+#for i in range(0,len(green_edges)-1):
+#  for j in range(0,len(my_null.T)-1):
+for i in range(0,rows):
+  #print 'I ro print kon'
+  #print i
+  for j in range(0,columns):
+    #print 'J ro print kon'
+    #print j
+    if (-1e-12 <my_null[i][j] < 1e-12) and (iden==1):
       iden=1
     else:
       iden=0
-    if (iden == 1):
-      Num_Identi_link = Num_Identi_link +1 
+  if (iden == 1):
+    Num_Identi_link = Num_Identi_link +1 
+    #print 'Which Row?'
+    #print i
+  iden=1
 print 'Number of Identofiable links:'
+#if (not my_null):
+#  Num_Identi_link = len(green_edges)
 print Num_Identi_link
+print "Nodes: %d"%H2.number_of_nodes()
+print "Edges: %d"%H2.number_of_edges()
 
 

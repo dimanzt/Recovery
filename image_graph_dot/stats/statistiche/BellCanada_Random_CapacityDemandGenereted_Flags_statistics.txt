@@ -34,3 +34,543 @@ Max flows su grafo supply per ogni coppia:
 (12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
 Domanda Finale assegnata al grafo: 
 (15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - (40, 46, 5) - (1, 19, 11) - (35, 44, 6) - (5, 18, 10) - (7, 25, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 49.0 - (2, 22): 44.0 - (35, 44): 46.0 - (1, 19): 20.0 - (16, 38): 48.0 - (12, 26): 29.0 - (41, 47): 48.0 - (5, 18): 20.0 - (40, 46): 43.0 - (7, 25): 44.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - (40, 46, 1) - (1, 19, 1) - (35, 44, 1) - (5, 18, 1) - (7, 25, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 2.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - (40, 46, 5) - (1, 19, 11) - (35, 44, 6) - (5, 18, 10) - (7, 25, 10) - 
+Max flows su grafo supply per ogni coppia: 
+(15, 27): 49.0 - (2, 22): 44.0 - (35, 44): 46.0 - (1, 19): 20.0 - (16, 38): 48.0 - (12, 26): 29.0 - (41, 47): 48.0 - (5, 18): 20.0 - (40, 46): 43.0 - (7, 25): 44.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - (40, 46, 1) - (1, 19, 1) - (35, 44, 1) - (5, 18, 1) - (7, 25, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 
+
+
+
+Topologia: BellCanada_Random_CapacityDemandGenereted
+Seed: 120
+Alfa: 1.0
+Coppie di nodi selezionati con probabilita = 0.002 : 
+(15, 27, 7) - (2, 22, 10) - (41, 47, 4) - (12, 26, 6) - (16, 38, 7) - 
+Max flows su grafo supply per ogni coppia: 
+(12, 26): 29.0 - (15, 27): 49.0 - (2, 22): 44.0 - (16, 38): 48.0 - (41, 47): 48.0 - 
+Domanda Finale assegnata al grafo: 
+(15, 27, 1) - (2, 22, 1) - (41, 47, 1) - (12, 26, 1) - (16, 38, 1) - 

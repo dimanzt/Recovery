@@ -24,6 +24,8 @@ import numpy as np
 from numpy.linalg import svd
 import matplotlib.pyplot as plt
 import math
+import scipy
+from scipy import linalg, matrix
 from my_lib_optimal_recovery import *
 from scipy.integrate import dblquad
 from scipy.stats import multivariate_normal
@@ -1349,6 +1351,35 @@ def generate_demand_of_fixed_value_from_list_of_coupl(H,list_of_couple,flow_c_va
     file_flags.write(string+'\n')
     file_flags.close()
     return file_gml,green_selected
+
+def generate_random_monitors(H,Percentage,seed_random):
+
+    selected_monitors=[]
+    end_to_end_edges=[]
+    while (float(len(selected_monitors))/len(H.nodes()) < Percentage): 
+      for node in H.nodes():
+        seed_random=int(seed_random)+1
+        if flip_coin_2(Percentage,seed_random):
+        #if (flip_coin(Percentage)):
+          if (node not in selected_monitors):
+            if  (float(len(selected_monitors))/len(H.nodes()) < Percentage ):
+              #print 'JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ'
+              #print float(len(selected_monitors))/len(H.nodes())
+              selected_monitors.append(node)
+              #print selected_monitors
+    #print H.nodes()
+    #print float(len(selected_monitors))/len(H.nodes())
+    #print 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+    #print selected_monitors
+    for i in range(0,len(selected_monitors)-1):
+      for j in range(i+1,len(selected_monitors)):
+        source = selected_monitors[i]
+        target = selected_monitors[j]
+        edge= (source, target)
+        if edge not in end_to_end_edges:
+          end_to_end_edges.append(edge)
+    return selected_monitors, end_to_end_edges
+      
 
 
 #OTTIMIZZATA
@@ -11220,6 +11251,22 @@ def nullspace(A, atol=1e-13, rtol=0):
     nnz = (s >= tol).sum()
     ns = vh[nnz:].conj().T
     return ns
+
+
+def null(A, eps=1e-12): #1e-12
+    u, s, vh = scipy.linalg.svd(A)
+    padding = max(0,np.shape(A)[1]-np.shape(s)[0])
+    null_mask = np.concatenate(((s <= eps), np.ones((padding,),dtype=bool)),axis=0)
+    null_space = scipy.compress(null_mask, vh, axis=0)
+    return scipy.transpose(null_space)
+
+
+#def null(A, eps=1e-18):
+#    u, s, vh = scipy.linalg.svd(A)
+#    null_mask = (s <= eps)
+#    null_space = scipy.compress(null_mask, vh, axis=0)
+#    return scipy.transpose(null_space)
+
 
 def rank(A, atol=1e-13, rtol=0):
     """Estimate the rank (i.e. the dimension of the nullspace) of a matrix.
