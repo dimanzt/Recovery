@@ -4,6 +4,7 @@ import my_lib as my_lib_var
 import sys
 #import winsound
 import time
+import itertools
 from scipy import stats
 import numpy as np
 from numpy.linalg import svd
@@ -53,6 +54,7 @@ flow_c_fixed=sys.argv[8]
 flow_c_value=int(sys.argv[9])
 number_of_couple=int(sys.argv[10])
 Percentage = float(sys.argv[18])
+Monitors = int(sys.argv[17])
 #fixed_distruption=str(sys.argv[11])
 #var_distruption=float(sys.argv[12])
 #K_HOPS=int(sys.argv[14])
@@ -284,7 +286,7 @@ print 'Edges in the graph'
 print H2.edges()
 print 'Routing matrix'
 print R
-#C = np.array([[1.0, 1.0, 1.0], [1.0, 0.0, 0.0], [1.0, 1.0, 1.0]])
+#C = np.array([[1.0, 1.0, 0.0], [1.0, 0.0, 1.0], [0.0, 1.0, 1.0]])
 #[1,1,0;0,1,1;1,0,1]
 my_null = null(R)
 print 'Null space of R'
@@ -320,11 +322,79 @@ for i in range(0,rows):
     #print 'Which Row?'
     #print i
   iden=1
+print 'Number of monitors'
+print len(my_monitors)
 print 'Number of Identofiable links:'
 #if (not my_null):
 #  Num_Identi_link = len(green_edges)
 print Num_Identi_link
 print "Nodes: %d"%H2.number_of_nodes()
 print "Edges: %d"%H2.number_of_edges()
+###########################################################
+#In this section, we want to find solutions of each variable:
+# Use brute force to find the equations that solve e1 e2, ...
+# Suppose I only want to choose k/M monitors.
+#X1= R[0][:] 
+#X2= R[1][:]
+#X3= [X1; X2]#np.concatenate([X1; X2])
+#X3= [X1 X2]
+#print 'Concatinate'
+#print X3
+#R2= R
+#R_enumurate=[]
+#N= len(R)
+#for k in range(0,N-2)
+#  #find all c(n,k) combination of rows
+########################OPTIMAL##########################################
+#COMPUTE all combinations:
+print 'All chosen monitors'
+print my_monitors
+stuff = my_monitors
+Max_Ident=0
+Selected_Max=[]
+x = (int)(Monitors+1)
+if 1> 0:
+#for L in range(x, x+1):
+#for L in range(2, len(stuff)+1):
+  L = x
+  for subset in itertools.combinations(stuff, L):
+    #print(subset)
+    enum_green_edges= my_green_edges(subset)
+    Rx= Routing_matrix(H2, enum_green_edges)
+    Num_Iden, Iden= Identifiable_links(Rx)
+    #print Iden 
+    if (Num_Iden > Max_Ident):
+      if (L-1 < x):
+        print 'L:'
+        print L
+        print 'Monitors'
+        print x
+        print 'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD'
+        Max_Ident = Num_Iden
+        Selected_Max=Iden
+    #print len(subset)
+    #add to the list of e1 or e2 ....eN which can be identified using this list
+
+#print type(Monitors)
+#print type(L)
+print 'Best Solution:'
+print 'Maximum number of links:'
+print Max_Ident
+print 'Selected Monitors:'
+print Selected_Max
+
+
+
+filename_stat='stat_simulations_'+filename_graph+"_Max_Monitors_"+str(Monitors)+"_Alpha_"+str(alfa)+".txt"
+
+#numero della simulazione corrente e scrivo statistiche
+num_sim=get_num_simulation(path_to_file_simulation)
+
+Nodes= H2.number_of_nodes()
+Edges= H2.number_of_edges()
+write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
+                          my_monitors,Num_Identi_link,
+                          Monitors, Max_Ident, Selected_Max, 
+                          Nodes, Edges)
 
 

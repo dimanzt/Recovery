@@ -1371,6 +1371,11 @@ def generate_random_monitors(H,Percentage,seed_random):
     #print float(len(selected_monitors))/len(H.nodes())
     #print 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
     #print selected_monitors
+    end_to_end_edges = my_green_edges(selected_monitors)
+    return selected_monitors, end_to_end_edges
+
+def my_green_edges(selected_monitors):
+    end_to_end_edges =[]
     for i in range(0,len(selected_monitors)-1):
       for j in range(i+1,len(selected_monitors)):
         source = selected_monitors[i]
@@ -1378,7 +1383,7 @@ def generate_random_monitors(H,Percentage,seed_random):
         edge= (source, target)
         if edge not in end_to_end_edges:
           end_to_end_edges.append(edge)
-    return selected_monitors, end_to_end_edges
+    return end_to_end_edges
       
 
 
@@ -4018,7 +4023,39 @@ def count_occurance(elem, path):
 
     return count
 
+
+
+
+def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
+                          my_monitors,Num_Identi_link,
+                          Monitors, Max_Ident, Selected_Monitors,
+                          Nodes, Edges):
+
+
+        path_to_file_stat=path_to_stats+filename_stat
+        print path_to_file_stat
+        if not os.path.exists(path_to_file_stat):
+            #print 'non esiste lo creo'
+            file=open(path_to_file_stat,'w+')
+            name_of_colunms="Seed\tAlfa\tTotalRandomMonitors\tIdentifiableLinks\tMonitorLimit\tOMaxIdentifiabilitys\tSelectedMonitors\tNumberofNodes\tNumberofEdges\n"
+
+            file.write(name_of_colunms)
+            file.close
+
+
+        file=open(path_to_file_stat,'a')
+        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(Monitors)+'\t\t'+str(Max_Ident)+'\t\t'+str(Selected_Monitors)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
+        file.write(raw_line)
+        file.close()
+
+
+
+
+
+
 def write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
+
+
                           num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
                           num_rip_optimal_gray_nodes,num_rip_optimal_gray_edges,#Gray OPTIMAL
                           num_rip_IBB_optimal_nodes,num_rip_IBB_optimal_edges,num_rip_IBB_truely_optimal_nodes,num_rip_IBB_truely_optimal_edges,#IBB Expected,
@@ -11308,3 +11345,123 @@ def rank(A, atol=1e-13, rtol=0):
     tol = max(atol, rtol * s[0])
     rank = int((s >= tol).sum())
     return rank
+
+	
+def Routing_matrix(H2, green_edges):	
+    nodes_included=[]
+    edges_included=[]
+    distance_metric = "one-hop"
+    R= np.zeros(shape=(len(green_edges),H2.number_of_edges()))
+    #print ' A zero matrix'
+    #print R
+    # Counts the number of equations
+    Path_Index =0
+    for edge in green_edges:
+      #residual_graph=nx.MultiGraph(supply_graph)
+      source=edge[0]
+      target=edge[1]
+      #demand= edge[2]
+      arc=(source,target)
+      (length, path) = my_prob_single_source_dijkstra(H2,distance_metric, source, target)
+      #print 'Diman'
+      #print i
+      #print path
+      #print 'Length'
+      #print length
+      #i = i+1
+      #print patih
+      try:
+        #print path[target]
+    
+        #print type(path[target]), len(path[target]), path[target]
+        a = np.asarray(path[target])
+        #print type(a), a.shape, "\n", a
+        #keydict=H[id_source][id_target]
+        #for k in keydict:
+        #  if H2[source][target][k]['type']=='normal':
+        #    #H.add_edge(source,target,key=k, true_status='destroyed')
+        #    edges_destroyed.append((id_source,id_target))
+        i=0
+        #my_path = path[target].tolist()
+        #print a
+        for node in a:
+          if i < (len(path[target])-1):
+            id_source= a[i]
+            i = i+1
+            id_target= a[i]
+            #i= i+1
+            #keydict=H2[id_source][id_target]
+            #for k in keydict:
+            #  if H2[source]
+            my_edge=(id_source,id_target)
+            if my_edge not in edges_included:
+              edges_included.append(my_edge)
+            #Set up the routing matrix R:
+            edge_number=0
+            for e in H2.edges():
+              #print 'Number of H2 edges'
+              #print H2.edges()
+              my_source=e[0]
+              my_target=e[1]
+              graph_edge=(my_source, my_target)
+              graph_edge_reverse= (my_target, my_source)
+              if (my_edge == graph_edge) or (my_edge== graph_edge_reverse):
+                #print 'Hahahaaaaa'
+                R[Path_Index][edge_number]=1#.item((Path_Index,edge_number))= 1
+              edge_number=edge_number + 1
+              #Increase by the number of edges in the graph
+          #Add nodes in each path to the solution set
+          if node not in nodes_included:
+            nodes_included.append(node)
+    
+      except KeyError:
+        raise nx.NetworkXNoPath("node %s not reachable from %s" % (source, target))
+    
+      Path_Index= Path_Index +1
+    
+    return R
+
+def Identifiable_links(R):
+    my_null = null(R)
+    #print 'Null space of R'
+    #print my_null
+    rows= len(my_null)
+    columns = len(my_null.T)
+    #print 'Rows'
+    #print rows
+    #print 'Columns'
+    #print columns
+    routing_rows = len(R)
+    routing_columns = len(R.T)
+    #print 'Routing rows'
+    #print routing_rows
+    #print 'Routing Columns'
+    #print routing_columns
+    iden =1
+    Num_Identi_link =0
+    Identifiable_links=[]
+    #for i in range(0,len(green_edges)-1):
+    #  for j in range(0,len(my_null.T)-1):
+    for i in range(0,rows):
+      #print 'I ro print kon'
+      #print i
+      for j in range(0,columns):
+        #print 'J ro print kon'
+        #print j
+        if (-1e-12 <my_null[i][j] < 1e-12) and (iden==1):
+          iden=1
+        else:
+          iden=0
+      if (iden == 1):
+        Num_Identi_link = Num_Identi_link +1
+        if i not in Identifiable_links:
+          Identifiable_links.append(i)
+        #print 'Which Row?'
+        #print i
+      iden=1
+    #print 'Number of Identofiable links:'
+    #if (not my_null):
+    #  Num_Identi_link = len(green_edges)
+    #print Num_Identi_link
+    return Num_Identi_link, Identifiable_links
+
