@@ -532,6 +532,8 @@ while (Add_more_monitors):
   print Identified_links 
   print 'Selected Monitors:'
   print Best_greedy_monitors      
+####################### Finished with the Greedy Algorithm#####################
+####################### Start writing the ILP formulation for Branch and Bound ######################
 ####################### Writing the Stats#######################################
 filename_stat='stat_simulations_'+filename_graph+"_Max_Monitors_"+str(Monitors)+"_Alpha_"+str(alfa)+".txt"
 
