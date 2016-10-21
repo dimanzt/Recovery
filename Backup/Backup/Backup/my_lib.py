@@ -4027,8 +4027,8 @@ def count_occurance(elem, path):
 
 
 def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
-                          my_monitors,Num_Identi_link,
-                          Monitors, Max_Ident, Selected_Monitors,
+                          my_monitors,Num_my_monitors,Num_Identi_link,
+                          Monitors, Num_Monitors, Max_Ident, Selected_Monitors,
                           Nodes, Edges):
 
 
@@ -4037,14 +4037,14 @@ def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
         if not os.path.exists(path_to_file_stat):
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
-            name_of_colunms="Seed\tAlfa\tTotalRandomMonitors\tIdentifiableLinks\tMonitorLimit\tOMaxIdentifiabilitys\tSelectedMonitors\tNumberofNodes\tNumberofEdges\n"
+            name_of_colunms="Seed\tAlfa\tTotal_Random_Monitors\tNumber_of_Random_Monitors\tIdentifiable_Links\tMonitor_Limit\tMaxIdentifiabilitys\tSelected_Monitors\tNumber_of_selected_Monitors\tNumberofNodes\tNumberofEdges\n"
 
             file.write(name_of_colunms)
             file.close
 
 
         file=open(path_to_file_stat,'a')
-        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(Monitors)+'\t\t'+str(Max_Ident)+'\t\t'+str(Selected_Monitors)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
+        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(Monitors)+'\t\t'+str(Num_Monitors)+'\t\t'+str(Max_Ident)+'\t\t'+str(Selected_Monitors)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
         file.write(raw_line)
         file.close()
 
@@ -11443,11 +11443,11 @@ def Identifiable_links(R):
     #for i in range(0,len(green_edges)-1):
     #  for j in range(0,len(my_null.T)-1):
     for i in range(0,rows):
-      #print 'I ro print kon'
-      #print i
+      print 'I ro print kon'
+      print i
       for j in range(0,columns):
-        #print 'J ro print kon'
-        #print j
+        print 'J ro print kon'
+        print j
         if (-1e-12 <my_null[i][j] < 1e-12) and (iden==1):
           iden=1
         else:

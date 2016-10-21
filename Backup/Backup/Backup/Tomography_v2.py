@@ -330,6 +330,7 @@ print 'Number of Identofiable links:'
 print Num_Identi_link
 print "Nodes: %d"%H2.number_of_nodes()
 print "Edges: %d"%H2.number_of_edges()
+print '********************************'
 ###########################################################
 #In this section, we want to find solutions of each variable:
 # Use brute force to find the equations that solve e1 e2, ...
@@ -347,31 +348,82 @@ print "Edges: %d"%H2.number_of_edges()
 #  #find all c(n,k) combination of rows
 ########################OPTIMAL##########################################
 #COMPUTE all combinations:
+#class Combination:
+#     def __init__(s,d, comb_monitors):
+#         edge= (s,d)
+#         Combination.e = edge
+#         Combination.m = comb_monitors
+
+#class Combination:
+#    def __init__(edge):
+#        edge.self = []
+#
+#    def add(edge, s,d):
+#        e=(s,d)
+#        edge.self.append(e)        
+#
+#    #def addtwice(self, x):
+#    #    self.add(x)
+#    #    self.add(x
+
+class Combination():#(s,d,m):
+    def __init__(self, s, d, m,number):
+        edge=(s, d)
+        self.e = edge
+        self.m = m
+        self.n = number
+    #def AddComb(self, m):
+    #    self.m = m
+
+my_objects = []
+Edge_index=0
+
+for links in H2.edges():
+    my_objects.append(Combination(Edge_index,links,[],Edge_index))
+    Edge_index = Edge_index +1
+    #my_objects.AddComb(
+
+# later
+
+#for obj in my_objects:
+#    print obj.e
+#    print obj.m
+#    print obj.n
+
 print 'All chosen monitors'
 print my_monitors
+print '##############################'
 stuff = my_monitors
 Max_Ident=0
 Selected_Max=[]
 x = (int)(Monitors+1)
-if 1> 0:
+#if 1> 0:
 #for L in range(x, x+1):
-#for L in range(2, len(stuff)+1):
-  L = x
+for L in range(2, len(stuff)+1):
+  #L = x
   for subset in itertools.combinations(stuff, L):
     #print(subset)
     enum_green_edges= my_green_edges(subset)
     Rx= Routing_matrix(H2, enum_green_edges)
     Num_Iden, Iden= Identifiable_links(Rx)
+    #print ' Deeeeeeeeeeeeeeeeeeeeeeee'
+    #print Iden
+    for n in Iden:
+      for obj in my_objects:
+        if (str(obj.n) == str(n)):
+          #print 'YEEEEEYYYYYYYYYYYYYYYYYEEEEEEEEEEEEEEEEs'
+          obj.m.append(subset)
     #print Iden 
     if (Num_Iden > Max_Ident):
-      if (L-1 < x):
-        print 'L:'
-        print L
-        print 'Monitors'
-        print x
-        print 'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD'
+      if (L < x):
+        #print 'L:'
+        #print L
+        #print 'Monitors'
+        #print x
+        #print 'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD'
         Max_Ident = Num_Iden
         Selected_Max=Iden
+      #if (float(Num_Iden)/(L) >  )
     #print len(subset)
     #add to the list of e1 or e2 ....eN which can be identified using this list
 
@@ -382,6 +434,14 @@ print 'Maximum number of links:'
 print Max_Ident
 print 'Selected Monitors:'
 print Selected_Max
+print '##########################OPT Finished############################'
+print '##########################Start Greedy ###########################'
+#########################GREEEDY BASED APPROACH###############################
+for obj in my_objects:
+    print obj.e
+    print obj.m
+    print obj.n
+
 
 
 
@@ -393,8 +453,8 @@ num_sim=get_num_simulation(path_to_file_simulation)
 Nodes= H2.number_of_nodes()
 Edges= H2.number_of_edges()
 write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
-                          my_monitors,Num_Identi_link,
-                          Monitors, Max_Ident, Selected_Max, 
+                          my_monitors, len(my_monitors), Num_Identi_link,
+                          Monitors, len(Selected_Max) ,Max_Ident, Selected_Max, 
                           Nodes, Edges)
 
 
