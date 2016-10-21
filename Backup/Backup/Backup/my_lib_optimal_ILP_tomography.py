@@ -55,7 +55,7 @@ def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
         print mon.num
         print 'Monitor Combination:'
         print mon.monitors
-
+    
 
     # Create optimization model
     # Xl = Identifiable links,
@@ -66,15 +66,22 @@ def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
     Xl = {}
     Zs = {}
     for m in My_moonitors:
-        Yv[m] = m.addVar(ub=1, obj=0, vtype=GRB.BINARY, name='Selected_Monitor%s'% (m))  #m_cost[m],  
+        Yv[m] = m.addVar(ub=1, vtype=GRB.BINARY, name='Selected_Monitor%s'% (m))  #m_cost[m], 
+    for e in Edges:
+        Xl[e] = m.addVar(ub =1, vtype=GRB.BINARY, name='Identified_Links%s'% (e)) 
+    for mon in my_monitor_comb:
+        Zs[mon.num] = maddVar(ub=1, vtype=GRB.BINARY, name='Selected_Set%s'% (mon.num) )
     m.update()
     m.addConstr(quicksum(Yv[m] for m in My_monitors) <= Max_monitors, 'Max_Monitors')
-        
+    #This part is not completely correct:
+    for obj in my_objects:
+        m.addConstr(Xl[my_objects.n] <= quicksum(Zs[i] for i in obj.m ), 'Identifiable_links' )
+ 
     for obj in my_objects:
         for m in obj.m
             m.addConstr(quicksum() <= )
 
-
+    m.update()
     # Set objective
     m.setObjective(quicksum(Xl[i] for l in edges), GRB.MAXIMIZE)
 
@@ -98,19 +105,15 @@ except AttributeError:
 
         my_used_arc=[]
         my_used_vertex=[]
-        for i,j in arcs:
-           var_reference = m1.getVarByName('usedArc_%s_%s' % (i,j))    #arco ij
-           var_reference_reverse=m1.getVarByName('usedArc_%s_%s'%(j,i)) #arco ji
-           if var_reference.x>0 or var_reference_reverse.x>0:
-               #SE IL SUO COSTO ERA NON NULLO, QUINDI ERA ROTTO !!!
-                if arc_cost[i,j]!=0:
-                    edge=(i,j)
-                    my_used_arc.append(edge)
+        for m in My_monitors:
+           var_reference = m.getVarByName('Selected_Monitors%s' % (m))    #selected monitor
+           if var_reference.x>0:
+                ILP_identifiable_links.append(m)
 
-        for i in nodes:
-            var_reference=m1.getVarByName('usedVertex_%s'%(i))
+        for e in Edges:
+            var_reference=m.getVarByName('Identified_Links%s'% (e))
             if var_reference.x>0:
-                if vertex_cost[i] !=0:
+                ILP_identifiable_links.append(e)
 
 
     return Best_ILP_monitors, ILP_identifiable_links
