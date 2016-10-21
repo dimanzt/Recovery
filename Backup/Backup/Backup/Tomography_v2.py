@@ -515,8 +515,9 @@ while (Add_more_monitors):
   Added_monitors= Added_monitors + len(temp_mon)
   #Best_greedy = float(float(Num_Identifiable)/len(temp_selected_mon))
   Best_greedy_monitors.append(temp_mon)
+  print '##################Start printing the stats:#############'
   print 'Found the best greedy monitor combinations:'
-  print mon.monitors
+  print Best_greedy_monitors
   print 'Those which were not included before:'
   print temp_mon
   print 'Best greedy number:'
