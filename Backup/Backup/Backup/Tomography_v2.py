@@ -459,29 +459,80 @@ for obj in my_objects:
     #print obj.m[0]
     #if (float(len(obj.m[0]))/len() > Best_greedy)
 print '########################START MONITOR LISTS###################'
-for mon in my_monitor_comb:
-    print 'Identifiable_Links:'
-    print mon.ident
-    print 'Number:'
-    print mon.num
-    print 'Monitor Combination:'
-    print mon.monitors
-    Num_Identifiable=len(mon.ident)
-    for e in mon.ident:
-      if e in Identified_links:
-         Num_Identifiable = Num_Identifiable -1
-    if (float(float(Num_Identifiable)/len(mon.monitors))> Best_greedy):
-        Best_greedy = (float(len(mon.ident))/len(mon.monitors))
-        Best_greedy_monitors.append(mon.monitors)
-        print 'Found the best greedy:'
-        print mon.monitors
-        for edge in mon.ident:
-          if edge not in Identified_links:
-            Identified_links.append(edge)
-        
-
-
-
+Add_more_monitors =1
+Added_monitors =0
+temp_monitors=[]
+temp_mon=[]
+temp_Identifiable_links=[]
+temp_mon_ident=[]
+Identified_links=[]
+while (Add_more_monitors):
+  for mon in my_monitor_comb:
+      print 'Identifiable_Links:'
+      print mon.ident
+      print 'Number:'
+      print mon.num
+      print 'Monitor Combination:'
+      print mon.monitors
+      Num_Identifiable=len(mon.ident)
+      Num_Selected_Mon =0
+      Selected_mon=[]
+      for m in mon.monitors:
+        if m not in Best_greedy_monitors:
+           Num_Selected_Mon= Num_Selected_Mon + 1
+           Selected_mon.append(m)
+      for e in mon.ident:
+        if e in Identified_links:
+           Num_Identifiable = Num_Identifiable -1
+      if ((Added_monitors+ len(Selected_mon)) > Monitors):
+          Add_more_monitors =0
+      if ((float(float(Num_Identifiable)/len(Selected_mon))) > float(Best_greedy)) and ((Added_monitors+ len(Selected_mon) -1) < Monitors):
+          print 'Length of selected monitors:'
+          print (Added_monitors+ len(Selected_mon)) 
+          #Added_monitors= Added_monitors + len(Selected_mon)
+          Best_greedy = float(float(Num_Identifiable)/len(Selected_mon))
+          temp_monitors=Selected_mon
+          #temp_selected_mon= len(Selected_mon)
+          #temp_selected_mon=Selected_mon
+          temp_num_Identifiable= Num_Identifiable
+          temp_mon=mon.monitors
+          temp_Identifiable_links= Identifiable_links
+          temp_mon_ident= mon.ident
+          #Best_greedy_monitors.append(Selected_mon)
+          #print 'Found the best greedy monitor combinations:'
+          #print mon.monitors
+          #print 'Those which were not included before:'
+          #print Selected_mon
+          #print 'Best greedy number:'
+          #print Best_greedy
+          #print 'Num identifiable links:'
+          #print Num_Identifiable
+          #print 'Length of monitors:'
+          #print len(mon.monitors)
+          #for edge in mon.ident:
+          #  if edge not in Identified_links:
+          #    Identified_links.append(edge)
+  Added_monitors= Added_monitors + len(temp_mon)
+  #Best_greedy = float(float(Num_Identifiable)/len(temp_selected_mon))
+  Best_greedy_monitors.append(temp_mon)
+  print 'Found the best greedy monitor combinations:'
+  print mon.monitors
+  print 'Those which were not included before:'
+  print temp_mon
+  print 'Best greedy number:'
+  print Best_greedy
+  print 'Num identifiable links:'
+  print temp_num_Identifiable
+  print 'Length of monitors:'
+  print len(temp_mon)
+  for edge in temp_mon_ident:
+    if edge not in Identified_links:
+      Identified_links.append(edge)
+  print 'Links which were identified:'
+  print Identified_links 
+  print 'Selected Monitors:'
+  print Best_greedy_monitors      
+####################### Writing the Stats#######################################
 filename_stat='stat_simulations_'+filename_graph+"_Max_Monitors_"+str(Monitors)+"_Alpha_"+str(alfa)+".txt"
 
 #numero della simulazione corrente e scrivo statistiche
