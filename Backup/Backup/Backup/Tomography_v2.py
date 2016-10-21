@@ -21,7 +21,8 @@ from my_lib_optimal_recovery_multicommodity_worst import *
 from my_lib_optimal_recovery_multicommodity_best import *
 from my_lib_check_routability import *
 from my_lib_compute_max_demand_in_the_graph import *
-from my_lib_optimal_tomography import *
+#from my_lib_optimal_tomography import *
+##from my_lib_optimal_ILP_tomography import *
 #from my_lib_optimal_risk_averse_expected_recovery import *
 from my_lib_optimal_risk_behavior_expected_recovery import *
 #https://www.diffchecker.com/efddo0xv
@@ -535,9 +536,12 @@ while (Add_more_monitors):
   print Best_greedy_monitors      
 ####################### Finished with the Greedy Algorithm#####################
 ####################### Start writing the ILP formulation for Branch and Bound ######################
+#Max sum xl s.t xl <= sum zs for s: l \in I(Ms) and sum_{v \in V} yv <= k nad Zs <= yv ####
+#Best_ILP_monitors, ILP_identifiable_links = optimal_ILP_tomography(my_monitor_comb,my_objects,Monitors) 
+####################### Finished OPT ILP, start the LP relaxation of the problem####################
+#Best_LP_relaxation_monitors. LP_relaxation_identifiable_links =
 ####################### Writing the Stats#######################################
 filename_stat='stat_simulations_'+filename_graph+"_Max_Monitors_"+str(Monitors)+"_Alpha_"+str(alfa)+".txt"
-
 #numero della simulazione corrente e scrivo statistiche
 num_sim=get_num_simulation(path_to_file_simulation)
 

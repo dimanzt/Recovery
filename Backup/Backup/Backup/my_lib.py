@@ -1359,7 +1359,7 @@ def generate_random_monitors(H,Percentage,seed_random):
     while (float(len(selected_monitors))/len(H.nodes()) < Percentage): 
       for node in H.nodes():
         seed_random=int(seed_random)+1
-        if flip_coin_2(Percentage,seed_random):
+        if flip_coin_2(0.5,seed_random):
         #if (flip_coin(Percentage)):
           if (node not in selected_monitors):
             if  (float(len(selected_monitors))/len(H.nodes()) < Percentage ):
