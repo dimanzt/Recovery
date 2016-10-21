@@ -374,6 +374,11 @@ class Combination():#(s,d,m):
         self.n = number
     #def AddComb(self, m):
     #    self.m = m
+class Monitors_Perm():
+    def __init__(self,edges,m,number):
+        self.ident= edges
+        self.num=number
+        self.monitors= m
 
 my_objects = []
 Edge_index=0
@@ -382,7 +387,7 @@ for links in H2.edges():
     my_objects.append(Combination(Edge_index,links,[],Edge_index))
     Edge_index = Edge_index +1
     #my_objects.AddComb(
-
+my_monitor_comb=[]
 # later
 
 #for obj in my_objects:
@@ -395,8 +400,10 @@ print my_monitors
 print '##############################'
 stuff = my_monitors
 Max_Ident=0
-Selected_Max=[]
+Selected_Links=[]
+Selected_monitors=[]
 x = (int)(Monitors+1)
+index=0
 #if 1> 0:
 #for L in range(x, x+1):
 for L in range(2, len(stuff)+1):
@@ -408,6 +415,8 @@ for L in range(2, len(stuff)+1):
     Num_Iden, Iden= Identifiable_links(Rx)
     #print ' Deeeeeeeeeeeeeeeeeeeeeeee'
     #print Iden
+    my_monitor_comb.append(Monitors_Perm(Iden,subset,index))
+    index= index+1
     for n in Iden:
       for obj in my_objects:
         if (str(obj.n) == str(n)):
@@ -422,7 +431,8 @@ for L in range(2, len(stuff)+1):
         #print x
         #print 'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD'
         Max_Ident = Num_Iden
-        Selected_Max=Iden
+        Selected_Links=Iden
+        Selected_Monitors = subset
       #if (float(Num_Iden)/(L) >  )
     #print len(subset)
     #add to the list of e1 or e2 ....eN which can be identified using this list
@@ -432,16 +442,43 @@ for L in range(2, len(stuff)+1):
 print 'Best Solution:'
 print 'Maximum number of links:'
 print Max_Ident
-print 'Selected Monitors:'
-print Selected_Max
+print 'Selected Links:'
+print Selected_Links
+print 'Selected_Monitors'
+print Selected_Monitors
 print '##########################OPT Finished############################'
 print '##########################Start Greedy ###########################'
 #########################GREEEDY BASED APPROACH###############################
+Best_greedy=0
+Best_greedy_monitors=[]
+Identified_links=[]
 for obj in my_objects:
     print obj.e
     print obj.m
     print obj.n
-
+    #print obj.m[0]
+    #if (float(len(obj.m[0]))/len() > Best_greedy)
+print '########################START MONITOR LISTS###################'
+for mon in my_monitor_comb:
+    print 'Identifiable_Links:'
+    print mon.ident
+    print 'Number:'
+    print mon.num
+    print 'Monitor Combination:'
+    print mon.monitors
+    Num_Identifiable=len(mon.ident)
+    for e in mon.ident:
+      if e in Identified_links:
+         Num_Identifiable = Num_Identifiable -1
+    if (float(float(Num_Identifiable)/len(mon.monitors))> Best_greedy):
+        Best_greedy = (float(len(mon.ident))/len(mon.monitors))
+        Best_greedy_monitors.append(mon.monitors)
+        print 'Found the best greedy:'
+        print mon.monitors
+        for edge in mon.ident:
+          if edge not in Identified_links:
+            Identified_links.append(edge)
+        
 
 
 
@@ -454,7 +491,7 @@ Nodes= H2.number_of_nodes()
 Edges= H2.number_of_edges()
 write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
                           my_monitors, len(my_monitors), Num_Identi_link,
-                          Monitors, len(Selected_Max) ,Max_Ident, Selected_Max, 
+                          Monitors, len(Selected_Links) ,Max_Ident, Selected_Monitors, 
                           Nodes, Edges)
 
 

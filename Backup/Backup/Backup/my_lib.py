@@ -11443,11 +11443,11 @@ def Identifiable_links(R):
     #for i in range(0,len(green_edges)-1):
     #  for j in range(0,len(my_null.T)-1):
     for i in range(0,rows):
-      print 'I ro print kon'
-      print i
+      #print 'I ro print kon'
+      #print i
       for j in range(0,columns):
-        print 'J ro print kon'
-        print j
+        #print 'J ro print kon'
+        #print j
         if (-1e-12 <my_null[i][j] < 1e-12) and (iden==1):
           iden=1
         else:
