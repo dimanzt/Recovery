@@ -46,9 +46,9 @@ if len(sys.argv)>6:
 else:
    random_disruption=0
 if len(sys.argv)>7:
-   disruption_value=int(sys.argv[8])
+   Monitors=int(sys.argv[8])
 else:
-   disruption_value=50
+   Monitors=5
 if len(sys.argv)>8:
    var_distruption=float(sys.argv[9])
 else:
@@ -95,7 +95,7 @@ prob_edge=0.002
 prob_edge_fixed=True
 
 #numero di simulazioni da eseguire (per far variare alpha oppure far variare la prob edge)
-num_simulations= 1
+num_simulations= 10
 #metrica di distanza per calcolare lunghezza dei path : 'one-hop' , 'capacity', 'broken'
 #distance_metric='broken'
 #distance_metric='broken_capacity'
@@ -132,7 +132,7 @@ size_array_seed=10
 seed_array=[]
 
 if seed_fixed==False:
-    for i in range(120,120+1,1):
+    for i in range(120,120+10,1):
         seed_array.append(i)
 else:
     seed_array.append(seed)
@@ -164,7 +164,7 @@ for i in range(0,num_simulations,1):
         var_distruption+=0
 
     if fixed_dist_value==False:
-        disruption_value+=0
+        Monitors+=1
 
     if fixed_hop==False:
         K_HOPS+=0
@@ -178,7 +178,7 @@ for i in range(0,num_simulations,1):
     for seed_elem in seed_array:
         #esegui una simulazione
         #os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(disruption_value)+" "+str(error)+" "+str(Gap))
-        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(disruption_value)+" "+str(error)+" "+str(Gap))
+        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(Monitors)+" "+str(error)+" "+str(Gap))
 #Always split is 1 if we always put a monitor, 0 is we don't always put a monitor
 
         #genera le immagini della simulazione corrente

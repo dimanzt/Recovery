@@ -1,10 +1,12 @@
 __author__ = 'Diman'
 
 from gurobipy import *
+import math
 
+#from math import *
 # Model data
 
-def optimal_ILP_tomography(my_monitor_comb,my_objects, Max_monitors, My_monitors):
+def optimal_LP_tomography(my_monitor_comb,my_objects, Max_monitors, My_monitors):
     Best_ILP_monitors=[]
     ILP_identifiable_links=[]
     #########################GREEEDY BASED APPROACH###############################
@@ -25,13 +27,13 @@ def optimal_ILP_tomography(my_monitor_comb,my_objects, Max_monitors, My_monitors
         #print 'Monitor Combination:'
         #print mon.monitors
     """
-    Best_ILP_monitors, ILP_identifiable_links = ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors)
+    Best_ILP_monitors, ILP_identifiable_links = LP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors)
 
     return Best_ILP_monitors, ILP_identifiable_links
 ###
 # Solve ILP of max flow problem where the Sets are given and each set can identify a set of links,
 
-def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
+def LP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
     Best_ILP_monitors=[]
     ILP_identifiable_links=[]
     #########################GREEEDY BASED APPROACH###############################
@@ -69,7 +71,7 @@ def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
     for m in My_monitors:
         Yv[m] = my_Model.addVar(ub=1, vtype=GRB.BINARY, name='Selected_Monitor%s'% (m))  #m_cost[m], 
     for e in Edges:
-        Xl[e] = my_Model.addVar(ub =1, vtype=GRB.BINARY, name='Identified_Links%s'% (e)) 
+        Xl[e] = my_Model.addVar(ub =1, vtype=GRB.CONTINUOUS, name='Identified_Links%s'% (e)) 
     for mon in my_monitor_comb:
         Zs[mon.num] = my_Model.addVar(ub=1, vtype=GRB.BINARY, name='Selected_Set%s'% (mon.num) )
     my_Model.update()

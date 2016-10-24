@@ -1,0 +1,7 @@
+#!/bin/sh
+#PBS -l nodes=10:ppn=1
+#PBS -l walltime=1000:00:00
+#PBS -q goliath
+cd /home/moby/dxz149/Softwares/Recovery/Backup/Backup/Backup/
+./CAIDA_TOMO_01.sh
+wait

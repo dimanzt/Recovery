@@ -53,7 +53,7 @@ import time
 
 
 def my_draw(H,file_name):
-                            
+    """                            
     #print 'DRAWING************************'
     #imposto le coordinate del nodo per il formato .dot "x,y!"
     for i in H.nodes():
@@ -130,7 +130,7 @@ def my_draw(H,file_name):
     #print path
     graphDot.write(path+'Dot.dot')
     #graphDot.write_png(file_name +'.png')
-                         
+    """                         
 
 def set_attrDot(elem,attr,value):
     elem.__set_attribute__(attr,value)
@@ -4023,9 +4023,34 @@ def count_occurance(elem, path):
 
     return count
 
+def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
+                          my_monitors, Num_Identi_link, #Random generated monitor with a maximum of Monitors, Number of Identifiable links using shortest path 
+                          Monitors, #Limit on Maximum number of monitors
+                          Num_Selected_Links, Num_Selected_Monitors, #Brute Force: The identifiable links, , Selected number of monitors
+                          Num_Identified_links, Num_Best_greedy_monitors, # Greedy algorithm: The identifiable links, Selected number of monitors,
+                          Num_ILP_identifiable_links, Num_Best_ILP_monitors, # ILP solution: The identifiable links, Selected number of monitors,
+                          Num_LP_relaxation_identifiable_links,Num_Best_LP_relaxation_monitors, # LP relaxation of ILP: The identifiable links, Selected number of monitors
+                          Nodes, Edges): # Number of nodes in the graph, Number of edges in the graph
 
 
 
+
+        path_to_file_stat=path_to_stats+filename_stat
+        print path_to_file_stat
+        if not os.path.exists(path_to_file_stat):
+            #print 'non esiste lo creo'
+            file=open(path_to_file_stat,'w+')
+            name_of_colunms="Seed\tAlfa\tNumber_of_Random_Monitors\tTotal_Identifiable_Links\tMonitor_Limit\tBrute_Force_Max_Identified_Links\tBrute_Force_Monitors\tGreedy_Identified_Links\tGreedy_Monitors\tILP_identified_Links\tILP_Monitors\tLP_relaxation_identified_Links\tLP_relaxation_Monitors\tNumberofNodes\tNumberofEdges\n"
+
+            file.write(name_of_colunms)
+            file.close
+
+
+        file=open(path_to_file_stat,'a')
+        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(Monitors)+'\t\t'+str(Num_Selected_Links)+'\t\t'+str(Num_Selected_Monitors)+'\t\t'+str(Num_Identified_links)+'\t\t'+str(Num_Best_greedy_monitors)+'\t\t'+str(Num_ILP_identifiable_links)+'\t\t'+str(Num_Best_ILP_monitors)+'\t\t'+str(Num_LP_relaxation_identifiable_links)+'\t\t'+str(Num_Best_LP_relaxation_monitors)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
+        file.write(raw_line)
+        file.close()
+"""
 def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
                           my_monitors,Num_my_monitors,Num_Identi_link,
                           Monitors, Num_Monitors, Max_Ident, Selected_Monitors,
@@ -4049,10 +4074,7 @@ def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
         file.close()
 
 
-
-
-
-
+"""
 def write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
 
 

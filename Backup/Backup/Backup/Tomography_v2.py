@@ -22,7 +22,8 @@ from my_lib_optimal_recovery_multicommodity_best import *
 from my_lib_check_routability import *
 from my_lib_compute_max_demand_in_the_graph import *
 #from my_lib_optimal_tomography import *
-##from my_lib_optimal_ILP_tomography import *
+from my_lib_optimal_ILP_tomography import *
+from my_lib_optimal_LP_Relax_tomography import *
 #from my_lib_optimal_risk_averse_expected_recovery import *
 from my_lib_optimal_risk_behavior_expected_recovery import *
 #https://www.diffchecker.com/efddo0xv
@@ -138,6 +139,8 @@ if not os.path.exists(path_to_file_times):
 #genera la domanda in base ad una quantita' di flusso FISSATA (flow_c_value_ da assegnare a tutte le coppie
 path_to_demand,green_edges_old=generate_demand_of_fixed_value_from_list_of_couple(H,list_of_couples,flow_c_value,prob_edge,filename_demand,alfa,seed_random,path_to_stats,distance_metric)
 my_monitors,green_edges = generate_random_monitors(H,Percentage,seed_random)
+if (len(my_monitors) < Monitors):
+    Monitors = len(my_monitors)
 print 'DIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN'
 print my_monitors
 print green_edges
@@ -368,11 +371,12 @@ print '********************************'
 #    #    self.add(x
 
 class Combination():#(s,d,m):
-    def __init__(self, s, d, m,number):
+    def __init__(self, s, d, m,number, monitor_number):
         edge=(s, d)
         self.e = edge
         self.m = m
         self.n = number
+        self.mon_num = monitor_number
     #def AddComb(self, m):
     #    self.m = m
 class Monitors_Perm():
@@ -380,12 +384,13 @@ class Monitors_Perm():
         self.ident= edges
         self.num=number
         self.monitors= m
+        
 
 my_objects = []
 Edge_index=0
 
 for links in H2.edges():
-    my_objects.append(Combination(Edge_index,links,[],Edge_index))
+    my_objects.append(Combination(Edge_index,links,[],Edge_index,[]))
     Edge_index = Edge_index +1
     #my_objects.AddComb(
 my_monitor_comb=[]
@@ -417,12 +422,14 @@ for L in range(2, len(stuff)+1):
     #print ' Deeeeeeeeeeeeeeeeeeeeeeee'
     #print Iden
     my_monitor_comb.append(Monitors_Perm(Iden,subset,index))
-    index= index+1
+    #index= index+1
     for n in Iden:
       for obj in my_objects:
         if (str(obj.n) == str(n)):
           #print 'YEEEEEYYYYYYYYYYYYYYYYYEEEEEEEEEEEEEEEEs'
           obj.m.append(subset)
+          obj.mon_num.append(index)
+    index= index+1
     #print Iden 
     if (Num_Iden > Max_Ident):
       if (L < x):
@@ -533,23 +540,35 @@ while (Add_more_monitors):
   print 'Links which were identified:'
   print Identified_links 
   print 'Selected Monitors:'
-  print Best_greedy_monitors      
+  print Best_greedy_monitors 
+  print 'Number of Selected Monitors'
+  print Added_monitors     
 ####################### Finished with the Greedy Algorithm#####################
 ####################### Start writing the ILP formulation for Branch and Bound ######################
 #Max sum xl s.t xl <= sum zs for s: l \in I(Ms) and sum_{v \in V} yv <= k nad Zs <= yv ####
-#Best_ILP_monitors, ILP_identifiable_links = optimal_ILP_tomography(my_monitor_comb,my_objects,Monitors) 
+Best_ILP_monitors, ILP_identifiable_links = optimal_ILP_tomography(my_monitor_comb,my_objects,Monitors, my_monitors) 
 ####################### Finished OPT ILP, start the LP relaxation of the problem####################
-#Best_LP_relaxation_monitors. LP_relaxation_identifiable_links =
+Best_LP_relaxation_monitors, LP_relaxation_identifiable_links = optimal_LP_tomography(my_monitor_comb,my_objects,Monitors, my_monitors)
 ####################### Writing the Stats#######################################
-filename_stat='stat_simulations_'+filename_graph+"_Max_Monitors_"+str(Monitors)+"_Alpha_"+str(alfa)+".txt"
+filename_stat='stat_simulations_'+filename_graph+"_Max_Monitors_"+str(Monitors)+"_Percentage_"+str(Percentage)+"_Alpha_"+str(alfa)+".txt"
 #numero della simulazione corrente e scrivo statistiche
 num_sim=get_num_simulation(path_to_file_simulation)
 
 Nodes= H2.number_of_nodes()
 Edges= H2.number_of_edges()
+Edges= H2.number_of_edges()
 write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
-                          my_monitors, len(my_monitors), Num_Identi_link,
-                          Monitors, len(Selected_Links) ,Max_Ident, Selected_Monitors, 
-                          Nodes, Edges)
+                          len(my_monitors), Num_Identi_link, #Random generated monitor with a maximum of Monitors, Number of Identifiable links using shortest path 
+                          Monitors, #Limit on Maximum number of monitors
+                          len(Selected_Links), len(Selected_Monitors), #Brute Force: The identifiable links, , Selected number of monitors
+                          len(Identified_links), Added_monitors, # Greedy algorithm: The identifiable links, Selected number of monitors,
+                          len(ILP_identifiable_links), len(Best_ILP_monitors), # ILP solution: The identifiable links, Selected number of monitors,
+                          len(LP_relaxation_identifiable_links),len(Best_LP_relaxation_monitors), # LP relaxation of ILP: The identifiable links, Selected number of monitors
+                          Nodes, Edges) # Number of nodes in the graph, Number of edges in the graph
+
+#write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
+#                          my_monitors, len(my_monitors), Num_Identi_link,
+#                          Monitors, len(Selected_Links) ,Max_Ident, Selected_Monitors, 
+#                          Nodes, Edges)
 
 
