@@ -105,6 +105,13 @@ def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
     my_Model.setObjective(quicksum(Xl[l] for l in Edges), GRB.MAXIMIZE)
 
     my_Model.update()
+    my_Model.setParam('MIPGap',0.5)
+    #m.setParam('MIPGAPABS',2)
+    #m.setParam('ITERATION_LIMIT',Gaps)
+    #m.params.timeLimit = Gaps
+    #m.setParam('IterationLimit',Gaps)
+    #m.setParam('TimeLimit', Gaps)
+    my_Model.update()
     my_Model.optimize()
 
     if my_Model.status == GRB.status.OPTIMAL:
