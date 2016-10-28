@@ -66,12 +66,13 @@ def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
     Yv = {}
     Xl = {}
     Zs = {}
+    #GRB.CONTINUOUS GRB.BINARY
     for m in My_monitors:
-        Yv[m] = my_Model.addVar(ub=1, vtype=GRB.BINARY, name='Selected_Monitor%s'% (m))  #m_cost[m], 
+        Yv[m] = my_Model.addVar(ub=1,lb=0, vtype=GRB.BINARY, name='Selected_Monitor%s'% (m))  #m_cost[m], 
     for e in Edges:
-        Xl[e] = my_Model.addVar(ub =1, vtype=GRB.BINARY, name='Identified_Links%s'% (e)) 
+        Xl[e] = my_Model.addVar(ub =1,lb=0, vtype=GRB.CONTINUOUS, name='Identified_Links%s'% (e)) 
     for mon in my_monitor_comb:
-        Zs[mon.num] = my_Model.addVar(ub=1, vtype=GRB.BINARY, name='Selected_Set%s'% (mon.num) )
+        Zs[mon.num] = my_Model.addVar(ub=1,lb=0, vtype=GRB.CONTINUOUS, name='Selected_Set%s'% (mon.num) )
     my_Model.update()
     my_Model.addConstr(quicksum(Yv[m] for m in My_monitors) <= Max_monitors, 'Max_Monitors')
     #This part is not completely correct:
@@ -91,11 +92,11 @@ def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
                 #k= (int)j
             my_Model.addConstr(Zs[i] <= Yv[j], 'Coverage' )
 
-    for mon in my_monitor_comb:
-        i= mon.num
-        for j in mon.ident:
-            #if j:
-            my_Model.addConstr(Zs[i] <= Xl[j], 'LinkCoverage')
+    #for mon in my_monitor_comb:
+    #    i= mon.num
+    #    for j in mon.ident:
+    #        #if j:
+    #        my_Model.addConstr(Zs[i] <= Xl[j], 'LinkCoverage')
     #for obj in my_objects:
     #    for m in obj.m
     #        m.addConstr(quicksum() <= )
@@ -105,29 +106,43 @@ def ILP_solution_best(my_monitor_comb, my_objects, Max_monitors, My_monitors):
     my_Model.setObjective(quicksum(Xl[l] for l in Edges), GRB.MAXIMIZE)
 
     my_Model.update()
-    my_Model.setParam('MIPGap',0.5)
+    ##my_Model.setParam('MIPGap',0.5)
     #m.setParam('MIPGAPABS',2)
     #m.setParam('ITERATION_LIMIT',Gaps)
     #m.params.timeLimit = Gaps
     #m.setParam('IterationLimit',Gaps)
     #m.setParam('TimeLimit', Gaps)
-    my_Model.update()
+    ##my_Model.update()
     my_Model.optimize()
 
     if my_Model.status == GRB.status.OPTIMAL:
 
         ILP_identifiable_links=[]#my_used_arc=[]
         Best_ILP_monitors=[]#my_used_vertex=[]
+        Best_Selected_Sets=[]
         for m in My_monitors:
            var_reference = my_Model.getVarByName('Selected_Monitor%s'% (m))    #selected monitor
            if var_reference.x>0:
+                print var_reference.x
                 Best_ILP_monitors.append(m)
+                print 'BEST MONITORSSSSSSSSSSSSSSSSSSSSSSS'
+                print Best_ILP_monitors
 
         for e in Edges:
             var_reference=my_Model.getVarByName('Identified_Links%s'% (e))
             if var_reference.x>0:
+                print var_reference.x
                 ILP_identifiable_links.append(e)
-
+                print 'IDENTIFIED LINKSSSSSSSSSSSSSSSSSS:'
+                print ILP_identifiable_links
+        for mon in my_monitor_comb:
+            i = mon.num
+            var_reference=my_Model.getVarByName('Selected_Set%s' % (mon.num))
+            if var_reference.x >0:
+                print var_reference.x
+                print 'Selected_Set'
+                Best_Selected_Sets.append(i)
+                print Best_Selected_Sets
     #print 'YOHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO'
     #print Best_ILP_monitors
     #print ILP_identifiable_links
