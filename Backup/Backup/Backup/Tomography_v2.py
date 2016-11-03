@@ -411,8 +411,8 @@ Selected_monitors=[]
 x = (int)(Monitors+1)
 index=0
 #if 1> 0:
-#for L in range(x, x+1):
-for L in range(2, len(stuff)+1):
+for L in range(x, x+1):
+#for L in range(2, len(stuff)+1):
   #L = x
   for subset in itertools.combinations(stuff, L):
     #print(subset)
