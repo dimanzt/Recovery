@@ -26,6 +26,7 @@ from my_lib_optimal_ILP_tomography import *
 from my_lib_optimal_LP_Relax_tomography import *
 #from my_lib_optimal_risk_averse_expected_recovery import *
 from my_lib_optimal_risk_behavior_expected_recovery import *
+from numpy.linalg import matrix_rank
 #https://www.diffchecker.com/efddo0xv
 
 work_dir=os.getcwd()
@@ -272,7 +273,7 @@ for edge in green_edges:
           if (my_edge == graph_edge) or (my_edge== graph_edge_reverse):
             #print 'Hahahaaaaa'
             R[Path_Index][edge_number]=1#.item((Path_Index,edge_number))= 1
-            Cost_routing[Path_Index][1] = length
+            Cost_routing[Path_Index][0] = len(length)
           edge_number=edge_number + 1
           #Increase by the number of edges in the graph
       #Add nodes in each path to the solution set    
@@ -343,9 +344,23 @@ print '********************************'
 RMin=[]
 IncreaseInRank=0
 currentRank =0
-for i in range(0,rows):
-  #Print 'I ro print kon'
-  InreaseInRank= rank() - currentRank
+Max_Increase =0
+sort_index = np.argsort(Cost_routing[:,0])
+#Sorted= np.sort(Cost_routing[:,0])
+print 'Diman Sort naKarde'
+print Cost_routing
+print 'Diman Sort Karde!'
+print sort_index
+for i in sort_index:
+  print 'I ro print kon'
+  print i
+  InreaseInRank=  matrix_rank(R[i,:]) - currentRank
+  if (IncreaseInRank > Max_Increase):
+    #Print 'Yaftam!'
+    Max_Increase = IncreaseInRank
+    RMin.append(i)
+
+  
   
 
 ###########################################################
@@ -453,7 +468,7 @@ if 1> 0:
         #print 'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD'
         Max_Ident = Num_Iden
         Selected_Links=Iden
-        Selected_Monitors = subset
+        Selected_monitors = subset
       #if (float(Num_Iden)/(L) >  )
     #print len(subset)
     #add to the list of e1 or e2 ....eN which can be identified using this list
@@ -466,7 +481,7 @@ print Max_Ident
 print 'Selected Links:'
 print Selected_Links
 print 'Selected_Monitors'
-print Selected_Monitors
+print Selected_monitors
 print '##########################OPT Finished############################'
 print '##########################Start Greedy ###########################'
 #########################GREEEDY BASED APPROACH###############################
@@ -487,6 +502,7 @@ temp_mon=[]
 temp_Identifiable_links=[]
 temp_mon_ident=[]
 Identified_links=[]
+temp_num_Identifiable= []
 while (Add_more_monitors):
   for mon in my_monitor_comb:
       print 'Identifiable_Links:'
@@ -573,7 +589,7 @@ Edges= H2.number_of_edges()
 write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
                           len(my_monitors), Num_Identi_link, #Random generated monitor with a maximum of Monitors, Number of Identifiable links using shortest path 
                           Monitors, #Limit on Maximum number of monitors
-                          len(Selected_Links), len(Selected_Monitors), #Brute Force: The identifiable links, , Selected number of monitors
+                          len(Selected_Links), len(Selected_monitors), #Brute Force: The identifiable links, , Selected number of monitors
                           len(Identified_links), Added_monitors, # Greedy algorithm: The identifiable links, Selected number of monitors,
                           len(ILP_identifiable_links), len(Best_ILP_monitors), # ILP solution: The identifiable links, Selected number of monitors,
                           len(LP_relaxation_identifiable_links),len(Best_LP_relaxation_monitors), # LP relaxation of ILP: The identifiable links, Selected number of monitors

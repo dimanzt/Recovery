@@ -95,7 +95,7 @@ prob_edge=0.002
 prob_edge_fixed=True
 
 #numero di simulazioni da eseguire (per far variare alpha oppure far variare la prob edge)
-num_simulations= 10
+num_simulations= 1
 #metrica di distanza per calcolare lunghezza dei path : 'one-hop' , 'capacity', 'broken'
 #distance_metric='broken'
 #distance_metric='broken_capacity'
@@ -132,7 +132,7 @@ size_array_seed=10
 seed_array=[]
 
 if seed_fixed==False:
-    for i in range(120,120+10,1):
+    for i in range(120,120+1,1):
         seed_array.append(i)
 else:
     seed_array.append(seed)
