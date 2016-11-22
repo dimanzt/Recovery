@@ -217,6 +217,7 @@ print green_edges
 # This is the routing matrix
 R= np.zeros(shape=(len(green_edges),H2.number_of_edges()))
 Cost_routing= np.zeros(shape=(len(green_edges), 1))
+#Green_Edges= np.zeros
 print ' A zero matrix'
 print R
 # Counts the number of equations
@@ -346,21 +347,118 @@ IncreaseInRank=0
 currentRank =0
 Max_Increase =0
 sort_index = np.argsort(Cost_routing[:,0])
-#Sorted= np.sort(Cost_routing[:,0])
-print 'Diman Sort naKarde'
-print Cost_routing
-print 'Diman Sort Karde!'
-print sort_index
+Cost=0
+#print 'Diman Sort naKarde'
+#print Cost_routing
+#print 'Diman Sort Karde!'
+#print sort_index
 for i in sort_index:
   print 'I ro print kon'
   print i
-  InreaseInRank=  matrix_rank(R[i,:]) - currentRank
-  if (IncreaseInRank > Max_Increase):
+  temp= RMin
+  temp.append(i)
+  IncreaseInRank=  matrix_rank(R[temp,:]) - currentRank
+  print 'Rank of R'
+  print matrix_rank(R[temp,:])
+  print 'IncreaseInRank'
+  print IncreaseInRank
+  print 'currentRank'
+  print currentRank
+  #temp.remove(i)
+  if (IncreaseInRank > 0):
     #Print 'Yaftam!'
-    Max_Increase = IncreaseInRank
+    #Max_Increase = IncreaseInRank
     RMin.append(i)
+    currentRank= matrix_rank(R[temp,:])
+    Cost = Cost + Cost_routing[i,0]
+  temp.remove(i)
+print 'Found R'
+print RMin
+MinProbMonitors=[]
+for i in RMin:
+  print 'This is which index'
+  print i
+  if green_edges[i][0] not in MinProbMonitors:
+    print 'Source:'
+    print green_edges[i][0]
+    MinProbMonitors.append(green_edges[i][0])
+  if green_edges[i][1] not in MinProbMonitors:
+    print 'Destination:'
+    print green_edges[i][1]
+    MinProbMonitors.append(green_edges[i][1])
+#print 'Green Edges'
+#for edge in green_edges:
+#  print 'Source'
+#  print edge[0]
+#  print 'Destination'
+#  print edge[1]
+print 'Preserving rank, we have this many monitors:'
+print len(MinProbMonitors)
+print 'Minimum Number of Probes to preserve Rank:'
+print len(RMin)
+print 'Cost of Preserving Rank (Hop count):'
+print Cost
+print '####################FINISHED MIN-Prob algorithm ######################' 
+#############################################################################
+print '####################Start Min-Prob with minimum monitors##############'
+RMinMon=[]
+IncreaseInRank=0
+currentRank =0
+Max_Increase =0
+sort_index = np.argsort(Cost_routing[:,0])
+CostMinMon=0
+#print 'Diman Sort naKarde'
+#print Cost_routing
+#print 'Diman Sort Karde!'
+#print sort_index
+for i in sort_index:
+  print 'I ro print kon'
+  print i
+  temp= RMinMon
+  temp.append(i)
+  IncreaseInRank=  matrix_rank(R[temp,:]) - currentRank
+  print 'Rank of R'
+  print matrix_rank(R[temp,:])
+  print 'IncreaseInRank'
+  print IncreaseInRank
+  print 'currentRank'
+  print currentRank
+  #temp.remove(i)
+  if (IncreaseInRank > 0):
+    #Print 'Yaftam!'
+    #Max_Increase = IncreaseInRank
+    RMinMon.append(i)
+    currentRank= matrix_rank(R[temp,:])
+    CostMinMon = CostMinMon + Cost_routing[i,0]
+  temp.remove(i)
+print 'Found R'
+print RMinMon
+MinProbMinMon=[]
+for i in RMinMon:
+  print 'This is which index'
+  print i
+  if green_edges[i][0] not in MinProbMinMon:
+    print 'Source:'
+    print green_edges[i][0]
+    MinProbMinMon.append(green_edges[i][0])
+  if green_edges[i][1] not in MinProbMinMon:
+    print 'Destination:'
+    print green_edges[i][1]
+    MinProbMinMon.append(green_edges[i][1])
+#print 'Green Edges'
+#for edge in green_edges:
+#  print 'Source'
+#  print edge[0]
+#  print 'Destination'
+#  print edge[1]
+print 'Preserving rank, we have this many monitors:'
+print len(MinProbMinMon)
+print 'Minimum Number of Probes to preserve Rank:'
+print len(RMinMon)
+print 'Cost of Preserving Rank (Hop count):'
+print CostMinMon
+print '####################FINISHED MIN-Prob algorithm ######################'
 
-  
   
 
 ###########################################################
@@ -593,6 +691,7 @@ write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
                           len(Identified_links), Added_monitors, # Greedy algorithm: The identifiable links, Selected number of monitors,
                           len(ILP_identifiable_links), len(Best_ILP_monitors), # ILP solution: The identifiable links, Selected number of monitors,
                           len(LP_relaxation_identifiable_links),len(Best_LP_relaxation_monitors), # LP relaxation of ILP: The identifiable links, Selected number of monitors
+                          len(MinProbMonitors), len(RMin), Cost, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count)
                           Nodes, Edges) # Number of nodes in the graph, Number of edges in the graph
 
 #write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
