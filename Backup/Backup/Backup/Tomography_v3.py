@@ -215,7 +215,6 @@ print green_edges
 #i=0
 # This is the routing matrix
 R= np.zeros(shape=(len(green_edges),H2.number_of_edges()))
-Cost_routing= np.zeros(shape=(len(green_edges), 1))
 print ' A zero matrix'
 print R
 # Counts the number of equations
@@ -272,7 +271,6 @@ for edge in green_edges:
           if (my_edge == graph_edge) or (my_edge== graph_edge_reverse):
             #print 'Hahahaaaaa'
             R[Path_Index][edge_number]=1#.item((Path_Index,edge_number))= 1
-            Cost_routing[Path_Index][1] = length
           edge_number=edge_number + 1
           #Increase by the number of edges in the graph
       #Add nodes in each path to the solution set    
@@ -337,17 +335,6 @@ print Num_Identi_link
 print "Nodes: %d"%H2.number_of_nodes()
 print "Edges: %d"%H2.number_of_edges()
 print '********************************'
-##############################################################################################################
-########################START Greedy-Min-Prob Algorithm#######################################################
-##Description: The algorithm starts by adding a path to the set of path that increase the rank most###########
-RMin=[]
-IncreaseInRank=0
-currentRank =0
-for i in range(0,rows):
-  #Print 'I ro print kon'
-  InreaseInRank= rank() - currentRank
-  
-
 ###########################################################
 #In this section, we want to find solutions of each variable:
 # Use brute force to find the equations that solve e1 e2, ...

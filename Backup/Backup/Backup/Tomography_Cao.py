@@ -337,17 +337,6 @@ print Num_Identi_link
 print "Nodes: %d"%H2.number_of_nodes()
 print "Edges: %d"%H2.number_of_edges()
 print '********************************'
-##############################################################################################################
-########################START Greedy-Min-Prob Algorithm#######################################################
-##Description: The algorithm starts by adding a path to the set of path that increase the rank most###########
-RMin=[]
-IncreaseInRank=0
-currentRank =0
-for i in range(0,rows):
-  #Print 'I ro print kon'
-  InreaseInRank= rank() - currentRank
-  
-
 ###########################################################
 #In this section, we want to find solutions of each variable:
 # Use brute force to find the equations that solve e1 e2, ...
