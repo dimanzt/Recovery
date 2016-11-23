@@ -512,23 +512,13 @@ for i in sort_index:
         temp.remove(i)
         #temp.remove(temp[len(temp)-1])
         OldProb= temp[len(temp)-1]
-        print ' Older Probe'
-        print OldProb
         temp.remove(OldProb)
-        print 'new temp'
-        print temp
         OldRank= matrix_rank(R[temp,:])
         temp.append(i)
-        print 'New Temp'
-        print temp
-        #temp.append(i)
         IncreaseInRank = matrix_rank(R[temp,:]) - OldRank
-        print matrix_rank(R[temp,:])
         if (IncreaseInRank >0):
           TempList.append(temp)
           #ListofCost.append(ListofCost[k-1] +Cost_routing[i,0])
-          print 'Temp List of R'
-          print TempList
           currentRank = matrix_rank(R[temp,:])
         else: 
           temp.append(OldProb)
