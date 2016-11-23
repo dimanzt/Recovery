@@ -7,6 +7,7 @@ import time
 import itertools
 from scipy import stats
 import numpy as np
+import copy
 from numpy.linalg import svd
 from my_lib import *
 from my_flows_lib import *
@@ -27,6 +28,7 @@ from my_lib_optimal_LP_Relax_tomography import *
 #from my_lib_optimal_risk_averse_expected_recovery import *
 from my_lib_optimal_risk_behavior_expected_recovery import *
 from numpy.linalg import matrix_rank
+
 #https://www.diffchecker.com/efddo0xv
 
 work_dir=os.getcwd()
@@ -402,49 +404,169 @@ print '####################FINISHED MIN-Prob algorithm ######################'
 #############################################################################
 print '####################Start Min-Prob with minimum monitors##############'
 RMinMon=[]
+ListofR=[]
+#ListofCost=[]
+TempList=[]
 IncreaseInRank=0
 currentRank =0
 Max_Increase =0
 sort_index = np.argsort(Cost_routing[:,0])
 CostMinMon=0
+Previous_Cost =0
+PrevProb=[]
 #print 'Diman Sort naKarde'
 #print Cost_routing
 #print 'Diman Sort Karde!'
 #print sort_index
 for i in sort_index:
-  print 'I ro print kon'
-  print i
-  temp= RMinMon
-  temp.append(i)
-  IncreaseInRank=  matrix_rank(R[temp,:]) - currentRank
-  print 'Rank of R'
-  print matrix_rank(R[temp,:])
-  print 'IncreaseInRank'
-  print IncreaseInRank
-  print 'currentRank'
-  print currentRank
   #temp.remove(i)
-  if (IncreaseInRank > 0):
-    #Print 'Yaftam!'
-    #Max_Increase = IncreaseInRank
-    RMinMon.append(i)
-    currentRank= matrix_rank(R[temp,:])
-    CostMinMon = CostMinMon + Cost_routing[i,0]
-  temp.remove(i)
-print 'Found R'
-print RMinMon
-MinProbMinMon=[]
-for i in RMinMon:
-  print 'This is which index'
-  print i
-  if green_edges[i][0] not in MinProbMinMon:
-    print 'Source:'
-    print green_edges[i][0]
-    MinProbMinMon.append(green_edges[i][0])
-  if green_edges[i][1] not in MinProbMinMon:
-    print 'Destination:'
-    print green_edges[i][1]
-    MinProbMinMon.append(green_edges[i][1])
+  #print 'Temp List in the beginning:'
+  #print TempList
+  #if (TempList):
+  #  ListofR=TempList
+  print 'ListofR in the beginning:'
+  print ListofR
+  ThisCost=Cost_routing[i,0]
+  #print 'This Cost:'
+  #print ThisCost
+  #print 'PPPPRevious Cost'
+  #print Previous_Cost
+  if (ThisCost != Previous_Cost): 
+      if (len(ListofR) ==0):
+          #print 'NO EQUAL COST EMPTY'
+          temp= []
+          temp.append(i)
+          IncreaseInRank = matrix_rank(R[temp,:]) - currentRank
+          print 'Rank of R'
+          print matrix_rank(R[temp,:])
+          print 'Incease in Rank'
+          print IncreaseInRank
+          print 'current Rank'
+          print currentRank
+          if (IncreaseInRank >0):
+            ListofR.append(temp)
+            currentRank= matrix_rank(R[temp,:])
+            CostMinMon = CostMinMon + Cost_routing[i,0]
+            PrevProb=i
+            #ListofCost.append(CostMinMon)
+
+      else:
+        k=0
+        for Probes in ListofR:
+          #print 'NO EQUAL COST NO EMPTY'
+          #print Probes
+          temp= copy.deepcopy(Probes)
+          currentRank=matrix_rank(R[temp,:])
+          temp.append(i)
+          IncreaseInRank = matrix_rank(R[temp,:]) - currentRank
+          #print 'Rank of R'
+          #print matrix_rank(R[temp,:])
+          #print 'Incease in Rank'
+          #print IncreaseInRank
+          #print 'current Rank'
+          #print currentRank
+          if i in Probes:
+            Probes.remove(i)
+          if (IncreaseInRank >0):
+            Probes.append(i)
+            currentRank= matrix_rank(R[temp,:])
+            CostMinMon = CostMinMon + Cost_routing[i,0]
+            PrevProb=i
+            #ListofCost[k]= ListofCost[k] + Cost_routing[i,0]
+          k=k+1
+  elif (ThisCost == Previous_Cost):
+    #if (TempList):
+    #  ListofR=TempList
+    #ListofR = copy.deepcopy(TempList)
+    print 'TempList Here:'
+    print TempList
+    #print 'Prev Cost'
+    #print Previous_Cost
+    #print 'this cost'
+    #print ThisCost
+    k=0
+    for Probes in ListofR:
+      #print 'Probes Here'
+      #print Probes
+      TempList = copy.deepcopy(ListofR)
+      temp = copy.deepcopy(Probes)
+      temp.append(i)
+      IncreaseInRank = matrix_rank(R[temp,:]) - currentRank
+      if i in Probes:
+        Probes.remove(i)
+      if (IncreaseInRank > 0):
+        Probes.append(i)
+        #print ListofR
+        currentRank = matrix_rank(R[temp,:])
+        #ListofCost[k]=ListofCost[k]+ Cost_routing[i,0]
+        CostMinMon = CostMinMon + Cost_routing[i,0]
+        PrevProb = i
+        TempList = []
+      else:
+        #print 'Probes'
+        #print Probes
+        #print 'Temp:'
+        #print temp
+        #print 'I:'
+        #print i
+        temp.remove(i)
+        #temp.remove(temp[len(temp)-1])
+        OldProb= temp[len(temp)-1]
+        print ' Older Probe'
+        print OldProb
+        temp.remove(OldProb)
+        print 'new temp'
+        print temp
+        OldRank= matrix_rank(R[temp,:])
+        temp.append(i)
+        print 'New Temp'
+        print temp
+        #temp.append(i)
+        IncreaseInRank = matrix_rank(R[temp,:]) - OldRank
+        print matrix_rank(R[temp,:])
+        if (IncreaseInRank >0):
+          TempList.append(temp)
+          #ListofCost.append(ListofCost[k-1] +Cost_routing[i,0])
+          print 'Temp List of R'
+          print TempList
+          currentRank = matrix_rank(R[temp,:])
+        else: 
+          temp.append(OldProb)
+      k=k+1
+    if (TempList):
+      ListofR = TempList
+  #temp.remove(i)
+  Previous_Cost= ThisCost
+print 'Found ListofR'
+print ListofR
+ProbMinMon=[]
+MinimumMonitors=1000000
+MinProbeLen=0
+ListofCost= np.zeros(shape=(len(ListofR), 1))
+J=0
+for x in ListofR:
+  for p in x:
+    ListofCost[J] = ListofCost[J] + Cost_routing[p,0]
+  J = J +1
+for c in ListofCost:
+  print 'Cost of Elements:'
+  print c
+for Probes in ListofR:
+  MinProbMinMon= []
+  for i in Probes:
+    if green_edges[i][0] not in MinProbMinMon:
+      print 'Source:'
+      print green_edges[i][0]
+      MinProbMinMon.append(green_edges[i][0])
+    if green_edges[i][1] not in MinProbMinMon:
+      print 'Destination:'
+      print green_edges[i][1]
+      MinProbMinMon.append(green_edges[i][1])
+  if (len(MinProbMinMon) < MinimumMonitors):
+    MinimumMonitors = len(MinProbMinMon)
+    ProbMinMon = MinProbMinMon
+    MinProbeLen = len(Probes)
+    
 #print 'Green Edges'
 #for edge in green_edges:
 #  print 'Source'
@@ -452,12 +574,12 @@ for i in RMinMon:
 #  print 'Destination'
 #  print edge[1]
 print 'Preserving rank, we have this many monitors:'
-print len(MinProbMinMon)
+print MinimumMonitors
 print 'Minimum Number of Probes to preserve Rank:'
-print len(RMinMon)
+print MinProbeLen
 print 'Cost of Preserving Rank (Hop count):'
 print CostMinMon
-print '####################FINISHED MIN-Prob algorithm ######################'
+print '####################FINISHED MIN-Prob with minimum monitors algorithm: Similar to finding all spanning trees ######################'
 
   
 
@@ -692,6 +814,7 @@ write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
                           len(ILP_identifiable_links), len(Best_ILP_monitors), # ILP solution: The identifiable links, Selected number of monitors,
                           len(LP_relaxation_identifiable_links),len(Best_LP_relaxation_monitors), # LP relaxation of ILP: The identifiable links, Selected number of monitors
                           len(MinProbMonitors), len(RMin), Cost, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count)
+                          MinimumMonitors, MinProbeLen, CostMinMon, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count)
                           Nodes, Edges) # Number of nodes in the graph, Number of edges in the graph
 
 #write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
