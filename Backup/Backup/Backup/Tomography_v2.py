@@ -345,19 +345,20 @@ print '********************************'
 ########################START Greedy-Min-Prob Algorithm#######################################################
 ##Description: The algorithm starts by adding a path to the set of path that increase the rank most###########
 RMin=[]
+temp=[]
 IncreaseInRank=0
 currentRank =0
 Max_Increase =0
 sort_index = np.argsort(Cost_routing[:,0])
 Cost=0
-#print 'Diman Sort naKarde'
-#print Cost_routing
-#print 'Diman Sort Karde!'
-#print sort_index
+print 'Diman Sort naKarde'
+print Cost_routing
+print 'Diman Sort Karde!'
+print sort_index
 for i in sort_index:
   print 'I ro print kon'
   print i
-  temp= RMin
+  temp= copy.deepcopy(RMin)
   temp.append(i)
   IncreaseInRank=  matrix_rank(R[temp,:]) - currentRank
   print 'Rank of R'
@@ -366,6 +367,8 @@ for i in sort_index:
   print IncreaseInRank
   print 'currentRank'
   print currentRank
+  if i in RMin:
+    RMin.remove(i)
   #temp.remove(i)
   if (IncreaseInRank > 0):
     #Print 'Yaftam!'
@@ -376,6 +379,9 @@ for i in sort_index:
   temp.remove(i)
 print 'Found R'
 print RMin
+#for x in RMin:
+print 'Rank:'
+print matrix_rank(R[RMin,:])
 MinProbMonitors=[]
 for i in RMin:
   print 'This is which index'
@@ -424,8 +430,8 @@ for i in sort_index:
   #print TempList
   #if (TempList):
   #  ListofR=TempList
-  print 'ListofR in the beginning:'
-  print ListofR
+  #print 'ListofR in the beginning:'
+  #print ListofR
   ThisCost=Cost_routing[i,0]
   #print 'This Cost:'
   #print ThisCost
@@ -437,17 +443,18 @@ for i in sort_index:
           temp= []
           temp.append(i)
           IncreaseInRank = matrix_rank(R[temp,:]) - currentRank
-          print 'Rank of R'
-          print matrix_rank(R[temp,:])
-          print 'Incease in Rank'
-          print IncreaseInRank
-          print 'current Rank'
-          print currentRank
+          #print 'Rank of R'
+          #print matrix_rank(R[temp,:])
+          #print 'Incease in Rank'
+          #print IncreaseInRank
+          #print 'current Rank'
+          #print currentRank
           if (IncreaseInRank >0):
             ListofR.append(temp)
             currentRank= matrix_rank(R[temp,:])
             CostMinMon = CostMinMon + Cost_routing[i,0]
             PrevProb=i
+            Previous_Cost = ThisCost
             #ListofCost.append(CostMinMon)
 
       else:
@@ -472,6 +479,7 @@ for i in sort_index:
             currentRank= matrix_rank(R[temp,:])
             CostMinMon = CostMinMon + Cost_routing[i,0]
             PrevProb=i
+            Previous_Cost = ThisCost
             #ListofCost[k]= ListofCost[k] + Cost_routing[i,0]
           k=k+1
   elif (ThisCost == Previous_Cost):
@@ -490,6 +498,7 @@ for i in sort_index:
       #print Probes
       TempList = copy.deepcopy(ListofR)
       temp = copy.deepcopy(Probes)
+      currentRank = matrix_rank(R[temp,:])
       temp.append(i)
       IncreaseInRank = matrix_rank(R[temp,:]) - currentRank
       if i in Probes:
@@ -502,6 +511,7 @@ for i in sort_index:
         CostMinMon = CostMinMon + Cost_routing[i,0]
         PrevProb = i
         TempList = []
+        Previous_Cost = ThisCost
       else:
         #print 'Probes'
         #print Probes
@@ -520,13 +530,14 @@ for i in sort_index:
           TempList.append(temp)
           #ListofCost.append(ListofCost[k-1] +Cost_routing[i,0])
           currentRank = matrix_rank(R[temp,:])
+          Previous_Cost = ThisCost
         else: 
           temp.append(OldProb)
       k=k+1
     if (TempList):
       ListofR = TempList
   #temp.remove(i)
-  Previous_Cost= ThisCost
+  #Previous_Cost= ThisCost
 print 'Found ListofR'
 print ListofR
 ProbMinMon=[]
@@ -534,23 +545,30 @@ MinimumMonitors=1000000
 MinProbeLen=0
 ListofCost= np.zeros(shape=(len(ListofR), 1))
 J=0
+CostMinMon =0
 for x in ListofR:
+  print 'Rank'
+  print matrix_rank(R[x,:])
   for p in x:
     ListofCost[J] = ListofCost[J] + Cost_routing[p,0]
   J = J +1
+  if (ListofCost[J-1] > CostMinMon):
+    CostMinMon = ListofCost[J-1]
 for c in ListofCost:
   print 'Cost of Elements:'
   print c
+  #if (c > CostMinMon):
+  #  CostMinMon = c
 for Probes in ListofR:
   MinProbMinMon= []
   for i in Probes:
     if green_edges[i][0] not in MinProbMinMon:
-      print 'Source:'
-      print green_edges[i][0]
+      #print 'Source:'
+      #print green_edges[i][0]
       MinProbMinMon.append(green_edges[i][0])
     if green_edges[i][1] not in MinProbMinMon:
-      print 'Destination:'
-      print green_edges[i][1]
+      #print 'Destination:'
+      #print green_edges[i][1]
       MinProbMinMon.append(green_edges[i][1])
   if (len(MinProbMinMon) < MinimumMonitors):
     MinimumMonitors = len(MinProbMinMon)
@@ -715,12 +733,12 @@ Identified_links=[]
 temp_num_Identifiable= []
 while (Add_more_monitors):
   for mon in my_monitor_comb:
-      print 'Identifiable_Links:'
-      print mon.ident
-      print 'Number:'
-      print mon.num
-      print 'Monitor Combination:'
-      print mon.monitors
+      ##print 'Identifiable_Links:'
+      ##print mon.ident
+      ##print 'Number:'
+      ##print mon.num
+      ##print 'Monitor Combination:'
+      ##print mon.monitors
       Num_Identifiable=len(mon.ident)
       Num_Selected_Mon =0
       Selected_mon=[]
