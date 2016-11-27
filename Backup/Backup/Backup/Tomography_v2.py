@@ -1,3 +1,4 @@
+# Author: Diman Zad Tootaghaj
 import pydot # import pydot or you're not going to get anywhere my friend :D
 import networkx as nx
 import my_lib as my_lib_var
