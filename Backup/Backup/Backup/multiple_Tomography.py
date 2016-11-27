@@ -59,9 +59,9 @@ if len(sys.argv)>9:
 else:
    error=0.0
 if len(sys.argv)>10:
-   Gap=float(sys.argv[11])
+   ProbeCost=int(sys.argv[11])
 else:
-   Gap=0.0001
+   ProbeCost=100
 
 #parametri delle simulazioni
 
@@ -75,7 +75,7 @@ alpha_fixed=False
 #flow_fixed=True
 flow_fixed=False
 error_fixed=False
-Gap_fixed = False
+Probe_fixed = False
 flow_c=1
 if num_couple_passed!=-1:
     num_couple_fix=True
@@ -172,13 +172,13 @@ for i in range(0,num_simulations,1):
     if error_fixed==False:
         error+=0
 
-    if Gap_fixed==False:
-        Gap+=0.1
+    if Probe_fixed==False:
+        ProbeCost+=0
 
     for seed_elem in seed_array:
         #esegui una simulazione
         #os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(disruption_value)+" "+str(error)+" "+str(Gap))
-        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(Monitors)+" "+str(error)+" "+str(Gap))
+        os.system("python "+name_of_program_simulation +" "+str(seed_elem)+" "+str(alpha)+" "+str(prob_edge)+" "+str(num_simulations)+" "+str(i+1)+" "+distance_metric+" "+type_of_bet+" "+str(flow_fixed)+" "+str(flow_c)+" "+str(number_of_couple)+" "+str(fixed_distruption)+" "+str(var_distruption)+" "+filename_graph+" "+str(K_HOPS)+" "+str(always_split)+" "+str(random_disruption)+" "+str(Monitors)+" "+str(error)+" "+str(ProbeCost))
 #Always split is 1 if we always put a monitor, 0 is we don't always put a monitor
 
         #genera le immagini della simulazione corrente

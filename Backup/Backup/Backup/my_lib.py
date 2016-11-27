@@ -4032,6 +4032,7 @@ def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
                           Num_LP_relaxation_identifiable_links,Num_Best_LP_relaxation_monitors, # LP relaxation of ILP: The identifiable links, Selected number of monitors
                           MinProbMonitors, RMin, Cost, # Min-prob algorithm: Number of monitors, number of routing paths, Cost of probing
                           MinimumMonitors, MinProbeLen, CostMinMon, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count)
+                          MaxRank, MaxRankMonitors, RMaxRank, CostMaxRank, ProbeCost,  #Matrix maximum rank is, number of monitors for the max rank, Minimum number of probes, Cost of probes for the max rank, Limit on the probe cost
                           Nodes, Edges): # Number of nodes in the graph, Number of edges in the graph
 
 
@@ -4042,14 +4043,14 @@ def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
         if not os.path.exists(path_to_file_stat):
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
-            name_of_colunms="Seed\tAlfa\tNumber_of_Random_Monitors\tTotal_Identifiable_Links\tMonitor_Limit\tBrute_Force_Max_Identified_Links\tBrute_Force_Monitors\tGreedy_Identified_Links\tGreedy_Monitors\tILP_identified_Links\tILP_Monitors\tLP_relaxation_identified_Links\tLP_relaxation_Monitors\tMinProbMonitors\tRMin\tCost\tMinimumMonitors\tMinProbLen\tCostMinMon\tNumberofNodes\tNumberofEdges\n"
+            name_of_colunms="Seed\tAlfa\tNumber_of_Random_Monitors\tTotal_Identifiable_Links\tMonitor_Limit\tBrute_Force_Max_Identified_Links\tBrute_Force_Monitors\tGreedy_Identified_Links\tGreedy_Monitors\tILP_identified_Links\tILP_Monitors\tLP_relaxation_identified_Links\tLP_relaxation_Monitors\tMinProbMonitors\tRMin\tCost\tMinimumMonitors\tMinProbLen\tCostMinMon\tMaxRankAlg\tMaxRankMonitors\tMaxRankProbNum\tMaxRankProbCost\tMaxRankLimitCost\tNumberofNodes\tNumberofEdges\n"
 
             file.write(name_of_colunms)
             file.close
 
 
         file=open(path_to_file_stat,'a')
-        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(Monitors)+'\t\t'+str(Num_Selected_Links)+'\t\t'+str(Num_Selected_Monitors)+'\t\t'+str(Num_Identified_links)+'\t\t'+str(Num_Best_greedy_monitors)+'\t\t'+str(Num_ILP_identifiable_links)+'\t\t'+str(Num_Best_ILP_monitors)+'\t\t'+str(Num_LP_relaxation_identifiable_links)+'\t\t'+str(Num_Best_LP_relaxation_monitors)+'\t\t'+str(MinProbMonitors)+'\t\t'+str(RMin)+'\t\t'+str(Cost)+'\t\t'+str(MinimumMonitors)+'\t\t'+str(MinProbeLen)+'\t\t'+str(CostMinMon)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
+        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(Monitors)+'\t\t'+str(Num_Selected_Links)+'\t\t'+str(Num_Selected_Monitors)+'\t\t'+str(Num_Identified_links)+'\t\t'+str(Num_Best_greedy_monitors)+'\t\t'+str(Num_ILP_identifiable_links)+'\t\t'+str(Num_Best_ILP_monitors)+'\t\t'+str(Num_LP_relaxation_identifiable_links)+'\t\t'+str(Num_Best_LP_relaxation_monitors)+'\t\t'+str(MinProbMonitors)+'\t\t'+str(RMin)+'\t\t'+str(Cost)+'\t\t'+str(MinimumMonitors)+'\t\t'+str(MinProbeLen)+'\t\t'+str(CostMinMon)+'\t\t'+str(MaxRank)+'\t\t'+str(MaxRankMonitors)+'\t\t'+str(RMaxRank)+'\t\t'+str(CostMaxRank)+'\t\t'+str(ProbeCost)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
         file.write(raw_line)
         file.close()
 """
