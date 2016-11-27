@@ -809,10 +809,19 @@ print len(RMaxRank)
 print 'Cost of Preserving Rank (Hop count):'
 print CostMaxRank
 print '####################FINISHED MAX-rank algorithm ######################'
-###########################################################
+###################################################################################
+#################STARTED Min Monitor's Algorithm###################################
+print '##################STARTED Min Monitor Algorithm#######################'
 
 
 
+
+
+
+
+
+print '##################Finished Min Monitor Algorithm######################'
+################FINISHED Min Monitor Algorithm####################################
 ###########################################################
 #In this section, we want to find solutions of each variable:
 # Use brute force to find the equations that solve e1 e2, ...
