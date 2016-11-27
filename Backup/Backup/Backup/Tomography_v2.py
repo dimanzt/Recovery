@@ -301,6 +301,7 @@ print R
 #C = np.array([[1.0, 1.0, 0.0], [1.0, 0.0, 1.0], [0.0, 1.0, 1.0]])
 #[1,1,0;0,1,1;1,0,1]
 my_null = null(R)
+MatrixRank= matrix_rank(R)
 print 'Null space of R'
 print my_null
 rows= len(my_null)
@@ -597,6 +598,7 @@ for c in ListofCost:
   print c
   #if (c > CostMinMon):
   #  CostMinMon = c
+OPT_Prob=[]
 for Probes in ListofR:
   MinProbMinMon= []
   for i in Probes:
@@ -612,7 +614,45 @@ for Probes in ListofR:
     MinimumMonitors = len(MinProbMinMon)
     ProbMinMon = MinProbMinMon
     MinProbeLen = len(Probes)
+    OPT_Prob = Probes
 ###############################################################################################################################
+#################################################################################
+MinProbMinMonNull = null(R[OPT_Prob,:])
+rows= len(MinProbMinMonNull)
+columns = len(MinProbMinMonNull.T)
+print 'Rows'
+print rows
+print 'Columns'
+print columns
+routing_rows = len(R[OPT_Prob,:])
+routing_columns = len(R[OPT_Prob,:].T)
+print 'Routing rows'
+print routing_rows
+print 'Routing Columns'
+print routing_columns
+iden =1
+MinProb_MinMon_Identi_link =0
+#for i in range(0,len(green_edges)-1):
+#  for j in range(0,len(my_null.T)-1):
+for i in range(0,rows):
+  #print 'I ro print kon'
+  #print i
+  for j in range(0,columns):
+    #print 'J ro print kon'
+    #print j
+    if (-1e-12 < MinProbMinMonNull[i][j] < 1e-12) and (iden==1):
+      iden=1
+    else:
+      iden=0
+  if (iden == 1):
+    MinPron_MinMon_Identi_link = MinProb_MinMon_Identi_link +1
+    #print 'Which Row?'
+    #print i
+  iden=1
+#################################################################################
+print 'Number of Identofiable links:'
+print MinProb_MinMon_Identi_link
+#################################################################################
 #################################################################################################################################    
 #print 'Green Edges'
 #for edge in green_edges:
@@ -812,17 +852,186 @@ print CostMaxRank
 print '####################FINISHED MAX-rank algorithm ######################'
 ###################################################################################
 #################STARTED Min Monitor's Algorithm###################################
-print '##################STARTED Min Monitor Algorithm#######################'
-
-
-
-
-
-
-
-
-print '##################Finished Min Monitor Algorithm######################'
-################FINISHED Min Monitor Algorithm####################################
+print '##################STARTED Min Monitor Max Rank Algorithm#######################'
+RMinMonMaxRank=[]
+temp=[]
+Added =[]
+AddedCost = []
+IncreaseInRank=0
+IncreaseWeight=0
+MaxWeight =0
+currentRank =0
+Max_Increase =0
+sort_index = np.argsort(Cost_routing[:,0])
+Sorted=[]
+MinMonMaxRankSet=[]
+CostofMon = 0
+Sorted = list(sort_index)
+#sort_index.tolist()
+#sort_index = Cost_routing
+#Sorted = copy.deepcopy(sort_index)
+CostMinMonMaxRank=0
+#while (CostMaxRank < ProbeCost):
+for j in Sorted:#sort_index:
+  for i in Sorted:#sort_index:
+    #print 'I ro print kon'
+    #print i
+    #print 'RMaxRank'
+    #print RMaxRank
+    temp= copy.deepcopy(RMinMonMaxRank)
+    if (temp):
+      currentRank = matrix_rank(R[temp,:])
+    else:
+      currentRank = 0
+    if i not in temp:
+      temp.append(i)
+    IncreaseInRank=  matrix_rank(R[temp,:]) - currentRank
+    CostofMon = 0
+    if green_edges[i][0] not in MinMonMaxRankSet:
+      CostofMon= CostofMon + 1
+    if green_edges[i][1] not in MinMonMaxRankSet:
+      CostofMon= CostofMon + 1
+    IncreaseWeight = IncreaseInRank / (CostofMon+0.1)
+    #print 'Rank of R'
+    #print matrix_rank(R[temp,:])
+    #print 'IncreaseInRank'
+    #print IncreaseInRank
+    #print 'currentRank'
+    #print currentRank
+    #print 'IncreaseWeight'
+    #print IncreaseWeight
+    #if i in RMaxRank:
+    #  RMaxRank.remove(i)
+    #temp.remove(i)
+    if (IncreaseWeight > MaxWeight) and ((CostofMon + CostMinMonMaxRank) < Monitors):
+      #Print 'Yaftam!'
+      #Max_Increase = IncreaseInRank
+      #RMaxRank.append(i)
+      MaxWeight = IncreaseWeight
+      Added=i
+      AddedCost = CostofMon
+      #print 'Added:'
+      #print Added
+      #print 'ProbeCossssssssssssssst'
+      #print ProbeCost
+      #print 'Added Probe Cost:'
+      #print (Cost_routing[i,0]+Cost)
+      #print 'AddedCost:'
+      #print AddedCost
+      #currentRank= matrix_rank(R[temp,:])
+      #CostMaxRank = CostMaxRank + Cost_routing[i,0]
+    if i != Added:
+      temp.remove(i)
+  if Added not in RMinMonMaxRank:
+    RMinMonMaxRank.append(Added)
+    print 'RMinMonMaxRank Found:'
+    print RMinMonMaxRank
+    CostMinMonMaxRank = CostMinMonMaxRank + AddedCost
+    if green_edges[Added][0] not in MinMonMaxRankSet:
+      MinMonMaxRankSet.append(green_edges[Added][0])
+    if green_edges[Added][1] not in MinMonMaxRankSet:
+      MinMonMaxRankSet.append(green_edges[Added][1])
+    #print 'CostMaxRank of Rmin:'
+    #print CostMaxRank
+    temp.append(Added)
+    currentRank = matrix_rank(R[temp,:])
+    #temp.remove(Added)
+    #sort_index = np.delete(sort_index, Added)
+    Sorted.remove(Added)
+    #print 'HHHHHHHHHHHHEEEEEEEEEEEEEYYY Print SortIndex'
+    #print Sorted
+    MaxWeight =0
+    IncreaseWeight =0
+    #del sort_index[Added]
+    #sort_index.delete(Added)
+    #Sorted.remove(Added)
+#####################################
+print 'Found R'
+print RMinMonMaxRank
+#for x in RMaxRank:
+print 'Maximum Rank:'
+print matrix_rank(R[RMinMonMaxRank,:])
+MinMonMaxRankMonitors=[]
+for i in RMinMonMaxRank:
+  #print 'This is which index'
+  #print i
+  if green_edges[i][0] not in MinMonMaxRankMonitors:
+    #print 'Source:'
+    #print green_edges[i][0]
+    MinMonMaxRankMonitors.append(green_edges[i][0])
+  if green_edges[i][1] not in MinMonMaxRankMonitors:
+    #print 'Destination:'
+    #print green_edges[i][1]
+    MinMonMaxRankMonitors.append(green_edges[i][1])
+print 'Preserving rank, we have this many monitors:'
+print len(MinMonMaxRankMonitors)
+print 'Minimum Number of Probes to preserve Rank:'
+print len(RMinMonMaxRank)
+#for x in RMaxRank:
+print 'Rank:'
+print matrix_rank(R[RMinMonMaxRank,:])
+MinMonMaxRankMonitors=[]
+for i in RMinMonMaxRank:
+  #print 'This is which index'
+  print i
+  if green_edges[i][0] not in MinMonMaxRankMonitors:
+    #print 'Source:'
+    #print green_edges[i][0]
+    MaxRankMonitors.append(green_edges[i][0])
+  if green_edges[i][1] not in MinMonMaxRankMonitors:
+    #print 'Destination:'
+    #print green_edges[i][1]
+    MinMonMaxRankMonitors.append(green_edges[i][1])
+MinMonMaxRank = matrix_rank(R[RMinMonMaxRank,:])
+###########################################################
+#################################################################################
+MinMonMaxRankNull = null(R[RMinMonMaxRank,:])
+rows= len(MaxRankNull)
+columns = len(MinMonMaxRankNull.T)
+print 'Rows'
+print rows
+print 'Columns'
+print columns
+routing_rows = len(R[RMinMonMaxRank,:])
+routing_columns = len(R[RMinMonMaxRank,:].T)
+print 'Routing rows'
+print routing_rows
+print 'Routing Columns'
+print routing_columns
+iden =1
+MinMonMaxRank_Identi_link =0
+#for i in range(0,len(green_edges)-1):
+#  for j in range(0,len(my_null.T)-1):
+for i in range(0,rows):
+  #print 'I ro print kon'
+  #print i
+  for j in range(0,columns):
+    #print 'J ro print kon'
+    #print j
+    if (-1e-12 < MinMonMaxRankNull[i][j] < 1e-12) and (iden==1):
+      iden=1
+    else:
+      iden=0
+  if (iden == 1):
+    MinMonMaxRank_Identi_link = MinMonMaxRank_Identi_link +1
+    #print 'Which Row?'
+    #print i
+  iden=1
+#################################################################################
+print 'Number of Identofiable links:'
+print MinMonMaxRank_Identi_link
+#################################################################################
+#################################################################################
+print 'Maximum Rank is:'
+print MinMonMaxRank
+print 'With this rank, we have this many monitors:'
+print CostMinMonMaxRank#len(MinMonMaxRankMonitors)
+print 'Minimum Number of Probes to for maximum Rank:'
+print len(RMinMonMaxRank)
+print 'Cost of Preserving Rank (Hop count):'
+print CostMinMonMaxRank
+print '##################DIMAAAAAAAAAAAAAAN Finished Min Monitor Max Rank Algorithm######################'
+################FINISHED Min Monitor Max Rank Algorithm####################################
 ###########################################################
 #In this section, we want to find solutions of each variable:
 # Use brute force to find the equations that solve e1 e2, ...
@@ -898,10 +1107,11 @@ Selected_Links=[]
 Selected_monitors=[]
 x = (int)(Monitors+1)
 index=0
-if 1> 0:
+#if 1> 0:
 #for L in range(x, x+1):
 #for L in range(2, len(stuff)+1):
-  L = x
+for L in range(len(stuff), len(stuff)+1):
+  #L = x
   for subset in itertools.combinations(stuff, L):
     #print(subset)
     enum_green_edges= my_green_edges(subset)
@@ -955,7 +1165,7 @@ for obj in my_objects:
     #print obj.m[0]
     #if (float(len(obj.m[0]))/len() > Best_greedy)
 print '########################START MONITOR LISTS###################'
-Add_more_monitors =1
+Add_more_monitors =0#1
 Added_monitors =0
 temp_monitors=[]
 temp_mon=[]
@@ -1047,15 +1257,16 @@ Nodes= H2.number_of_nodes()
 Edges= H2.number_of_edges()
 Edges= H2.number_of_edges()
 write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
-                          len(my_monitors), Num_Identi_link, #Random generated monitor with a maximum of Monitors, Number of Identifiable links using shortest path 
+                          len(my_monitors), Num_Identi_link,MatrixRank, #Random generated monitor with a maximum of Monitors, Number of Identifiable links using shortest path 
                           Monitors, #Limit on Maximum number of monitors
                           len(Selected_Links), len(Selected_monitors), #Brute Force: The identifiable links, , Selected number of monitors
                           len(Identified_links), Added_monitors, # Greedy algorithm: The identifiable links, Selected number of monitors,
                           len(ILP_identifiable_links), len(Best_ILP_monitors), # ILP solution: The identifiable links, Selected number of monitors,
                           len(LP_relaxation_identifiable_links),len(Best_LP_relaxation_monitors), # LP relaxation of ILP: The identifiable links, Selected number of monitors
-                          len(MinProbMonitors), len(RMin), Cost, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count)
-                          MinimumMonitors, MinProbeLen, CostMinMon, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count)
-                          MaxRank, len(MaxRankMonitors), len(RMaxRank), CostMaxRank, ProbeCost,  #Matrix maximum rank is, number of monitors for the max rank, Minimum number of probes, Cost of probes for the max rank, Limit on the probe cost
+                          len(MinProbMonitors), len(RMin), Cost, MinProbe_Identi_link,  #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count), Number of identifiable links
+                          MinimumMonitors, MinProbeLen, CostMinMon, MinProb_MinMon_Identi_link, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count), Number of identifiable links
+                          MaxRank, len(MaxRankMonitors), len(RMaxRank), CostMaxRank, ProbeCost, MaxRank_Identi_link,  #Matrix maximum rank is, number of monitors for the max rank, Minimum number of probes, Cost of probes for the max rank, Limit on the probe cost, Number of identifiable links using max Rank algorithm
+                          MinMonMaxRank, CostMinMonMaxRank, len(RMinMonMaxRank), MinMonMaxRank_Identi_link, #Matrix maximum Rank when having a bound on number of monitors, Number of Monitors that maximizes the rank, Number of Probes for Min Mon Max Rank Algorithm, Number of identifiable links using MaxRankMin Mon Algorithm
                           Nodes, Edges) # Number of nodes in the graph, Number of edges in the graph
 
 #print 'Maximum Rank is:'
@@ -1068,4 +1279,17 @@ write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
 #print CostMaxRank
 #print '####################FINISHED MIAX-rank algorithm ######################'
 
-
+#################################################################################
+#print 'Number of Identofiable links:'
+#print MinMonMaxRank_Identi_link
+#################################################################################
+#################################################################################
+#print 'Maximum Rank is:'
+#print MinMonMaxRank
+#print 'With this rank, we have this many monitors:'
+#print CostMinMonMaxRank#len(MinMonMaxRankMonitors)
+#print 'Minimum Number of Probes to for maximum Rank:'
+#print len(RMinMonMaxRank)
+#print 'Cost of Preserving Rank (Hop count):'
+#print CostMinMonMaxRank
+#print '##################DIMAAAAAAAAAAAAAAN Finished Min Monitor Max Rank Algorithm######################'
