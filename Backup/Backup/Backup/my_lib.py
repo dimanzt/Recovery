@@ -4024,7 +4024,7 @@ def count_occurance(elem, path):
     return count
 
 def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
-                          my_monitors, Num_Identi_link, MatrixRank, #Random generated monitor with a maximum of Monitors, Number of Identifiable links using shortest path 
+                          my_monitors, Num_Identi_link, MatrixRank, TotalCost, #Random generated monitor with a maximum of Monitors, Number of Identifiable links using shortest path 
                           Monitors, #Limit on Maximum number of monitors
                           Num_Selected_Links, Num_Selected_Monitors, #Brute Force: The identifiable links, , Selected number of monitors
                           Num_Identified_links, Num_Best_greedy_monitors, # Greedy algorithm: The identifiable links, Selected number of monitors,
@@ -4044,14 +4044,14 @@ def write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
         if not os.path.exists(path_to_file_stat):
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
-            name_of_colunms="Seed\tAlfa\tNumber_of_Random_Monitors\tTotal_Identifiable_Links\tMatrixRank\tMonitor_Limit\tBrute_Force_Max_Identified_Links\tBrute_Force_Monitors\tGreedy_Identified_Links\tGreedy_Monitors\tILP_identified_Links\tILP_Monitors\tLP_relaxation_identified_Links\tLP_relaxation_Monitors\tMinProbMonitors\tRMin\tCost\tIdentifiable_Links_MinProb\tMinimumMonitors\tMinProbLen\tCostMinMon\tIdentifiable_Links_MinProb_MinMon\tMaxRankAlg\tMaxRankMonitors\tMaxRankProbNum\tMaxRankProbCost\tMaxRankLimitCost\tMaxRnak_Identifiable_Links\tRank_of_MinMonMaxRank\tNumMon_MinMonMaxRank\tNumProbes_MinMonMaxRank\tIdentifiable_Links_MinMon_MaxRank\tNumberofNodes\tNumberofEdges\n"
+            name_of_colunms="Seed\tAlfa\tNumber_of_Random_Monitors\tTotal_Identifiable_Links\tMatrixRank\tTotalCost\tMonitor_Limit\tBrute_Force_Max_Identified_Links\tBrute_Force_Monitors\tGreedy_Identified_Links\tGreedy_Monitors\tILP_identified_Links\tILP_Monitors\tLP_relaxation_identified_Links\tLP_relaxation_Monitors\tMinProbMonitors\tRMin\tCost\tIdentifiable_Links_MinProb\tMinimumMonitors\tMinProbLen\tCostMinMon\tIdentifiable_Links_MinProb_MinMon\tMaxRankAlg\tMaxRankMonitors\tMaxRankProbNum\tMaxRankProbCost\tMaxRankLimitCost\tMaxRnak_Identifiable_Links\tRank_of_MinMonMaxRank\tNumMon_MinMonMaxRank\tNumProbes_MinMonMaxRank\tIdentifiable_Links_MinMon_MaxRank\tNumberofNodes\tNumberofEdges\n"
 
             file.write(name_of_colunms)
             file.close
 
 
         file=open(path_to_file_stat,'a')
-        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(MatrixRank)+'\t\t'+str(Monitors)+'\t\t'+str(Num_Selected_Links)+'\t\t'+str(Num_Selected_Monitors)+'\t\t'+str(Num_Identified_links)+'\t\t'+str(Num_Best_greedy_monitors)+'\t\t'+str(Num_ILP_identifiable_links)+'\t\t'+str(Num_Best_ILP_monitors)+'\t\t'+str(Num_LP_relaxation_identifiable_links)+'\t\t'+str(Num_Best_LP_relaxation_monitors)+'\t\t'+str(MinProbMonitors)+'\t\t'+str(RMin)+'\t\t'+str(Cost)+'\t\t'+str(MinProbe_Identi_link)+'\t\t'+str(MinimumMonitors)+'\t\t'+str(MinProbeLen)+'\t\t'+str(CostMinMon)+'\t\t'+str(MinProb_MinMon_Identi_link)+'\t\t'+str(MaxRank)+'\t\t'+str(MaxRankMonitors)+'\t\t'+str(RMaxRank)+'\t\t'+str(CostMaxRank)+'\t\t'+str(ProbeCost)+'\t\t'+str(MaxRank_Identi_link)+'\t\t'+str(MinMonMaxRank)+'\t\t'+str(CostMinMonMaxRank)+'\t\t'+str(RMinMonMaxRank)+'\t\t'+str(MinMonMaxRank_Identi_link)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
+        raw_line=str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(my_monitors)+'\t\t'+str(Num_Identi_link)+'\t\t'+str(MatrixRank)+'\t\t'+str(TotalCost)+'\t\t'+str(Monitors)+'\t\t'+str(Num_Selected_Links)+'\t\t'+str(Num_Selected_Monitors)+'\t\t'+str(Num_Identified_links)+'\t\t'+str(Num_Best_greedy_monitors)+'\t\t'+str(Num_ILP_identifiable_links)+'\t\t'+str(Num_Best_ILP_monitors)+'\t\t'+str(Num_LP_relaxation_identifiable_links)+'\t\t'+str(Num_Best_LP_relaxation_monitors)+'\t\t'+str(MinProbMonitors)+'\t\t'+str(RMin)+'\t\t'+str(Cost)+'\t\t'+str(MinProbe_Identi_link)+'\t\t'+str(MinimumMonitors)+'\t\t'+str(MinProbeLen)+'\t\t'+str(CostMinMon)+'\t\t'+str(MinProb_MinMon_Identi_link)+'\t\t'+str(MaxRank)+'\t\t'+str(MaxRankMonitors)+'\t\t'+str(RMaxRank)+'\t\t'+str(CostMaxRank)+'\t\t'+str(ProbeCost)+'\t\t'+str(MaxRank_Identi_link)+'\t\t'+str(MinMonMaxRank)+'\t\t'+str(CostMinMonMaxRank)+'\t\t'+str(RMinMonMaxRank)+'\t\t'+str(MinMonMaxRank_Identi_link)+'\t\t'+str(Nodes)+'\t\t'+str(Edges)+'\n'
         file.write(raw_line)
         file.close()
 """
