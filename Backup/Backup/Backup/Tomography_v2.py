@@ -679,6 +679,9 @@ print '#################################Start Greedy-Max-Rank Algorithm ########
 MaxRank_Identi_link, MaxRank,MaxRankMonitors, RMaxRank, CostMaxRank = Greedy_Max_Rank_Unbounded(Cost_routing, R, ProbeCost, green_edges)
 print '####################FINISHED MAX-rank algorithm ######################'
 ###################################################################################
+#################Started Max-Rank Alg 1: This algorithm gauranteed (1-1/e)/2 approximation######################################
+#MaxRank_Identi_link, MaxRank,MaxRankMonitors, RMaxRank, CostMaxRank = Greedy_Max_Rank_Alg1(Cost_routing, R, ProbeCost, green_edges)
+
 #################STARTED Min Monitor's Algorithm###################################
 print '##################STARTED Min Monitor Max Rank Algorithm#######################'
 RMinMonMaxRank=[]

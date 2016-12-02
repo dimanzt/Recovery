@@ -201,7 +201,7 @@ def Greedy_Max_Rank_Unbounded(Cost_routing, R, ProbeCost, green_edges):
 
 
 
-def Greedy_Max_Rank_Alg1(Cost_routing, R):
+def Greedy_Max_Rank_Alg1(Cost_routing, R, ProbeCost, green_edges):
   #Description: This algorithm is the same as Algorithm 1 in http://reports-archive.adm.cs.cmu.edu/anon/cald/CMU-CALD-05-103.pdf
   # This algorithm has (1 - 1/e)/2 approximation with respect to OPT
   ##############Start Greedy-Max-Rank Algorithm####################################################################################
@@ -241,14 +241,16 @@ def Greedy_Max_Rank_Alg1(Cost_routing, R):
   FA1=0 # This shows the increase in rank
   tempMaxFA1 = 0
   tempA1 = []
+  CostA1=0
   for k in Sorted:
     tempA1.append(k)
     FA1= matrix_rank(R[tempA1,:])
     if (FA1 > tempMaxFA1) and (Cost_routing[k,0] <= ProbeCost):
       tempMaxFA1 = FA1
       A1 = k
+      CostA1= Cost_routing[k,0]
     tempA1.remove(k)
-  FA1 = tempMaxA1
+  FA1 = tempMaxFA1
   print 'A1'
   print A1
   print 'MaxIncrease in Rank in A1'
@@ -319,6 +321,11 @@ def Greedy_Max_Rank_Alg1(Cost_routing, R):
       #del sort_index[Added]
       #sort_index.delete(Added)
       #Sorted.remove(Added)
+  if (currentRank < FA1):
+    RMaxRank =[]
+    RMaxRank = A1
+    currentRank = FA1
+    CostMaxRank = CostA1
   #####################################
   print 'Found R'
   print RMaxRank
