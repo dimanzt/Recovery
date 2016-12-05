@@ -676,12 +676,12 @@ print '####################FINISHED MIN-Prob with minimum monitors algorithm: Si
 #################################################################################################################################
 ##############Start Greedy-Max-Rank Algorithm####################################################################################
 print '#################################Start Greedy-Max-Rank Algorithm #######################################################'
-MaxRank_Identi_link, MaxRank,MaxRankMonitors, RMaxRank, CostMaxRank = Greedy_Max_Rank_Unbounded(Cost_routing, R, ProbeCost, green_edges)
+#MaxRank_Identi_link, MaxRank,MaxRankMonitors, RMaxRank, CostMaxRank = Greedy_Max_Rank_Unbounded(Cost_routing, R, ProbeCost, green_edges)
 print '####################FINISHED MAX-rank algorithm ######################'
 ###################################################################################
 #################Started Max-Rank Alg 1: This algorithm gauranteed (1-1/e)/2 approximation######################################
-#MaxRank_Identi_link, MaxRank,MaxRankMonitors, RMaxRank, CostMaxRank = Greedy_Max_Rank_Alg1(Cost_routing, R, ProbeCost, green_edges)
-
+Alg1MaxRank_Identi_link, Alg1MaxRank, Alg1MaxRankMonitors, Alg1RMaxRank, Alg1CostMaxRank = Greedy_Max_Rank_Alg1(Cost_routing, R, ProbeCost, green_edges)
+MaxRank_Identi_link, MaxRank,MaxRankMonitors, RMaxRank, CostMaxRank = Greedy_Max_Rank_Alg2(Cost_routing, R, ProbeCost, green_edges)
 #################STARTED Min Monitor's Algorithm###################################
 print '##################STARTED Min Monitor Max Rank Algorithm#######################'
 RMinMonMaxRank=[]
@@ -1097,6 +1097,7 @@ write_stat_monitors(path_to_stats,filename_stat,seed_random,alfa,
                           len(MinProbMonitors), len(RMin), Cost, MinProbe_Identi_link,  #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count), Number of identifiable links
                           MinimumMonitors, MinProbeLen, CostMinMon, MinProb_MinMon_Identi_link, #Min-prob algorithm that preserves the rank: Minimum number of Monitors, Number of probes is OPT, Cost (hop-count), Number of identifiable links
                           MaxRank, len(MaxRankMonitors), len(RMaxRank), CostMaxRank, ProbeCost, MaxRank_Identi_link,  #Matrix maximum rank is, number of monitors for the max rank, Minimum number of probes, Cost of probes for the max rank, Limit on the probe cost, Number of identifiable links using max Rank algorithm
+                          Alg1MaxRank, len(Alg1MaxRankMonitors), len(Alg1RMaxRank), Alg1CostMaxRank, ProbeCost, Alg1MaxRank_Identi_link,  #Matrix maximum rank is, number of monitors for the max rank, Minimum number of probes, Cost of probes for the max rank, Limit on the probe cost, Number of identifiable links using max Rank algorithm
                           MinMonMaxRank, CostMinMonMaxRank, len(RMinMonMaxRank), MinMonMaxRank_Identi_link, #Matrix maximum Rank when having a bound on number of monitors, Number of Monitors that maximizes the rank, Number of Probes for Min Mon Max Rank Algorithm, Number of identifiable links using MaxRankMin Mon Algorithm
                           Nodes, Edges) # Number of nodes in the graph, Number of edges in the graph
 
