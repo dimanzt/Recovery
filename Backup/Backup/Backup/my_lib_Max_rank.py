@@ -423,7 +423,7 @@ def Greedy_Max_Rank_Alg2(Cost_routing, R, ProbeCost, green_edges):
   #Description: This algorithm is the same as Algorithm 2 in http://reports-archive.adm.cs.cmu.edu/anon/cald/CMU-CALD-05-103.pdf
   # This algorithm has (1 - 1/e) approximation with respect to OPT
   ##############Start Greedy-Max-Rank Algorithm####################################################################################
-  print '#################################Start Greedy-Max-Rank Algorithm #######################################################'
+  print '#################################Start Greedy-Max-Rank Algorithm 22222222 #######################################################'
   #class Queue:
   #  def __init__(self):
   #    self.items = []
@@ -448,102 +448,115 @@ def Greedy_Max_Rank_Alg2(Cost_routing, R, ProbeCost, green_edges):
   sort_index = np.argsort(Cost_routing[:,0])
   Sorted=[]
   Sorted = list(sort_index)
+  #G = list(sort_index)
   #sort_index.tolist()
   #sort_index = Cost_routing
   #Sorted = copy.deepcopy(sort_index)
   CostMaxRank=0
   #Enumerate all single Elements:#####################
-  print 'Start enumerating all single element solutions:'
+  print 'Start enumerating all three element solutions:'
   A1 =[]
+  A2 =[]
   CostA1 = 0
-  FA1=0 # This shows the increase in rank
+  CostA2 = 0
+  FA1 = 0 # This shows the increase in rank
+  FA2 = 0
   tempMaxFA1 = 0
   tempA1 = []
   CostA1=0
-  for k in Sorted:
-    tempA1.append(k)
+  for subset in itertools.combinations(Sorted, 3):
+  #for k in Sorted:
+    #print 'SubSEEEEEEEEEEEEEEEEEEEEEEETTTT'
+    #print subset
+    tempCost= 0
+    for x in subset:
+      tempA1.append(x)
+      tempCost = Cost_routing[x,0] + tempCost
+    #print 'TempA1'
+    #print tempA1
     FA1= matrix_rank(R[tempA1,:])
-    if (FA1 > tempMaxFA1) and (Cost_routing[k,0] <= ProbeCost):
+    if (FA1 > tempMaxFA1) and (tempCost <= ProbeCost):
       tempMaxFA1 = FA1
-      A1 = k
-      CostA1= Cost_routing[k,0]
-    tempA1.remove(k)
+      A1 = subset
+      for x in subset:
+        CostA1= Cost_routing[x,0]
+    for x in subset:
+      tempA1.remove(x)
   FA1 = tempMaxFA1
-  print 'A1'
-  print A1
-  print 'MaxIncrease in Rank in A1'
-  print FA1
+  #print 'A1'
+  #print A1
+  #print 'MaxIncrease in Rank in A1'
+  #print FA1
   #Finished enumerating all singl items
   #while (CostMaxRank < ProbeCost):
-  for j in Sorted:#sort_index:
-    for i in Sorted:#sort_index:
-      #print 'I ro print kon'
-      #print i
-      #print 'RMaxRank'
-      #print RMaxRank
-      temp= copy.deepcopy(RMaxRank)
-      if (temp):
-        currentRank = matrix_rank(R[temp,:])
-      else:
-        currentRank = 0
-      if i not in temp:
-        temp.append(i)
-      IncreaseInRank=  matrix_rank(R[temp,:]) - currentRank
-      IncreaseWeight = IncreaseInRank / Cost_routing[i,0]
-      #print 'Rank of R'
-      #print matrix_rank(R[temp,:])
-      #print 'IncreaseInRank'
-      #print IncreaseInRank
-      #print 'currentRank'
-      #print currentRank
-      #print 'IncreaseWeight'
-      #print IncreaseWeight
-      #if i in RMaxRank:
-      #  RMaxRank.remove(i)
-      #temp.remove(i)
-      if (IncreaseWeight > MaxWeight) and ((Cost_routing[i,0]+ CostMaxRank) <= ProbeCost):
-        #Print 'Yaftam!'
-        #Max_Increase = IncreaseInRank
-        #RMaxRank.append(i)
-        MaxWeight = IncreaseWeight
-        Added=i
-        AddedCost = Cost_routing[i,0]
-        #print 'Added:'
-        #print Added
-        #print 'ProbeCossssssssssssssst'
-        #print ProbeCost
-        #print 'Added Probe Cost:'
-        #print (Cost_routing[i,0]+Cost)
-        #print 'AddedCost:'
-        #print AddedCost
-        #currentRank= matrix_rank(R[temp,:])
-        #CostMaxRank = CostMaxRank + Cost_routing[i,0]
-      if i != Added:
-        temp.remove(i)
-    if Added not in RMaxRank:
-      RMaxRank.append(Added)
-      print 'RMaxRank Found:'
-      print RMaxRank
-      CostMaxRank = CostMaxRank + AddedCost
-      #print 'CostMaxRank of Rmin:'
-      #print CostMaxRank
-      temp.append(Added)
-      currentRank = matrix_rank(R[temp,:])
-      #temp.remove(Added)
-      #sort_index = np.delete(sort_index, Added)
-      Sorted.remove(Added)
-      #print 'HHHHHHHHHHHHEEEEEEEEEEEEEYYY Print SortIndex'
-      #print Sorted
-      MaxWeight =0
-      IncreaseWeight =0
-      #del sort_index[Added]
-      #sort_index.delete(Added)
-      #Sorted.remove(Added)
+  G = list(sort_index)
+  for subset in itertools.combinations(G, 3):
+    W = list(sort_index)
+    tempA2 = []
+    for x in subset:
+      W.remove(x)
+      tempA2.append(x)
+    tempMaxWeight = 0
+    tempCostMaxRank = 0
+    tempcurrentRank =0
+    for j in W:#sort_index:
+      for i in W:#sort_index:
+        #print 'I ro print kon'
+        #print i
+        #print 'RMaxRank'
+        #print RMaxRank
+        temp= copy.deepcopy(tempA2)
+        if (temp):
+          tempcurrentRank = matrix_rank(R[temp,:])
+        else:
+          tempcurrentRank = 0
+        if i not in temp:
+          temp.append(i)
+        IncreaseInRank=  matrix_rank(R[temp,:]) - tempcurrentRank
+        IncreaseWeight = IncreaseInRank / Cost_routing[i,0]
+        if (IncreaseWeight > tempMaxWeight) and ((Cost_routing[i,0]+ tempCostMaxRank) <= ProbeCost):
+          tempMaxWeight = IncreaseWeight
+          Added=i
+          AddedCost = Cost_routing[i,0]
+        if i != Added:
+          temp.remove(i)
+      if Added not in tempA2:
+        tempA2.append(Added)
+        #print 'tempMaxRank Found:'
+        #print tempA2
+        tempCostMaxRank = tempCostMaxRank + AddedCost
+        #print 'tempCostMaxRank of Rmin:'
+        #print tmpCostMaxRank
+        temp.append(Added)
+        tempcurrentRank = matrix_rank(R[temp,:])
+        #temp.remove(Added)
+        #sort_index = np.delete(sort_index, Added)
+        W.remove(Added)
+        #print 'HHHHHHHHHHHHEEEEEEEEEEEEEYYY Print SortIndex'
+        #print Sorted
+        tempMaxWeight =0
+        IncreaseWeight =0
+        #del sort_index[Added]
+        #sort_index.delete(Added)
+        #Sorted.remove(Added)
+    ########################
+    if (tempcurrentRank > currentRank):
+      A2= []
+      for x in tempA2:
+        A2.append(x)
+      currentRank = tempcurrentRank
+      CostMaxRank = tempCostMaxRank
+  ############################    
   if (currentRank < FA1):
     RMaxRank =[]
-    RMaxRank = A1
+    for x in A1:
+      RMaxRank.append(x)
     currentRank = FA1
     CostMaxRank = CostA1
+  else:
+    RMaxRank = []
+    for x in A2:
+      RMaxRank.append(x)
   #####################################
   print 'Found R'
   print RMaxRank
