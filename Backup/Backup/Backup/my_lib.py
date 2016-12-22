@@ -165,6 +165,8 @@ def add_attribute_Nodes(H):
             H.node[i]['true_status']='on'
         if 'prob' not in H.node[i]:
             H.node[i]['prob']=0
+        if 'cost' not in H.node[i]:
+            H.node[i]['cost']=random.randint(0,10)
 def add_attribute_Edges(H):
 
     #for i in H.nodes():
@@ -209,7 +211,9 @@ def add_attribute_Edges(H):
                         if 'true_status' not in H.edge[id_source][id_target]:
                             H.add_edge(id_source,id_target, true_status='on')
                         if 'prob' not in H.edge[id_source][id_target]:
-                            H.add_edge(id_source,id_target, prob=0)									
+                            H.add_edge(id_source,id_target, prob=0)
+                        if 'cost' not in H.edge[id_source][id_target]:
+                            H.add_edge(id_source, id_target, cost=random.randint(0,20))
                     else:
                         #print 'barpa'
                         key=len(keydict)
@@ -230,7 +234,9 @@ def add_attribute_Edges(H):
                             if 'true_status' not in H.edge[id_source][id_target][k]:
                                 H.add_edge(id_source,id_target,key=k, true_status='on')
                             if 'prob' not in H.edge[id_source][id_target][k]:
-                                H.add_edge(id_source,id_target,key=k, prob=0)									
+                                H.add_edge(id_source,id_target,key=k, prob=0)
+                            if 'cost' not in H.edge[id_source][id_target][k]:
+                                H.add_edge(id_source,id_target,key=k, cost=random.randint(0,20))	
                             #print 'ripeti'
                             #print keydict
                             #print len(keydict)
@@ -4125,11 +4131,11 @@ def write_stat_tomo(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
 
 
 def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
-                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed,      #ISP
-                          num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
-                          num_rip_expected_optimal_nodes,num_rip_expected_optimal_edges,num_rip_expected_truely_optimal_nodes,num_rip_expected_truely_optimal_edges,#Expected,
-                          num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges,num_rip_one_shot_expected_truely_optimal_nodes,num_rip_one_shot_expected_truely_optimal_edges,#One ShotExpected,
-                          num_rip_BB_expected_optimal_nodes,num_rip_BB_expected_optimal_edges,num_rip_BB_expected_truely_optimal_nodes,num_rip_BB_expected_truely_optimal_edges,#BB Expected,
+                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed, cost_isp_nodes, cost_isp_edges, cost_isp_nodes_real, cost_isp_edges_real,      #ISP
+                          num_rip_optimal_nodes,num_rip_optimal_edges,cost_opt_nodes, cost_opt_edges, #OPTIMAL
+                          num_rip_expected_optimal_nodes,num_rip_expected_optimal_edges,num_rip_expected_truely_optimal_nodes,num_rip_expected_truely_optimal_edges, cost_exp_nodes, cost_exp_edges, cost_exp_nodes_real, cost_exp_edges_real, #Expected,
+                          num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges,num_rip_one_shot_expected_truely_optimal_nodes,num_rip_one_shot_expected_truely_optimal_edges, cost_one_nodes, cost_one_edges, cost_one_nodes_real, cost_one_edges_real,#One ShotExpected,
+                          num_rip_BB_expected_optimal_nodes,num_rip_BB_expected_optimal_edges,num_rip_BB_expected_truely_optimal_nodes,num_rip_BB_expected_truely_optimal_edges, cost_BB_nodes, cost_BB_edges, cost_BB_nodes_real, cost_BB_edges_real, #BB Expected,
                           num_rip_mult_nodes,num_rip_mult_edges,num_rip_truely_mult_nodes,num_rip_truely_mult_edges,       #Multicommodity generale
                           num_rip_mult_worst_nodes,num_rip_mult_worst_edges, #Multicommodity worst
                           num_rip_mult_best_nodes,num_rip_mult_best_edges,    #Multicommodity best
@@ -4152,7 +4158,7 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
         if not os.path.exists(path_to_file_stat):
             #print 'non esiste lo creo'
             file=open(path_to_file_stat,'w+')
-            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tISP_Nodes\tISP_Edges\tTotal_ISP\tTruely_ISP_NODES\tTruely_ISP_EDGES\tTotal_truely_ISP_repairs\tExpected_OPT_Nodes\tExpected_OPT_Edges\tTotal_OPT_Expected\tExpected_OPT_Nodes\tExpected_OPT_Edges\tExpected_OPT_Total\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tTotal_ONE_SHOT_OPT_Expected\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tONE_SHOT_Expected_OPT_Total\tBB_Expected_OPT_Nodes\tBB_Expected_OPT_Edges\tBB_Expected_OPT_Total\tBB_Truely_OPT_Nodes\tBB_Truely_OPT_Edges\tBB_Truely_OPT_Total\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tMCG_Nodes\tMCG_Edges\tTotal_MCG\tMCW_Nodes\tMCW_Edges\tTotal_MCW\tMCB_Nodes\tMCB_Edges\tTotal_MCB\tSRT_Nodes\tSRT_Edges\tTotal_SRT\tTruely_SRT_Nodes\tTruely_SRT_EDGES\tTotal_Truely_SRT\tRNK_Nodes\tRNK_Edges\tTotal_RNK\tALL_Nodes\tALL_Edges\tTotal_ALL\tTotal_DEM\tSRT_SATIS\t%_DEM_SAT\tRNK_N_COM\tRNK_E_COM\tTot_RNK_C\tRNK_N_NC\tRNK_E_NC\tTot_RNK_NC\tRNK_SATIS\t%_DEM_RNK\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\tFlag_MCG\t\tDirImages\n"
+            name_of_colunms="Prob_Edge\tSeed\t\tAlfa\tISP_Nodes\tISP_Edges\tTotal_ISP\tTruely_ISP_NODES\tTruely_ISP_EDGES\tTotal_truely_ISP_repairs\tCost_ISP_Nodes\tCost_ISP_Edges\tCost_ISP_Nodes_real\tCost_ISP_Edges_real\tExpected_OPT_Nodes\tExpected_OPT_Edges\tTotal_OPT_Expected\tExpected_OPT_Nodes\tExpected_OPT_Edges\tExpected_OPT_Total\tCost_EXP_Nodes\tCost_EXP_Edges\tCost_EXP_Nodes_real\tCost_EXP_Edges_real\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tTotal_ONE_SHOT_OPT_Expected\tONE_SHOT_Expected_OPT_Nodes\tONE_SHOT_Expected_OPT_Edges\tONE_SHOT_Expected_OPT_Total\tCost_ONE_Nodes\tCost_ONE_Edges\tCost_One_Node_real\tCost_ONE_Edges_real\tBB_Expected_OPT_Nodes\tBB_Expected_OPT_Edges\tBB_Expected_OPT_Total\tBB_Truely_OPT_Nodes\tBB_Truely_OPT_Edges\tBB_Truely_OPT_Total\tCost_BB_Nodes\tCost_BB_Edges\tCost_BB_Nodes_real\tCost_BB_Edges_real\tOPT_Nodes\tOPT_Edges\tTotal_OPT\tCost_OPT_Nodes\tCost_OPT_Edges\tMCG_Nodes\tMCG_Edges\tTotal_MCG\tMCW_Nodes\tMCW_Edges\tTotal_MCW\tMCB_Nodes\tMCB_Edges\tTotal_MCB\tSRT_Nodes\tSRT_Edges\tTotal_SRT\tTruely_SRT_Nodes\tTruely_SRT_EDGES\tTotal_Truely_SRT\tRNK_Nodes\tRNK_Edges\tTotal_RNK\tALL_Nodes\tALL_Edges\tTotal_ALL\tTotal_DEM\tSRT_SATIS\t%_DEM_SAT\tRNK_N_COM\tRNK_E_COM\tTot_RNK_C\tRNK_N_NC\tRNK_E_NC\tTot_RNK_NC\tRNK_SATIS\t%_DEM_RNK\tFLOW_FIXD\tNUM_COUPL\tVAR_DISTR\tERROR_FLG\tFlag_MCG\t\tDirImages\n"
 
             file.write(name_of_colunms)
             file.close
@@ -4265,7 +4271,7 @@ def write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,
             sys.exit('Errore: Algoritmo Multicommodity Best ha fatto peggio del Multicommodity Worst!')
         """
         file=open(path_to_file_stat,'a')
-        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_isp_nodes)+'\t\t'+str(num_rip_isp_edges)+'\t\t'+str(tot_rip_isp)+'\t\t'+str(nodes_truely_recovered_isp)+'\t\t'+str(edges_truely_recovered_isp)+'\t\t'+str(tot_truely_rip_isp)+'\t\t'+str(num_rip_expected_optimal_nodes )+'\t\t'+str(num_rip_expected_optimal_edges)+'\t\t'+str(tot_rip_exp_opt)+'\t\t'+str(num_rip_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_exp_opt)+'\t\t'+str(num_rip_one_shot_expected_optimal_nodes )+'\t\t'+str(num_rip_one_shot_expected_optimal_edges)+'\t\t'+str(tot_rip_one_shot_exp_opt)+'\t\t'+str(num_rip_one_shot_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_one_shot_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_one_shot_exp_opt)+'\t\t'+str(num_rip_BB_expected_optimal_nodes )+'\t\t'+str(num_rip_BB_expected_optimal_edges)+'\t\t'+str(tot_rip_BB_exp_opt)+'\t\t'+str(num_rip_BB_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_BB_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_BB_exp_opt)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(num_rip_mult_nodes)+'\t\t'+str(num_rip_mult_edges)+'\t\t'+str(tot_rip_mcg)+'\t\t'+str(num_rip_mult_worst_nodes)+'\t\t'+str(num_rip_mult_worst_edges)+'\t\t'+str(tot_rip_mcw)+'\t\t'+str(num_rip_mult_best_nodes)+'\t\t'+str(num_rip_mult_best_edges)+'\t\t'+str(tot_rip_mcb)+'\t\t'+str(num_rip_shortest_nodes)+'\t\t'+str(num_rip_shortest_edges)+'\t\t'+str(tot_rip_srt)+'\t\t'+str(num_rip_truely_shortest_nodes)+'\t\t'+str(num_rip_truely_shortest_edges)+'\t\t'+str(tot_truely_rip_srt)+'\t\t'+str(num_rip_ranked_nodes)+'\t\t'+str(num_rip_ranked_edges)+'\t\t'+str(tot_rip_rnk)+'\t\t'+str(num_rip_all_nodes)+'\t\t'+str(num_rip_all_edges)+'\t\t'+str(tot_rip_all)+'\t\t'+str(total_demand_of_graph)+'\t\t'+str(demand_satisfied)+'\t\t'+str(percent_of_demand)+'\t\t'+str(num_rip_ranked_comm_nodes)+'\t\t'+str(num_rip_ranked_comm_edges)+'\t\t'+str(tot_rip_rnk_com)+'\t\t'+str(num_rip_ranked_no_comm_nodes)+'\t\t'+str(num_rip_ranked_no_comm_edges)+'\t\t'+str(tot_rip_rnk_no_com)+'\t\t'+str(demand_satisfied_rnk)+'\t\t'+str(percent_of_demand_rnk)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+str(mcg_solution)+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
+        raw_line=str(prob_edge)+'\t\t'+str(seed_random)+'\t\t'+str(alfa)+'\t\t'+str(num_rip_isp_nodes)+'\t\t'+str(num_rip_isp_edges)+'\t\t'+str(tot_rip_isp)+'\t\t'+str(nodes_truely_recovered_isp)+'\t\t'+str(edges_truely_recovered_isp)+'\t\t'+str(tot_truely_rip_isp)+'\t\t'+str(cost_isp_nodes)+'\t\t'+str(cost_isp_edges)+'\t\t'+str(cost_isp_nodes_real)+'\t\t'+str(cost_isp_edges_real)+'\t\t'+str(num_rip_expected_optimal_nodes )+'\t\t'+str(num_rip_expected_optimal_edges)+'\t\t'+str(tot_rip_exp_opt)+'\t\t'+str(num_rip_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_exp_opt)+'\t\t'+str(cost_exp_nodes)+'\t\t'+str(cost_exp_edges)+'\t\t'+str(cost_exp_nodes_real)+'\t\t'+str(cost_exp_edges_real)+'\t\t'+str(num_rip_one_shot_expected_optimal_nodes )+'\t\t'+str(num_rip_one_shot_expected_optimal_edges)+'\t\t'+str(tot_rip_one_shot_exp_opt)+'\t\t'+str(num_rip_one_shot_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_one_shot_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_one_shot_exp_opt)+'\t\t'+str(cost_one_nodes)+'\t\t'+str(cost_one_edges)+'\t\t'+str(cost_one_nodes_real)+'\t\t'+str(cost_one_edges_real)+'\t\t'+str(num_rip_BB_expected_optimal_nodes )+'\t\t'+str(num_rip_BB_expected_optimal_edges)+'\t\t'+str(tot_rip_BB_exp_opt)+'\t\t'+str(num_rip_BB_expected_truely_optimal_nodes)+'\t\t'+str(num_rip_BB_expected_truely_optimal_edges)+'\t\t'+str(tot_truely_BB_exp_opt)+'\t\t'+str(cost_BB_nodes)+'\t\t'+str(cost_BB_edges)+'\t\t'+str(cost_BB_nodes_real)+'\t\t'+str(cost_BB_edges_real)+'\t\t'+str(num_rip_optimal_nodes)+'\t\t'+str(num_rip_optimal_edges)+'\t\t'+str(tot_rip_opt)+'\t\t'+str(cost_opt_nodes)+'\t\t'+str(cost_opt_edges)+'\t\t'+str(num_rip_mult_nodes)+'\t\t'+str(num_rip_mult_edges)+'\t\t'+str(tot_rip_mcg)+'\t\t'+str(num_rip_mult_worst_nodes)+'\t\t'+str(num_rip_mult_worst_edges)+'\t\t'+str(tot_rip_mcw)+'\t\t'+str(num_rip_mult_best_nodes)+'\t\t'+str(num_rip_mult_best_edges)+'\t\t'+str(tot_rip_mcb)+'\t\t'+str(num_rip_shortest_nodes)+'\t\t'+str(num_rip_shortest_edges)+'\t\t'+str(tot_rip_srt)+'\t\t'+str(num_rip_truely_shortest_nodes)+'\t\t'+str(num_rip_truely_shortest_edges)+'\t\t'+str(tot_truely_rip_srt)+'\t\t'+str(num_rip_ranked_nodes)+'\t\t'+str(num_rip_ranked_edges)+'\t\t'+str(tot_rip_rnk)+'\t\t'+str(num_rip_all_nodes)+'\t\t'+str(num_rip_all_edges)+'\t\t'+str(tot_rip_all)+'\t\t'+str(total_demand_of_graph)+'\t\t'+str(demand_satisfied)+'\t\t'+str(percent_of_demand)+'\t\t'+str(num_rip_ranked_comm_nodes)+'\t\t'+str(num_rip_ranked_comm_edges)+'\t\t'+str(tot_rip_rnk_com)+'\t\t'+str(num_rip_ranked_no_comm_nodes)+'\t\t'+str(num_rip_ranked_no_comm_edges)+'\t\t'+str(tot_rip_rnk_no_com)+'\t\t'+str(demand_satisfied_rnk)+'\t\t'+str(percent_of_demand_rnk)+'\t\t'+str(flow_c_value)+'\t\t'+str(number_of_couple)+'\t\t'+str(var_distruption)+'\t\t'+error+'\t\t'+str(mcg_solution)+'\t\t'+'Simulazione_'+str(num_sim)+'\n'
         file.write(raw_line)
         file.close()
 

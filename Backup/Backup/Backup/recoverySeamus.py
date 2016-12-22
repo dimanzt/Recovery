@@ -771,9 +771,31 @@ print len(real_edge_repairs)
 #print edges_recovered_isp
 #p
 num_rip_isp_nodes=len(nodes_recovered_isp)
+cost_isp_nodes=0
+cost_isp_edges=0
+for node in nodes_recovered_isp:
+  cost_isp_nodes= cost_isp_nodes + H.node[node]['cost']
+for edge in edges_recovered_isp:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H[id_source][id_target]
+  for k in keydict:
+    cost_isp_edges= cost_isp_edges + H[id_source][id_target][k]['cost']
 num_rip_isp_edges=len(edges_recovered_isp)
 nodes_truely_recovered_isp=len(real_node_repairs)
 edges_truely_recovered_isp=len(real_edge_repairs)
+
+cost_isp_nodes_real=0
+cost_isp_edges_real=0
+for node in real_node_repairs:
+  cost_isp_nodes_real= cost_isp_nodes_real + H.node[node]['cost']
+for edge in real_edge_repairs:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H[id_source][id_target]
+  for k in keydict:
+    cost_isp_edges_real= cost_isp_edges_real + H[id_source][id_target][k]['cost']
+
 num_not_needed=len(not_needed_repairs)
 #print num_rip_isp_nodes
 #print num_rip_isp_edges
@@ -842,6 +864,16 @@ nodes_recovered_optimal,edges_recovered_optimal=optimal_recovery(H,green_edges)
 
 num_rip_optimal_nodes=len(nodes_recovered_optimal)
 num_rip_optimal_edges=len(edges_recovered_optimal)
+cost_opt_nodes=0
+cost_opt_edges=0
+for node in nodes_recovered_optimal:
+  cost_opt_nodes= cost_opt_nodes + H.node[node]['cost']
+for edge in edges_recovered_optimal:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H[id_source][id_target]
+  for k in keydict:
+    cost_opt_edges= cost_opt_edges + H[id_source][id_target][k]['cost']
 print num_rip_optimal_nodes
 print num_rip_optimal_edges
 #ripristina e disegna
@@ -1046,6 +1078,18 @@ num_rip_expected_optimal_nodes=len(repaired_nodes)#len(nodes_recovered_expected_
 num_rip_expected_optimal_edges=len(repaired_edges)
 print num_rip_expected_optimal_nodes
 print num_rip_expected_optimal_edges
+
+cost_exp_nodes=0
+cost_exp_edges=0
+for node in repaired_nodes:
+  cost_exp_nodes= cost_exp_nodes + H6.node[node]['cost']
+for edge in repaired_edges:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H6[id_source][id_target]
+  for k in keydict:
+    cost_exp_edges= cost_exp_edges + H6[id_source][id_target][k]['cost']
+
 #########################################################
 real_expected_node_repairs = []
 for node in  repaired_nodes:
@@ -1060,6 +1104,17 @@ for edge in repaired_edges:
 
 num_rip_expected_truely_optimal_nodes=len(real_expected_node_repairs)
 num_rip_expected_truely_optimal_edges=len(real_expected_edge_repairs)
+############################################################
+cost_exp_nodes_real=0
+cost_exp_edges_real=0
+for node in real_expected_node_repairs:
+  cost_exp_nodes_real= cost_exp_nodes_real + H6.node[node]['cost']
+for edge in real_expected_edge_repairs:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H6[id_source][id_target]
+  for k in keydict:
+    cost_exp_edges_real= cost_exp_edges_real + H6[id_source][id_target][k]['cost']
 ############################################################
 #ripristina e disegna
 recover(H6,repaired_nodes,repaired_edges)
@@ -1214,6 +1269,17 @@ num_rip_one_shot_expected_optimal_nodes=len(repaired_nodes)#len(nodes_recovered_
 num_rip_one_shot_expected_optimal_edges=len(repaired_edges)
 print num_rip_one_shot_expected_optimal_nodes
 print num_rip_one_shot_expected_optimal_edges
+########################################################
+cost_one_nodes=0
+cost_one_edges=0
+for node in repaired_nodes:
+  cost_isp_nodes= cost_one_nodes + H7.node[node]['cost']
+for edge in repaired_edges:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H7[id_source][id_target]
+  for k in keydict:
+    cost_one_edges= cost_one_edges + H7[id_source][id_target][k]['cost']
 #########################################################
 real_expected_node_repairs = []
 for node in  repaired_nodes:
@@ -1228,6 +1294,17 @@ for edge in repaired_edges:
 
 num_rip_one_shot_expected_truely_optimal_nodes=len(real_expected_node_repairs)
 num_rip_one_shot_expected_truely_optimal_edges=len(real_expected_edge_repairs)
+############################################################
+cost_one_nodes_real=0
+cost_one_edges_real=0
+for node in real_expected_node_repairs:
+  cost_one_nodes_real= cost_one_nodes_real + H7.node[node]['cost']
+for edge in real_expected_edge_repairs:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H7[id_source][id_target]
+  for k in keydict:
+    cost_one_edges_real= cost_one_edges_real + H7[id_source][id_target][k]['cost']
 ############################################################
 #ripristina e disegna
 recover(H7,repaired_nodes,repaired_edges)
@@ -1374,10 +1451,21 @@ for edge in edges_recovered_expected_optimal:
   if edge not in repaired_edges:
     repaired_edges.append(edge)
 
-num_rip_one_shot_expected_optimal_nodes=len(repaired_nodes)#len(nodes_recovered_expected_optimal)
+num_rip_BB_expected_optimal_nodes=len(repaired_nodes)#len(nodes_recovered_expected_optimal)
 num_rip_one_shot_expected_optimal_edges=len(repaired_edges)
-print num_rip_one_shot_expected_optimal_nodes
+print num_rip_BB_expected_optimal_nodes
 print num_rip_one_shot_expected_optimal_edges
+########################################################
+cost_BB_nodes=0
+cost_BB_edges=0
+for node in repaired_nodes:
+  cost_BB_nodes= cost_BB_nodes + H9.node[node]['cost']
+for edge in repaired_edges:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H9[id_source][id_target]
+  for k in keydict:
+    cost_BB_edges= cost_BB_edges + H9[id_source][id_target][k]['cost']
 #########################################################
 real_expected_node_repairs = []
 for node in  repaired_nodes:
@@ -1392,6 +1480,17 @@ for edge in repaired_edges:
 
 num_rip_BB_expected_truely_optimal_nodes=len(real_expected_node_repairs)
 num_rip_BB_expected_truely_optimal_edges=len(real_expected_edge_repairs)
+############################################################
+cost_BB_nodes_real=0
+cost_BB_edges_real=0
+for node in real_expected_node_repairs:
+  cost_BB_nodes_real= cost_BB_nodes_real + H9.node[node]['cost']
+for edge in real_expected_edge_repairs:
+  id_source=edge[0]
+  id_target=edge[1]
+  keydict=H[id_source][id_target]
+  for k in keydict:
+    cost_BB_edges_real= cost_BB_edges_real + H9[id_source][id_target][k]['cost']
 ############################################################
 #ripristina e disegna
 recover(H9,repaired_nodes,repaired_edges)
@@ -2050,12 +2149,12 @@ write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa
 
 """
 write_stat_num_reparation(path_to_stats,filename_stat,prob_edge,seed_random,alfa,
-                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed,        #ISP
-                          num_rip_optimal_nodes,num_rip_optimal_edges,#OPTIMAL
-                          num_rip_expected_optimal_nodes,num_rip_expected_optimal_edges,num_rip_expected_truely_optimal_nodes,num_rip_expected_truely_optimal_edges,#Expected,
-                          num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges,num_rip_one_shot_expected_truely_optimal_nodes,num_rip_one_shot_expected_truely_optimal_edges,#One Shot Expected,
-                          num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges,num_rip_BB_expected_truely_optimal_nodes,num_rip_BB_expected_truely_optimal_edges,#BB Expected,
-                          num_rip_mult_nodes,num_rip_mult_edges,num_rip_truely_mult_nodes,num_rip_truely_mult_edges,       #Multicommodity generale
+                          num_rip_isp_nodes,num_rip_isp_edges,nodes_truely_recovered_isp,edges_truely_recovered_isp, num_not_needed,cost_isp_nodes, cost_isp_edges, cost_isp_nodes_real, cost_isp_edges_real,        #ISP 1)
+                          num_rip_optimal_nodes,num_rip_optimal_edges, cost_opt_nodes, cost_opt_edges, #OPTIMAL 2)
+                          num_rip_expected_optimal_nodes,num_rip_expected_optimal_edges,num_rip_expected_truely_optimal_nodes,num_rip_expected_truely_optimal_edges, cost_exp_nodes, cost_exp_edges, cost_exp_nodes_real, cost_exp_edges_real, #Expected, 3)
+                          num_rip_one_shot_expected_optimal_nodes,num_rip_one_shot_expected_optimal_edges,num_rip_one_shot_expected_truely_optimal_nodes,num_rip_one_shot_expected_truely_optimal_edges, cost_one_nodes, cost_one_edges, cost_one_nodes_real, cost_one_edges_real, #One Shot Expected, 4)
+                          num_rip_BB_expected_optimal_nodes,num_rip_BB_expected_optimal_edges,num_rip_BB_expected_truely_optimal_nodes,num_rip_BB_expected_truely_optimal_edges, cost_BB_nodes, cost_BB_edges, cost_BB_nodes_real, cost_BB_edges_real, #BB Expected, 5)
+                          num_rip_mult_nodes,num_rip_mult_edges,num_rip_truely_mult_nodes,num_rip_truely_mult_edges,       #Multicommodity generale 6)
                           num_rip_mult_worst_nodes,num_rip_mult_worst_edges, #Multicommodity worst
                           num_rip_mult_best_nodes,num_rip_mult_best_edges,    #Multicommodity best
                           num_rip_shortest_nodes,num_rip_shortest_edges,num_rip_truely_shortest_nodes, num_rip_truely_shortest_edges,      #Shortest Based
