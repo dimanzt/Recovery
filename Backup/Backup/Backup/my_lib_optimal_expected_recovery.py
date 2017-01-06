@@ -64,9 +64,9 @@ def optimal_expected_recovery(H,green_edges,Gap):
         if H.node[i]['color']=='red':
             node_cost=1 #H.node[i]['prob'] #1
         if H.node[i]['color']=='gray':
-            node_cost=H.node[i]['prob']
+            node_cost=H.node[i]['prob']*H.node[i]['cost']
         else:
-            node_cost=H.node[i]['prob']
+            node_cost=H.node[i]['prob']*H.node[i]['cost']
 
 
         id_node=H.node[i]['id']
@@ -87,11 +87,11 @@ def optimal_expected_recovery(H,green_edges,Gap):
             if H[id_source][id_target][k]['type']=='normal' and H[id_source][id_target][k]['type']!='green':
                 edge_cost=0 #H[id_source][id_target][k]['prob'] #0
                 if H[id_source][id_target][k]['color']=='red':
-                    edge_cost= 1 #H[id_source][id_target][k]['prob'] #1
+                    edge_cost= H[id_source][id_target][k]['cost'] #1 #H[id_source][id_target][k]['prob'] #1
                 if H[id_source][id_target][k]['color']=='gray':
-                    edge_cost=H[id_source][id_target][k]['prob']
+                    edge_cost=H[id_source][id_target][k]['prob']*H[id_source][id_target][k]['cost']
                 else:
-                    edge_cost=H[id_source][id_target][k]['prob']
+                    edge_cost=H[id_source][id_target][k]['prob']*H[id_source][id_target][k]['cost']
                 edge_tupla_1=(id_source,id_target)
                 #edge_tupla_2=(id_target,id_source)
                 if not arc_cost.has_key(edge_tupla_1):

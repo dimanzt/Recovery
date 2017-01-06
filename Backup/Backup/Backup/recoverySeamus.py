@@ -771,6 +771,8 @@ print len(real_edge_repairs)
 #print edges_recovered_isp
 #p
 num_rip_isp_nodes=len(nodes_recovered_isp)
+num_rip_isp_edges=len(edges_recovered_isp)
+
 cost_isp_nodes=0
 cost_isp_edges=0
 for node in nodes_recovered_isp:
@@ -781,7 +783,7 @@ for edge in edges_recovered_isp:
   keydict=H[id_source][id_target]
   for k in keydict:
     cost_isp_edges= cost_isp_edges + H[id_source][id_target][k]['cost']
-num_rip_isp_edges=len(edges_recovered_isp)
+#num_rip_isp_edges=len(edges_recovered_isp)
 nodes_truely_recovered_isp=len(real_node_repairs)
 edges_truely_recovered_isp=len(real_edge_repairs)
 
@@ -1273,7 +1275,7 @@ print num_rip_one_shot_expected_optimal_edges
 cost_one_nodes=0
 cost_one_edges=0
 for node in repaired_nodes:
-  cost_isp_nodes= cost_one_nodes + H7.node[node]['cost']
+  cost_one_nodes= cost_one_nodes + H7.node[node]['cost']
 for edge in repaired_edges:
   id_source=edge[0]
   id_target=edge[1]
@@ -1452,7 +1454,7 @@ for edge in edges_recovered_expected_optimal:
     repaired_edges.append(edge)
 
 num_rip_BB_expected_optimal_nodes=len(repaired_nodes)#len(nodes_recovered_expected_optimal)
-num_rip_one_shot_expected_optimal_edges=len(repaired_edges)
+num_rip_BB_expected_optimal_edges=len(repaired_edges)
 print num_rip_BB_expected_optimal_nodes
 print num_rip_one_shot_expected_optimal_edges
 ########################################################

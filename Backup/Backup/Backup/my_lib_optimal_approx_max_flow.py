@@ -62,9 +62,9 @@ def optimal_approx_max_flow(H,green_edges):
     for i in H.nodes():
         node_cost=0
         if H.node[i]['color']=='red':
-            node_cost=1
+            node_cost=H.node[i]['cost']#1
         if H.node[i]['color']=='gray':
-            node_cost=H.node[i]['prob']
+            node_cost=H.node[i]['prob']*H.node[i]['cost']
 
         id_node=H.node[i]['id']
         if not vertex_cost.has_key(id_node):
@@ -84,9 +84,9 @@ def optimal_approx_max_flow(H,green_edges):
             if H[id_source][id_target][k]['type']=='normal' and H[id_source][id_target][k]['type']!='green':
                 edge_cost=0
                 if H[id_source][id_target][k]['color']=='red':
-                    edge_cost=1
+                    edge_cost=H[id_source][id_target][k]['cost']#1
                 if H[id_source][id_target][k]['color']=='gray':
-                    edge_cost=H[id_source][id_target][k]['prob']
+                    edge_cost=H[id_source][id_target][k]['prob']*H[id_source][id_target][k]['cost']
                 edge_tupla_1=(id_source,id_target)
                 #edge_tupla_2=(id_target,id_source)
                 if not arc_cost.has_key(edge_tupla_1):

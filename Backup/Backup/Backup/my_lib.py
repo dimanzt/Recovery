@@ -166,7 +166,7 @@ def add_attribute_Nodes(H):
         if 'prob' not in H.node[i]:
             H.node[i]['prob']=0
         if 'cost' not in H.node[i]:
-            H.node[i]['cost']=random.randint(0,10)
+            H.node[i]['cost']=random.randint(5,35) #(0, 10)
 def add_attribute_Edges(H):
 
     #for i in H.nodes():
@@ -213,7 +213,7 @@ def add_attribute_Edges(H):
                         if 'prob' not in H.edge[id_source][id_target]:
                             H.add_edge(id_source,id_target, prob=0)
                         if 'cost' not in H.edge[id_source][id_target]:
-                            H.add_edge(id_source, id_target, cost=random.randint(0,20))
+                            H.add_edge(id_source, id_target, cost=random.randint(5,35)) #(0, 20)
                     else:
                         #print 'barpa'
                         key=len(keydict)
@@ -236,7 +236,7 @@ def add_attribute_Edges(H):
                             if 'prob' not in H.edge[id_source][id_target][k]:
                                 H.add_edge(id_source,id_target,key=k, prob=0)
                             if 'cost' not in H.edge[id_source][id_target][k]:
-                                H.add_edge(id_source,id_target,key=k, cost=random.randint(0,20))	
+                                H.add_edge(id_source,id_target,key=k, cost=random.randint(5,35))	#(0, 20)
                             #print 'ripeti'
                             #print keydict
                             #print len(keydict)
@@ -2521,7 +2521,7 @@ def distance_node(H,node_i,node_j,distance_metric):
                 true_status=H[node_i][node_j][k]['true_status']
                 color=H[node_i][node_j][k]['color']				
                 capacity=H[node_i][node_j][k]['capacity']
-                prob=H[node_i][node_j][k]['prob']
+                prob=H[node_i][node_j][k]['prob']*H[node_i][node_j][k]['cost']
 				
 
         #print node_i,node_j
@@ -2531,7 +2531,7 @@ def distance_node(H,node_i,node_j,distance_metric):
         y=H.node[node_i]['Longitude']		
         if H.node[node_i]['color']=='gray':
             #print 'nodo rotto'
-            distanza_temp+=float("%0.10f"%((costo_vertici*H.node[node_i]['prob'])/capacity))
+            distanza_temp+=float("%0.10f"%((costo_vertici*H.node[node_i]['prob']*H.node[node_i]['cost'])/capacity))
         if H.node[node_i]['color']=='red': 
             distanza_temp+=float("%0.10f"%((costo_vertici)/capacity))
             #print 'aggiungo'
