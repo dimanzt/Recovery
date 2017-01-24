@@ -166,7 +166,7 @@ def add_attribute_Nodes(H):
         if 'prob' not in H.node[i]:
             H.node[i]['prob']=0
         if 'cost' not in H.node[i]:
-            H.node[i]['cost']=random.randint(5,35) #(0, 10)
+            H.node[i]['cost']=random.randint(1,1) #(0, 10)
 def add_attribute_Edges(H):
 
     #for i in H.nodes():
@@ -213,7 +213,7 @@ def add_attribute_Edges(H):
                         if 'prob' not in H.edge[id_source][id_target]:
                             H.add_edge(id_source,id_target, prob=0)
                         if 'cost' not in H.edge[id_source][id_target]:
-                            H.add_edge(id_source, id_target, cost=random.randint(5,35)) #(0, 20)
+                            H.add_edge(id_source, id_target, cost=random.randint(1,1)) #(0, 20)
                     else:
                         #print 'barpa'
                         key=len(keydict)
@@ -236,7 +236,7 @@ def add_attribute_Edges(H):
                             if 'prob' not in H.edge[id_source][id_target][k]:
                                 H.add_edge(id_source,id_target,key=k, prob=0)
                             if 'cost' not in H.edge[id_source][id_target][k]:
-                                H.add_edge(id_source,id_target,key=k, cost=random.randint(5,35))	#(0, 20)
+                                H.add_edge(id_source,id_target,key=k, cost=random.randint(1,1))	#(0, 20)
                             #print 'ripeti'
                             #print keydict
                             #print len(keydict)
@@ -2569,6 +2569,84 @@ def distance_node(H,node_i,node_j,distance_metric):
             #print costo_arco_rotto/capacity
             ##ratio=float("%.10f"%(costo_arco_rotto/capacity))
             ratio=float("%.10f"%((0.1 +(prob)*0.9)/capacity))
+
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        else:
+            distanza_temp+=0.1/(capacity)
+            #print 'arco non rotto'
+        #print distanza_temp
+        if distanza_temp==0.0:
+            sys.exit('Errore in distace node: distanza=0.0 !!!')
+            distanza_temp=0.1
+        #print 'Diman distance'
+        #print distanza_temp
+
+        return distanza_temp
+
+
+#Diman Added New distance metric withour prior knowledge
+    elif distance_metric == 'unknown_knowledge':
+        #get status of the link for 'broken' metric
+        keydict=H[node_i][node_j]
+        #print keydict
+        #print node_i, node_j
+        for k in keydict:
+            if H[node_i][node_j][k]['type']=='normal':
+                status=H[node_i][node_j][k]['status']
+                true_status=H[node_i][node_j][k]['true_status']
+                color=H[node_i][node_j][k]['color']
+                capacity=H[node_i][node_j][k]['capacity']
+                prob= 1.0 #H[node_i][node_j][k]['prob']*H[node_i][node_j][k]['cost']
+
+
+        #print node_i,node_j
+        distanza_temp=0.0 #distanza con arco ok e nodi ok
+        costo_vertici=0.5
+        x=H.node[node_i]['Latitude']
+        y=H.node[node_i]['Longitude']
+        if H.node[node_i]['color']=='gray':
+            #print 'nodo rotto'
+            distanza_temp+=float("%0.10f"%((costo_vertici*H.node[node_i]['cost'])/capacity))
+        if H.node[node_i]['color']=='red':
+            distanza_temp+=float("%0.10f"%((costo_vertici)/capacity))
+            #print 'aggiungo'
+            #print distanza_temp
+        #if H.node[node_j]['status']=='destroyed':
+            #print 'nodo rotto'
+            #distanza_temp+=costo_vertici
+            #print 'aggiungo'
+            #print 'Nodo rotto'
+            #print distanza_temp
+
+        #print distanza_temp
+        if color == 'red':
+            #return the lenght of a link broken
+            costo_arco_rotto=1.0
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            #print 'arco rotto'
+            #print ratio
+            distanza_temp+=ratio
+            #print 'arco rotto'
+            #print distanza_temp
+        elif color == 'gray':
+            #return the lenght of a link broken
+
+            #pdf=bivariate_normal(x,y,sigma,sigma,mux=mu_x,muy=mu_y,sigmaxy=0)
+            ##prob= H.node[node_i]['prob'] #get_prob(pdf,x,y,sigma)
+            #costo_arco_rotto=float("%.10f"%(0.1 +(prob)*0.9))  
+            costo_arco_rotto=0.1
+            ratio=0.0
+            #print costo_arco_rotto,capacity
+            #print costo_arco_rotto/capacity
+            ##ratio=float("%.10f"%(costo_arco_rotto/capacity))
+            ratio=float("%.10f"%((0.1)/capacity))
 
             #print 'arco rotto'
             #print ratio
