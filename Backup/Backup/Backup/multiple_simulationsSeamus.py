@@ -69,7 +69,7 @@ alpha=0.0
 alpha_fixed=False
 #flow_fixed=True
 flow_fixed=False
-flow_c=3
+flow_c=0
 if num_couple_passed!=-1:
     num_couple_fix=True
     number_of_couple=num_couple_passed
@@ -87,7 +87,7 @@ prob_edge=0.002
 prob_edge_fixed=True
 
 #numero di simulazioni da eseguire (per far variare alpha oppure far variare la prob edge)
-num_simulations=10
+num_simulations=20
 #metrica di distanza per calcolare lunghezza dei path : 'one-hop' , 'capacity', 'broken'
 #distance_metric='broken'
 #distance_metric='broken_capacity'
@@ -120,17 +120,17 @@ if prob_edge_fixed==False:
 
 
 #per 1 solo seed mettere size_array_seed ad 1
-size_array_seed=20
+size_array_seed=6
 seed_array=[]
 
 if seed_fixed==False:
-    for i in range(220,220+20,1):
+    for i in range(220,220+1,1):
         seed_array.append(i)
 else:
     seed_array.append(seed)
 
 if flow_fixed==True:
-    flow_c=3
+    flow_c=0
 
 if num_couple_fix==False:
     number_of_couple=5
@@ -148,7 +148,7 @@ for i in range(0,num_simulations,1):
         number_of_couple+=0
 
     if flow_fixed==False:
-        flow_c+=2
+        flow_c+=4
 
     if fixed_distruption==False:
         var_distruption+=15
